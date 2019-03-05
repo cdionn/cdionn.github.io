@@ -1,14 +1,14 @@
 Package: com.cdionn.noctis12
 Name: Noctis12
 Version: 1.2.6.1
-Size: 145.124
+Size: 145124
 Architecture: iphoneos-arm
 Description: Darkmode for iOS 12
-Maintainer: cdionn
-Author: LaughingQuoll
+Maintainer: cdionn <test@gmail.com>
+Author: LaughingQuoll <test@gmail.com>
 Section: Tweaks
 MD5sum: 6B7296BEA9699CD7DE9A08CF73934B17
 SHA1sum: 825B087D7D4C4624B4C61BA27FF8BE6AEE44876B
-SHA256sum:
+SHA256sum: BA70A1BF312E57DC87940708812CF3FE9D15B9BCD0B5D7525D57BFCB7424B71A
 Filename: debs//com.laughingquoll.noctis12_1.2.6.1_iphoneos-arm.deb
 
