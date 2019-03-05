@@ -7,7 +7,7 @@ Description: Darkmode for iOS 12
 Maintainer: cdionn <test@gmail.com>
 Author: LaughingQuoll <test@gmail.com>
 Section: Tweaks
-MD5sum: 6B7296BEA9699CD7DE9A08CF73934B17
+MD5sum: 6b7296bea9699cd7de9a08cf73934b17
 SHA1sum: 
 SHA256sum: 
 Filename: debs//com.laughingquoll.noctis12_1.2.6.1_iphoneos-arm.deb
@@ -22,7 +22,7 @@ Description: Whatsapp dark mode
 Maintainer: cdionn <test@gmail.com>
 Author: chloee <test@gmail.com>
 Section: Tweaks
-MD5sum: B973831F5C4FF476A3D3B25C2726CC56
+MD5sum: b973831f5c4ff476a3d3b25c2726cc56
 SHA1sum: 
 SHA256sum: 
 Filename: debs//com.chloee.waoled_0.0.1-16+debug_iphoneos-arm.deb
