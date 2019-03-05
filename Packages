@@ -4,7 +4,7 @@ Section: Tweaks
 Maintainer: cdionn <test@gmail.com>
 Depends: firmware (>7.0), mobilesubstrate
 Architecture: iphoneos-arm
-Filename: ./debs/com.laughingquoll.noctis12_1.2.6.1_iphoneos-arm.deb
+Filename: ./debs/com.cdionn.noctis12.deb
 Size: 145
 MD5sum: 6b7296bea9699cd7de9a08cf73934b17
 Description: iOS 12 Darkmode
