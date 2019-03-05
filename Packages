@@ -18,7 +18,7 @@ Maintainer: cdionn <test@gmail.com>
 Depends: firmware (>= 3.0), mobilesubstrate (>= 0.9.5000), preferenceloader
 Architecture: iphoneos-arm
 Filename: ./debs/cylinder_1.0.6.deb
-Size: 145
+Size: 255488
 MD5sum: 1c0eebe91f6e03faea96218dadf8f4cc
 Description: New Homescreen Animations
 Name: Cylinder
