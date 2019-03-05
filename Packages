@@ -1,15 +1,14 @@
-Package: com.laughingquoll.noctis12
-Section: Tweaks
-Maintainer: 
-Architecture: iphoneos-arm
-Version: 1.2.6.1
-Depends: mobilesubstrate
-Filename: com.laughingquoll.noctis12_1.2.6.1_iphoneos-arm.deb
-Size: 880000
-MD5sum: 
-SHA1: 
-SHA256: 
-Description: ios 12 Dark Mode
+Package: com.laughingquoll.noctis12_1.2.6.1_iphoneos-arm
 Name: Noctis12
+Version: 1.2.6.1
+Size: 880000
+Architecture: iphoneos-arm
+Description: Darkmode for iOS 12
+Maintainer: cdionn
 Author: LaughingQuoll
+Section: Tweaks
+MD5sum:
+SHA1sum:
+SHA256sum:
+Filename: debs//com.laughingquoll.noctis12_1.2.6.1_iphoneos-arm.deb
 
