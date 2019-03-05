@@ -1,0 +1,25 @@
+Package: com.cdionn.noctis12
+Version: 1.2.6.1
+Section: Tweaks
+Maintainer: cdionn <test@gmail.com>
+Depends: firmware (>7.0), mobilesubstrate
+Architecture: iphoneos-arm
+Filename: ./debs/com.laughingquoll.noctis12_1.2.6.1_iphoneos-arm.deb
+Size: 145
+MD5sum: 6b7296bea9699cd7de9a08cf73934b17
+Description: iOS 12 Darkmode
+Name: Noctis12
+Author: LaughingQuoll <test@gmail.com>
+
+Package: com.cdionn.cylinder
+Version: 1.0.6
+Section: Tweaks
+Maintainer: cdionn <test@gmail.com>
+Depends: firmware (>= 3.0), mobilesubstrate (>= 0.9.5000), preferenceloader
+Architecture: iphoneos-arm
+Filename: ./debs/cylinder_1.0.6.deb
+Size: 145
+MD5sum: 1c0eebe91f6e03faea96218dadf8f4cc
+Description: New Homescreen Animations
+Name: Cylinder
+Author: Reed Weichler <test@gmail.com>
