@@ -1,0 +1,29 @@
+Package: com.cdionn.noctis12
+Name: Noctis12
+Version: 1.2.6.1
+Size: 147456
+Architecture: iphoneos-arm
+Description: Darkmode for iOS 12
+Maintainer: cdionn <test@gmail.com>
+Author: LaughingQuoll <test@gmail.com>
+Section: Tweaks
+MD5sum: 6B7296BEA9699CD7DE9A08CF73934B17
+SHA1sum: 
+SHA256sum: 
+Filename: debs//com.laughingquoll.noctis12_1.2.6.1_iphoneos-arm.deb
+
+-
+
+Package: com.cdionn.waoled
+Name: WAOLED
+Version: 0.0.1-16+debug
+Size: 12288
+Architecture: iphoneos-arm
+Description: Whatsapp dark mode
+Maintainer: cdionn <test@gmail.com>
+Author: chloee <test@gmail.com>
+Section: Tweaks
+MD5sum: B973831F5C4FF476A3D3B25C2726CC56
+SHA1sum: 
+SHA256sum: 
+Filename: debs//com.chloee.waoled_0.0.1-16+debug_iphoneos-arm.deb
