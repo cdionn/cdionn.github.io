@@ -1,15 +1,15 @@
 Package: com.cdionn.noctis12
-Version: 1.2.6.1
+Version: 1.2.7
 Section: Tweaks
-Maintainer: cdionn <test@gmail.com>
-Depends: firmware (>7.0), mobilesubstrate
+Maintainer: cdionn
+Depends: mobilesubstrate, preferenceloader, org.thebigboss.libcolorpicker, com.laughingquoll.prefixui, com.spark.libsparkapplist, com.opa334.ccsupport
 Architecture: iphoneos-arm
 Filename: ./debs/com.cdionn.noctis12.deb
-Size: 145
-MD5sum: 6b7296bea9699cd7de9a08cf73934b17
-Description: iOS 12 Darkmode
+Size: 880
+MD5sum: 7EC39BD6A784F9B3F5A62BFB93BE1DF7
+Description: Noctis12 - System Wide Dark Mode for iOS
 Name: Noctis12
-Author: LaughingQuoll <test@gmail.com>
+Author: LaughingQuoll
 
 Package: com.cdionn.cylinder
 Version: 1.0.6
