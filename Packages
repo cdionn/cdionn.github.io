@@ -1,0 +1,32 @@
+Package: com.cdion.tenebris
+Section: Themes
+Maintainer: cdion
+Architecture: iphoneos-arm
+Version: 1.2	
+Depends: mobilesubstrate
+Description: a black and white oriented theme
+Name: Tenebris
+Author: cdion
+Homepage: https://twitter.com/_cdion
+Filename: debs/com.cdion.tenebris_1.2_iphoneos-arm.deb
+Size: 724916
+MD5sum: ef0e83b5b819f72b69c1b2713d445470
+SHA1: 935d39fbd380e496ec4f8131e3731eaf885a8b9b
+SHA256: 813f6d657f6f519fd0fd46ca9652c8b5fc1ee5ad4eccb781de4d19f15a5ea30a
+
+Package: com.julioverne.spotilife
+Section: Tweaks
+Maintainer: Julio
+Architecture: iphoneos-arm
+Version: 1.0
+Depends: mobilesubstrate
+Description: Spotify Unlimited Skips, Remove ADs, Extreme Quality Stream Unlocked... Requires Spotify App (AppStore)
+Name: Spotilife
+Author: julioverne
+Homepage: http://twitter.com/ijulioverne
+Filename: debs/com.julioverne.spotilife_1.0_iphoneos-arm.deb
+Size: 91604
+MD5sum: e1178796749e796517be1a4926cb4129
+SHA1: 44247beef6aa93702630aaa85e57fdef8fd27492
+SHA256: 59829f9a09a0936375973f504de0391886a4d5a47b3ac61e6f267fd37f9c3b74
+
