@@ -1,8 +1,8 @@
-Origin: Samg_is_a_Ninja Repo
-Label: Samg_is_a_Ninja's tweaks
+Origin: cdion's repo
+Label: cdion's repo
 Suite: stable
 Version: 1.0
-Codename: cydia-ios
+Codename: cdion's
 Architectures: iphoneos-arm
 Components: main
-Description: Samg_is_a_Ninja Repo. Drama-free, DRM-free tweak releases.
+Description: My private repo
