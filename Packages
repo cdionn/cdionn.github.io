@@ -2,17 +2,17 @@ Package: com.cdion.tenebris
 Section: Themes
 Maintainer: cdion
 Architecture: iphoneos-arm
-Version: 1.4.2
+Version: 1.4.5
 Depends: mobilesubstrate
 Description: a black and white theme
 Name: Tenebris
 Author: cdion
 Homepage: https://twitter.com/_cdion
-Filename: debs/com.cdion.tenebris_1.4.2_iphoneos-arm.deb
-Size: 1154958
-MD5sum: 57c498167bd55c9a2f92030053b5f05e
-SHA1: 510566b9b0fe2ba85c5bda19a794e011b3991974
-SHA256: 5f299bc2cdb2594903f01075bc4586d5af3ba84c0fa5df819083c1a7b8e1bcc2
+Filename: debs/com.cdion.tenebris_1.4.5_iphoneos-arm.deb
+Size: 1201628
+MD5sum: 307bec5004fd0aeb365f6ef5a4f3e405
+SHA1: 6dbc7f97db14b8e5554bcff6cf865a6034b1a615
+SHA256: 6bd17119999268136161fa1cf6092f229c0c0e95151a64e5be434e70f23d2397
 
 Package: com.julioverne.spotilife
 Section: Tweaks
