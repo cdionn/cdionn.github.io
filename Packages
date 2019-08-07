@@ -2,17 +2,17 @@ Package: com.cdion.tenebris
 Section: Themes
 Maintainer: cdion
 Architecture: iphoneos-arm
-Version: 1.5.0
+Version: 1.5.2
 Depends: mobilesubstrate
-Description: a black and white theme
+Description: Eine Weiß Schwarze Theme installiere bitte Snowboard Icon Masks Extension dazu!!
 Name: Tenebris
 Author: cdion
 Homepage: https://twitter.com/_cdion
-Filename: debs/com.cdion.tenebris_1.5.0_iphoneos-arm.deb
-Size: 1363784
-MD5sum: ce3fc8f8599457fb6c5b9a95b3995a8b
-SHA1: f94e0922c5039f5b3f3389f145ebfdaa461ac9c1
-SHA256: 451582513cf57b88cb4876a6549f710cdf597c02686a5b624f730bc45f46a155
+Filename: debs/com.cdion.tenebris_1.5.2_iphoneos-arm.deb
+Size: 1433390
+MD5sum: 0a3dcccb3f55db32c138e175977c416d
+SHA1: 9711ed2b48f41139cbb6984dc1b6d36f4887a365
+SHA256: 064a6d38be82135c8d4fe6e6ec93d8b0eb5d33d1c917f183526d8acefd424e64
 
 Package: com.julioverne.spotilife
 Section: Tweaks
