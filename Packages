@@ -2,7 +2,7 @@ Package: com.cdion.tenebris
 Section: Themes
 Maintainer: cdion
 Architecture: iphoneos-arm
-Version: 1.5.2
+Version: 1.5.3
 Depends: mobilesubstrate
 Description: a black and white theme supports icon masks and settings if youre using snowboard download Snowboard Icon Mask Extension and Settings Extension
 Name: Tenebris
