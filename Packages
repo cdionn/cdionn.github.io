@@ -30,3 +30,19 @@ MD5sum: e1178796749e796517be1a4926cb4129
 SHA1: 44247beef6aa93702630aaa85e57fdef8fd27492
 SHA256: 59829f9a09a0936375973f504de0391886a4d5a47b3ac61e6f267fd37f9c3b74
 
+Package: anondev.LocalIAPStore
+Section: Tweaks
+Maintainer: anondev
+Architecture: iphoneos-arm
+Version: 1.4-2
+Depends: mobilesubstrate
+Description: Free in app purchases
+Name: LocalIAPStore
+Author: anondev
+Homepage: 
+Filename: debs/anondev.localiapstore_1.4-2_iphoneos-arm.deb
+Size: 68372
+MD5sum: 90911d56767eeae8ce2a58fc66fc6331
+SHA1: 44247beef6aa93702630aaa85e57fdef8fd27492
+SHA256: 84afad6b4e65c255c1aacce94d7ed2946b6b7a6b9222f2e8e45ba5a1caea9e5d
+
