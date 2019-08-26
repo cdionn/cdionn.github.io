@@ -35,7 +35,7 @@ Section: Tweaks
 Maintainer: anondev
 Architecture: iphoneos-arm
 Version: 1.4-2
-Depends: mobilesubstrate
+Depends: firmware (>= 5.1.1), mobilesubstrate, preferenceloader
 Description: Free in app purchases
 Name: LocalIAPStore
 Author: anondev
@@ -43,6 +43,6 @@ Homepage:
 Filename: debs/anondev.localiapstore_1.4-2_iphoneos-arm.deb
 Size: 68372
 MD5sum: 90911d56767eeae8ce2a58fc66fc6331
-SHA1: 44247beef6aa93702630aaa85e57fdef8fd27492
+SHA1: f0d1eabba819cda7980407dbc469c8431b971b3f
 SHA256: 84afad6b4e65c255c1aacce94d7ed2946b6b7a6b9222f2e8e45ba5a1caea9e5d
 
