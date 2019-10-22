@@ -2195,11 +2195,12 @@ html .tabBadge-3smxHS:hover {
 	content: "";
 	width: 72px;
 	height: 48px;
-	transition: 0.5s ease;
+	transition: 0.5s ease all;
 }
 
 .scrollerWrap-1IAIlv:hover:after {
 	opacity: 0.5;
+	transform: scale(0.9);
 }
 
 .scroller-2TZvBN {
