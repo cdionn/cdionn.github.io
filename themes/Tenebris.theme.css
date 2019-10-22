@@ -1,4 +1,4 @@
-﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"3.7.3"}*//{}
+﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"3.7.5"}*//{}
 /*
 ///////////////////////////////////////
 
@@ -17,7 +17,7 @@
 	--accent-color: white;
 	--text-color: black;
 	--gifbg: url("https://media0.giphy.com/media/3ohze1qcZ9woSlyvFm/giphy.gif?cid=3640f6095c49e8bb52582f7249383aab");
-	--version: "3.7.3";
+	--version: "3.7.5";
 	
 
 	--online: #2dc8fc;
@@ -129,7 +129,7 @@
 }
 
 .sidebarRegionScroller-3MXcoP, .sidebar-2K8pFh {
-    background-color: #080808;
+    background-color: transparent;
 }
 
 .base-PmTxvP {
@@ -2173,8 +2173,38 @@ html .tabBadge-3smxHS:hover {
     border-right: 1px solid rgba(24, 24, 27, 0.45);
 }
 
+.scrollerWrap-1IAIlv:before {
+	content: "";
+	display: block;
+	width: 72px;
+	height: 48px;
+	position: absolute;
+	background-color: var(--background-light);
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px 0px;
+	z-index: 2;
+}
+
+.scrollerWrap-1IAIlv:after {
+	background-image: url(https://cdionn.github.io/themes/Tenebris/Logo/Logo.png);
+	background-size: 35px;
+	background-repeat: no-repeat;
+	background-position: center;
+	display:block;
+	position: absolute;
+	z-index: 3; 
+	content: "";
+	width: 72px;
+	height: 48px;
+	transition: 0.5s ease;
+}
+
+.scrollerWrap-1IAIlv:hover:after {
+	opacity: 0.5;
+}
+
 .scroller-2TZvBN {
 	background-color: black;
+	padding: 60px 0 0;
 }
 
 .theme-dark .body-3iLsc4, .theme-dark .footer-1fjuF6 {
