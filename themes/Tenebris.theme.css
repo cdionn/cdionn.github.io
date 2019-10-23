@@ -1097,8 +1097,12 @@
 
 .channelNotices-41mJbj .channelNotice-1-XFjC.quickswitcher-35bYg4 {
     background: #060606 url(/assets/8fdb69b7684b8e1ecb3fdde909daca41.svg) no-repeat center 35px;
-	filter: grayscale();
+		filter: grayscale(1);
     padding: 100px 20px 20px;
+}
+
+.channelNotice-1-XFjC.quickswitcher-35bYg4 {
+		border-right: solid 1px rgba(24, 24, 27, 0.45);
 }
 
 .theme-dark .tier1Banner-1B_WXY {
@@ -2190,12 +2194,11 @@ html .tabBadge-3smxHS:hover {
 }
 
 .scrollerWrap-1IAIlv:after {
-	/* background-image: url(https://cdionn.github.io/themes/Tenebris/Logo/Logo.png); */
-	background-image: url(http://pluspng.com/img-png/halloween-hd-png-halloween-png-hd-2002.png);
-	background-size: 50px;
+	background-image: url(https://cdionn.github.io/themes/Tenebris/Logo/Logo.png);
+	/* background-image: url(http://pluspng.com/img-png/halloween-hd-png-halloween-png-hd-2002.png); */
+	background-size: 35px;
 	background-repeat: no-repeat;
 	background-position: center;
-	filter: grayscale(1) brightness(1.1);
 	display:block;
 	position: absolute;
 	z-index: 3;
