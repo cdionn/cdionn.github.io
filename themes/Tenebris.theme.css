@@ -1,4 +1,4 @@
-﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"3.7.7"}*//{}
+//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"3.7.8"}*//{}
 /*
 ///////////////////////////////////////
 
@@ -17,7 +17,7 @@
 	--accent-color: white;
 	--text-color: black;
 	--gifbg: url("https://media.giphy.com/media/YV3hvYumOAvWNLRAPH/giphy.gif");
-	--version: "3.7.7";
+	--version: "3.7.8";
 
 
 	--online: #2dc8fc;
@@ -520,6 +520,7 @@
 .theme-dark .item-2J1YMK:active, .theme-dark .item-2J1YMK:hover {
 	background-color: black;
 	transition: var(--animation);
+	color: var(--accent-color);
 }
 
 .theme-dark .searchBar-2_Yu-C.searchBarLight-1NxoDG {
@@ -661,12 +662,14 @@
 }
 
 .container-3cGP6G {
-	border-radius: 0px;
+	border-radius: 5px;
 	transition: var(--animation);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .container-3cGP6G:hover {
 	transform: scale(1.1);
+	  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .theme-dark .container-3cGP6G {
@@ -677,6 +680,10 @@
 .theme-light .status-2s6iDp {
     border-color: #ff56e7;
 	border-radius: 5px;
+}
+
+.label-JWQiNe {
+	font-weight: bold;
 }
 
 .theme-dark .status-2s6iDp {
@@ -2392,6 +2399,7 @@ html .tabBadge-3smxHS:hover {
 	transition: var(--animation);
 }
 
+
 .callAvatar-v-u4BM.voice-2D-tt_{
 	border-radius: 3px;
 }
@@ -2453,6 +2461,15 @@ html .tabBadge-3smxHS:hover {
 
 .theme-dark .wrapper-29NfPK.minimum-2d6zH6 .actions-2vadYq .center-1Vp33r {
     border-radius: 0px;
+}
+
+.winButtonClose-1HsbF-:hover {
+	background-color: var(--accent-color)!important;
+	color: var(--text-color);
+}
+
+.winButtonClose-1HsbF-, .winButton-iRh8-Z{
+	transition: ease all 100ms;
 }
 
 .themeDefault-24hCdX.valueChecked-m-4IJZ {
@@ -4131,16 +4148,24 @@ a {
     transition: var(--animation);
 }
 
-.theme-dark .reaction-1ELvT8.reactionMe-23mbRf {
-    background: rgba(128, 128, 128, 0.3);
+.reaction-1ELvT8 {
+	border-radius: 50px;
+	border: solid 2px transparent;
 }
 
-.theme-dark .reaction-1ELvT8.reactionMe-23mbRf .reactionCount-2ddRoS {
-	color: var(--text-color);
+.reactionCount-2ddRoS {
+	color: white;
+	transition: var(--aninmation);
 }
 
-.theme-dark .reaction-1ELvT8.reactionMe-23mbRf {
-	background-color: var(--accent-color);
+.reaction-1ELvT8.reactionMe-23mbRf {
+	background-color: #080808;
+	border: solid 2px var(--accent-color);
+	border-radius: 50px;
+}
+
+.reactionMe-23mbRf .reactionCount-2ddRoS, .reactionMe-23mbRf:hover .reactionCount-2ddRoS {
+	color: var(--accent-color);
 }
 
 .theme-dark .header-3ZP1MY, .theme-light .header-3ZP1MY, .theme-dark .create-3jownz .actionHeader-2CT5c7, .theme-light .create-3jownz .actionHeader-2CT5c7 {
