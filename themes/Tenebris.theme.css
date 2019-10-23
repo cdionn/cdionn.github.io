@@ -1,4 +1,4 @@
-﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"3.7.5"}*//{}
+﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"3.7.6"}*//{}
 /*
 ///////////////////////////////////////
 
@@ -17,7 +17,7 @@
 	--accent-color: white;
 	--text-color: black;
 	--gifbg: url("https://media0.giphy.com/media/3ohze1qcZ9woSlyvFm/giphy.gif?cid=3640f6095c49e8bb52582f7249383aab");
-	--version: "3.7.5";
+	--version: "3.7.6";
 	
 
 	--online: #2dc8fc;
@@ -2186,7 +2186,7 @@ html .tabBadge-3smxHS:hover {
 
 .scrollerWrap-1IAIlv:after {
 	background-image: url(https://cdionn.github.io/themes/Tenebris/Logo/Logo.png);
-	background-size: 35px;
+	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
 	display:block;
@@ -2196,11 +2196,11 @@ html .tabBadge-3smxHS:hover {
 	width: 72px;
 	height: 48px;
 	transition: 0.5s ease all;
+	opacity: 0.5;
 }
 
-.scrollerWrap-1IAIlv:hover:after {
-	opacity: 0.5;
-	transform: scale(0.9);
+.platform-win .scroller-2TZvBN {
+    padding-top: 57px;
 }
 
 .scroller-2TZvBN {
