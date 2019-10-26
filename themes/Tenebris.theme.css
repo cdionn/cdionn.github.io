@@ -29,8 +29,9 @@
 	--animation: all 250ms cubic-bezier(0.0, 0.0, 0.2, 1);
 
 
-	--background-light: rgb(24, 24, 27);
+	--background-light: #080808;
 	--background-dark: #000;
+	--searchbar: #151515
 }
 
 .body {
@@ -411,7 +412,7 @@
 
 .container-2Rl01u, .header-2o-2hj {
 	border-radius: 0px!important;
-	background-color: rgb(24, 24, 27);
+	background-color: var(--background-light);
 }
 
 /* Hässliche ecke oben Links vom Server Namen */
@@ -426,7 +427,7 @@
 }
 
 .container-2lgZY8, .spacer-29U_x8 {
-    background-color: rgb(24, 24, 27);
+    background-color: var(--background-light);
 }
 
 .home-2gmu2h {
@@ -447,7 +448,7 @@
 }
 
 .theme-dark .search-2oPWTC .searchBar-3dMhjb {
-	background-color: #080808;
+	background-color: var(--searchbar);
 	border: 1px solid transparent;
 	transition: var(--animation);
 	border-radius: 0px;
@@ -455,6 +456,7 @@
 
 .theme-dark .search-2oPWTC .searchBar-3dMhjb:focus-within {
 	border-color: var(--accent-color)!important;
+	background-color: black;
 }
 
 .theme-light .search-2oPWTC .searchBar-3dMhjb:focus-within {
@@ -1418,7 +1420,7 @@
 }
 
 .theme-dark .title-3qD0b,.container-1r6BKw.themed-ANHk51, .searchBar-6Kv8R2 {
-    background: rgb(24, 24, 27);
+    background: var(--background-light);
 	box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px 0px;
 }
 
@@ -1430,7 +1432,7 @@
 
 .searchBar-6Kv8R2 .searchBarComponent-32dTOx {
     border-radius: 0px;
-    background-color: #080808;
+    background-color: var(--searchbar);
 }
 
 .avatar-small {
@@ -1695,7 +1697,7 @@
 }
 
 .theme-dark .container-2x5lvQ .header-2C89wJ {
-	background-color: rgb(24, 24, 27);
+	background-color: var(--background-light);
 }
 
 .theme-dark .inner-zqa7da {
@@ -2242,9 +2244,10 @@ html .tabBadge-3smxHS:hover {
 }
 
 .scrollerWrap-1IAIlv:after {
-	background-image: url(https://cdionn.github.io/themes/Tenebris/Logo/Logo.png);
-	/* background-image: url(http://pluspng.com/img-png/halloween-hd-png-halloween-png-hd-2002.png); */
-	background-size: 35px;
+	/* background-image: url(https://cdionn.github.io/themes/Tenebris/Logo/Logo.png); */
+	background-image: url(http://giphygifs.s3.amazonaws.com/media/ezzBRTg3S4BoY/giphy.gif);
+	filter: grayscale(0);
+	background-size: 45px;
 	background-repeat: no-repeat;
 	background-position: center;
 	display:block;
@@ -4220,6 +4223,10 @@ a {
 	opacity: 0.5!important;
 	transition: var(--animation);
 	filter:blur(100px) grayscale(0.5);
+}
+
+.defaultValue-3gC7yw .markValue-2DwdXI {
+	color:var(--accent-color);
 }
 
 .theme-dark .join-33Tr-7 .actionHeader-2CT5c7, .theme-light .join-33Tr-7 .actionHeader-2CT5c7 {
