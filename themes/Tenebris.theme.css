@@ -303,14 +303,16 @@
 	width: inherit;
 	background-color: red;
 	background-blend-mode: overlay;
-	background: url(https://media1.giphy.com/media/xkGkrAIbJqAtKlsZI5/giphy.gif?cid=790b761147fbfe17c647bde7f0d7b525ec9001dc5eebf5e1&rid=giphy.gif);
+	background: url(https://cdionn.github.io/themes/Tenebris/Weinachten/Snow.gif);
 	opacity: 0.2;
-	filter:blur(0px);
+	filter:blur(0px) brightness(2);
 	pointer-events: none;
-	background-size: 500px;
+	background-size: 350px;
 }
 
-*/
+ */
+
+
 
 .da-appMount {
     background-color: #000;
