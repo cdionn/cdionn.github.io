@@ -3155,6 +3155,24 @@ img[alt] {
 	background-blend-mode: saturation;
 }
 
+.theme-dark .tooltipGreen-WdeQwd, .theme-light .tooltipGreen-WdeQwd {
+	transition: var(--animation);
+	background-color: var(--accent-color);
+	color: var(--text-color);
+}
+
+.theme-dark .tooltipGreen-WdeQwd .tooltipPointer-3ZfirK, .theme-light .tooltipGreen-WdeQwd .tooltipPointer-3ZfirK {
+	border-top-color: var(--accent-color);
+}
+
+.theme-dark .tooltipRed-8-9NeP, .theme-light .tooltipRed-8-9NeP {
+	background-color: red;
+}
+
+.theme-dark .tooltipRed-8-9NeP .tooltipPointer-3ZfirK, .theme-light .tooltipRed-8-9NeP .tooltipPointer-3ZfirK {
+	border-top-color: red;
+}
+
 .da-connection {
 	transition: var(--animation);
 }
