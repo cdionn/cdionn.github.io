@@ -1919,8 +1919,23 @@
 	color: var(--text-color);
 }
 
+.theme-dark .tooltipBrand-g03Nz8, .theme-light .tooltipBrand-g03Nz8 {
+	background-color: var(--accent-color);
+	color: var(--text-color);
+}
+
+.theme-dark .tooltipBrand-g03Nz8 .tooltipPointer-3ZfirK, .theme-light .tooltipBrand-g03Nz8 .tooltipPointer-3ZfirK {
+	border-top-color: var(--accent-color);
+}
+
 .theme-dark .mobileIndicator-329Gd6 {
 	color: white;
+}
+
+.hasMore-3e72_v {
+	color: var(--accent-color);
+	transition: var(--animation);
+	border-radius: 0px;
 }
 
 .theme-dark .notDetected-33MY4s, .theme-light .notDetected-33MY4s {
