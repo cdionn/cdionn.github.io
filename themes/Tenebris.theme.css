@@ -1,4 +1,4 @@
-﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"3.8.0"}*//{}
+﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"3.8.1"}*//{}
 /*
 ///////////////////////////////////////
 
@@ -18,7 +18,7 @@
 	--text-color: black;
 	--gifbg: url("https://media.giphy.com/media/YV3hvYumOAvWNLRAPH/giphy.gif");
 	--gifbghalloween: url("https://media.giphy.com/media/ds7ltUbHYLxjW/giphy.gif");
-	--version: "3.8.0";
+	--version: "3.8.1";
 
 
 	--online: #2dc8fc;
@@ -4214,6 +4214,15 @@ a {
 
 .valueChecked-m-4IJZ.sizeDefault-2YlOZr:after {
     transition: var(--animation);
+}
+
+.theme-dark .wumpusTooltip-65YlMT {
+	background-color: var(--background-light);
+	color: white;
+}
+
+.wumpus-3VDMUi {
+	filter: grayscale(1);
 }
 
 .reaction-1ELvT8 {
