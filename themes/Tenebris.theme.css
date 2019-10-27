@@ -1,4 +1,4 @@
-﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"3.7.8"}*//{}
+﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"3.8.0"}*//{}
 /*
 ///////////////////////////////////////
 
@@ -18,7 +18,7 @@
 	--text-color: black;
 	--gifbg: url("https://media.giphy.com/media/YV3hvYumOAvWNLRAPH/giphy.gif");
 	--gifbghalloween: url("https://media.giphy.com/media/ds7ltUbHYLxjW/giphy.gif");
-	--version: "3.7.8";
+	--version: "3.8.0";
 
 
 	--online: #2dc8fc;
@@ -268,14 +268,7 @@
 	transform:scale(1.03)!important;
 }
 
-.side-8zPYf6 .itemSelected-1qLhcL{position:relative;overflow:hidden;transform:translate3d(0,0,0)}.side-8zPYf6 .itemSelected-1qLhcL:after{content:"";display:block;position:absolute;width:100%;height:100%;top:0;left:0;pointer-events:none;background-image:radial-gradient(circle,var(--accent-color) 10%,transparent 10.01%);background-repeat:no-repeat;background-position:50%;transform:scale(10,10);opacity:0;transition:transform .5s,opacity 1s}.side-8zPYf6 .itemSelected-1qLhcL:active:after{transform:scale(0,0);opacity:.2;transition:0s}
-
-.name-3YKhmS{font-style: italic;font-weight: bold;position:relative;overflow:hidden;transform:translate3d(0,0,0)}.name-3YKhmS:after{content:"";display:block;position:absolute;width:100%;height:100%;top:0;left:0;pointer-events:none;background-image:radial-gradient(circle, var(--accent-color) 10%,transparent 10.01%);background-repeat:no-repeat;background-position:50%;transform:scale(10,10);opacity:0;transition:transform .5s,opacity 1s}
-
-
-#bd-settings-sidebar .ui-tab-bar-item{position:relative;overflow:hidden;transform:translate3d(0,0,0)}#bd-settings-sidebar .ui-tab-bar-item:after{content:"";display:block;position:absolute;width:100%;height:100%;top:0;left:0;pointer-events:none;background-image:radial-gradient(circle,var(--accent-color) 10%,transparent 10.01%);background-repeat:no-repeat;background-position:50%;transform:scale(10,10);opacity:0;transition:transform .5s,opacity 1s}#bd-settings-sidebar .ui-tab-bar-item:active:after{transform:scale(0,0);opacity:.2;transition:0s}
-
-/* Halloween Effekt*/
+/* Halloween Effekt */
 
 .da-appMount:before {
 	content:"";
@@ -305,15 +298,13 @@
 	background-color: red;
 	background-blend-mode: overlay;
 	background: url(https://cdionn.github.io/themes/Tenebris/Weinachten/Snow.gif);
-	opacity: 0.2;
+	opacity: 0.3;
 	filter:blur(0px) brightness(2);
 	pointer-events: none;
 	background-size: 350px;
 }
 
  */
-
-
 
 .da-appMount {
     background-color: #000;
@@ -1283,6 +1274,12 @@
 	border-radius: 0px;
 }
 
+.theme-dark .streamPreview-2-WUWT {
+	background-color: black;
+	border-radius: 0px;
+	border: 1px solid var(--background-light);
+}
+
 .theme-dark .slideBody-2nMrnU, .theme-light .slideBody-2nMrnU {
 	background: none;
 	transition: var(--animation);
@@ -2151,16 +2148,19 @@ html .tabBadge-3smxHS:hover {
 
 .lookOutlined-3sRXeN.colorRed-1TFJan {
 	color: white;
-	border-color: red;
-	background-color: red;
+	border-color: #ff5454;
+	background-color: #ff5454;
 	font-weight: bold;
 	letter-spacing: 1px;
+	border-radius: 0px;
+	transition: var(--animation);
 }
 
 .lookOutlined-3sRXeN.colorRed-1TFJan:hover {
-	color: var(--accent-color);
-	border-color: var(--accent-color);
+	color: #ff5454;
+	border-color: #ff5454;
 	background-color: transparent;
+	transform: scale(1.03);
 }
 
 .authedApp-mj2Hmd {
@@ -2177,15 +2177,11 @@ html .tabBadge-3smxHS:hover {
 }
 
 .theme-dark .headerPlaying-j0WQBV {
-	background: url(https://i.ibb.co/NL5JsJC/Playing-background.png);
+	background: url(https://cdionn.github.io/themes/Tenebris/nowplaying/Playing-background.png);
 	background-size: cover;
 	background-position: center center;
-}
-
-.theme-light .headerPlaying-j0WQBV {
-	background: url(https://i.ibb.co/NL5JsJC/Playing-background.png);
-	background-size: cover;
-	background-position: center center;
+	background-color: var(--accent-color);
+	background-blend-mode: luminosity;
 }
 
 .userPopout-3XzG_A {
@@ -2200,9 +2196,11 @@ html .tabBadge-3smxHS:hover {
 }
 
 .headerSpotify-zpWxgT {
-    background: var(--accent-color) url(https://i.ibb.co/zmWMgnw/Spotify-Transparent.png);
+  background: url(https://cdionn.github.io/themes/Tenebris/nowplaying/Playing_spotify.png);
 	background-size: cover;
 	background-position: center center;
+	background-color: var(--accent-color);
+	background-blend-mode: luminosity;
 }
 
 .headerTop-3C2Zn0, .header-QKLPzZ {
@@ -3131,15 +3129,6 @@ img[alt] {
     border: solid 1px transparent;
 	transition: var(--animation);
 	border-radius: 0px;
-}
-
-.lookOutlined-3sRXeN.colorRed-1TFJan {
-	border-radius: 0px;
-	transition: var(--animation);
-}
-
-.lookOutlined-3sRXeN.colorRed-1TFJan:hover {
-	transform:scale(1.03);
 }
 
 .lookFilled-1Gx00P.colorGreen-29iAKY:hover {
