@@ -788,7 +788,7 @@
 }
 
 .activity-11LB_k {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 #friends .friends-table .friends-table-body {
@@ -2205,6 +2205,7 @@ html .tabBadge-3smxHS:hover {
 
 .headerTop-3C2Zn0, .header-QKLPzZ {
 	border-bottom: 1px solid var(--accent-color);
+	background-color: black;
 }
 
 .barInner-3NDaY_ {
