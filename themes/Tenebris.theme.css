@@ -1,4 +1,4 @@
-﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"3.8.1"}*//{}
+﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"3.8.2"}*//{}
 /*
 ///////////////////////////////////////
 
@@ -18,7 +18,7 @@
 	--text-color: black;
 	--gifbg: url("https://media.giphy.com/media/YV3hvYumOAvWNLRAPH/giphy.gif");
 	--gifbghalloween: url("https://media.giphy.com/media/ds7ltUbHYLxjW/giphy.gif");
-	--version: "3.8.1";
+	--version: "3.8.2";
 
 
 	--online: #2dc8fc;
@@ -34,6 +34,9 @@
 	--searchbar: #151515;
 	--button-active: rgba(255, 255, 255, 0.05);
 	--button-hover:	rgba(255, 255, 255, 0.02);
+
+	--shadow:	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	--shadow-hover:	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .body {
@@ -1239,7 +1242,50 @@
 }
 
 .theme-dark .menu-Sp6bN1 {
-    background: #060606;
+    background: #080808;
+		border-radius: 0px;
+		box-shadow: var(--shadow);
+		transition: var(--animation);
+		border: solid 1px transparent;
+}
+
+.theme-dark .menu-Sp6bN1:hover {
+    transform:scale(1.03);
+		border: solid 1px var(--background-light);
+		background-color: black;
+		box-shadow: var(--shadow-hover);
+}
+
+.itemBase-1Qj4z6{transition: var(--animation);}
+.itemBase-1Qj4z6:hover {
+	background-color: var(--button-hover);
+}
+
+.itemBase-1Qj4z6:active {
+	background-color: var(--button-active);
+}
+
+.scale-3iLZhb.didRender-33z1u8 {
+	transition: var(--animation);
+}
+
+.lookGhost-2Fn_0-.colorGrey-2DXtkV {
+	background-color: var(--accent-color);
+	color: var(--text-color);
+	font-weight: bold;
+	letter-spacing: 1px;
+	border: solid 1px transparent;
+	transition: var(--animation);
+}
+
+.lookGhost-2Fn_0-.colorBrand-3pXr91 {
+	background-color: transparent;
+	color: var(--accent-color);
+	border:solid 1px var(--accent-color)!important;
+	font-weight: bold;
+	letter-spacing: 1px;
+	transition: var(--animation);
+	transform: scale(1.03);
 }
 
 .theme-light .cardPrimary-1Hv-to {
@@ -3097,6 +3143,15 @@ img[alt] {
 	border-radius: 10px;
 	background-color: white;
 	width: 2px;
+}
+
+.scale-3iLZhb.animatorTop-2Y7x2r {
+	    transform-origin: center center;
+
+}
+
+.statusGreen-168O6Q {
+	color: var(--accent-color);
 }
 
 #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch {
