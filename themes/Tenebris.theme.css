@@ -17,7 +17,7 @@
 	--accent-color: white;
 	--text-color: black;
 	--gifbg: url("https://media.giphy.com/media/YV3hvYumOAvWNLRAPH/giphy.gif");
-	--gifbghalloween: url("https://media.giphy.com/media/ds7ltUbHYLxjW/giphy.gif");
+	--gifbg-halloween: url("https://media.giphy.com/media/ds7ltUbHYLxjW/giphy.gif");
 	--version: "3.8.2";
 
 
@@ -325,7 +325,7 @@
 	transform:scale(1.03)!important;
 }
 
-/* Halloween Effekt */
+/* Halloween Effekt
 
 .da-appMount:before {
 	content:"";
@@ -342,6 +342,7 @@
 	pointer-events: none;
 	background-size: 200px;
 }
+	*/
 
 /* Weinachten Effekt
 
@@ -1213,7 +1214,7 @@
 }
 
 .theme-dark .container-2Thooq, .theme-light .container-2Thooq, .panels-j1Uci_ {
-	background: linear-gradient(black, black), var(--gifbghalloween);
+	background: linear-gradient(black, black), var(--gifbg);
 	background-blend-mode: saturation;
 	background-color: rgba(0,0,0,.8);
 	background-position: center center;
@@ -1292,7 +1293,7 @@
 	border-color: var(--accent-color);
 	transition: var(--animation);
 	background-color: rgba(0,0,0,.8)!important;
-	background: linear-gradient(black, black), var(--gifbghalloween);
+	background: linear-gradient(black, black), var(--gifbg);
 	background-size: cover;
 	background-position: center;
 	background-blend-mode: saturation;
@@ -3256,7 +3257,7 @@ img[alt] {
 }
 
 .theme-dark .cardPrimary-1Hv-to {
-    background: linear-gradient(black, black), var(--gifbghalloween);
+    background: linear-gradient(black, black), var(--gifbg);
     border:none;
 	border-radius: 0px;
 	border-bottom: solid 1px var(--accent-color);
@@ -3886,7 +3887,7 @@ img[alt] {
 .content-region #bd-customcss-attach-controls::after {
     width: 100%;
     padding: 10px;
-    content:"Tutorial how to change colors, type in the code which is below this text \A \A-----------------------------------------------------\A \A:root {\A\9 --accent-color: #7289DA;\A\9 --text-color: #FFFFFF;\A\9 --gifbghalloween: url(yourlink.gif); \A } \A \A ----------------------------------------------------- \A Accent-color changes the Text/Button/Icon colors etc. \A Text-color changes the text color inside of buttons use this if you \A can't see the text of a button. \A Gifbg changes the gif that plays behind your user card you can change \A it to whatever you like.";
+    content:"Tutorial how to change colors, type in the code which is below this text \A \A-----------------------------------------------------\A \A:root {\A\9 --accent-color: #7289DA;\A\9 --text-color: #FFFFFF;\A\9 --gifbg: url(yourlink.gif); \A } \A \A ----------------------------------------------------- \A Accent-color changes the Text/Button/Icon colors etc. \A Text-color changes the text color inside of buttons use this if you \A can't see the text of a button. \A Gifbg changes the gif that plays behind your user card you can change \A it to whatever you like.";
     background: transparent;
     margin-top: 10px;
     display: block;
