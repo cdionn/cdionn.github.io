@@ -356,13 +356,15 @@
 	background-color: red;
 	background-blend-mode: overlay;
 	background: url(https://cdionn.github.io/themes/Tenebris/Weinachten/Snow.gif);
-	opacity: 0.3;
+	opacity: 0.2;
 	filter:blur(0px) brightness(2);
 	pointer-events: none;
 	background-size: 350px;
 }
 
  */
+
+
 
 .da-appMount {
     background-color: #000;
@@ -2344,8 +2346,8 @@ html .tabBadge-3smxHS:hover {
 }
 
 .scrollerWrap-1IAIlv:after {
-	/* background-image: url(https://cdionn.github.io/themes/Tenebris/Logo/Logo.png); */
-	background-image: url(http://giphygifs.s3.amazonaws.com/media/ezzBRTg3S4BoY/giphy.gif);
+	background-image: url(https://cdionn.github.io/themes/Tenebris/Logo/Logo.png);
+	/* background-image: url(http://giphygifs.s3.amazonaws.com/media/ezzBRTg3S4BoY/giphy.gif); */
 	filter: grayscale(0);
 	background-size: 45px;
 	background-repeat: no-repeat;
