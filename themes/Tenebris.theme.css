@@ -1,4 +1,4 @@
-﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"3.8.2"}*//{}
+﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"3.8.3"}*//{}
 /*
 ///////////////////////////////////////
 
@@ -2346,7 +2346,7 @@ html .tabBadge-3smxHS:hover {
 }
 
 .scrollerWrap-1IAIlv:after {
-	background-image: url(https://cdionn.github.io/themes/Tenebris/Logo/Logo.png);
+	background-image: url(https://cdionn.github.io/themes/Tenebris/Logo/Logotenebris.png);
 	filter: grayscale(0);
 	background-size: 45px;
 	background-repeat: no-repeat;
