@@ -1,0 +1,46 @@
+Package: com.cdion.tenebris
+Section: Themes
+Maintainer: cdion
+Architecture: iphoneos-arm
+Version: 1.6.2
+Depends:
+Description: a black and white theme supports icon masks and settings if youre using snowboard download Snowboard Icon Mask Extension and Settings Extension
+Name: Tenebris
+Author: cdion
+Homepage: https://twitter.com/_cdion
+Filename: debs/tenebris.deb
+MD5sum: 2f2f13b62c89cfb1399b8fe74c4ef780
+SHA1: 81dca752fdad51648a5055f8f32146ce4e6fa5ee
+SHA256: 1a0e82ae1dfadb05d8e55ccbbc5345065ad59b36c504c956a30f9ff1f453e046
+
+Package: com.julioverne.spotilife
+Section: Tweaks
+Maintainer: Julio
+Architecture: iphoneos-arm
+Version: 1.0
+Depends: mobilesubstrate
+Description: Spotify Unlimited Skips, Remove ADs, Extreme Quality Stream Unlocked... Requires Spotify App (AppStore)
+Name: Spotilife
+Author: julioverne
+Homepage: http://twitter.com/ijulioverne
+Filename: debs/com.julioverne.spotilife_1.0_iphoneos-arm.deb
+Size: 91604
+MD5sum: e1178796749e796517be1a4926cb4129
+SHA1: 44247beef6aa93702630aaa85e57fdef8fd27492
+SHA256: 59829f9a09a0936375973f504de0391886a4d5a47b3ac61e6f267fd37f9c3b74
+
+Package: anondev.LocalIAPStore
+Section: Tweaks
+Maintainer: anondev
+Architecture: iphoneos-arm
+Version: 1.4-2
+Depends: firmware (>= 5.1.1), mobilesubstrate, preferenceloader
+Description: Free in app purchases
+Name: LocalIAPStore
+Author: anondev
+Homepage:
+Filename: debs/anondev.localiapstore_1.4-2_iphoneos-arm.deb
+Size: 68372
+MD5sum: 90911d56767eeae8ce2a58fc66fc6331
+SHA1: f0d1eabba819cda7980407dbc469c8431b971b3f
+SHA256: 84afad6b4e65c255c1aacce94d7ed2946b6b7a6b9222f2e8e45ba5a1caea9e5d
