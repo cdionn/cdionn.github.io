@@ -2,17 +2,17 @@ Package: com.cdion.tenebris
 Section: Themes
 Maintainer: cdion
 Architecture: iphoneos-arm
-Version: 1.5.4
+Version: 1.6.1
 Depends: mobilesubstrate
 Description: a black and white theme supports icon masks and settings if youre using snowboard download Snowboard Icon Mask Extension and Settings Extension
 Name: Tenebris
 Author: cdion
 Homepage: https://twitter.com/_cdion
-Filename: debs/com.cdion.tenebris_1.5.4_iphoneos-arm.deb
-Size: 1081520
-MD5sum: cd0daf8d14980e362eae7c8aa22a7170
-SHA1: a7ae95c890ca347e9e0569e92c322824fa67e2c7
-SHA256: a3aabf1466618a831243d0e83c80547bfa858bdb18bd15da70b4c1c595738588
+Filename: debs/tenebris.deb
+Size: 1173496
+MD5sum: 382fd02c8586af4f3ebefb87f91a031f
+SHA1: 1bddc2cb823b48f3e46ce99015f06deb93a8528a
+SHA256: f051805ef4862b6691083a9ae08f9fe04b49044566d3e1895b32f8965d4396aa
 
 Package: com.julioverne.spotilife
 Section: Tweaks
@@ -39,10 +39,9 @@ Depends: firmware (>= 5.1.1), mobilesubstrate, preferenceloader
 Description: Free in app purchases
 Name: LocalIAPStore
 Author: anondev
-Homepage: 
+Homepage:
 Filename: debs/anondev.localiapstore_1.4-2_iphoneos-arm.deb
 Size: 68372
 MD5sum: 90911d56767eeae8ce2a58fc66fc6331
 SHA1: f0d1eabba819cda7980407dbc469c8431b971b3f
 SHA256: 84afad6b4e65c255c1aacce94d7ed2946b6b7a6b9222f2e8e45ba5a1caea9e5d
-
