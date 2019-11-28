@@ -344,7 +344,7 @@
 }
 	*/
 
-/* Weinachten Effekt
+/* Weinachten Effekt */
 
 .da-appMount:before {
 	content:"";
@@ -361,9 +361,6 @@
 	pointer-events: none;
 	background-size: 350px;
 }
-
- */
-
 
 
 .da-appMount {

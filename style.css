@@ -1,0 +1,30 @@
+:root {
+  --animation: all 250ms cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+body{
+  background-color: black;
+}
+
+#info-text {
+  color: white;
+  font-size: 30px;
+  transition: var(--animation);
+  word-wrap: normal;
+  text-align: center;
+}
+
+#info-text:hover {
+  font-size: 35px;
+}
+
+.container{
+  background-color: #080808;
+  margin: 0 auto;
+  padding:0.1px;
+  width: 500px;
+  height: 100px;
+  display:block;
+  border-radius:5px;
+  border:solid 1px #cccccc
+}
