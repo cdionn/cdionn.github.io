@@ -355,9 +355,9 @@
 	width: inherit;
 	background-color: red;
 	background-blend-mode: overlay;
-	background: url(https://cdionn.github.io/themes/Tenebris/Weinachten/Snow.gif);
+	background: url(https://media0.giphy.com/media/xkGkrAIbJqAtKlsZI5/giphy.gif);
 	opacity: 0.2;
-	filter:blur(0px) brightness(2);
+	filter:blur(0px) brightness(0.5);
 	pointer-events: none;
 	background-size: 350px;
 }
