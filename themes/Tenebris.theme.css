@@ -3496,6 +3496,18 @@ img[alt] {
     border-color: var(--accent-color)!important;
 }
 
+.panel-24C3ux {
+	background-color: #040404;
+	border-top: solid 1px var(--background-light);
+	border-bottom: solid 1px var(--background-light);
+}
+
+.gameIcon-2YB8Et, .screenshareIcon-2redWJ {
+    width: 32px;
+    height: 32px;
+    border-radius: 0px;
+}
+
 .theme-dark .input-cIJ7To {
     border-color: #333;
 	opacity: 1;
