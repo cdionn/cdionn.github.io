@@ -4688,6 +4688,10 @@ a {
 	cursor: pointer;
 }
 
+.updateIconForeground-3tnNZn {
+    fill: #ea6147;
+}
+
 @-webkit-keyframes hue {
   from {
     -webkit-filter: hue-rotate(0deg);
