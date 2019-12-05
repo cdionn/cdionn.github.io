@@ -2515,6 +2515,11 @@ html .tabBadge-3smxHS:hover {
 	transition: var(--animation);
 }
 
+strong {
+	color: var(--accent-color);
+	filter:grayscale(0.7);
+}
+
 .lookFilled-1Gx00P.colorRed-1TFJan {
     background-color: var(--accent-color);
     color: var(--text-color);
