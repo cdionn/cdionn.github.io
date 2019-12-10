@@ -1663,8 +1663,8 @@
 
 .lookFilled-1Gx00P.colorBrand-3pXr91:disabled {
 	color: white;
-	background-color: #151515!important;
-	border-color: var(--background-light);
+	background-color: #333!important;
+	border-color: #aaa;
 }
 
 .theme-dark .userSettingsVoice-iwdUCU .inputSensitivityToggle-2LKb8o.manual-36Evg9 .microphone-2rtdHw, .theme-light .userSettingsVoice-iwdUCU .previewOverlay-2O7_KC.dismiss-3tPbRc {
@@ -2313,6 +2313,10 @@ html .tabBadge-3smxHS:hover {
 	box-shadow: inset 0 -1px 0 0 #1b1b1b;
 }
 
+.theme-dark .item-3eFBNF {
+	box-shadow: inset 0 -1px 0 0 #1b1b1b;
+}
+
 .item-3eFBNF:focus, .item-3eFBNF:focus-within, .item-3eFBNF:hover {
 	background-color: #040404;
 }
@@ -2579,18 +2583,6 @@ html .tabBadge-3smxHS:hover {
 	border-radius: 0px;
 	box-shadow: inset 0 0 0 4px var(--accent-color);
 	transition: var(--animation);
-}
-
-.css-2yldzf-control {
-	background-color: #101010;
-}
-
-.css-1yegjoj-control {
-	background-color: #080808;
-}
-
-.css-2yldzf-control:hover {
-
 }
 
 .css-15ejc46-control {
@@ -3311,7 +3303,6 @@ img[alt] {
 
 .scale-3iLZhb.animatorTop-2Y7x2r {
 	    transform-origin: center center;
-
 }
 
 .statusGreen-168O6Q {
@@ -3375,8 +3366,7 @@ img[alt] {
 
 .theme-dark .userSettingsVoice-iwdUCU .previewOverlay-2O7_KC {
     background-color: #040404;
-    border-color: var(--background-light);
-		border-radius: 0px;
+    border-color: var(--accent-color);
 }
 
 .theme-dark .messageGroupWrapper-o-Zw7G {
@@ -3513,6 +3503,20 @@ img[alt] {
 	border-bottom: 1px solid #000
 }
 
+#bda-qem button.active, #bda-qem button.active:hover {
+	background-color: var(--accent-color);
+	opacity: 0.8;
+}
+
+#bda-qem button {
+	transition: var(--animation);
+	border-radius:	0px;
+}
+
+.layer-v9HyYc {
+    border: solid 1px var(--background-light);
+}
+
 .emojiPicker-3m1S-j .header-1nkwgG {
     border-bottom: 1px solid rgb(0, 0, 0);
 }
@@ -3545,9 +3549,29 @@ img[alt] {
 	color: var(--accent-color);
 }
 
+.strikethrough-3Wiitd {
+    color: #ff0000;
+}
+
+.emojiPicker-3m1S-j .searchBar-2pWH0_ {
+    border-radius: 0px;
+}
+
+.inner-3ErfOT {
+	background-color: #080808;
+	border: solid 1px transparent;
+	transition: var(--animation);
+}
+
+.inner-3ErfOT:focus-within {
+	background-color: #000;
+	border-color: var(--accent-color);
+}
+
 .emojiPicker-3m1S-j {
     background-color: #000;
-	border: 1px solid #000;
+		border: 1px solid #000;
+		border-radius: 0px;
 }
 
 .search-bar.search-bar-light .search-bar-inner {
