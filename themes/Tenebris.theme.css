@@ -1,4 +1,4 @@
-﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"3.8.6"}*//{}
+﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"3.8.7"}*//{}
 /*
 ///////////////////////////////////////
 
@@ -18,7 +18,7 @@
 	--text-color: black;
 	--gifbg: url("https://media2.giphy.com/media/fnglNFjBGiyAFtm6ke/source.gif");
 	--gifbg-halloween: url("https://media.giphy.com/media/ds7ltUbHYLxjW/giphy.gif");
-	--version: "3.8.5";
+	--version: "3.8.7";
 
 
 	--online: #2dc8fc;
@@ -60,11 +60,12 @@
 	border-radius: 0px;
 }
 
-.theme-dark .selected-nT-gM3:before {
-	background: var(--accent-color);
+.mini-dmm9yo .grabber-3mFHz2 {
+    margin-top: 1px;
 }
 
-.rightSplit-2US0xy {
+.fakeLink-11RWCQ {
+	color: var(--accent-color);
 }
 
 .headerStreaming-2FjmGz {
@@ -154,12 +155,6 @@
 .theme-dark .lookFilled-1h1y05.select-1Pkeg4:hover.selectOpen-hQuR6b, .theme-dark .lookFilled-1h1y05.selectOpen-hQuR6b {
 	background-color: black;
 	border-color: var(--accent-color);
-}
-
-.noticePremium-12Zvj9 {
-    color: #fff;
-    background-color: #080808;
-    border-radius: 0px;
 }
 
 .theme-dark .popout-2sKjHu {
