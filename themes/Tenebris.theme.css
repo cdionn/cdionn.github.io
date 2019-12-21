@@ -128,6 +128,18 @@
 	color:black;
 }
 
+.scrollableContainer-2NUZem {
+	background-color: #080808;
+	transition: var(--animation);
+	border: solid 2px transparent;
+}
+
+.scrollableContainer-2NUZem:focus-within {
+	background-color: #000;
+	transition: var(--animation);
+	border-color: var(--accent-color);
+}
+
 .theme-dark .root-1gCeng {
 	border-radius: 0px;
 	background-color: var(--background-light);
