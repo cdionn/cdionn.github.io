@@ -16,7 +16,7 @@
 :root {
 	--accent-color: #CFDEF3;
 	--text-color: black;
-	--gifbg: url("https://media2.giphy.com/media/fnglNFjBGiyAFtm6ke/source.gif");
+	--gifbg: url("https://media.giphy.com/media/fSRQtBAzrPokPCItuu/giphy.gif");
 	--gifbg-halloween: url("https://media.giphy.com/media/ds7ltUbHYLxjW/giphy.gif");
 	--version: "3.8.8";
 
@@ -401,11 +401,12 @@
 	width: inherit;
 	background-color: red;
 	background-blend-mode: overlay;
-	background: url(https://media0.giphy.com/media/xkGkrAIbJqAtKlsZI5/giphy.gif);
+	background: url(https://media0.giphy.com/media/xkGkrAIbJqAtKlsZI5/giphy.gif?cid=790b761102c30e6f030d0843828033aed618efb7e087ed5a&rid=giphy.gif);
 	opacity: 0.2;
-	filter:blur(0px) brightness(0.5);
+	background-position: center;
+	background-size: 400px 225px;
+	filter:blur(0px) brightness(1);
 	pointer-events: none;
-	background-size: 350px;
 }
 
 
@@ -1269,7 +1270,7 @@
 .theme-dark .container-2Thooq, .theme-light .container-2Thooq, .panels-j1Uci_ {
 	background: linear-gradient(black, black), var(--gifbg);
 	background-blend-mode: saturation;
-	background-color: rgba(0,0,0,.85);
+	background-color: rgba(0,0,0,.90);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
