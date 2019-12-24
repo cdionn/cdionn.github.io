@@ -3640,6 +3640,10 @@ img[alt] {
     border-radius: 3px!important;
 }
 
+.emojiPicker-3m1S-j,#bda-qem {
+	border:solid 1px var(--background-light);
+}
+
 #bda-qem button {
     border-left: 1px solid #000000;
 	box-shadow: #060606 1px 0 0 0;
