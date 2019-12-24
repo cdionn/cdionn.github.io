@@ -1,4 +1,4 @@
-﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"3.8.8"}*//{}
+﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"3.8.9"}*//{}
 /*
 ///////////////////////////////////////
 
@@ -18,7 +18,7 @@
 	--text-color: black;
 	--gifbg: url("https://media.giphy.com/media/fSRQtBAzrPokPCItuu/giphy.gif");
 	--gifbg-halloween: url("https://media.giphy.com/media/ds7ltUbHYLxjW/giphy.gif");
-	--version: "3.8.8";
+	--version: "3.8.9";
 
 
 	--online: #2dc8fc;
@@ -245,6 +245,7 @@
 .base-PmTxvP {
 	background-color: var(--accent-color)!important;
 	color:var(--text-color)!important;
+	animation: pulse 3s ease infinite;
 }
 
 .theme-dark .iconBadge-2wi9r4, .theme-light .iconBadge-2wi9r4 {
@@ -392,6 +393,7 @@
 
 /* Weinachten Effekt */
 
+
 .da-appMount:before {
 	content:"";
 	position: absolute;
@@ -402,8 +404,9 @@
 	background-color: transparent;
 	background-image: url('https://designshack.net/tutorialexamples/letitsnow/snow.png'), url('https://designshack.net/tutorialexamples/letitsnow/snow3.png'), url('https://designshack.net/tutorialexamples/letitsnow/snow2.png');
 	animation: snow 20s linear infinite;
-	opacity: 0.4;
+	opacity: 0.2;
 	pointer-events: none;
+	filter:blur(1px);
 }
 
 @keyframes snow {
@@ -4809,3 +4812,5 @@ a {
     -webkit-filter: hue-rotate(-360deg);
   }
 }
+
+/* Baukasten */
