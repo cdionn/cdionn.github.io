@@ -403,7 +403,6 @@
 	background-image: url('https://designshack.net/tutorialexamples/letitsnow/snow.png'), url('https://designshack.net/tutorialexamples/letitsnow/snow3.png'), url('https://designshack.net/tutorialexamples/letitsnow/snow2.png');
 	animation: snow 20s linear infinite;
 	opacity: 0.4;
-	filter:blur(0px);
 	pointer-events: none;
 }
 
