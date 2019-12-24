@@ -399,16 +399,19 @@
 	display: inline-block;
 	height: inherit;
 	width: inherit;
-	background-color: red;
-	background-blend-mode: overlay;
-	background: url(https://media0.giphy.com/media/xkGkrAIbJqAtKlsZI5/giphy.gif?cid=790b761102c30e6f030d0843828033aed618efb7e087ed5a&rid=giphy.gif);
-	opacity: 0.2;
-	background-position: center;
-	background-size: 400px 225px;
-	filter:blur(0px) brightness(1);
+	background-color: transparent;
+	background-image: url('https://designshack.net/tutorialexamples/letitsnow/snow.png'), url('https://designshack.net/tutorialexamples/letitsnow/snow3.png'), url('https://designshack.net/tutorialexamples/letitsnow/snow2.png');
+	animation: snow 20s linear infinite;
+	opacity: 0.4;
+	filter:blur(0px);
 	pointer-events: none;
 }
 
+@keyframes snow {
+	0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 	100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+
+}
 
 .da-appMount {
     background-color: #000;
@@ -2117,7 +2120,7 @@
     color: var(--text-color);
     background-color: var(--accent-color);
     transition: var(--animation);
-    border: solid 1px var(--accent-color)!important;
+    border: solid 2px var(--accent-color)!important;
     margin-left: 5px;
     border-radius: 0px !important;
 }
@@ -2238,7 +2241,7 @@
     background-color: var(--accent-color)!important;
     color: var(--text-color);
 	border: solid 1px var(--accent-color);
-	border-width: 1px;
+	border-width: 2px;
 	border-radius: 0px!important;
 	transition: var(--animation);
 	letter-spacing: 1px;
@@ -2249,7 +2252,7 @@
     background-color: transparent!important;
     color: var(--accent-color);
 	border-style: solid;
-	border-width: 1px;
+	border-width: 2px;
 	transition: var(--animation);
 	transform: scale(1.01);
 }
