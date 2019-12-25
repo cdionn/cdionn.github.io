@@ -674,7 +674,7 @@
 	background-color: #080808;
 }
 
-.theme-dark .searchBox-3Y2Vi7:focus-within {border-color: var(--accent-color); border-radius: 15px;}
+.theme-dark .searchBox-3Y2Vi7:focus-within {border-color: var(--accent-color); border-radius: 15px; background-color: var(--background-dark);}
 .theme-dark .searchBox-3Y2Vi7 {
     background-color: var(--background-light);
     -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.2);
@@ -2203,7 +2203,6 @@
 .lookFilled-1Gx00P .contents-18-Yxp, .lookInverted-2D7oAl .contents-18-Yxp, .lookLink-9FtZy- .contents-18-Yxp, .lookOutlined-3sRXeN .contents-18-Yxp {
 	font-weight: bold;
 	text-transform: uppercase;
-	font-style: italic;
 }
 
 .tile-2silOL:hover .sourceThumbnail-14Iubx {    box-shadow: inset 0 0 0 2px var(--accent-color);}
@@ -2309,6 +2308,10 @@
 	transform: scale(1.01);
 }
 
+.lookFilled-1Gx00P.colorBrand-3pXr91:active {transform:scale(.95);}
+
+.lookFilled-1Gx00P.colorGreen-29iAKY:active {background-color: transparent; transform:scale(.95); color: var(--accent-color); border: 2px solid var(--accent-color);}
+
 .theme-light .lookFilled-1Gx00P.colorBrand-3pXr91:hover {
     background-color: transparent;
 }
@@ -2408,20 +2411,23 @@ html .tabBadge-3smxHS:hover {
 
 .lookOutlined-3sRXeN.colorRed-1TFJan {
 	color: white;
-	border-color: #ff5454;
-	background-color: #ff5454;
+	border-color: #500505;
+	background-color: #500505;
 	font-weight: bold;
 	letter-spacing: 1px;
 	border-radius: 0px;
 	transition: var(--animation);
+	border: 2px solid transparent;
 }
 
 .lookOutlined-3sRXeN.colorRed-1TFJan:hover {
-	color: #ff5454;
-	border-color: #ff5454;
+	color: white;
+	border-color: #500505;
 	background-color: transparent;
 	transform: scale(1.01);
 }
+
+.lookOutlined-3sRXeN.colorRed-1TFJan:active {transform:scale(.95);}
 
 
 .item-3eFBNF.selected-2DeaDa {
@@ -2489,6 +2495,7 @@ html .tabBadge-3smxHS:hover {
 	background-color: var(--accent-color);
 	background-blend-mode: luminosity;
 }
+
 
 .headerTop-3C2Zn0, .header-QKLPzZ {
 	border-bottom: 1px solid var(--accent-color);
@@ -3503,7 +3510,7 @@ img[alt] {
 .lookFilled-1Gx00P.colorGreen-29iAKY {
     background-color: var(--accent-color);
     color: var(--text-color);
-    border: solid 1px transparent;
+    border: solid 2px transparent;
 	transition: var(--animation);
 	border-radius: 0px;
 }
@@ -3511,7 +3518,7 @@ img[alt] {
 .lookFilled-1Gx00P.colorGreen-29iAKY:hover {
     background-color: transparent;
     color: var(--accent-color);
-    border: solid 1px var(--accent-color);
+    border: solid 2px var(--accent-color);
 }
 
 .modeSelected-1zApJ_ .icon-1_QxNX, .modeSelected-1zApJ_:hover .icon-1_QxNX, .modeUnread-1zpFdA .icon-1_QxNX, .modeUnread-1zpFdA:hover .icon-1_QxNX {
@@ -3558,7 +3565,7 @@ img[alt] {
 }
 
 .da-cardPrimary:hover {
-	transform: scale(1.01)
+	transform: scale(1.01);
 }
 
 .theme-dark .da-checked svg[name="Checkmark"] polyline {
@@ -3782,8 +3789,29 @@ img[alt] {
 	border-radius: 50px!important;
 }
 
+.required-7sPBq3 {
+	color: red;
+}
+
+.input-cIJ7To {
+	transition: var(--animation);
+	background-color: var(--background-light);
+	border:2px solid transparent;
+	border-radius: 8px;
+}
+
+.input-cIJ7To:focus-within {
+	background-color: var(--background-dark);
+	border-color: transparent;
+	border-radius: 13px;
+}
+
+.input-cIJ7To.focused-1mmYsC, .input-cIJ7To:focus {
+	border-color: transparent;
+}
+
 .input-cIJ7To:focus {
-    border-color: var(--accent-color)!important;
+    border-color: white;
 }
 
 .panel-24C3ux {
