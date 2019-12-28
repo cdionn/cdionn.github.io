@@ -415,7 +415,7 @@
 }
 	*/
 
-/* Weinachten Effekt */
+/* Weinachten Effekt
 
 
 .da-appMount:before {
@@ -431,7 +431,7 @@
 	opacity: 0.2;
 	pointer-events: none;
 	filter:blur(1px);
-}
+} */
 
 @keyframes snow {
 	0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
@@ -442,6 +442,15 @@
 .da-appMount {
     background-color: #000;
 		z-index: 1;
+}
+
+.attachWrapper-2TRKBi {
+    border-right: 1px solid #171717;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
 }
 
 .theme-dark .standardSidebarView-3F1I7i {
@@ -3982,7 +3991,7 @@ img[alt] {
 .theme-dark .wrapperHover-1GktnT:hover {
     background-color: var(--accent-color);
     color: var(--text-color);
-	transition: var(--animation);
+		transition: var(--animation);
 }
 
 .theme-dark .wrapperHover-1GktnT {
@@ -4540,8 +4549,10 @@ a {
     transition: 100ms ease all;
 }
 
+/* einstellung animation */
+
 .layers-3iHuyZ>.layer-3QrUeG.animating-rRxada {
-	transform: skew(30deg);
+	transform: skewX(10deg);
 }
 
 .popoutLeft-30WmrD.noArrow-3BYQ0Z {
