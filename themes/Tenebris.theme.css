@@ -266,6 +266,22 @@
     background-color: transparent;
 }
 
+.attachPopoutRow-3iqqu1:hover { background-color: #090909; border-radius:0px; }
+.attachPopout-36hjtN:hover { border-color: var(--background-light); background-color: var(--background-dark); transform: scale(1.01); }
+.attachPopout-36hjtN {
+	background-color: var(--background-light);
+	border: 1px solid transparent;
+	border-radius: 0px;
+	transition: var(--animation);
+}
+
+.theme-dark .tierHeaderUnlocked-1n-OTI, .theme-light .tierHeaderUnlocked-1n-OTI { border-radius: 0px; }
+.theme-dark .tierBody-16Chc9 { background-color: var(--background-light); border-radius:0px; }
+.theme-dark .ctaBar-2UsjF2, .theme-dark .perk-2WeBWW { background-color: var(--background-light); border-radius:0px; }
+.theme-dark .perksModal-fSYqOq {
+    background-color: #000000;
+}
+
 .base-PmTxvP {
 	background-color: var(--accent-color)!important;
 	color:var(--text-color)!important;
