@@ -1,4 +1,4 @@
-﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"3.9.3"}*//{}
+﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"3.9.4"}*//{}
 /*
 ///////////////////////////////////////
 
@@ -11,14 +11,14 @@
 */
 
 
-@import url('https://fonts.googleapis.com/css?family=Ruda&display=swap');
+@import url('https://cdionn.github.io/themes/Fonts/Roobert/style.css');
 
 :root {
 	--accent-color: #CFDEF3;
 	--text-color: black;
 	--gifbg: url("https://media.giphy.com/media/3ohze1qcZ9woSlyvFm/giphy.gif");
 	--gifbg-halloween: url("https://media.giphy.com/media/ds7ltUbHYLxjW/giphy.gif");
-	--version: "3.9.3";
+	--version: "3.9.4";
 
 
 	--online: #2dc8fc;
@@ -39,9 +39,24 @@
 	--shadow-hover:	0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.body {
-	font-family: 'Ruda', sans-serif;
+/* body, div, span, textarea, ::-webkit-input-placeholder {
+	font-family: 'Product Sans Medium Regular', normal;
+} */
+
+body, div, span, textarea, ::-webkit-input-placeholder {
+	font-family: 'Roobert Medium', sans-serif;
 }
+
+.hljs,
+ .inline,
+ .hljs :-webkit-any(ol, li, span),
+ .editor-wrapper :-webkit-any(textarea, div, span) {
+     /**
+      * Keep Custom CSS editor and code related parts untouched.
+      * Avoids issues when working with the Custom CSS editor.
+      */
+     font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+ }
 
 .flexChild-faoVW3 {
 	border-radius: 0px!important;
