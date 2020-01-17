@@ -561,6 +561,12 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 
 .users-i_3-kL {background-color: #0c0c0c;}
 
+.inviteDestinationExpired-2_1Ava {color: var(--accent-color);}
+.theme-dark .guildIconExpired-2Qcq05 {
+    background-color: var(--accent-color);
+    background-blend-mode: exclusion;
+}
+
 .contextMenu-HLZMGh:hover {background-color: var(--background-dark); border-color: var(--background-light);transform: scale(1.03); box-shadow: var(--shadow-hover);}
 .contextMenu-HLZMGh {
 	background-color: var(--background-light);
