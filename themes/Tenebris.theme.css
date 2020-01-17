@@ -1,4 +1,4 @@
-﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"3.9.4"}*//{}
+﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"3.9.5"}*//{}
 /*
 ///////////////////////////////////////
 
@@ -11,14 +11,15 @@
 */
 
 
-@import url('https://cdionn.github.io/themes/Fonts/Roobert/style.css');
+/* @import url('https://cdionn.github.io/themes/Fonts/Roobert/style.css'); */
+@import url('https://cdionn.github.io/themes/Fonts/Google Sans Serif/style.css');
 
 :root {
 	--accent-color: #CFDEF3;
 	--text-color: black;
 	--gifbg: url("https://media.giphy.com/media/3ohze1qcZ9woSlyvFm/giphy.gif");
 	--gifbg-halloween: url("https://media.giphy.com/media/ds7ltUbHYLxjW/giphy.gif");
-	--version: "3.9.4";
+	--version: "3.9.5";
 
 
 	--online: #2dc8fc;
@@ -39,13 +40,13 @@
 	--shadow-hover:	0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-/* body, div, span, textarea, ::-webkit-input-placeholder {
-	font-family: 'Product Sans Medium Regular', normal;
-} */
-
 body, div, span, textarea, ::-webkit-input-placeholder {
-	font-family: 'Roobert Medium', sans-serif;
+	font-family: 'Product Sans Medium Regular', normal;
 }
+
+/* body, div, span, textarea, ::-webkit-input-placeholder {
+	font-family: 'Roobert Medium', sans-serif;
+} */
 
 .hljs,
  .inline,
@@ -542,23 +543,23 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 }
 
 .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
-    background-color: var(--accent-color)!important;
-    color: #000;
+  background-color: var(--accent-color)!important;
+  color: #000;
 	border: solid 2px transparent;
 	transition: var(--animation);
 }
 
 .theme-dark .guildSeparator-1X4GQ1:after {
-    background: var(--accent-color);
+  background: var(--accent-color);
 	opacity: 0.2;
 }
 
 .lookLink-9FtZy-.colorBrand-3pXr91:hover .contents-18-Yxp {
-	    background-image: linear-gradient(0deg,transparent,transparent 1px,var(--accent-color) 0,var(--accent-color) 2px,transparent 0);
+	background-image: linear-gradient(0deg,transparent,transparent 1px,var(--accent-color) 0,var(--accent-color) 2px,transparent 0);
 }
 
 .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:active, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
-    background-color: transparent!important;
+  background-color: transparent!important;
 	color: var(--accent-color);
 	border-color:var(--accent-color);
 	transform: scale(1.01);
@@ -1483,6 +1484,7 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 	border-color: var(--background-light);
 	border-radius: 0px;
 	border-width: 2px;
+	border-style: none none solid none;
 }
 
 .da-cardPrimaryEditable {
@@ -1498,12 +1500,6 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 
 .da-cardPrimaryEditable:hover {
 	transform: scale(1.01);
-}
-
-.da-card {
-	border: 2px;
-	border-style: none none solid none;
-	border-radius:0px;
 }
 
 .theme-dark .embedTitleLink-1Zla9e {
@@ -1858,7 +1854,7 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 }
 
 .da-button {
-	border-radius:0px;
+	border-radius:50px;
 }
 
 .theme-dark .bda-slist li {
@@ -2238,7 +2234,8 @@ body, div, span, textarea, ::-webkit-input-placeholder {
     transition: var(--animation);
     border: solid 2px var(--accent-color)!important;
     margin-left: 5px;
-    border-radius: 0px !important;
+    border-radius: 50px !important;
+		font-weight: bold;
 }
 
 .btn-primary:hover {
@@ -2361,19 +2358,19 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 }
 
 .lookFilled-1Gx00P.colorBrand-3pXr91 {
-    background-color: var(--accent-color)!important;
-    color: var(--text-color);
+  background-color: var(--accent-color)!important;
+  color: var(--text-color);
 	border: solid 1px var(--accent-color);
 	border-width: 2px;
-	border-radius: 0px!important;
+	border-radius: 50px!important;
 	transition: var(--animation);
 	letter-spacing: 1px;
 	font-weight: bold;
 }
 
 .lookFilled-1Gx00P.colorBrand-3pXr91:hover {
-    background-color: transparent!important;
-    color: var(--accent-color);
+  background-color: transparent!important;
+  color: var(--accent-color);
 	border-style: solid;
 	border-width: 2px;
 	transition: var(--animation);
@@ -2483,18 +2480,18 @@ html .tabBadge-3smxHS:hover {
 
 .lookOutlined-3sRXeN.colorRed-1TFJan {
 	color: white;
-	border-color: #500505;
-	background-color: #500505;
+	border-color: #a71f1f;
+	background-color: #a71f1f;
 	font-weight: bold;
 	letter-spacing: 1px;
-	border-radius: 0px;
+	border-radius: 50px;
 	transition: var(--animation);
 	border: 2px solid transparent;
 }
 
 .lookOutlined-3sRXeN.colorRed-1TFJan:hover {
 	color: white;
-	border-color: #500505;
+	border-color: #a71f1f;
 	background-color: transparent;
 	transform: scale(1.01);
 }
@@ -2543,6 +2540,10 @@ html .tabBadge-3smxHS:hover {
 
 .theme-dark .elevationLow-2lY09M {
 	background-color: #040404!important;
+	border-radius: 0px;
+}
+
+.cardPrimaryOutline-29Ujqw {
 	border-radius: 0px;
 }
 
@@ -2603,13 +2604,13 @@ html .tabBadge-3smxHS:hover {
 .lookInverted-2D7oAl.colorBrand-3pXr91 {
     background-color: var(--accent-color);
     color: var(--text-color);
-	border: solid 1px transparent;
+	border: solid 2px transparent;
 	transition: var(--animation);
 }
 
 .lookInverted-2D7oAl.colorBrand-3pXr91:hover {
     background-color: transparent;
-	border: solid 1px var(--accent-color);
+	border: solid 2px var(--accent-color);
 	color: var(--accent-color);
 	transition: var(--animation);
 }
@@ -2885,7 +2886,7 @@ strong {
 }
 
 .callAvatarBorder-uWp8Ga {
-	border-radius: 50px!important;
+	border-radius: 50px;
 	transition: var(--animation);
 	border: solid 0px var(--accent-color);
 }
@@ -3211,6 +3212,7 @@ img[alt] {
 .theme-dark .consent-1AQ-th, .theme-light .consent-1AQ-th {
 	background-color: #040404;
 	transition: var(--animation);
+	border-radius: 0px;
 }
 
 .theme-dark .consent-1AQ-th:hover, .theme-light .consent-1AQ-th:hover {
@@ -3740,28 +3742,44 @@ img[alt] {
 }
 
 .emojiPicker-3m1S-j .header-1nkwgG {
-    border-bottom: 1px solid rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .bda-slist .bda-footer button {
-    background: var(--accent-color);
-    color: var(--text-color);
+  background: var(--accent-color);
+  color: var(--text-color);
 	transition: var(--animation);
-	border: 1px solid transparent;
-	border-radius: 0px;
+	border: 2px solid transparent;
+	border-radius: 50px;
+	font-weight: bold;
 }
+
+.bda-slist .bda-footer button:disabled {
+	background-color: gray;
+	color: white;
+	opacity: .2;
+	pointer-events: none;
+}
+
+.bda-slist .bda-footer button:disabled:hover {
+	background-color: gray;
+	color: white;
+	border-color: transparent;
+}
+
 
 .bda-slist .bda-footer button:hover {
     background: transparent;
 	color: var(--accent-color);
-	border: 1px solid var(--accent-color);
+	border-color: var(--accent-color);
 }
 
 #bd-settingspane-container .bd-pfbtn {
-	border-radius: 0px;
-	border: solid 1px transparent;
+	border-radius: 50px;
+	border: solid 2px transparent;
 	color: var(--text-color);
 	transition:var(--animation);
+	font-weight: bold;
 }
 
 #bd-settingspane-container .bd-pfbtn:hover {
@@ -4092,8 +4110,8 @@ img[alt] {
 }
 
 .theme-light .contentRegion-3nDuYy #bd-customcss-attach-controls, #bd-customcss-detach-container #bd-customcss-attach-controls {
-	background-color: #fff;
-	color: black;
+	background-color: var(--background-dark);
+	color: white;
 }
 
 #bd-settings-sidebar .ui-tab-bar-item {
@@ -4113,7 +4131,7 @@ img[alt] {
 .theme-dark .closeButton-1tv5uR {
 	border-color: transparent;
 	transition: var(--animation);
-	border-radius: 0px;
+	border-radius: 50px;
 	background-color: #080808;
 }
 
@@ -4556,8 +4574,25 @@ a {
 	transition: var(--animation);
 }
 
-.Select--single>.Select-control .Select-value, .Select-placeholder {
+.itemActive-2V2HNc {
+    background-color: rgba(103, 103, 103, 0.12);
+		border-left: solid 2px var(--accent-color);
+		border-radius: 0px;
+}
 
+.standardSidebarView-3F1I7i #editor-detached button {
+	border-radius: 50px;
+	background-color: var(--accent-color);
+	color: var(--text-color);
+	transition: var(--animation);
+	border: solid 2px transparent;
+	font-weight: bold;
+}
+
+.standardSidebarView-3F1I7i #editor-detached button:hover {
+	border-color: var(--accent-color);
+	color: var(--text-color);
+	transform: scale(1.02);
 }
 
 .theme-dark .select-2TCrqx .Select-menu-outer {
