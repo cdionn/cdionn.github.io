@@ -13,9 +13,11 @@ a {
   color: #ff2149;;
 }
 
+#info-text {color: #ff2149;}
 #info-text {
   font-size: 30px;
   text-align: center;
+  color: white;
 }
 
 #description,#psdescription {
