@@ -3860,10 +3860,31 @@ img[alt] {
 .option-n0icdO {
     background-color: var(--accent-color);
     opacity: .3;
+		transition: var(--animation);
+		border-radius: 0px;
 }
 
 .wrapper-3jrx9n {
     border: 2px solid var(--accent-color);
+		border-radius: 0px;
+}
+
+.disabled-3I9jyo {
+	transition: var(--animation);
+}
+
+.disabled-3I9jyo:hover {
+	color: var(--accent-color);
+}
+
+.container-CpszHS:not(.disabled-29eJ21):hover {
+	border-color: var(--accent-color);
+	border-radius: 12px;
+	border-width: 2px;
+}
+
+.container-CpszHS.hasValue-3pdcdm:not(.disabled-29eJ21):hover .button-34kXw5 {
+	font-size: 11px;
 }
 
 .foreground-2aE44H {
