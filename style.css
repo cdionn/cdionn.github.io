@@ -1,30 +1,49 @@
+@import url('https://cdionn.github.io/themes/Fonts/Google Sans Serif/style.css');
+
 :root {
   --animation: all 250ms cubic-bezier(0.0, 0.0, 0.2, 1);
 }
 
 body{
   background-color: black;
+  font-family: 'Product Sans Medium Regular', normal;
+}
+
+a {
+  color: #ff2149;;
 }
 
 #info-text {
-  color: white;
   font-size: 30px;
-  transition: var(--animation);
-  word-wrap: normal;
   text-align: center;
 }
 
-#info-text:hover {
-  font-size: 35px;
+#description,#psdescription {
+  text-align: center;
+  color: gray;
 }
 
-.container{
+#psdescription {
+  font-size: 15px;
+  color: #2b2b2b;
+}
+
+.titlecontainer{
   background-color: #080808;
-  margin: 0 auto;
-  padding:0.1px;
-  width: 500px;
-  height: 100px;
-  display:block;
+  padding:10px;
+  width: 350px;
+  height: 220px;
   border-radius:5px;
-  border:solid 1px #cccccc
+  border:solid 2px #111111;
+  transition: var(--animation);
+  overflow-wrap: break-word;
+  margin: 0 auto;
+  user-select: none;
+}
+
+.titlecontainer:hover {
+  transform: scale(1.02);
+  color: #ff2149;
+  border-color: #ff2149;
+  box-shadow: 0px 0px 10px 0px #ff2149;
 }
