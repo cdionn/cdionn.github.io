@@ -2662,9 +2662,13 @@ html .tabBadge-3smxHS:hover {
 	height: 40px;
 	left: 15px;
 	top: 3.5px;
-	transition: 0.5s ease all;
+	transition: 1s ease all;
 	opacity: 1;
 	border-radius: 50px;
+}
+
+.scrollerWrap-1IAIlv:hover:after{
+	background-color: white;
 }
 
 .platform-win .scroller-2TZvBN, .platform-osx .scroller-2TZvBN {
