@@ -13,7 +13,7 @@
 
 /* @import url('https://cdionn.github.io/themes/Fonts/Roobert/style.css'); */
 /* @import url('https://cdionn.github.io/themes/Fonts/Google Sans Serif/style.css'); */
-@import url('https://fonts.googleapis.com/css?family=Changa&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Exo:500,800&display=swap');
 
 :root {
 	--accent-color: #CFDEF3;
@@ -50,7 +50,7 @@
 } */
 
 body, div, span, textarea, ::-webkit-input-placeholder {
-	font-family: 'Changa', sans-serif;
+    font-family: 'Exo', sans-serif;
 }
 
 .hljs,
@@ -221,7 +221,6 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 
 .css-1rckt42-menu {
 	background-color: var(--background-light);
-
 }
 
 .css-1wqqa50-container {
@@ -338,6 +337,18 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 
 .theme-dark .uploadModal-2ifh8j {
     background-color: #000000;
+}
+
+.theme-dark .emptyPreviewImage-IBznSI {
+	filter:grayscale(1) invert(1);
+}
+
+.theme-dark .watchButton-2SbJEo {
+	border-width: 2px;
+}
+
+.theme-dark .previewContainer-12UlHl {
+	background-color: var(--background-light);
 }
 
 .container-3-pyIM {
@@ -3494,13 +3505,7 @@ img[alt] {
 }
 
 .listItem-2P_4kh:hover{
-
 	transform:scale(0.9);
-}
-
-.horizontal-1ae9ci>.flex-1xMQg5:last-child, .horizontal-1ae9ci>.flexChild-faoVW3:last-child {
-    margin-right: 0;
-    border-radius: 50px!important;
 }
 
 .akaBadge-1M-1Gw {
@@ -3509,10 +3514,6 @@ img[alt] {
 
 .bda-dark .theme-light .slide-2pHaq5 {
     background: #000000;
-}
-
-.horizontal-1ae9ci>.flex-1xMQg5:last-child, .horizontal-1ae9ci {
-		border-radius:50px!important;
 }
 
 .theme-dark .listDefault-2y5Z9D .clickable-23RaYz.selected-3TGCSZ .content-3xS9Lh, .theme-light .listDefault-2y5Z9D .clickable-23RaYz.selected-3TGCSZ .content-3xS9Lh {
@@ -3627,6 +3628,8 @@ img[alt] {
 .theme-dark .userSettingsVoice-iwdUCU .previewOverlay-2O7_KC {
     background-color: #040404;
     border-color: var(--accent-color);
+		border-radius: 0px;
+		border-width: 2px;
 }
 
 .theme-dark .messageGroupWrapper-o-Zw7G {
