@@ -1,4 +1,4 @@
-﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"3.9.5"}*//{}
+﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"3.9.6"}*//{}
 /*
 ///////////////////////////////////////
 
@@ -12,14 +12,15 @@
 
 
 /* @import url('https://cdionn.github.io/themes/Fonts/Roobert/style.css'); */
-@import url('https://cdionn.github.io/themes/Fonts/Google Sans Serif/style.css');
+/* @import url('https://cdionn.github.io/themes/Fonts/Google Sans Serif/style.css'); */
+@import url('https://fonts.googleapis.com/css?family=Changa&display=swap');
 
 :root {
 	--accent-color: #CFDEF3;
 	--text-color: black;
 	--gifbg: url("https://media.giphy.com/media/3ohze1qcZ9woSlyvFm/giphy.gif");
 	--gifbg-halloween: url("https://media.giphy.com/media/ds7ltUbHYLxjW/giphy.gif");
-	--version: "3.9.5";
+	--version: "3.9.6";
 
 
 	--online: #2dc8fc;
@@ -40,13 +41,17 @@
 	--shadow-hover:	0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-body, div, span, textarea, ::-webkit-input-placeholder {
+/* body, div, span, textarea, ::-webkit-input-placeholder {
 	font-family: 'Product Sans Medium Regular', normal;
-}
+} */
 
 /* body, div, span, textarea, ::-webkit-input-placeholder {
 	font-family: 'Roobert Medium', sans-serif;
 } */
+
+body, div, span, textarea, ::-webkit-input-placeholder {
+	font-family: 'Changa', sans-serif;
+}
 
 .hljs,
  .inline,
@@ -2849,16 +2854,20 @@ strong {
 .lookFilled-1Gx00P.colorRed-1TFJan {
     background-color: var(--accent-color);
     color: var(--text-color);
-	border: solid 1px transparent;
-	border-radius: 0px;
+	border: solid 2px transparent;
+	border-radius: 50px;
 	transition: var(--animation);
 }
 
 .lookFilled-1Gx00P.colorRed-1TFJan:hover {
     background-color: transparent;
     color: var(--accent-color);
-	border: solid 1px var(--accent-color);
+	border-color: var(--accent-color);
 	transition: var(--animation);
+}
+
+.wrapper-29NfPK.fullScreen-3DKbL8 .actions-2vadYq .center-1Vp33r, .wrapper-29NfPK.fullScreen-3DKbL8 .actions-2vadYq .side-kO0bwV, .wrapper-29NfPK.noChat-2qlG4B .center-1Vp33r, .wrapper-29NfPK.noChat-2qlG4B .side-kO0bwV, .wrapper-29NfPK.normal-2GSW0u .center-1Vp33r, .wrapper-29NfPK.normal-2GSW0u .side-kO0bwV {
+	border-radius: 50px!important;
 }
 
 .container-2ax-kl {
@@ -2886,7 +2895,7 @@ strong {
 }
 
 .callAvatarBorder-uWp8Ga {
-	border-radius: 50px;
+	border-radius: 0px!important;
 	transition: var(--animation);
 	border: solid 0px var(--accent-color);
 }
@@ -3016,11 +3025,15 @@ strong {
 }
 
 .callAvatarBorder-uWp8Ga.video-3SrWSI.selected-2tLJQ6.notSpeaking-a3bIkW.notSoundsharing-2sYlLk {
-	box-shadow: inset 0 0 0 2px gray;
+	box-shadow: inset 0 0 0 3px gray;
+}
+
+.callAvatarBorder-uWp8Ga.video-3SrWSI.soundsharing-1ne9xH {
+	box-shadow: inset 0px 0px 0px 3px gray;
 }
 
 .callAvatarBorder-uWp8Ga.video-3SrWSI.speaking-B2MXPi {
-	box-shadow: inset 0 0 0 2px var(--accent-color);
+	box-shadow: inset 0 0 0 3px var(--accent-color);
 }
 
 .callAvatarWrapper-3Ax_xH {
@@ -3441,6 +3454,25 @@ img[alt] {
 	border-radius: 0px;
 }
 
+.noticeStreamerMode-2TSQpg {
+	border-bottom: solid 2px var(--accent-color);
+	background-color: var(--background-light);
+}
+
+.streamerModeEnabledBtn-2ZJ2eq {
+	background-color: var(--accent-color);
+	color: var(--text-color);
+	border-radius: 50px;
+	border: solid 2px transparent;
+	transition: var(--animation);
+}
+
+.streamerModeEnabledBtn-2ZJ2eq:hover {
+	background-color: transparent;
+	color: var(--accent-color);
+	border: solid 2px var(--accent-color);
+}
+
 /* .icon-3BcwQu {
 	color: red!important;
 	background-color: transparent;
@@ -3480,7 +3512,7 @@ img[alt] {
 }
 
 .horizontal-1ae9ci>.flex-1xMQg5:last-child, .horizontal-1ae9ci {
-		border-radius:0px!important;
+		border-radius:50px!important;
 }
 
 .theme-dark .listDefault-2y5Z9D .clickable-23RaYz.selected-3TGCSZ .content-3xS9Lh, .theme-light .listDefault-2y5Z9D .clickable-23RaYz.selected-3TGCSZ .content-3xS9Lh {
