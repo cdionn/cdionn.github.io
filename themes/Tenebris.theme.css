@@ -2650,17 +2650,21 @@ html .tabBadge-3smxHS:hover {
 .scrollerWrap-1IAIlv:after {
 	background-image: url(https://cdionn.github.io/themes/Tenebris/Logo/Logotenebris.png);
 	filter: grayscale(0);
-	background-size: 45px;
+	background-size: 41px;
 	background-repeat: no-repeat;
 	background-position: center;
+	background-color: var(--accent-color);
 	display:block;
 	position: absolute;
 	z-index: 3;
 	content: "";
-	width: 72px;
-	height: 48px;
+	width: 40px;
+	height: 40px;
+	left: 15px;
+	top: 3.5px;
 	transition: 0.5s ease all;
 	opacity: 1;
+	border-radius: 50px;
 }
 
 .platform-win .scroller-2TZvBN, .platform-osx .scroller-2TZvBN {
