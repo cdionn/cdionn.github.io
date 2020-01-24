@@ -304,6 +304,10 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 	animation: pulse 3s ease infinite;
 }
 
+.nowPlayingColumn-2sl4cE {
+  background-color: var(--background-dark);
+}
+
 .theme-dark .iconBadge-2wi9r4, .theme-light .iconBadge-2wi9r4 {
 	background-color: var(--accent-color)!important;
 }
@@ -2665,6 +2669,7 @@ html .tabBadge-3smxHS:hover {
 	border: solid 2px var(--accent-color);
 	color: var(--accent-color);
 	transition: var(--animation);
+  transform: scale(1.02);
 }
 
 .scrollerWrap-1IAIlv {
