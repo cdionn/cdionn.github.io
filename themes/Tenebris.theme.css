@@ -1,4 +1,4 @@
-﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"3.9.8"}*//{}
+﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"3.9.9"}*//{}
 /*
 ///////////////////////////////////////
 
@@ -13,14 +13,14 @@
 
 /* @import url('https://cdionn.github.io/themes/Fonts/Roobert/style.css'); */
 /* @import url('https://cdionn.github.io/themes/Fonts/Google Sans Serif/style.css'); */
- @import url('https://fonts.googleapis.com/css?family=Exo:500,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Exo+2:100,400,500,600,700&display=swap');
 
 :root {
 	--accent-color: #CFDEF3;
 	--text-color: black;
 	--gifbg: url("https://media.giphy.com/media/3ohze1qcZ9woSlyvFm/giphy.gif");
 	--gifbg-halloween: url("https://media.giphy.com/media/ds7ltUbHYLxjW/giphy.gif");
-	--version: "3.9.8";
+	--version: "3.9.9";
 
 
 	--online: #2dc8fc;
@@ -50,7 +50,7 @@
 } */
 
 body, div, span, textarea, ::-webkit-input-placeholder {
-    font-family: 'Exo', sans-serif;
+    font-family: 'Exo 2', sans-serif;
 }
 
 .hljs,
@@ -148,6 +148,61 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 
 .theme-dark .passthroughSelected-1Eq0Kl {
     background: #232323;
+}
+
+.wrapper-2aW0bm {
+  background-color: var(--background-light);
+  border-radius: 50px;
+}
+
+.group-spacing-8 .groupStart-23k01U {
+  transition: var(--animation);
+}
+
+.channelTextArea-rNsIhG {
+  background-color: transparent;
+}
+
+.form-2fGMdU:before {
+  background: transparent;
+}
+
+.content-1o0f9g {
+    color: #5a5a5a;
+    background: #0e0e0e;
+}
+
+.group-spacing-8 .groupStart-23k01U:hover {
+  background-color: #040404;
+}
+
+.unreadPill-2HyYtt,.isUnread-3Ef-o9 {
+  background-color: black!important;
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.unreadPillCapStroke-7rkHbg {
+  fill: black;
+  color: var(--accent-color);
+}
+
+.emptyCard-1RJw8n {
+  border-radius: 0px;
+  background-color: var(--background-light);
+}
+
+.item-1Yvehc .hint-22uc-R {
+    color: #696969;
+}
+
+.clickableHeader-2Cygs8 .avatar-1BDn8e {
+  border-radius: 50px;
+}
+
+.preview-2nSL_2 {
+  background-color: var(--background-light);
+  border-color: var(--background-light)
 }
 
 .scrollableContainer-2NUZem {
@@ -2909,7 +2964,7 @@ html .tabBadge-3smxHS:hover {
 .base-gE7OpD strong {
 	animation: pulse 3s ease infinite;
 	border-radius: 50px;
-	border: 1px solid var(--accent-color);
+	border: 2px solid var(--accent-color);
 	color: var(--accent-color);
 	margin: 0px 5px 0px 5px;
 	padding: 0px 5px 0px 5px;
@@ -2921,6 +2976,37 @@ html .tabBadge-3smxHS:hover {
 
 .base-gE7OpD .ellipsis-19qdx6 {
 	display: none;
+}
+
+.bd-toast.toast-success {
+    background-color: #2de451;
+    border-radius: 50px;
+    color: white;
+}
+
+.bd-toast {
+    animation: var(--animation)
+    transform: translateY(-10px);
+    background: #080808;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.reaction-1hd86g.reactionMe-wv5HKu, .reaction-1hd86g {
+  border-radius: 50px;
+}
+
+.reactionCount-2mvXRV {
+  transition: var(--animation);
+  font-weight 700;
+}
+
+.reactionMe-wv5HKu .reactionCount-2mvXRV, .reactionMe-wv5HKu:hover .reactionCount-2mvXRV {
+  color: var(--text-color);
+}
+
+.reaction-1hd86g.reactionMe-wv5HKu {
+  background-color: var(--accent-color);
 }
 
 .userSettingsAccount-2eMFVR .userInfoViewingButton-2-jbH9 {
@@ -3337,6 +3423,10 @@ img[alt] {
 	padding-left: 20px;
 	transition: var(--animation);
 	font-style: italic;
+}
+
+.theme-dark .username-1A8OIy {
+  font-weight: 600;
 }
 
 .theme-dark .anchor-3Z-8Bb {
@@ -5262,7 +5352,7 @@ a {
 }
 
 /* Theme Updates */
-.container-2zArDx:before {
+/* .container-2zArDx:before {
 	content: var(--version) " THEME UPDATES \A\A • Adjusted Dark Mode \A • New Animation's for LIVE and Type Status \A • UI adjustments \A • Fixed Colors \A • New Font";
 	background-color: transparent;
 	position: relative
@@ -5270,13 +5360,13 @@ a {
 	color: white;
 	display:block;
 	margin-bottom: 30px;
-}
+} */
 
 .theme-light .container-2zArDx:before {
 	color: #72767d;
 }
 
-#bd-settings-sidebar .ui-tab-bar-separator:before {
+/* #bd-settings-sidebar .ui-tab-bar-separator:before {
 	content: "and theme updates";
 	text-align: ;
 	position: relative;
@@ -5285,7 +5375,7 @@ a {
 	top: -30px;
 	margin-top: 25px;
 	font-size: 15px;
-}
+} */
 
 .socialLinks-3jqNFy {
 	transition: var(--animation);
