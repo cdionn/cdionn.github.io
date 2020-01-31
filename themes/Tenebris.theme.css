@@ -3169,7 +3169,7 @@ strong {
 }
 
 .winButtonClose-1HsbF-, .winButton-iRh8-Z{
-	transition: ease all 100ms;
+	transition: var(--animation);
 }
 
 .themeDefault-24hCdX.valueChecked-m-4IJZ {
@@ -4602,6 +4602,9 @@ img[alt] {
 
 .winButton-iRh8-Z {
 	color: var(--accent-color);
+  border-radius: 50px;
+  width: 22px;
+  margin: 0px 3px 0px 3px;
 }
 
 .theme-dark .children-19S4PO:after {
