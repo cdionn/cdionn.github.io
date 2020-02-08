@@ -1,4 +1,4 @@
-﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"4.0.0"}*//{}
+﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"4.0.1"}*//{}
 /*
 ///////////////////////////////////////
 
@@ -20,7 +20,7 @@
 	--text-color: black;
 	--gifbg: url("https://media.giphy.com/media/3ohze1qcZ9woSlyvFm/giphy.gif");
 	--gifbg-halloween: url("https://media.giphy.com/media/ds7ltUbHYLxjW/giphy.gif");
-	--version: "4.0.0";
+	--version: "4.0.1";
 
 
 	--online: #2dc8fc;
@@ -3168,13 +3168,45 @@ strong {
 	border: solid 0px var(--accent-color);
 }
 
+.group-spacing-16 .groupStart-23k01U {
+	transition: var(--animation);
+}
+
 .wrapper-CU3qI5.muted-1NRuDm:hover .icon-WnO6o2, .wrapper-CU3qI5.muted-1NRuDm:hover .name-IbjUBS, .wrapper-CU3qI5:hover .icon-WnO6o2, .wrapper-CU3qI5:hover .name-IbjUBS {
 	color: var(--accent-color);
+}
+
+.theme-dark .popout-38lTFE {
+	background-color: var(--background-light);
+	border: 1px solid var(--background-dark);
+	border-radius: 0px;
+	transition: var(--animation);
+}
+
+.theme-dark .separator-XqIyoz {
+    background-color: #171717;
+}
+
+.theme-dark .popout-38lTFE:hover {
+	background-color: var(--background-dark);
+	border-color: var(--background-light);
+	transform: scale(1.03);
 }
 
 .wrapper-3D2qGf {
 	background-color: var(--background-light);
 	border-radius: 0px;
+	transition: var(--animation);
+}
+
+.section-2gLsgF {
+	border-radius: 0px;
+	background-color: var(--background-dark);
+	transition: var(--animation);
+}
+
+.section-2gLsgF:hover {
+	background-color: var(--background-light);
 }
 
 .theme-dark .popout-13LQ_3 {
