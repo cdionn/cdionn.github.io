@@ -17,6 +17,7 @@ body {
     font-family: 'Quantico', sans-serif;
     margin: 0px; padding: 0px;
     animation: page 1s 1;
+    padding-left: calc(100vw - 100%);
 }
 
 a:link, a:visited {
