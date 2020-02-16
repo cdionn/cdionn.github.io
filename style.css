@@ -16,8 +16,7 @@ body {
     color: white;
     font-family: 'Quantico', sans-serif;
     margin: 0px; padding: 0px;
-    animation: page 1s 1;
-    padding-left: calc(100vw - 100%);
+    animation: page .5s 1;
 }
 
 a:link, a:visited {
@@ -68,10 +67,10 @@ a:link, a:visited {
 #liste-mine {
   line-height: 1.5;
   background-color: #080808;
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 10px;
   margin: 30px;
-  animation: page 1s 1;
+  border: 2px solid #111;
 }
 
 #minecraftbild {
