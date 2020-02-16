@@ -1,16 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Jockey+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
 
+:root {
+	--accent-color: #ffe278;
+	--text-color: black;
+
+	--animation: all 250ms cubic-bezier(0.0, 0.0, 0.2, 1);
+
+	--shadow:	0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	--shadow-hover:	0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
 body {
     background-color: black;
     color: white;
     font-family: 'Quantico', sans-serif;
     margin: 0px; padding: 0px;
+    animation: page 1s 1;
 }
 
 a:link, a:visited {
     text-decoration: none;
-    color: #7878ff;
+    color: var(--accent-color);
+}
+
+@keyframes page{
+  0%{
+    opacity:0;
+    transform:translateY(3rem);
+  }
+  100%{
+    opacity:1;
+    transform:translateY(0px);
+  }
 }
 
 #ip{
@@ -34,10 +56,12 @@ a:link, a:visited {
   margin-top: 5px;
   display: table;
   border-radius: 10px;
+  transition: var(--animation);
 }
 
 #links:hover {
   transform: scale(1.03);
+  border-color: var(--accent-color);
 }
 
 #liste-mine {
@@ -46,6 +70,7 @@ a:link, a:visited {
   border-radius: 10px;
   padding: 10px;
   margin: 30px;
+  animation: page 1s 1;
 }
 
 #minecraftbild {
