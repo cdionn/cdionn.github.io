@@ -1,4 +1,4 @@
-﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"4.0.3"}*//{}
+﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"4.0.4"}*//{}
 /*
 ///////////////////////////////////////
 
@@ -20,7 +20,7 @@
 	--text-color: black;
 	--gifbg: url("https://media.giphy.com/media/3ohze1qcZ9woSlyvFm/giphy.gif");
 	--gifbg-halloween: url("https://media.giphy.com/media/ds7ltUbHYLxjW/giphy.gif");
-	--version: "4.0.3";
+	--version: "4.0.4";
 
 
 	--online: #2dc8fc;
@@ -3039,14 +3039,14 @@ html .tabBadge-3smxHS:hover {
 .base-gE7OpD strong {
 	animation: pulse 3s ease infinite;
 	border-radius: 50px;
-	border: 2px solid var(--accent-color);
 	color: var(--accent-color);
 	margin: 0px 5px 0px 5px;
 	padding: 0px 5px 0px 5px;
 	transform: scale(1);
 	font-size: 10px;
 	letter-spacing: 1px;
-	font-weight: lighter;
+	font-weight: bold;
+	background-color: var(--background-light);
 }
 
 .base-gE7OpD .ellipsis-19qdx6 {
@@ -3241,6 +3241,7 @@ strong {
 .callAvatarBorder-uWp8Ga.voice-3bPYC-.speaking-B2MXPi {
 	box-shadow: inset 0 0 0 0px var(--accent-color);
 	border: solid 5px var(--accent-color);
+	border-radius: 50px!important;
 }
 
 .theme-dark .wrapper-29NfPK.minimum-2d6zH6 .actions-2vadYq .center-1Vp33r {
