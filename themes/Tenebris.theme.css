@@ -1,4 +1,4 @@
-﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"4.0.4"}*//{}
+﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"4.0.5"}*//{}
 /*
 ///////////////////////////////////////
 
@@ -20,7 +20,7 @@
 	--text-color: black;
 	--gifbg: url("https://media.giphy.com/media/3ohze1qcZ9woSlyvFm/giphy.gif");
 	--gifbg-halloween: url("https://media.giphy.com/media/ds7ltUbHYLxjW/giphy.gif");
-	--version: "4.0.4";
+	--version: "4.0.5";
 
 
 	--online: #2dc8fc;
@@ -51,6 +51,10 @@
 
 body, div, span, textarea, ::-webkit-input-placeholder {
     font-family: 'Exo', sans-serif;
+}
+
+body {
+
 }
 
 .hljs,
@@ -170,6 +174,7 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 .content-1o0f9g {
     color: #5a5a5a;
     background: #0e0e0e;
+		line-height: 14px;
 }
 
 .group-spacing-8 .groupStart-23k01U:hover {
@@ -177,14 +182,18 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 }
 
 .unreadPill-2HyYtt,.isUnread-3Ef-o9 {
-  background-color: black!important;
-  color: var(--accent-color);
+  background-color: var(--accent-color)!important;
+  color: var(--text-color);
   border-color: var(--accent-color);
 }
 
 .unreadPillCapStroke-7rkHbg {
-  fill: black;
+  fill: var(--accent-color);
   color: var(--accent-color);
+}
+
+.isUnread-3Ef-o9 .content-1o0f9g {
+	color: var(--accent-color);
 }
 
 .emptyCard-1RJw8n {
@@ -523,7 +532,6 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 	*/
 
 /* Weinachten Effekt
-
 
 .da-appMount:before {
 	content:"";
@@ -1759,6 +1767,22 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 .theme-dark .messagesWrapper-3lZDfY {
 	background-color: #000000;
 }
+
+/* Ricardo
+.scrollerWrap-2su1QI::after{
+	display: block;
+	position: absolute;
+	background: url("https://steamuserimages-a.akamaihd.net/ugc/945093483574536818/9BB7392E074EBFFBAF5D81AE795156C96FAECFED/");
+	content: "";
+	background-size: 30%;
+	top:200px;
+	left: 300px;
+	height: 3000px;
+	width: 3000px;
+	background-repeat: no-repeat;
+	opacity: .2;
+	pointer-events: none;
+} */
 
 .theme-dark .title-3qD0b,.container-1r6BKw.themed-ANHk51, .searchBar-6Kv8R2 {
     background: var(--background-light);
@@ -4062,7 +4086,7 @@ img[alt] {
 
 .theme-dark .userSettingsVoice-iwdUCU .previewOverlay-2O7_KC {
     background-color: #040404;
-    border-color: var(--accent-color);
+    border-color: #080808;
 		border-radius: 0px;
 		border-width: 2px;
 }
@@ -4317,6 +4341,7 @@ img[alt] {
 .theme-dark .card-3Qj_Yx a {
 	color: var(--accent-color)!important;
 	font-weight: bold;
+	border-width: 2px;
 }
 
 .emojiPicker-3m1S-j .categories-1feg4n .item-16cXuq.selected-39BZ4S {
@@ -4376,7 +4401,7 @@ img[alt] {
     color: #fff9f9;
     transition: var(--animation);
     cursor: pointer;
-	font-weight: bold;
+		font-weight: bold;
 }
 
 .role-2irmRk {
@@ -4390,12 +4415,16 @@ img[alt] {
 
 .botTag-2WPJ74 {
 	border-radius: 50px;
-	margin-top: -0.2em;
+	margin-top: -0.3em;
 }
 
 .botTag-2BhDSU {
     position: relative;
     top: -0.2em;
+}
+
+.chatContent-a9vAAp {
+
 }
 
 .theme-dark .container-VSDcQc .sectionTag-pXyto9 {
@@ -4755,8 +4784,8 @@ img[alt] {
 }
 
 .avatarSpeaking-3MqCHL {
-	transition: var(--animation)!important;
-	box-shadow: inset 0 0 0px 2px var(--accent-color), inset 0 0 0 3px black;
+	transition:  var(--animation)!important;
+	box-shadow: inset 0 0 0px 2px var(--accent-color), inset 0 0 0px 4px black;
 	transform: scale(1.15);
 }
 
@@ -4819,10 +4848,6 @@ img[alt] {
 .content-3at_AU {
 	background-color: transparent!important;
 	border-radius: 0px;
-}
-
-.listDefault-2y5Z9D .avatarContainer-2inGBK {
-	transition: var(--animation);
 }
 
 .callAvatarBorder-1D_KaE {
@@ -5562,24 +5587,43 @@ a {
 	transition: var(--animation);
 }
 
+.cardPrimaryEditable-3KtE4g[style*="border-color: rgb(250, 166, 26)"], .cardPrimaryEditable-3KtE4g[style*="border-color: rgb(67, 181, 129)"], .cardPrimaryEditable-3KtE4g[style*="border-color: rgb(240, 71, 71)"] {
+	border-color: var(--accent-color)!important;
+}
+
 .socialLinks-3jqNFy:after {
-    display:block;
+  display:block;
 	position: relative;
-    background: linear-gradient(253deg, #ea33e5, #ea6666, #4a38f9);
-    background-size: 300% 300%;
-    -webkit-animation: Background 10s ease infinite;
-    padding: 2px 5px;
+	background: #111;
+  padding: 2px 5px;
 	text-transform: uppercase;
 	margin: 0px;
-    border-radius: 50px;
-    font-weight: bold;
-    margin-top: 2px;
-    color: white;
+  border-radius: 0px;
+  font-weight: bold;
+  margin-top: 2px;
+  color: white;
 	content: "Dion's Tenebris Theme Version: " var(--version) ;
-	top: 10px;
+	top: 8px;
 	text-align: center;
-	cursor: pointer;
 }
+
+/* .socialLinks-3jqNFy:after {
+  display:block;
+	position: relative;
+  background: linear-gradient(253deg, #ea33e5, #ea6666, #4a38f9);
+  background-size: 300% 300%;
+  -webkit-animation: Background 10s ease infinite;
+  padding: 2px 5px;
+	text-transform: uppercase;
+	margin: 0px;
+  border-radius: 50px;
+  font-weight: bold;
+  margin-top: 2px;
+  color: white;
+	content: "Dion's Tenebris Theme Version: " var(--version) ;
+	top: 8px;
+	text-align: center;
+} */
 
 .updateIconForeground-3tnNZn {
     fill: #ea6147;
