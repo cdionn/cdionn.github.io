@@ -1,4 +1,4 @@
-﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"4.0.6"}*//{}
+﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"4.0.7"}*//{}
 /*
 ///////////////////////////////////////
 
@@ -20,7 +20,7 @@
 	--text-color: black;
 	--gifbg: url("https://media.giphy.com/media/3ohze1qcZ9woSlyvFm/giphy.gif");
 	--gifbg-halloween: url("https://media.giphy.com/media/ds7ltUbHYLxjW/giphy.gif");
-	--version: "4.0.6";
+	--version: "4.0.7";
 
 
 	--online: #2dc8fc;
@@ -3286,13 +3286,30 @@ strong {
     background-color: transparent;
 }
 
+/* Anruf */
+.incomingCallInner-2VmFiR {
+    border-radius: 0px;
+    border: 1px solid var(--background-dark);
+    text-align: center;
+    padding: 20px 10px 10px;
+    background: var(--background-light);
+    -webkit-box-shadow: var(--elevation-high);
+    box-shadow: var(--elevation-high);
+}
+
+.incomingCallInner-2VmFiR:hover {
+		background: var(--background-dark);
+		transform: scale(1.03);
+		border-color: var(--background-light)
+}
+
 .isLocalBot-38G0P0 {
     background-image: linear-gradient(90deg,#0e0e0e -40%,transparent 50%);
     color: var(--text-muted);
 }
 
 .callAvatarBorder-uWp8Ga {
-	border-radius: 0px!important;
+	border-radius: 50px;
 	transition: var(--animation);
 	border: solid 0px var(--accent-color);
 }
@@ -3496,7 +3513,7 @@ strong {
 }
 
 .callAvatarOverlay-1tkLjG {
-	border-radius: 0px;
+	border-radius: 5px;
 }
 
 .callAvatarBorder-uWp8Ga.video-3SrWSI.selected-2tLJQ6.notSpeaking-a3bIkW.notSoundsharing-2sYlLk {
@@ -3563,7 +3580,7 @@ strong {
 
 img[alt] {
   text-indent: -9999px;
-	border-radius: 0px;
+	border-radius: 3px;
 }
 
 .containerCozy-B4noqO>* {
