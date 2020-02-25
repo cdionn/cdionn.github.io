@@ -1,4 +1,4 @@
-﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"4.0.5"}*//{}
+﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"4.0.6"}*//{}
 /*
 ///////////////////////////////////////
 
@@ -20,7 +20,7 @@
 	--text-color: black;
 	--gifbg: url("https://media.giphy.com/media/3ohze1qcZ9woSlyvFm/giphy.gif");
 	--gifbg-halloween: url("https://media.giphy.com/media/ds7ltUbHYLxjW/giphy.gif");
-	--version: "4.0.5";
+	--version: "4.0.6";
 
 
 	--online: #2dc8fc;
@@ -2402,8 +2402,8 @@ body {
     transition: var(--animation);
     border: solid 2px var(--accent-color)!important;
     margin-left: 5px;
-    border-radius: 50px !important;
 		font-weight: bold;
+		border-radius: 50px!important;
 }
 
 .btn-primary:hover {
@@ -2812,10 +2812,6 @@ html .tabBadge-3smxHS:hover {
 	box-shadow: inset 0 -1px 0 0 #1b1b1b;
 }
 
-.theme-dark .item-3eFBNF {
-	box-shadow: inset 0 -1px 0 0 #1b1b1b;
-}
-
 .item-3eFBNF:focus, .item-3eFBNF:focus-within, .item-3eFBNF:hover {
 	background-color: #040404;
 }
@@ -2823,10 +2819,23 @@ html .tabBadge-3smxHS:hover {
 .theme-dark .item-3eFBNF {
 	transition: var(--animation);
 	border-color: #0e0e0e;
+	background-color: var(--background-light);
+	box-shadow: none;
+	margin: 10px 0px 0px 10px;
+	border-radius: 50px;
+}
+
+.theme-dark .checked-3_4uQ9[style*="background-color: rgb(67, 181, 129)"] {
+	background-color: var(--accent-color)!important;
+}
+
+.theme-dark .item-3eFBNF:hover {
+	background-color: #111;
 }
 
 .theme-dark .checkbox-1ix_J3 {
     border-color: #333333;
+		border-radius: 50px;
 }
 
 .labelText-2kBs7x {
@@ -4191,21 +4200,17 @@ img[alt] {
 
 .theme-dark .da-checked[style*="border-color: rgb(114, 137, 218);"] {
     border-color: #040404!important;
-	border-radius: 0px;
+	border-radius: 50px;
 	border-width:0px;
 }
 
 .theme-light .da-checked[style*="border-color: rgb(114, 137, 218);"] {
     border-color: #fff!important;
-	border-radius: 0px;
+	border-radius: 50px;
 	border-width:0px;
 }
 
 .theme-light .checkbox-1ix_J3 {
-	border-radius:0px;
-}
-
-.theme-dark .checkbox-1ix_J3 {
 	border-radius:0px;
 }
 
@@ -4896,6 +4901,7 @@ img[alt] {
 
 .checkbox .checkbox-inner input[type=checkbox]:checked+span {
     border-color: var(--accent-color);
+		border-radius: 50px;
 }
 
 .theme-dark .ace-monokai .ace_gutter {
