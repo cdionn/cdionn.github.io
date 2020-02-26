@@ -4923,7 +4923,7 @@ img[alt] {
 .content-region #bd-customcss-attach-controls::after {
     width: 100%;
     padding: 10px;
-    content:"Tutorial how to change colors, type in the code which is below this text\A Google Hex color picker in google to pick a color of your choice \A and copy the HEX value. \A \A-----------------------------------------------------\A \A:root {\A\9 --accent-color: #colorofyourchoice;\A\9 --text-color: #colorofyourchoice;\A\9 --gifbg: url(yourlink.gif);\A\9 --online: #colorofyourchoice\A\9 --idle: #colorofyourchoice \A\9 --dnd: #colorofyourchoice \A} \A \A ----------------------------------------------------- \A Accent-color changes the Text/Button/Icon colors etc. \A Text-color changes the text color inside of buttons use this if you \A can't see the text of a button. \A Gifbg changes the gif that plays behind your user card you can change \A it to whatever you like.";
+    content:"Tutorial how to change colors, type in the code which is below this text\A Google Hex color picker to pick a color of your choice \A and copy the HEX value. \A \A-----------------------------------------------------\A \A:root {\A\9 --accent-color: #colorofyourchoice;\A\9 --text-color: #colorofyourchoice;\A\9 --gifbg: url(yourlink.gif);\A\9 --online: #colorofyourchoice\A\9 --idle: #colorofyourchoice \A\9 --dnd: #colorofyourchoice \A} \A \A ----------------------------------------------------- \A Accent-color changes the Text/Button/Icon colors etc. \A Text-color changes the text color inside of buttons use this if you \A can't see the text of a button. \A Gifbg changes the gif that plays behind your user card you can change \A it to whatever you like.";
     background: transparent;
     margin-top: 10px;
     display: block;
