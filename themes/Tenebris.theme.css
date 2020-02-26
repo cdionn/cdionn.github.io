@@ -104,20 +104,20 @@ body {
 
 .status-1AY8sU[style*="rgb(250, 166, 26)"] {background-color: var(--idle)!important;}
 rect[fill="rgba(250, 166, 26, 1)"], .pointerEvents-2zdfdO[mask^="url(#svg-mask-status-idle"], .header-QKLPzZ .pointerEvents-2zdfdO[mask^="url(#svg-mask-status-idle"], .header-2BwW8b .pointerEvents-2zdfdO[mask^="url(#svg-mask-status-idle"] {
-	fill: var(--idle);
+	fill: var(--idle)!important;
 }
 
 .status-1AY8sU[style*="rgb(67, 181, 129)"] {background-color: var(--online)!important;}
-rect[fill="rgb(67, 181, 129);"], .pointerEvents-2zdfdO[mask*="url(#svg-mask-status-online)"] {
-	fill: var(--online);
+rect[fill="rgba(67, 181, 129, 1)"], .pointerEvents-2zdfdO[mask*="url(#svg-mask-status-online)"] {
+	fill: var(--online)!important;
 }
 
 .status-1AY8sU[style*="rgb(240, 71, 71"] {background-color: var(--dnd)!important;}
-rect[fill="rgb(240, 71, 71)"], .pointerEvents-2zdfdO[mask*="url(#svg-mask-status-dnd)"] {
-	fill: var(--dnd);
+rect[fill="rgba(240, 71, 71, 1)"], .pointerEvents-2zdfdO[mask*="url(#svg-mask-status-dnd)"] {
+	fill: var(--dnd)!important;
 }
 
-rect[fill="rgb(67, 181, 129)"], .pointerEvents-2zdfdO[mask*="url(#svg-mask-status-online-mobile)"] {
+rect[fill="rgba(67, 181, 129, 1)"], .pointerEvents-2zdfdO[mask*="url(#svg-mask-status-online-mobile)"] {
 	fill: var(--online);
 }
 
@@ -2053,10 +2053,6 @@ rect[fill="rgb(67, 181, 129)"], .pointerEvents-2zdfdO[mask*="url(#svg-mask-statu
 
 .theme-dark .base-gE7OpD span {
 	color: var(--accent-color);
-}
-
-.theme-dark .da-textArea {
-	transition: var(--animation);
 }
 
 .iconBadge-qZ4Ksk {
