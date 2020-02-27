@@ -1,4 +1,4 @@
-﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"4.0.8"}*//{}
+﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"4.0.9"}*//{}
 /*
 ///////////////////////////////////////
 
@@ -20,7 +20,7 @@
 	--text-color: black;
 	--gifbg: url("https://media.giphy.com/media/3ohze1qcZ9woSlyvFm/giphy.gif");
 	--gifbg-halloween: url("https://media.giphy.com/media/ds7ltUbHYLxjW/giphy.gif");
-	--version: "4.0.8";
+	--version: "4.0.9";
 
 
 	--online: #30cbff;
@@ -110,6 +110,10 @@ rect[fill="rgba(250, 166, 26, 1)"], .pointerEvents-2zdfdO[mask^="url(#svg-mask-s
 .status-1AY8sU[style*="rgb(67, 181, 129)"] {background-color: var(--online)!important;}
 rect[fill="rgba(67, 181, 129, 1)"], .pointerEvents-2zdfdO[mask*="url(#svg-mask-status-online)"] {
 	fill: var(--online)!important;
+}
+
+img[src*="226004083297878020"] ~ .header-23xsNx > span.username-1A8OIy {
+    color: #fc03e8!important;
 }
 
 .status-1AY8sU[style*="rgb(240, 71, 71"] {background-color: var(--dnd)!important;}
@@ -574,7 +578,7 @@ rect[fill="rgba(67, 181, 129, 1)"], .pointerEvents-2zdfdO[mask*="url(#svg-mask-s
 }
 
 .da-appMount {
-    background-color: #000;
+    background-color: red;
 		z-index: 1;
 }
 
@@ -693,11 +697,12 @@ rect[fill="rgba(67, 181, 129, 1)"], .pointerEvents-2zdfdO[mask*="url(#svg-mask-s
 
 .contextMenu-HLZMGh:hover {background-color: var(--background-dark); border-color: var(--background-light);transform: scale(1.03); box-shadow: var(--shadow-hover);}
 .contextMenu-HLZMGh {
-	background-color: var(--background-light);
+	background-color: #08080890;
 	border: 1px solid var(--background-dark);
 	transition: var(--animation);
 	box-shadow: var(--shadow);
   border-radius: 0px;
+	backdrop-filter:blur(15px);
 }
 
 .clickable-11uBi-:hover, .selected-BYpGTS {
@@ -1522,11 +1527,12 @@ rect[fill="rgba(67, 181, 129, 1)"], .pointerEvents-2zdfdO[mask*="url(#svg-mask-s
 }
 
 .theme-dark .menu-Sp6bN1 {
-    background: #080808;
+    background: #08080880;
 		border-radius: 0px;
 		box-shadow: var(--shadow);
 		transition: var(--animation);
 		border: solid 1px transparent;
+		backdrop-filter:blur(15px);
 }
 
 .theme-dark .menu-Sp6bN1:hover {
@@ -2890,7 +2896,7 @@ html .tabBadge-3smxHS:hover {
 }
 
 .theme-dark .headerNormal-T_seeN {
-    background-color: #040404;
+    background-color: #00000080;
 }
 
 .theme-dark .headerPlaying-j0WQBV {
@@ -2922,7 +2928,8 @@ html .tabBadge-3smxHS:hover {
 
 .headerTop-3C2Zn0, .header-QKLPzZ {
 	border-bottom: 1px solid var(--accent-color);
-	background-color: black;
+	background-color: #00000080;
+	backdrop-filter:blur(10px);
 }
 
 .barInner-3NDaY_ {
@@ -4447,6 +4454,22 @@ img[alt] {
 .role-2irmRk {
 	border-radius: 50px;
 	border-width: 2px;
+	position: relative;
+}
+
+.role-2irmRk::before {
+	content: "";
+	position: absolute;
+	border-radius: 50px;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	box-sizing: border-box;
+	opacity: 0.4;
+	z-index: 0;
+	border-width: calc(0.70em + 1.2px) 0.5em;
+	border-style: solid;
+	border-color: inherit;
 }
 
 .autocompleteShadow-iiGWFU {
@@ -5401,10 +5424,10 @@ a {
 }
 
 .backdrop-1wrmKB {
-	background-color: var(--accent-color)!important;
-	opacity: 0.5!important;
+	background-color: #00000020!important;
+	opacity: 1!important;
 	transition: var(--animation);
-	filter:blur(100px) grayscale(0.5);
+	backdrop-filter:blur(5px);
 }
 
 .defaultValue-3gC7yw .markValue-2DwdXI {
