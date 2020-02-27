@@ -1,4 +1,4 @@
-﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"4.0.6"}*//{}
+﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"4.0.8"}*//{}
 /*
 ///////////////////////////////////////
 
@@ -20,12 +20,12 @@
 	--text-color: black;
 	--gifbg: url("https://media.giphy.com/media/3ohze1qcZ9woSlyvFm/giphy.gif");
 	--gifbg-halloween: url("https://media.giphy.com/media/ds7ltUbHYLxjW/giphy.gif");
-	--version: "4.0.6";
+	--version: "4.0.8";
 
 
-	--online: #2dc8fc;
-	--idle: #f9690e;
-	--dnd: #ff0000;
+	--online: #30cbff;
+	--idle: #fffc47;
+	--dnd: #fc4460;
 	--invisible: #707070;
 
 	--animation: all 250ms cubic-bezier(0.0, 0.0, 0.2, 1);
@@ -100,6 +100,25 @@ body {
 
 .theme-dark .activityFeed-1C0EmJ {
     background-color: black;
+}
+
+.status-1AY8sU[style*="rgb(250, 166, 26)"] {background-color: var(--idle)!important;}
+rect[fill="rgba(250, 166, 26, 1)"], .pointerEvents-2zdfdO[mask^="url(#svg-mask-status-idle"], .header-QKLPzZ .pointerEvents-2zdfdO[mask^="url(#svg-mask-status-idle"], .header-2BwW8b .pointerEvents-2zdfdO[mask^="url(#svg-mask-status-idle"] {
+	fill: var(--idle)!important;
+}
+
+.status-1AY8sU[style*="rgb(67, 181, 129)"] {background-color: var(--online)!important;}
+rect[fill="rgba(67, 181, 129, 1)"], .pointerEvents-2zdfdO[mask*="url(#svg-mask-status-online)"] {
+	fill: var(--online)!important;
+}
+
+.status-1AY8sU[style*="rgb(240, 71, 71"] {background-color: var(--dnd)!important;}
+rect[fill="rgba(240, 71, 71, 1)"], .pointerEvents-2zdfdO[mask*="url(#svg-mask-status-dnd)"] {
+	fill: var(--dnd)!important;
+}
+
+rect[fill="rgba(67, 181, 129, 1)"], .pointerEvents-2zdfdO[mask*="url(#svg-mask-status-online-mobile)"] {
+	fill: var(--online);
 }
 
 .coloredBackground-37Z6Gv {
@@ -2036,10 +2055,6 @@ body {
 	color: var(--accent-color);
 }
 
-.theme-dark .da-textArea {
-	transition: var(--animation);
-}
-
 .iconBadge-qZ4Ksk {
 	background-color: red;
 }
@@ -2978,6 +2993,10 @@ html .tabBadge-3smxHS:hover {
 	padding: 60px 0 0;
 }
 
+.scroller-2TZvBN:hover > div[class*="da-chat"] {
+	filter:blur(2px);
+}
+
 .theme-dark .container-1D34oG,.peopleList-3c4jOR {
   background-color: var(--background-dark);
 }
@@ -3286,13 +3305,30 @@ strong {
     background-color: transparent;
 }
 
+/* Anruf */
+.incomingCallInner-2VmFiR {
+    border-radius: 0px;
+    border: 1px solid var(--background-dark);
+    text-align: center;
+    padding: 20px 10px 10px;
+    background: var(--background-light);
+    -webkit-box-shadow: var(--elevation-high);
+    box-shadow: var(--elevation-high);
+}
+
+.incomingCallInner-2VmFiR:hover {
+		background: var(--background-dark);
+		transform: scale(1.03);
+		border-color: var(--background-light)
+}
+
 .isLocalBot-38G0P0 {
     background-image: linear-gradient(90deg,#0e0e0e -40%,transparent 50%);
     color: var(--text-muted);
 }
 
 .callAvatarBorder-uWp8Ga {
-	border-radius: 0px!important;
+	border-radius: 50px;
 	transition: var(--animation);
 	border: solid 0px var(--accent-color);
 }
@@ -3496,7 +3532,7 @@ strong {
 }
 
 .callAvatarOverlay-1tkLjG {
-	border-radius: 0px;
+	border-radius: 5px;
 }
 
 .callAvatarBorder-uWp8Ga.video-3SrWSI.selected-2tLJQ6.notSpeaking-a3bIkW.notSoundsharing-2sYlLk {
@@ -3563,7 +3599,6 @@ strong {
 
 img[alt] {
   text-indent: -9999px;
-	border-radius: 0px;
 }
 
 .containerCozy-B4noqO>* {
@@ -4883,7 +4918,7 @@ img[alt] {
 .content-region #bd-customcss-attach-controls::after {
     width: 100%;
     padding: 10px;
-    content:"Tutorial how to change colors, type in the code which is below this text \A \A-----------------------------------------------------\A \A:root {\A\9 --accent-color: #7289DA;\A\9 --text-color: #FFFFFF;\A\9 --gifbg: url(yourlink.gif); \A } \A \A ----------------------------------------------------- \A Accent-color changes the Text/Button/Icon colors etc. \A Text-color changes the text color inside of buttons use this if you \A can't see the text of a button. \A Gifbg changes the gif that plays behind your user card you can change \A it to whatever you like.";
+    content:"Tutorial how to change colors, type in the code which is below this text\A Google Hex color picker to pick a color of your choice \A and copy the HEX value. \A \A-----------------------------------------------------\A \A:root {\A\9 --accent-color: #colorofyourchoice;\A\9 --text-color: #colorofyourchoice;\A\9 --gifbg: url(yourlink.gif);\A\9 --online: #colorofyourchoice\A\9 --idle: #colorofyourchoice \A\9 --dnd: #colorofyourchoice \A} \A \A ----------------------------------------------------- \A Accent-color changes the Text/Button/Icon colors etc. \A Text-color changes the text color inside of buttons use this if you \A can't see the text of a button. \A Gifbg changes the gif that plays behind your user card you can change \A it to whatever you like.";
     background: transparent;
     margin-top: 10px;
     display: block;
