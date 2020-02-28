@@ -1,4 +1,4 @@
-﻿//META{"name":"Mac OS","description":"Blurry Mac Os Theme","author":"c.dion","version":"alpha.0.0.1"}*//{}
+﻿//META{"name":"Blurscord","description":"Blurry Discord Theme","author":"c.dion","version":"alpha.0.0.5"}*//{}
 /*
 ///////////////////////////////////////
 
@@ -65,6 +65,21 @@
   border-radius: 10px 10px 10px 10px!important;
 }
 
+/* Benutzer Karte  */
+.theme-dark .quickMessage-1yeL4E {
+  background-color: #000000a5;
+  border: solid 1px black;
+}
+
+.headerTop-3C2Zn0 {
+  background-color: black;
+}
+
+.userPopout-3XzG_A {
+  border-radius: 0px;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,.2), 0 0 0 1px rgba(0, 0, 0, 0.6);
+}
+
 /* UI  */
 
 .folder-21wGz3, .folderIconWrapper-226oVY[style*="background-color: rgba(114, 137, 218, 0.4)"] {
@@ -81,12 +96,92 @@
   backdrop-filter: blur(15px);
 }
 
+.reaction-1hd86g.reactionMe-wv5HKu {
+  background-color: #ffffff20;
+  border-radius: 2px;
+}
+
+.jumpToPresentBar-9P20AM, .hasMore-3e72_v {
+    border-radius: 50px;
+    background-color: black;
+    opacity: 1;
+    padding-bottom: 0px;
+    margin-bottom: 15px!important;
+    color: white;
+    box-shadow: none;
+}
+
+.mentioned-xhSam7 {
+  background-color: #ffffff10;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.mentioned-xhSam7:before {
+  background-color: white;
+}
+
+.message-2qnXI6.mentioned-xhSam7.selected-2P5D_Z, .mouse-mode .mentioned-xhSam7:hover {
+  background-color: #ffffff20;
+}
+
+.reactionMe-wv5HKu .reactionCount-2mvXRV, .reactionMe-wv5HKu:hover .reactionCount-2mvXRV {
+  color: white;
+}
+
+.wrapper-3WhCwL {
+  color: white;
+  background-color: #ffffff20;
+  border-radius: 0px;
+}
+
+.wrapper-3WhCwL:hover {
+  background-color: #ffffff50;
+}
+
 .theme-dark .headerNormal-T_seeN {
   background-color: black;
 }
 
-.userPopout-3XzG_A {
-  border-radius: 0px;
+svg[style*="rgb(114, 137, 218)"] {
+  color: var(--accent-color)!important;
+}
+
+.contextMenu-HLZMGh, .menu-Sp6bN1 {
+  background-color: #000000a5;
+  border-radius: 10px;
+  border:none;
+  backdrop-filter: blur(15px);
+}
+
+.attachPopout-36hjtN {
+  background-color: transparent;
+  border-radius: 10px;
+  border:none;
+}
+
+.popoutTopLeft-3B0mFf.noArrow-2foL9g {
+  background-color: #000000a5;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+}
+
+.theme-dark .root-1gCeng {
+  background-color: #000000a5;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px black, 0 2px 10px 0 rgba(0,0,0,.2);
+  animation: page 500ms 1;
+}
+
+.container-cMG81i {
+  background-color: #080808;
+}
+
+.theme-dark .autocomplete-1vrmpx {
+  background-color: black;
+  border-radius: 10px;
+  border:none;
+  animation: page 500ms 1;
 }
 
 .circleIconButton-jET_ig {
@@ -123,6 +218,12 @@
   backdrop-filter: blur(15px);
   background-color: #08080880;
   border-radius: 0px;
+  border-color: black;
+}
+
+.side-8zPYf6 .item-PXvHYJ[style*="color: rgb(114, 137, 218);"] {
+  color: var(--accent-color)!important;
+  background-color: transparent!important;
 }
 
 .userSettingsAccount-2eMFVR .userInfoEditing-1CEzdT, .userSettingsAccount-2eMFVR .userInfoViewing-16kqK3 {
@@ -135,7 +236,10 @@
 .theme-dark .checked-3_4uQ9 {
   background-color: var(--accent-color);
   border-color: transparent!important;
-  border-radius: 10px;
+}
+
+.da-checked svg[name="Checkmark"] polyline {
+  stroke: var(--text-color)!important;
 }
 
 .themeDefault-24hCdX.valueChecked-m-4IJZ {
@@ -156,6 +260,21 @@
   border-color: black!important;
 }
 
+.card-3AyPWq, .theme-dark .codeRedemptionRedirect-1wVR4b {
+  backdrop-filter: blur(15px);
+  background-color: #000000a5;
+  border-radius: 10px;
+  border: solid 1px black;
+}
+
+.card-3AyPWq:hover {
+  background-color: #000000c5;
+}
+
+.cardWrapper-2Min21 {
+  background-color: transparent;
+}
+
 .item-26Dhrx[style*="background-color: rgb(114, 137, 218)"] {
   background-color: #000000a5!important;
   border-color: black!important;
@@ -172,6 +291,64 @@
   background-color: #000000a5!important;
   border-radius: 0px;
   backdrop-filter: blur(15px);
+}
+
+/* Buttons  */
+.lookFilled-1Gx00P.colorBrand-3pXr91, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
+  background-color: #111111;
+}
+
+.lookFilled-1Gx00P.colorBrand-3pXr91:hover, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
+  background-color: #181818;
+}
+
+/* bda stuff  */
+#bda-qem {
+  background-color: #000000a5;
+  backdrop-filter: blur(15px);
+}
+
+#bda-qem button.active, #bda-qem button.active:hover {
+  background-color: #222222a5;
+  backdrop-filter: blur(15px);
+}
+
+.theme-dark #bd-settings-sidebar .ui-tab-bar-item.selected {
+  background-color: var(--background-modifier-selected);
+}
+
+#bda-qem button {
+  background-color: #080808a5;
+  backdrop-filter: blur(15px);
+}
+
+#bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch.checked {
+  background-color: var(--accent-color);
+}
+
+.theme-dark .bda-slist .bda-header {
+  border-bottom-color: transparent!important;
+}
+
+.emojiPicker-3m1S-j, #bda-qem-twitch-container, #bda-qem-favourite-container {
+  background-color: #000000a5;
+  backdrop-filter: blur(15px);
+}
+
+.infoBar-U6oBFk {
+  background-color: #080808;
+}
+
+.emojiPicker-3m1S-j .categories-1feg4n {
+  background-color: black;
+}
+
+.container-2XeR5Z {
+  background-color: #080808a5
+}
+
+.emojiPicker-3m1S-j .categories-1feg4n .selected-39BZ4S {
+  border-color: var(--accent-color);
 }
 
 @keyframes page{
@@ -227,6 +404,19 @@
   border: solid 1px black;
 }
 
+.embedFull-2tM8-- {
+  background-color: #000000e5;
+  border-radius: 0px;
+}
+
+.embedImage-2W1cML img, .embedImage-2W1cML video, .embedThumbnail-2Y84-K img, .embedThumbnail-2Y84-K video, .embedVideo-3nf0O9 img, .embedVideo-3nf0O9 video {
+  border-radius: 0px;
+}
+
+.embedMedia-1guQoW {
+  border-radius: 0px;
+}
+
 .content-1o0f9g {
   background-color: #000000a5;
   color: white;
@@ -249,6 +439,10 @@
   border-radius: 50px;
 }
 
+.attachWrapper-2TRKBi {
+  border-color: #0a0a0a;
+}
+
 /* Server */
 .guilds-1SWlCJ {
   background-color: #000000e5;
@@ -261,7 +455,7 @@
 }
 
 /* Bild Backdrop  */
-.imageWrapper-2p5ogY img, .inner-1ilYF7 {
+.inner-1ilYF7 {
   animation: page 500ms 1;
 }
 
