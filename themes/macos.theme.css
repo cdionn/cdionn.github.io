@@ -51,8 +51,14 @@
 
 /* Abstand zum Hintergrund und der Sidebar  */
 
-.base-3dtUhz, .sidebar-2K8pFh {
+.base-3dtUhz {
   margin: 20px;
+}
+
+.sidebar-2K8pFh {
+  margin: 0px 20px 0px 0px;
+  width: 250px;
+  border-radius: 15px 15px 15px 15px!important;
 }
 
 /* UI  */
@@ -168,11 +174,19 @@
   }
 }
 
-/* Mittleres Fenster */
+/* Haupt Mittleres Fenster */
 .content-98HsJk {
-    background-color: #000000e5;
-    backdrop-filter: blur(8px);
+    background-color: transparent;
     border-radius: 5px;
+}
+
+.platform-win .sidebar-2K8pFh {
+  background-color: black;
+}
+
+.chat-3bRxxu {
+  background-color: #000000a5;
+  backdrop-filter: blur(15px);
 }
 
 /* Server */
