@@ -228,9 +228,14 @@ body {
   transition: var(--animation);
 }
 
-.container-3npvBV{transition: var(--animation);}
-.container-3npvBV:hover {
-  transform: scale(1.02);
+.theme-dark .uploadModal-2ifh8j {
+  background-color: #000000c5;
+  box-shadow:none;
+}
+
+.theme-dark .footer-3mqk7D {
+  background-color: #000000;
+  box-shadow:none;
 }
 
 .separator-42rNt0 {
@@ -398,7 +403,7 @@ svg[style*="rgb(114, 137, 218)"] {
   background-color: #00000090;
 }
 
-.layers-3iHuyZ>.layer-3QrUeG {
+.standardSidebarView-3F1I7i {
   animation: page 500ms 1;
 }
 
@@ -408,6 +413,38 @@ svg[style*="rgb(114, 137, 218)"] {
   background-color: #08080880;
   border-radius: 0px;
   border-color: black;
+}
+
+.theme-dark .notDetected-33MY4s, .theme-light .notDetected-33MY4s {
+  background-color: #000000a5;
+  border: solid 1px black;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+}
+
+.theme-dark .button-2CgfFz {
+  background-color: #000;
+  box-shadow: none;
+}
+
+.theme-dark .button-2CgfFz:hover {
+  background-color: #040404;
+  box-shadow: none;
+}
+
+.flowerStar-1GeTsn {
+	filter:grayscale(1) brightness(0.2);
+}
+
+.theme-dark .card-FDVird:before {
+  background-color: #00000090;
+  border: solid 1px black;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+}
+
+.theme-dark .game-1ipmAa {
+  box-shadow: none;
 }
 
 .theme-dark .connectionDelete-2Odoln {
@@ -873,7 +910,7 @@ svg[style*="rgb(114, 137, 218)"] {
 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: #11111180!important;
+    background-color: #ffffff20!important;
     border-radius: 0px!important;
 }
 
