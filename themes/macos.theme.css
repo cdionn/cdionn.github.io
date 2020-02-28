@@ -1,0 +1,214 @@
+﻿//META{"name":"Mac OS","description":"Blurry Mac Os Theme","author":"c.dion","version":"alpha.0.0.1"}*//{}
+/*
+///////////////////////////////////////
+
+ Created by Dion
+ Please do not edit this theme
+ and post it as yours.
+
+///////////////////////////////////////
+
+*/
+
+:root {
+  --accent-color: cyan;
+  --text-color: white;
+  --wallpaper: url("https://wallpapershome.com/images/pages/pic_h/21250.jpg")
+}
+
+
+.app-2rEoOp {
+  background-image: var(--wallpaper)!important;
+  background-size: cover;
+  background-color: none!important;
+}
+
+.appMount-3lHmkl, body {
+  background-color: black;
+}
+
+.bg-h5JY_x{
+  background: none;
+}
+
+/* transparent */
+
+.sidebar-2K8pFh,.container-PNkimc, .scroller-2TZvBN,.wrapper-1Rf91z, .panels-j1Uci_,.scrollableContainer-2NUZem,.channelTextArea-rNsIhG, .members-1998pB, .contentRegionScroller-26nc1e,.contentRegion-3nDuYy,.sidebarRegionScroller-3MXcoP,.standardSidebarView-3F1I7i,.layer-3QrUeG, .privateChannels-1nO12o, .scroller-1JbKMe {
+  background: transparent;
+  background-color: transparent;
+}
+
+/* Chat */
+.messages-3amgkR, .chat-3bRxxu, .container-1r6BKw.themed-ANHk51 {
+  background-color: transparent;
+}
+
+.wrapper-2aW0bm {
+  border-radius: 0px;
+  background-color: #00000080;
+}
+
+
+/* Abstand zum Hintergrund und der Sidebar  */
+
+.base-3dtUhz, .sidebar-2K8pFh {
+  margin: 20px;
+}
+
+/* UI  */
+
+.folder-21wGz3, .folderIconWrapper-226oVY[style*="background-color: rgba(114, 137, 218, 0.4)"] {
+  background-color: #080808!important;
+}
+
+.circleIconButton-jET_ig.selected-ugP_am {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+.theme-dark .bodyInner-245q0L, .theme-dark .footer-1fjuF6 {
+  background-color: #080808f5;
+  backdrop-filter: blur(15px);
+}
+
+.theme-dark .headerNormal-T_seeN {
+  background-color: black;
+}
+
+.userPopout-3XzG_A {
+  border-radius: 0px;
+}
+
+.circleIconButton-jET_ig {
+  background-color: #080808;
+}
+
+.expandedFolderBackground-2sPsd- {
+  background-color: #080808e5;
+}
+
+.container-2lgZY8 {
+  animation: page 500ms 1;
+}
+
+/* Server Liste */
+
+
+
+/* Einstellungen */
+.sidebarRegionScroller-3MXcoP {
+  background-color: #000000e5;
+}
+
+.contentRegionScroller-26nc1e {
+  background-color: #00000090;
+}
+
+.layers-3iHuyZ>.layer-3QrUeG {
+  animation: page 500ms 1;
+}
+
+/* Einstellungen UI */
+.da-card, .theme-dark .bda-slist li, .ace-monokai, .ace-monokai .ace_gutter,.theme-dark .bar-2Qqk5Z, .contentRegion-3nDuYy #bd-customcss-attach-controls, #bd-customcss-detach-container #bd-customcss-attach-controls {
+  backdrop-filter: blur(15px);
+  background-color: #08080880;
+  border-radius: 0px;
+}
+
+.theme-dark .checked-3_4uQ9 {
+  background-color: var(--accent-color);
+  border-color: transparent!important;
+  border-radius: 50px;
+}
+
+.themeDefault-24hCdX.valueChecked-m-4IJZ {
+  background-color: var(--accent-color);
+}
+
+.defaultValue-3gC7yw .markValue-2DwdXI {
+  color: var(--accent-color);
+}
+
+.barFill-23-gu- {
+  background: var(--accent-color);
+}
+
+.item-26Dhrx {
+  backdrop-filter: blur(15px);
+  background-color: #08080880;
+  border-color: black!important;
+}
+
+.item-26Dhrx[style*="background-color: rgb(114, 137, 218)"] {
+  background-color: #08080880!important;
+  border-color: black!important;
+}
+
+.css-15ejc46-control, .css-1yegjoj-control,.css-2yldzf-control {
+  background-color: #08080880!important;
+  border-color: black;
+  border-radius: 0px;
+  backdrop-filter: blur(15px);
+}
+
+.css-15ejc46-control:hover, .css-2yldzf-control:hover {
+  background-color: #00000080!important;
+  border-radius: 0px;
+  backdrop-filter: blur(15px);
+}
+
+@keyframes page{
+  0%{
+    opacity:0;
+    transform:translateY(3rem);
+  }
+	100%{
+    opacity:1;
+    transform:translateY(0px);
+  }
+}
+
+/* Mittleres Fenster */
+.content-98HsJk {
+    background-color: #000000e5;
+    backdrop-filter: blur(8px);
+    border-radius: 5px;
+}
+
+/* Server */
+.guilds-1SWlCJ {
+  background-color: #000000e5;
+  backdrop-filter: blur(8px);
+  border-radius: 0px;
+  margin: 20px 0px 20px 0px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Useless gradients  */
+
+.children-19S4PO:after,.form-2fGMdU:before {
+  background:none;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 0px!important;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent!important;
+    border-radius: 10px;
+    border-radius: 0px!important;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #11111180!important;
+    border-radius: 0px!important;
+}
+
+::-webkit-scrollbar-track-piece {
+  border-color: transparent !important;
+  background: transparent !important;
+}
