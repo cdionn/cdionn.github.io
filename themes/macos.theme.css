@@ -43,6 +43,10 @@
   background-color: transparent;
 }
 
+.messages-3amgkR {
+  margin-bottom: 8px;
+}
+
 .wrapper-2aW0bm {
   border-radius: 0px;
   background-color: #00000080;
@@ -58,7 +62,7 @@
 .sidebar-2K8pFh {
   margin: 0px 20px 0px 0px;
   width: 250px;
-  border-radius: 15px 15px 15px 15px!important;
+  border-radius: 10px 10px 10px 10px!important;
 }
 
 /* UI  */
@@ -115,16 +119,23 @@
 }
 
 /* Einstellungen UI */
-.da-card, .theme-dark .bda-slist li, .ace-monokai, .ace-monokai .ace_gutter,.theme-dark .bar-2Qqk5Z, .contentRegion-3nDuYy #bd-customcss-attach-controls, #bd-customcss-detach-container #bd-customcss-attach-controls {
+.theme-dark .bda-slist li, .ace-monokai, .ace-monokai .ace_gutter,.theme-dark .bar-2Qqk5Z, .contentRegion-3nDuYy #bd-customcss-attach-controls, #bd-customcss-detach-container #bd-customcss-attach-controls {
   backdrop-filter: blur(15px);
   background-color: #08080880;
   border-radius: 0px;
 }
 
+.userSettingsAccount-2eMFVR .userInfoEditing-1CEzdT, .userSettingsAccount-2eMFVR .userInfoViewing-16kqK3 {
+  background-color: #000000a5;
+  border-color: black;
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+}
+
 .theme-dark .checked-3_4uQ9 {
   background-color: var(--accent-color);
   border-color: transparent!important;
-  border-radius: 50px;
+  border-radius: 10px;
 }
 
 .themeDefault-24hCdX.valueChecked-m-4IJZ {
@@ -139,26 +150,26 @@
   background: var(--accent-color);
 }
 
-.item-26Dhrx {
+.item-26Dhrx, .cardPrimary-1Hv-to, .cardPrimaryEditable-3KtE4g, .cardPrimaryOutline-29Ujqw {
   backdrop-filter: blur(15px);
-  background-color: #08080880;
+  background-color: #000000a5;
   border-color: black!important;
 }
 
 .item-26Dhrx[style*="background-color: rgb(114, 137, 218)"] {
-  background-color: #08080880!important;
+  background-color: #000000a5!important;
   border-color: black!important;
 }
 
 .css-15ejc46-control, .css-1yegjoj-control,.css-2yldzf-control {
-  background-color: #08080880!important;
+  background-color: #000000a5!important;
   border-color: black;
   border-radius: 0px;
   backdrop-filter: blur(15px);
 }
 
 .css-15ejc46-control:hover, .css-2yldzf-control:hover {
-  background-color: #00000080!important;
+  background-color: #000000a5!important;
   border-radius: 0px;
   backdrop-filter: blur(15px);
 }
@@ -180,13 +191,62 @@
     border-radius: 5px;
 }
 
-.platform-win .sidebar-2K8pFh {
-  background-color: black;
+.members-1998pB {
+  background-color: #00000080;
+  margin: 10px;
+  border-radius: 10px;
+  border: solid 1px black;
 }
 
-.chat-3bRxxu {
+.platform-win .sidebar-2K8pFh {
+  background-color: #000000db;
+  backdrop-filter: blur(15px);
+  border: solid 1px black;
+}
+
+.chat-3bRxxu, .theme-dark .container-1D34oG {
   background-color: #000000a5;
   backdrop-filter: blur(15px);
+  border-radius: 10px;
+  border: solid 1px black;
+}
+
+.nowPlayingColumn-2sl4cE {
+  background-color: #000000a5;
+  border-radius: 0px;
+}
+
+.emptyCard-1RJw8n {
+  background-color: #000000a5;
+  border-radius: 10px;
+}
+
+.markup-2BOw-j code {
+  background-color: #000000a5;
+  border-radius: 10px;
+  border: solid 1px black;
+}
+
+.content-1o0f9g {
+  background-color: #000000a5;
+  color: white;
+}
+
+.divider-JfaTT5 {
+  border-color: black;
+}
+
+.container-1r6BKw.themed-ANHk51 {
+  background-color: #000000ad;
+}
+
+.header-2o-2hj {
+  background-color: #000000ad;
+}
+
+.channelTextArea-rNsIhG {
+  background-color: #0000008c;
+  border-radius: 50px;
 }
 
 /* Server */
@@ -197,6 +257,19 @@
   margin: 20px 0px 20px 0px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  border:solid 1px black;
+}
+
+/* Bild Backdrop  */
+.imageWrapper-2p5ogY img, .inner-1ilYF7 {
+  animation: page 500ms 1;
+}
+
+.backdrop-1wrmKB, .backdropWithLayer-3_uhz4 {
+  backdrop-filter: blur(15px);
+  opacity: 1!important;
+  background-color: rgba(0, 0, 0, 0.60)!important;
+  animation: fadeIn 500ms 1;
 }
 
 /* Useless gradients  */
@@ -225,4 +298,14 @@
 ::-webkit-scrollbar-track-piece {
   border-color: transparent !important;
   background: transparent !important;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
 }
