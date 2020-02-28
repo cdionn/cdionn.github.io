@@ -332,6 +332,18 @@ svg[style*="rgb(114, 137, 218)"] {
   background-color: #080808;
 }
 
+.iconBadge-2wi9r4.participating-NBGDkr {
+  background-color: var(--accent-color);
+}
+
+.base-PmTxvP {
+  color: var(--text-color);
+}
+
+.itemBase-1Qj4z6 {
+  transition: var(--animation);
+}
+
 .theme-dark .autocomplete-1vrmpx {
   background-color: black;
   border-radius: 10px;
@@ -419,6 +431,10 @@ svg[style*="rgb(114, 137, 218)"] {
 
 .theme-dark .closeButton-1tv5uR:hover {
 	background-color: #00000080;
+}
+
+.scroller-305q3I {
+  background-color: #000000c5;
 }
 
 #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch:before {
