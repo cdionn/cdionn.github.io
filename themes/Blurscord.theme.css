@@ -111,18 +111,38 @@ body {
 
 /* UI  */
 
+.container-3baos1 {
+  background-color: #ffffff0a;
+  margin: 0px 10px 10px 10px;
+  border-radius: 50px;
+}
+
 .folder-21wGz3, .folderIconWrapper-226oVY[style*="background-color: rgba(114, 137, 218, 0.4)"] {
   background-color: #080808!important;
 }
 
 .body-3ND3kc {
   background-color: #000000a5;
-  border-radius: 10px;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .activityName-1IaRLn,.theme-dark .activityUserPopout-2yItg2 .details-38sfDr,.activityUserPopout-2yItg2 .textRow-19NEd_, .theme-dark .activityProfile-2bJRaP .headerText-1HLrL7, .theme-dark .activityUserPopout-2yItg2 .headerText-1HLrL7, .theme-light .activityProfile-2bJRaP .headerText-1HLrL7, .theme-light .activityUserPopout-2yItg2 .headerText-1HLrL7 {
   color: var(--text-color);
   font-weight: bold;
+}
+
+.theme-dark .listDefault-2y5Z9D .clickable-23RaYz.selected-3TGCSZ .username-lm8y6T, .theme-dark .usernameSpeaking-2xbKKh, .theme-light .listDefault-2y5Z9D .clickable-23RaYz.selected-3TGCSZ .username-lm8y6T, .theme-light .usernameSpeaking-2xbKKh {
+	padding-left: 3px;
+}
+
+.icon-3BcwQu, .username-lm8y6T, .listDefault-2y5Z9D .avatarContainer-2inGBK {
+  transition: var(--animation);
+}
+
+.avatarSpeaking-3MqCHL {
+	transition:  var(--animation)!important;
+	box-shadow: inset 0 0 0px 2px var(--accent-color), inset 0 0 0px 4px black;
+	transform: scale(1.15);
 }
 
 .activity-11LB_k {
