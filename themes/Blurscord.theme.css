@@ -164,6 +164,16 @@ font-family: 'Exo', sans-serif;
 
 /* UI+  */
 
+.localBot-GrCgVt:hover {background-color: rgba(214, 214, 214, 0.10);}
+.localBot-GrCgVt {
+  background-color: rgba(214, 214, 214, 0.05);
+  transition: var(--animation);
+}
+
+.localBot-GrCgVt:before {
+  background-color: #ffffff70;
+}
+
 .input-cIJ7To.focused-1mmYsC, .input-cIJ7To:focus {
   border-color: var(--accent-color);
 }
