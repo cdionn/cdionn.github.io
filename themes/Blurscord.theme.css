@@ -1,4 +1,4 @@
-﻿//META{"name":"Blurscord","description":"Blurry Discord Theme","author":"c.dion","version":"alpha.0.1.0"}*//{}
+﻿//META{"name":"Blurscord","description":"Blurry Discord Theme","author":"c.dion","version":"alpha.0.1.1"}*//{}
 /*
 ///////////////////////////////////////
 
@@ -11,7 +11,7 @@
 */
 
 :root {
-  --version:"alpha.0.1.0";
+  --version:"alpha.0.1.1";
 
   --accent-color: #42a7f5;
   --text-color: white;
@@ -181,6 +181,17 @@ font-family: 'Exo', sans-serif;
   filter:grayscale(1) invert(1);
 }
 
+.gameIcon-2YB8Et, .screenshareIcon-2redWJ {
+  background-color: #ffffff0f;
+  border-radius: 50px;
+  background-size: 25px;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  padding: 2px;
+  background-position: center;
+}
+
 .localBot-GrCgVt:hover {background-color: rgba(214, 214, 214, 0.10);}
 .localBot-GrCgVt {
   background-color: rgba(214, 214, 214, 0.05);
@@ -265,7 +276,7 @@ font-family: 'Exo', sans-serif;
   filter: grayscale(1);
 }
 
-.container-1giJp5 {
+.container-1giJp5, .activityPanel-28dQGo {
   border-bottom-color: transparent;
   background-color: #ffffff0a;
   margin: 0px 10px 5px 10px;
@@ -425,6 +436,7 @@ font-family: 'Exo', sans-serif;
 
 .reactionCount-2mvXRV,.item-1Yvehc {
   transition: var(--animation);
+  color: #888888;
 }
 
 .theme-dark .uploadModal-2ifh8j {
@@ -1242,6 +1254,7 @@ background: var(--dark-blur)!important;
   background-color: black;
   border-radius: 50px;
   bottom: 0.3px;
+  margin-bottom: 3px;
 }
 
 .activityText-yGKsKm {
