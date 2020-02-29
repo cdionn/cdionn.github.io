@@ -186,6 +186,10 @@ font-family: 'Exo', sans-serif;
   color: var(--accent-color)!important;
 }
 
+.headerSpotify-zpWxgT {
+  background-color: var(--accent-color);
+}
+
 .container-1giJp5 {
   border-bottom-color: transparent;
   background-color: #ffffff0a;
@@ -536,14 +540,6 @@ svg[style*="rgb(114, 137, 218)"] {
 
 .theme-dark .questionMark-CWEQZn {
   background-color: var(--accent-color);
-}
-
-.directionColumn-35P_nr {
-  background-color: #000000a5;
-  padding: 10px;
-  backdrop-filter: blur(15px);
-  border: solid 1px #000000a5;
-  border-radius: 5px;
 }
 
 .defaultColor-1_ajX0 {
