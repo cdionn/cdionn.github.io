@@ -26,6 +26,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css?family=Exo:100,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oxanium&display=swap');
 
 body, div, span, textarea, ::-webkit-input-placeholder {
     font-family: 'Exo', sans-serif;
@@ -44,6 +45,31 @@ body {
       * Avoids issues when working with the Custom CSS editor.
       */
      font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+ }
+
+body::after{
+   content:"";
+   font-size: 100px;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   position: absolute;
+   display: flex;
+   height: inherit;
+   width: inherit;
+   background: transparent;
+   animation: load 2s forwards;
+   opacity: 1;
+   white-space: pre;
+   pointer-events: none;
+   background-image: url(https://cdionn.github.io/themes/Blurscord/logo.png);
+   background-size: 500px;
+   background-repeat: no-repeat;
+   background-position: center;
+   animation-delay: 1s;
+   backdrop-filter: grayscale(1);
+   transition: var(--animation);
  }
 
 .app-2rEoOp {
@@ -971,6 +997,16 @@ rect[fill="rgba(67, 181, 129, 1)"], .pointerEvents-2zdfdO[mask*="url(#svg-mask-s
 
     to {
         opacity: 1
+    }
+}
+
+@keyframes load {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
     }
 }
 
