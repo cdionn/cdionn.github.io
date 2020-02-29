@@ -2929,8 +2929,7 @@ html .tabBadge-3smxHS:hover {
 
 .headerTop-3C2Zn0, .header-QKLPzZ {
 	border-bottom: 1px solid var(--accent-color);
-	background-color: #00000095;
-	backdrop-filter:blur(10px);
+	background-color: black;
 }
 
 .barInner-3NDaY_ {
@@ -5714,5 +5713,66 @@ a {
     -webkit-filter: hue-rotate(-360deg);
   }
 }
+
+/* Launchscreen  */
+
+body::after{
+   content:"" var(--version);
+font-family: 'Exo', sans-serif;
+   font-size: 50px;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   color: #ffffff3f;
+   position: absolute;
+   display: flex;
+   height: inherit;
+   width: inherit;
+   background: #000000;
+   animation: load 1s forwards;
+   opacity: 1;
+   white-space: pre;
+   pointer-events: none;
+   animation-delay: 1s;
+   transition: var(--animation);
+   z-index: 9998;
+   padding-top: 300px;
+ }
+
+ body::before {
+   content:"";
+   font-size: 100px;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   position: absolute;
+   display: flex;
+   height: inherit;
+   width: inherit;
+   background: transparent;
+   animation: load 1s forwards;
+   opacity: 1;
+   white-space: pre;
+   pointer-events: none;
+   background-image: url(https://cdionn.github.io/themes/Tenebris/Logo/Logotenebris.png);
+   background-size: 500px;
+   background-repeat: no-repeat;
+   background-position: center;
+   animation-delay: 1s;
+   transition: var(--animation);
+   z-index: 9999;
+	 filter:invert(1);
+ }
+
+ @keyframes load {
+     from {
+         opacity: 1;
+     }
+
+     to {
+         opacity: 0;
+     }
+ }
 
 /* Baukasten */
