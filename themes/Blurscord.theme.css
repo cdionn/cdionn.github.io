@@ -1,4 +1,4 @@
-﻿//META{"name":"Blurscord","description":"Blurry Discord Theme","author":"c.dion","version":"alpha.0.0.7"}*//{}
+﻿//META{"name":"Blurscord","description":"Blurry Discord Theme","author":"c.dion","version":"alpha.0.0.8"}*//{}
 /*
 ///////////////////////////////////////
 
@@ -11,7 +11,7 @@
 */
 
 :root {
-  --version:"alpha.0.0.7";
+  --version:"alpha.0.0.8";
 
   --accent-color: red;
   --text-color: white;
@@ -48,6 +48,30 @@ body {
  }
 
 body::after{
+   content:"" var(--version);
+font-family: 'Exo', sans-serif;
+   font-size: 50px;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   color: #ffffff3f;
+   position: absolute;
+   display: flex;
+   height: inherit;
+   width: inherit;
+   background: #000000a5;
+   animation: load 1s forwards;
+   opacity: 1;
+   white-space: pre;
+   pointer-events: none;
+   animation-delay: 1s;
+   backdrop-filter: grayscale(1) blur(15px);
+   transition: var(--animation);
+   z-index: 9998;
+   padding-top: 300px;
+ }
+
+ body::before {
    content:"";
    font-size: 100px;
    text-align: center;
@@ -59,8 +83,8 @@ body::after{
    height: inherit;
    width: inherit;
    background: transparent;
-   animation: load 2s forwards;
-   opacity: 1;
+   animation: load 1s forwards;
+   opacity: 1.5;
    white-space: pre;
    pointer-events: none;
    background-image: url(https://cdionn.github.io/themes/Blurscord/logo.png);
@@ -68,8 +92,12 @@ body::after{
    background-repeat: no-repeat;
    background-position: center;
    animation-delay: 1s;
-   backdrop-filter: grayscale(1);
    transition: var(--animation);
+   z-index: 9999;
+ }
+
+ .container-16j22k {
+   background-color: #000000a5;
  }
 
 .app-2rEoOp {
@@ -147,6 +175,15 @@ body::after{
   background-color: #ffffff0a;
   margin: 0px 10px 10px 10px;
   border-radius: 50px;
+}
+
+.theme-dark .modal-yWgWj- {
+  background-color: #000000a5;
+  box-shadow: none;
+}
+
+.theme-dark .footer-3rDWdC {
+  box-shadow: none;
 }
 
 .button-14-BFJ {
@@ -1014,6 +1051,14 @@ rect[fill="rgba(67, 181, 129, 1)"], .pointerEvents-2zdfdO[mask*="url(#svg-mask-s
 .anchor-3Z-8Bb {
   color: white;
   transition: var(--animation);
+}
+
+.lookLink-9FtZy-.colorBrand-3pXr91 {
+  color: white;
+}
+
+.lookLink-9FtZy-.colorBrand-3pXr91:hover .contents-18-Yxp {
+  background-image: none;
 }
 
 .markup-2BOw-j a {
