@@ -53,10 +53,6 @@ body, div, span, textarea, ::-webkit-input-placeholder {
     font-family: 'Exo', sans-serif;
 }
 
-body {
-
-}
-
 .hljs,
  .inline,
  .hljs :-webkit-any(ol, li, span),
