@@ -1385,6 +1385,11 @@ background: var(--dark-blur)!important;
 }
 
 /* bda+  */
+
+.theme-dark #bd-settingspane-container h2.ui-form-title {
+  font-size: 25px;
+}
+
 #bda-qem {
   background-color: #000000a5;
   backdrop-filter: var(--blur-radius);
