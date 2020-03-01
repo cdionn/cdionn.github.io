@@ -18,7 +18,7 @@
 
   --accent-color: #42a7f5;
   --text-color: white;
-  --wallpaper: url("https://wallpaperaccess.com/full/1381244.jpg");
+  --wallpaper: url("https://images.unsplash.com/photo-1574451311227-31d77d4efbc6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjIxMTIzfQ&auto=format&fit=crop&w=1950&q=80");
 
   --light-blur:#ffffff0a;
   --light-blur-hover:#ffffff05;
@@ -1857,7 +1857,7 @@ rect[fill="rgba(67, 181, 129, 1)"], .pointerEvents-2zdfdO[mask*="url(#svg-mask-s
   transition: var(--animation);
 }
 
-.lookLink-9FtZy-.colorBrand-3pXr91 {
+.fakeLink-26oLcc, .lookLink-9FtZy-.colorBrand-3pXr91 {
   color: white;
 }
 
