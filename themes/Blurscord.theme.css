@@ -581,7 +581,7 @@ svg[style*="rgb(114, 137, 218)"] {
 }
 
 .expandedFolderBackground-2sPsd- {
-  background-color: #080808e5;
+  background-color: #000000a5;
 }
 
 .container-2lgZY8 {
@@ -900,6 +900,34 @@ svg[style*="rgb(114, 137, 218)"] {
   transition: var(--animation);
 }
 
+#bd-settingspane-container .ui-switch-item {
+  backdrop-filter: blur(15px);
+  background-color: var(--dark-blur);
+  border-color: var(--dark-blur)!important;
+  transition: var(--animation);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.theme-dark .item-3eFBNF {
+  box-shadow: none;
+  backdrop-filter: blur(15px);
+  background-color: var(--dark-blur);
+  border-color: var(--dark-blur)!important;
+  transition: var(--animation);
+  margin: 5px 0px 5px 0px;
+  border: solid 1px black;
+  border-radius: 5px;
+}
+
+.theme-dark .item-3eFBNF:hover{
+  background-color: var(--dark-blur-selected);
+}
+
+.theme-dark #bd-settingspane-container .ui-switch-item .style-description {
+  display:none;
+}
+
 .item-26Dhrx:hover , .cardPrimary-1Hv-to:hover , .cardPrimaryEditable-3KtE4g:hover , .cardPrimaryOutline-29Ujqw:hover {
   background-color: var(--dark-blur-selected);
 }
@@ -1109,6 +1137,10 @@ background: var(--dark-blur)!important;
 #bda-qem button.active, #bda-qem button.active:hover {
   background-color: #222222a5;
   backdrop-filter: blur(15px);
+}
+
+.bda-slist .bda-footer a {
+  color: var(--accent-color);
 }
 
 .theme-dark #bd-settings-sidebar .ui-tab-bar-item.selected {
