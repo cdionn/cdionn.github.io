@@ -174,6 +174,14 @@ font-family: 'Exo', sans-serif;
   border-radius: 10px;
 }
 
+.uploadModalIn-1z07Bv .uploadDropModal-2kTwbc.error-kKl9o2 {
+  background-color: var(--dark-blur);
+}
+
+.uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .inner-3nWsbo .icon-kyxXVr.two-3BBQI9, .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .inner-3nWsbo .icon-kyxXVr.three-27ScFD, .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .inner-3nWsbo .icon-kyxXVr.one-2crnLX {
+  filter: invert(1) grayscale(1);
+}
+
 .topSectionPlaying-1J5E4n {
   background-color: var(--dark-blur-selected);
 }
@@ -696,13 +704,52 @@ svg[style*="rgb(114, 137, 218)"] {
   color: var(--accent-color)!important;
 }
 
-.contextMenu-HLZMGh, .menu-Sp6bN1, .theme-dark .popout-38lTFE {
+.contextMenu-HLZMGh, .menu-Sp6bN1, .theme-dark .popout-38lTFE, .theme-dark .popout-1k352f {
   background-color: #000000c5;
   border-radius: 10px;
   border:none;
   backdrop-filter: var(--blur-radius);
   transition: var(--animation);
   animation: page 300ms 1;
+}
+
+.theme-dark .streamPreview-2-WUWT {
+  background-color: var(--dark-blur-selected);
+  border-radius: 10px;
+  border:none;
+  backdrop-filter: var(--blur-radius);
+  transition: var(--animation);
+  animation: page 300ms 1;
+}
+
+.theme-dark .tooltipGrey-1hnvTt .tooltipPointer-3ZfirK, .theme-light .tooltipGrey-1hnvTt .tooltipPointer-3ZfirK,.theme-dark .tooltipGrey-1hnvTt, .theme-light .tooltipGrey-1hnvTt {
+  border-top-color: black;
+}
+
+.theme-dark .tooltipGrey-1hnvTt {
+  background-color: #000;
+}
+
+.video-1kutKI {
+  background-color: var(--dark-blur);
+  border-radius: 10px;
+  backdrop-filter: var(--blur-radius);
+}
+
+.root-25RxKh, .theme-dark .container-2oTpPc {
+  background-color: transparent;
+}
+
+.memberListItem-2ZX2pl {
+  transition: var(--animation);
+}
+
+.theme-dark .tooltipGrey-1hnvTt, .theme-light .tooltipGrey-1hnvTt {
+
+}
+
+.theme-dark .memberListItem-2QQgFD:not(.popoutDisabled-1sb3_F):hover {
+  background-color: var(--light-blur-hover);
 }
 
 .theme-dark .enabled-1t_Gxm, .theme-dark .memberListItem-31QoHj:not(.popoutDisabled-2RK7MF) {transition: var(--animation);}
