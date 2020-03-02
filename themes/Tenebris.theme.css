@@ -53,10 +53,6 @@ body, div, span, textarea, ::-webkit-input-placeholder {
     font-family: 'Exo', sans-serif;
 }
 
-body {
-
-}
-
 .hljs,
  .inline,
  .hljs :-webkit-any(ol, li, span),
@@ -113,7 +109,7 @@ rect[fill="rgba(67, 181, 129, 1)"], .pointerEvents-2zdfdO[mask*="url(#svg-mask-s
 }
 
 img[src*="226004083297878020"] ~ .header-23xsNx > span.username-1A8OIy {
-    color: #fc03e8!important;
+    color: #fb9953!important;
 }
 
 .status-1AY8sU[style*="rgb(240, 71, 71"] {background-color: var(--dnd)!important;}
@@ -5719,7 +5715,7 @@ a {
 body::after{
    content:"" var(--version);
 font-family: 'Exo', sans-serif;
-   font-size: 50px;
+	 font-size: 25px;
    text-align: center;
    align-items: center;
    justify-content: center;
