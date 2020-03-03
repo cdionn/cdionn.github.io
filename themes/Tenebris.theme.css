@@ -1,4 +1,4 @@
-﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"4.0.9"}*//{}
+﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"4.1.0"}*//{}
 /*
 ///////////////////////////////////////
 
@@ -20,7 +20,7 @@
 	--text-color: black;
 	--gifbg: url("https://media.giphy.com/media/3ohze1qcZ9woSlyvFm/giphy.gif");
 	--gifbg-halloween: url("https://media.giphy.com/media/ds7ltUbHYLxjW/giphy.gif");
-	--version: "4.0.9";
+	--version: "4.1.0";
 
 
 	--online: #30cbff;
@@ -4235,12 +4235,28 @@ img[alt] {
 	transform: scale(1.01);
 }
 
-.theme-dark .da-checked svg[name="Checkmark"] polyline {
-    stroke: var(--text-color);
+.da-checked polyline[stroke="#7289da"]{
+  stroke: var(--text-color);
 }
 
-.theme-light .da-checked svg[name="Checkmark"] polyline {
-	stroke: var(--text-color);
+.da-checked polyline[stroke="#faa61a"]{
+  stroke: var(--text-color);
+}
+
+.da-checked polyline[stroke="#f04747"]{
+  stroke: var(--text-color);
+}
+
+.da-checked polyline[stroke="#43b581"]{
+  stroke: var(--text-color);
+}
+
+.da-checked polyline[stroke="#ffffff"] {
+  color: var(--text-color);
+}
+
+.da-checked {
+  animation: checked 500ms forwards;
 }
 
 .accountBtn-2Nozo3 {
@@ -4827,6 +4843,20 @@ img[alt] {
 .root-SR8cQa:hover {
 	transform: scale(1.01);
 	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+@keyframes checked{
+  0%{
+    transform: scale(1);
+    opacity: 0;
+  }
+  50%{
+    transform: scale(1.1);
+    opacity: 1;
+  }
+	100%{
+    transform: scale(1);
+  }
 }
 
   @-webkit-keyframes Background {
