@@ -2,5 +2,5 @@
 font-family: 'Segoe MDL2 Assets';
 font-style: normal;
 font-weight: normal;
-src: local('Segoe MDL2 Assets'), url('segmdl2.ttf') format('ttf');
+src: local('Segoe MDL2 Assets'), url('segmdl2.woff2') format('woff2');
 }
