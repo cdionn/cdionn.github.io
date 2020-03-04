@@ -16,9 +16,9 @@
 :root {
   --version:"1.0.2";
 
-  --accent-color: #42a7f5;
-  --text-color: white;
-  --wallpaper: url("https://steamuserimages-a.akamaihd.net/ugc/940586530515504757/CDDE77CB810474E1C07B945E40AE4713141AFD76/");
+  --accent-color: cyan;
+  --text-color: black;
+  --wallpaper: url("https://cdionn.github.io/themes/Blurscord/background.png");
 
   --light-blur:#ffffff40;
   --light-blur-hover:#ffffff30;
@@ -1744,6 +1744,11 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 }
 
 /* bda+  */
+
+.standardSidebarView-3F1I7i #bd-customcss-attach-controls button {
+  margin: 3px 3px 3px 3px;
+  border-radius: 3px!important;
+}
 
 .theme-dark #bd-settingspane-container h2.ui-form-title {
   font-size: 25px;
