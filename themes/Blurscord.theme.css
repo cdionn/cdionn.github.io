@@ -1816,15 +1816,12 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 
 @keyframes pulse {
   0%{
-    transform: scale(1);
     opacity: .5;
   }
   50%{
-    transform: scale(1.05);
     opacity: 1;
   }
   100%{
-    transform: scale(1);
     opacity: .5;
   }
 }
