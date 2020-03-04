@@ -320,11 +320,11 @@ rect[fill="#F04747"] {
   border: 1px solid black;
 }
 
-.theme-dark .card-3DjzTQ, .theme-dark .cardPlaceholder-1zrbbe {
+.theme-dark .card-2qZngs, .theme-dark .card-3DjzTQ, .theme-dark .cardPlaceholder-1zrbbe {
   background-color: var(--dark-blur);
 }
 
-.theme-dark .card-3DjzTQ:hover {
+.theme-dark .card-2qZngs, .theme-dark .card-3DjzTQ:hover {
   background-color: var(--dark-blur-selected);
   box-shadow: none;
 }
