@@ -16,9 +16,9 @@
 :root {
   --version:"1.0.2";
 
-  --accent-color: cyan;
-  --text-color: black;
-  --wallpaper: url("https://cdionn.github.io/themes/Blurscord/background.png");
+  --accent-color: #941432;
+  --text-color: white;
+  --wallpaper: url("https://cdionn.github.io/themes/Blurscord/background2.png");
 
   --light-blur:#ffffff40;
   --light-blur-hover:#ffffff30;
@@ -1345,7 +1345,7 @@ svg[style*="rgb(114, 137, 218)"] {
 }
 
 .themeDefault-24hCdX, #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch {
-  background-color: #ffffff39;
+  background-color: var(--dark-button-hover);
   backdrop-filter: var(--blur-radius) var(--vibrancy);
 }
 
