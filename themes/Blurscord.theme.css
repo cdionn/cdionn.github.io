@@ -1,4 +1,4 @@
-﻿//META{"name":"Blurscord","description":"Blurry Discord Theme","author":"c.dion","version":"1.0.2"}*//{}
+﻿//META{"name":"Blurscord","description":"Blurry Discord Theme","author":"c.dion","version":"1.0.3"}*//{}
 /*
 ///////////////////////////////////////
 
@@ -14,7 +14,7 @@
 @import url('https://cdionn.github.io/themes/Fonts/Segoe/style.css');
 
 :root {
-  --version:"1.0.2";
+  --version:"1.0.3";
 
   --accent-color: #941432;
   --text-color: white;
@@ -104,6 +104,7 @@ font-family: 'Exo', sans-serif;
 
  .container-16j22k {
    background-color: #000000a5;
+   backdrop-filter: blur(15px);
  }
 
 .app-2rEoOp {
@@ -1173,6 +1174,35 @@ svg[style*="rgb(114, 137, 218)"] {
 
 /* Einstellungen UI */
 
+
+.flexChild-faoVW3 div:nth-child(2) > .viewBody-2Qz-jg::before {
+  content: "✲✲✲✲✲✲✲✲✲✲✲";
+  color: white!important;
+  position: absolute;
+  height: 20px;
+  transition: ease 500ms;
+  pointer-events: none;
+  transition-delay: 2s;
+}
+
+.flexChild-faoVW3 div:nth-child(2) > .viewBody-2Qz-jg:hover::before {
+  content: "✲✲✲✲✲✲✲✲✲✲✲";
+  color: transparent!important;
+  position: absolute;
+  height: 20px;
+  transition-delay: 500ms;
+}
+
+.flexChild-faoVW3 div:nth-child(2) > .viewBody-2Qz-jg {
+  color: transparent;
+  transition: ease 500ms;
+  transition-delay: 2s;
+}
+
+.flexChild-faoVW3 div:nth-child(2) > .viewBody-2Qz-jg:hover {
+  color: white;
+  transition-delay: 500ms;
+}
 
 .valueChecked-m-4IJZ[style*="background-color: rgba(255, 255, 255, 0.3);"] {
   background-color: var(--dark-button-hover)!important;
