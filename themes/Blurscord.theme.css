@@ -198,6 +198,23 @@ font-family: 'Exo', sans-serif;
 
 /* UI+  */
 
+.da-contents img[src="https://cdn.discordapp.com/avatars/165109370470924288/d49fe9c46aaf515373679613c746ce8a.webp?size=128"] {
+  background: url("https://i.pinimg.com/originals/de/49/8a/de498a6269919be2ddf381606d5a64e7.jpg") no-repeat;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+ padding-left: 40px;
+ background-size: cover;
+ background-size: 45px;
+}
+
+.da-contents img[src="https://cdn.discordapp.com/avatars/165109370470924288/d49fe9c46aaf515373679613c746ce8a.webp?size=128"]::after {
+  background-color: red;
+  content: "";
+  position: absolute;
+}
+
+
 .theme-dark .perk-2WeBWW, .theme-dark .tierBody-16Chc9, .theme-dark .tierHeaderLocked-1s2JJz {
   background-color: var(--dark-blur);
   color: white;
