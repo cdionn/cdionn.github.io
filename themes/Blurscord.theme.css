@@ -204,12 +204,27 @@ font-family: 'Exo', sans-serif;
 
 /* UI+  */
 
+.separator-2zcjq8 {
+  border-color: #ffffff08;
+}
+
 .theme-dark .tooltipGreen-WdeQwd, .theme-light .tooltipGreen-WdeQwd {
   background-color: black;
 }
 
+.item-1GzJrl.invite-271nFU, .premiumGuildIcon-BhwtRn {
+  color: var(--accent-color)!important;
+}
+
 .theme-dark .tooltipGreen-WdeQwd .tooltipPointer-3ZfirK, .theme-light .tooltipGreen-WdeQwd .tooltipPointer-3ZfirK {
   border-top-color: black;
+}
+
+.inner-tyMogq > div:nth-child(1) > a {
+  margin-bottom: 0px;
+  display: inline-block;
+  position: relative;
+  bottom: 8px;
 }
 
 .channel-1TmDQ6 {
@@ -219,10 +234,10 @@ font-family: 'Exo', sans-serif;
   width: 87px;
   left: 4px;
   position: relative;
-  margin-bottom: 4px;
+  margin-bottom: 0px;
   justify-content: center;
   align-items: center;
-  bottom: 1px;
+  top: 3px;
   background-color: transparent;
   border-radius: 50px;
   padding: 2px 2px 2px 2px;
@@ -250,7 +265,15 @@ font-family: 'Exo', sans-serif;
 }
 
 .labelWrapper-Pniq53 {
-  display: none;
+  position: absolute;
+  top: 10px;
+  width: 30px;
+  display: block;
+}
+
+
+.statusWithPopout-3ZfFol {
+  color: transparent!important;
 }
 
 .scroller-zPkAnE {
@@ -531,6 +554,10 @@ rect[fill="#F04747"] {
 .searchHelpText-19imBp {
   color: transparent;
   transition: var(--animation);
+}
+
+.theme-dark .container-2x5lvQ section {
+  background-color: transparent;
 }
 
 .css-1rckt42-menu {
@@ -983,8 +1010,12 @@ rect[fill="#F04747"] {
   color: var(--dark-button-selected);
 }
 
-.icon-1_QxNX, .name-3_Dsmg, .container-2Pjhx- {
+.icon-1_QxNX, .name-3_Dsmg, .container-2Pjhx-, .theme-dark .debugButton-1Zec0y {
     color: #b1b1b1;
+}
+
+.tile-2silOL:hover .sourceThumbnail-14Iubx {
+  box-shadow: inset 0 0 0 2px var(--accent-color);
 }
 
 .modeMuted-3osy7j .icon-1_QxNX, .modeMuted-3osy7j .name-3_Dsmg {
@@ -1175,10 +1206,25 @@ svg[style*="rgb(114, 137, 218)"] {
   color: var(--accent-color)!important;
 }
 
-.contextMenu-HLZMGh, .menu-Sp6bN1, .theme-dark .popout-38lTFE, .theme-dark .popout-1k352f {
+.theme-dark .container-2x5lvQ .header-2C89wJ {
+  background-color: var(--dark-blur-hover);
+}
+
+canvas[width="210"]{
+  filter: invert(1) hue-rotate(-180deg);
+}
+
+.contextMenu-HLZMGh, .theme-dark .popout-38lTFE, .theme-dark .popout-1k352f,  .container-2x5lvQ {
   background-color: #000000c5;
   border-radius: 10px;
   border:none;
+  backdrop-filter: var(--blur-radius) var(--vibrancy);
+  transition: var(--animation);
+  animation: page 300ms 1;
+}
+
+.menu-Sp6bN1 {
+  background-color: var(--dark-dark-blur);
   backdrop-filter: var(--blur-radius) var(--vibrancy);
   transition: var(--animation);
   animation: page 300ms 1;
@@ -1268,10 +1314,22 @@ svg[style*="rgb(114, 137, 218)"] {
 }
 
 .theme-dark .autocomplete-1vrmpx {
-  background-color: black;
+  background-color: black;;
   border-radius: 10px;
   border:none;
   animation: page 500ms 1;
+}
+
+.theme-dark .focused-1En8bG:after, .theme-dark .result-3w1ZcL:hover:after {
+  box-shadow: inset 0 0 0 2px var(--accent-color);, inset 0 0 0 3px var(--accent-color);
+}
+
+.theme-dark .placeholder-1kJjXI {
+  background: var(--dark-button-hover);
+}
+
+.result-3w1ZcL {
+  background-color: var(--dark-button-hover)!important;
 }
 
 .circleIconButton-jET_ig {
@@ -1896,14 +1954,14 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 
 /* Hover  */
 
-.standardSidebarView-3F1I7i #bd-customcss-attach-controls button:hover, .bd-detached-css-editor #bd-customcss-attach-controls button:hover, .theme-dark .join-33Tr-7:hover .actionButton-2PeQbJ, .theme-light .join-33Tr-7:hover .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91:hover, .bd-pfbtn:hover, .lookFilled-1Gx00P.colorGreen-29iAKY:hover, .lookOutlined-3sRXeN.colorBrand-3pXr91:hover, .lookFilled-1Gx00P.colorBrand-3pXr91:hover, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
+.theme-dark .changeButton-1uBsOn:hover, .standardSidebarView-3F1I7i #bd-customcss-attach-controls button:hover, .bd-detached-css-editor #bd-customcss-attach-controls button:hover, .theme-dark .join-33Tr-7:hover .actionButton-2PeQbJ, .theme-light .join-33Tr-7:hover .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91:hover, .bd-pfbtn:hover, .lookFilled-1Gx00P.colorGreen-29iAKY:hover, .lookOutlined-3sRXeN.colorBrand-3pXr91:hover, .lookFilled-1Gx00P.colorBrand-3pXr91:hover, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
   background-color: white!important;
   color: var(--accent-color)!important;
   border-color: transparent!important;
 }
 
 /* Still  */
-.standardSidebarView-3F1I7i #bd-customcss-attach-controls button, .bd-detached-css-editor #bd-customcss-attach-controls button, .theme-dark .join-33Tr-7 .actionButton-2PeQbJ, .theme-light .join-33Tr-7 .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91, .lookFilled-1Gx00P.colorGreen-29iAKY,.lookOutlined-3sRXeN.colorBrand-3pXr91,.bd-pfbtn,.lookFilled-1Gx00P.colorBrand-3pXr91, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6, .bda-slist .bda-footer button {
+.theme-dark .changeButton-1uBsOn, .standardSidebarView-3F1I7i #bd-customcss-attach-controls button, .bd-detached-css-editor #bd-customcss-attach-controls button, .theme-dark .join-33Tr-7 .actionButton-2PeQbJ, .theme-light .join-33Tr-7 .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91, .lookFilled-1Gx00P.colorGreen-29iAKY,.lookOutlined-3sRXeN.colorBrand-3pXr91,.bd-pfbtn,.lookFilled-1Gx00P.colorBrand-3pXr91, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6, .bda-slist .bda-footer button {
   background-color: var(--accent-color)!important;
   transition: var(--animation);
   border-color: transparent!important;
