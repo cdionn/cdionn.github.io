@@ -1290,6 +1290,9 @@ svg[style*="rgb(114, 137, 218)"] {
 
 /* Einstellungen UI */
 
+#bd-settings-sidebar .ui-tab-bar-item:nth-child(7) {
+  display: none;
+}
 
 .flexChild-faoVW3 div:nth-child(2) > .viewBody-2Qz-jg::before {
   content: "✲✲✲✲✲✲✲✲✲✲✲";
