@@ -1,7 +1,7 @@
 ﻿/**
  * @name Blurscord
  * @author Dion#0303
- * @version 1.0.4
+ * @version 1.0.5
  * @description Discord in a blurry style.
  * @website https://cdionn.github.io/discordtheme.html
 */
@@ -20,7 +20,7 @@
 @import url('https://cdionn.github.io/themes/Fonts/Segoe/style.css');
 
 :root {
-  --version:"1.0.4";
+  --version:"1.0.5";
 
   --accent-color: #941432;
   --text-color: white;
@@ -203,6 +203,44 @@ font-family: 'Exo', sans-serif;
 }
 
 /* UI+  */
+
+.channel-1TmDQ6 {
+  display: inline-block;
+  margin-left: 0px;
+  overflow: hidden;
+  width: 87px;
+  left: 6px;
+  position: relative;
+  margin-bottom: 4px;
+  justify-content: center;
+  align-items: center;
+  bottom: 2px;
+}
+
+.ping-2NgC8E {
+  display: inline-block;
+  position: flex;
+  height: 20px;
+  width: 15px;
+  position:  relative;
+  top: 6px;
+  left: 7px;
+}
+
+.rtcConnectionStatus-2-jIsi {
+  display: inline-block;
+  margin-top: 1px;
+  border-radius: 50px;
+  height: 31px;
+  width: 32px;
+  background-color: #ffffff0a;
+  position: relative;
+  top: 1px;
+}
+
+.labelWrapper-Pniq53 {
+  display: none;
+}
 
 .scroller-zPkAnE {
   background-color: var(--dark-blur);
