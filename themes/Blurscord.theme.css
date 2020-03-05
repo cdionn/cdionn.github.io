@@ -11,8 +11,8 @@
 */
 
 @import url('https://fonts.googleapis.com/css?family=Exo:100,400,500,600,700&display=swap');
-@import url('https://cdionn.github.io/themes/Fonts/Segoe/style.css');
 @import url('https://cdionn.github.io/themes/Fonts/Exo2/style.css');
+@import url('https://cdionn.github.io/themes/Fonts/Segoe/style.css');
 
 :root {
   --version:"1.0.3";
@@ -198,6 +198,11 @@ font-family: 'Exo', sans-serif;
 }
 
 /* UI+  */
+
+.theme-dark .message-2qRu38 {
+  background-color: var(--dark-button-hover);
+  box-shadow: none;
+}
 
 .theme-dark .perk-2WeBWW, .theme-dark .tierBody-16Chc9, .theme-dark .tierHeaderLocked-1s2JJz {
   background-color: var(--dark-blur);
@@ -1821,6 +1826,7 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 
 
 /* Hover  */
+
 .standardSidebarView-3F1I7i #bd-customcss-attach-controls button:hover, .bd-detached-css-editor #bd-customcss-attach-controls button:hover, .theme-dark .join-33Tr-7:hover .actionButton-2PeQbJ, .theme-light .join-33Tr-7:hover .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91:hover, .bd-pfbtn:hover, .lookFilled-1Gx00P.colorGreen-29iAKY:hover, .lookOutlined-3sRXeN.colorBrand-3pXr91:hover, .lookFilled-1Gx00P.colorBrand-3pXr91:hover, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
   background-color: white!important;
   color: var(--accent-color)!important;
