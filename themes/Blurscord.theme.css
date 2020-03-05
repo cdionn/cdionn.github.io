@@ -12,6 +12,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Exo:100,400,500,600,700&display=swap');
 @import url('https://cdionn.github.io/themes/Fonts/Segoe/style.css');
+@import url('https://cdionn.github.io/themes/Fonts/Exo2/style.css');
 
 :root {
   --version:"1.0.3";
@@ -197,23 +198,6 @@ font-family: 'Exo', sans-serif;
 }
 
 /* UI+  */
-
-/* That happens when a friend annoys me and is using my theme */
-.da-contents img[src="https://cdn.discordapp.com/avatars/165109370470924288/d49fe9c46aaf515373679613c746ce8a.webp?size=128"] {
-  background: url("https://i.redd.it/y5d0o1szhb931.jpg") no-repeat;
-  box-sizing: border-box;
-  width: 40px;
-  height: 40px;
- padding-left: 40px;
- background-size: cover;
-}
-
-.da-contents img[src="https://cdn.discordapp.com/avatars/165109370470924288/d49fe9c46aaf515373679613c746ce8a.webp?size=128"]::after {
-  background-color: red;
-  content: "";
-  position: absolute;
-}
-
 
 .theme-dark .perk-2WeBWW, .theme-dark .tierBody-16Chc9, .theme-dark .tierHeaderLocked-1s2JJz {
   background-color: var(--dark-blur);
