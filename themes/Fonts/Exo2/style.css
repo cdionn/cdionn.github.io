@@ -58,3 +58,25 @@
  padding-left: 100px;
  background-size: cover;
 }
+
+.avatarContainer-2inGBK[style*="https://cdn.discordapp.com/avatars/226004083297878020"]
+{
+  background-image: url("https://i.redd.it/y5d0o1szhb931.jpg")!important;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  padding-left: 24px;
+  background-size: cover;
+}
+
+.avatarSmall-2CW6I1[style*="https://cdn.discordapp.com/avatars/226004083297878020"]
+{
+  background-image: url("https://i.redd.it/y5d0o1szhb931.jpg")!important;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  padding-left: 24px;
+  background-size: cover;
+}
