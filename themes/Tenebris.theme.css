@@ -14,6 +14,7 @@
 /* @import url('https://cdionn.github.io/themes/Fonts/Roobert/style.css'); */
 /* @import url('https://cdionn.github.io/themes/Fonts/Google Sans Serif/style.css'); */
 @import url('https://fonts.googleapis.com/css?family=Exo:100,400,500,600,700&display=swap');
+@import url('https://cdionn.github.io/themes/Fonts/Exo2/style.css');
 
 :root {
 	--accent-color: #CFDEF3;
@@ -280,8 +281,12 @@ rect[fill="rgba(67, 181, 129, 1)"], .pointerEvents-2zdfdO[mask*="url(#svg-mask-s
     background-color: #080808;
 }
 
-.image-1XD_iw {
+.image-1XD_iw, .theme-dark .emptyStateImage-2MrSNs {
     filter: invert(1) grayscale(1);
+}
+
+img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
+	filter: invert(1) grayscale(1);
 }
 
 .theme-dark .theme-dark .or-3THJsp, .theme-dark .theme-light .or-3THJsp {background: #f7f7f7;border: 2px solid #ffffff;}
