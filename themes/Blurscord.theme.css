@@ -1,7 +1,7 @@
 ﻿/**
  * @name Blurscord
  * @author Dion#0303
- * @version 1.0.3
+ * @version 1.0.4
  * @description Discord in a blurry style.
  * @website https://cdionn.github.io/discordtheme.html
 */
@@ -20,7 +20,7 @@
 @import url('https://cdionn.github.io/themes/Fonts/Segoe/style.css');
 
 :root {
-  --version:"1.0.3";
+  --version:"1.0.4";
 
   --accent-color: #941432;
   --text-color: white;
@@ -204,6 +204,22 @@ font-family: 'Exo', sans-serif;
 
 /* UI+  */
 
+.scroller-zPkAnE {
+  background-color: var(--dark-blur);
+}
+
+.resultFocused-3aIoYe {
+  background-color: var(--dark-button-hover);
+}
+
+.rtcConnectionStatusConnected-VRZDjy, .rtcConnectionQualityFine-2J6i8z .ping-2NgC8E {
+  color: var(--accent-color);
+}
+
+.button-14-BFJ {
+  color: white;
+}
+
 .theme-dark .message-2qRu38 {
   background-color: var(--dark-button-hover);
   box-shadow: none;
@@ -373,10 +389,6 @@ rect[fill="#F04747"] {
   color: var(--accent-color);
 }
 
-.container-2Pjhx- {
-  color: #a9a9a9;
-}
-
 .guildIconExpired-2Qcq05 {
   background-color: var(--dark-button-hover);
 }
@@ -519,7 +531,7 @@ rect[fill="#F04747"] {
   text-align: center;
 }
 
-.theme-dark .guildIconExpired-2Qcq05, .theme-dark .noResults-ZTbl5V .errorStateIcon-3fNXE5, .image-3XsqGc,.theme-dark .emptySearchImage-1qOMLW, .emptyPreviewImage-IBznSI,.uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .inner-3nWsbo .icon-kyxXVr.two-3BBQI9, .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .inner-3nWsbo .icon-kyxXVr.three-27ScFD, .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .inner-3nWsbo .icon-kyxXVr.one-2crnLX {
+.theme-dark .art-2gnmb7, .theme-dark .guildIconExpired-2Qcq05, .theme-dark .noResults-ZTbl5V .errorStateIcon-3fNXE5, .image-3XsqGc,.theme-dark .emptySearchImage-1qOMLW, .emptyPreviewImage-IBznSI,.uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .inner-3nWsbo .icon-kyxXVr.two-3BBQI9, .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .inner-3nWsbo .icon-kyxXVr.three-27ScFD, .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .inner-3nWsbo .icon-kyxXVr.one-2crnLX {
   filter: invert(1) grayscale(1);
 }
 
@@ -919,7 +931,15 @@ rect[fill="#F04747"] {
 }
 
 .strikethrough-1n4ekb {
-  color: white;
+  color: var(--accent-color);
+}
+
+.icon-1_QxNX, .name-3_Dsmg, .container-2Pjhx- {
+    color: #b1b1b1;
+}
+
+.modeMuted-3osy7j .icon-1_QxNX, .modeMuted-3osy7j .name-3_Dsmg {
+    color: #6d6e6f;
 }
 
 .layout-2DM8Md,.content-3at_AU,.name-IbjUBS,.addButtonIcon-3u-3Hu, .container-3baos1 .avatar-SmRMf2, .attachButtonPlus-jWVFah, .mention {
