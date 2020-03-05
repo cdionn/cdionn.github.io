@@ -1,4 +1,10 @@
-﻿//META{"name":"Blurscord","description":"Blurry Discord Theme","author":"c.dion","version":"1.0.3"}*//{}
+﻿/**
+ * @name Blurscord
+ * @author Dion#0303
+ * @version 1.0.3
+ * @description Discord in a blurry style.
+ * @website https://cdionn.github.io/discordtheme.html
+*/
 /*
 ///////////////////////////////////////
 
@@ -236,15 +242,15 @@ path[class="gemSheen-3yIyuX"] {
 }
 
 path[fill="rgb(230,84,211)"] {
-  fill: rgba(255, 255, 255, 0.1);!important;
+  fill: rgba(255, 255, 255, 0.1)!important;
 }
 
 path[fill="rgb(255,172,250)"] {
-  fill: rgba(255, 255, 255, 0.3);!important;
+  fill: rgba(255, 255, 255, 0.3)!important;
 }
 
 path[fill="url(#e91fa418-aed1-4d96-9000-6a309dcad450)"] {
-  fill: var(--accent-color);!important;
+  fill: var(--accent-color)!important;
 }
 
 .value-IR9osW {
@@ -1147,10 +1153,6 @@ svg[style*="rgb(114, 137, 218)"] {
 
 .memberListItem-2ZX2pl {
   transition: var(--animation);
-}
-
-.theme-dark .tooltipGrey-1hnvTt, .theme-light .tooltipGrey-1hnvTt {
-
 }
 
 .theme-dark .memberListItem-2QQgFD:not(.popoutDisabled-1sb3_F):hover {
