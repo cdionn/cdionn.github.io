@@ -204,17 +204,28 @@ font-family: 'Exo', sans-serif;
 
 /* UI+  */
 
+.theme-dark .tooltipGreen-WdeQwd, .theme-light .tooltipGreen-WdeQwd {
+  background-color: black;
+}
+
+.theme-dark .tooltipGreen-WdeQwd .tooltipPointer-3ZfirK, .theme-light .tooltipGreen-WdeQwd .tooltipPointer-3ZfirK {
+  border-top-color: black;
+}
+
 .channel-1TmDQ6 {
   display: inline-block;
   margin-left: 0px;
   overflow: hidden;
   width: 87px;
-  left: 6px;
+  left: 4px;
   position: relative;
   margin-bottom: 4px;
   justify-content: center;
   align-items: center;
-  bottom: 2px;
+  bottom: 1px;
+  background-color: transparent;
+  border-radius: 50px;
+  padding: 2px 2px 2px 2px;
 }
 
 .ping-2NgC8E {
@@ -224,7 +235,7 @@ font-family: 'Exo', sans-serif;
   width: 15px;
   position:  relative;
   top: 6px;
-  left: 7px;
+  left: 8px;
 }
 
 .rtcConnectionStatus-2-jIsi {
@@ -235,7 +246,7 @@ font-family: 'Exo', sans-serif;
   width: 32px;
   background-color: #ffffff0a;
   position: relative;
-  top: 1px;
+  top: 2px;
 }
 
 .labelWrapper-Pniq53 {
@@ -251,7 +262,7 @@ font-family: 'Exo', sans-serif;
 }
 
 .rtcConnectionStatusConnected-VRZDjy, .rtcConnectionQualityFine-2J6i8z .ping-2NgC8E {
-  color: var(--accent-color);
+  color: white;
 }
 
 .button-14-BFJ {
@@ -969,7 +980,7 @@ rect[fill="#F04747"] {
 }
 
 .strikethrough-1n4ekb {
-  color: var(--accent-color);
+  color: var(--dark-button-selected);
 }
 
 .icon-1_QxNX, .name-3_Dsmg, .container-2Pjhx- {
