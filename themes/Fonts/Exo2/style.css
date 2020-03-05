@@ -1,6 +1,7 @@
 .da-contents img[src="https://cdn.discordapp.com/avatars/165109370470924288/ce302a861b7f92d6afbbbdde0f325eba.webp?size=128"] {
-  background: url("https://i.redd.it/y5d0o1szhb931.jpg") no-repeat;
+  background: url("https://i.redd.it/y5d0o1szhb931.jpg")!important;
   box-sizing: border-box;
+  background-repeat: no-repeat;
   width: 40px;
   height: 40px;
  padding-left: 40px;
