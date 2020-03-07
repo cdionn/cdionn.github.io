@@ -37,6 +37,9 @@
   --blur-radius: blur(30px);
   --vibrancy: saturate(1.5) contrast(120%);
 
+  --shadow:	0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  --shadow-hover:	0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
   --online: #30cbff;
   --idle: #fffc47;
   --dnd: #fc4460;
@@ -1968,6 +1971,8 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
   background-color: white!important;
   color: var(--accent-color)!important;
   border-color: transparent!important;
+  transform: scale(1.02);
+  box-shadow: var(--shadow-hover);
 }
 
 /* Still  */
@@ -1978,6 +1983,7 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
   color: var(--text-color)!important;
   border: solid 1px transparent!important;
   font-weight: bold;
+  box-shadow: var(--shadow);
 }
 
 .lookInverted-2D7oAl.colorBrand-3pXr91 {
