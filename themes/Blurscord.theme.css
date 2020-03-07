@@ -1612,7 +1612,15 @@ canvas[width="210"]{
 }
 
 .scroller-305q3I {
-  background-color: #000000c5;
+  background-color: black;
+}
+
+.theme-dark .passthroughSelected-1Eq0Kl {
+    background: #252525;
+}
+
+.theme-dark .denySelected-1mh2mZ {
+  border-color: black;
 }
 
 .checkbox-3kaeSU .checkboxInner-3yjcPe .checkboxElement-1qV33p:checked+span {
