@@ -112,6 +112,7 @@ font-family: 'Exo', sans-serif;
    backdrop-filter: blur(15px);
  }
 
+
 .app-2rEoOp {
   background-image: var(--wallpaper)!important;
   background-size: cover;
@@ -301,10 +302,6 @@ path[fill="#7289da"] {
 }
 
 .rtcConnectionStatusConnected-VRZDjy, .rtcConnectionQualityFine-2J6i8z .ping-2NgC8E {
-  color: white;
-}
-
-.button-14-BFJ {
   color: white;
 }
 
@@ -921,7 +918,6 @@ rect[fill="#F04747"] {
   transition: var(--animation);
 }
 
-.container-3baos1:hover { transform: scale(1.03); }
 .container-3baos1 {
   background-color: #ffffff0a;
   margin: 0px 10px 10px 10px;
@@ -957,10 +953,13 @@ rect[fill="#F04747"] {
   box-shadow: none;
 }
 
+.button-14-BFJ:hover { transform: scale(1.05); }
 .button-14-BFJ {
   border-radius: 50px;
   background-color: #ffffff0a;
   margin: 0px 3px 0px 3px;
+  transition: var(--animation);
+  color: white;
   transition: var(--animation);
 }
 
