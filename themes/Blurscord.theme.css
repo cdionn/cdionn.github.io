@@ -1,16 +1,14 @@
 ﻿/**
  * @name Blurscord
  * @author Dion#0303
- * @version 1.0.5
+ * @version 1.0.6
  * @description Discord in a blurry style.
  * @website https://cdionn.github.io/discordtheme.html
 */
 /*
 ///////////////////////////////////////
 
- Created by Dion
- Please do not edit this theme
- and post it as yours.
+ Made by Dion#0303
 
 ///////////////////////////////////////
 
@@ -21,7 +19,7 @@
 @import url('https://cdionn.github.io/themes/Snippets/iosbuttons.css');
 
 :root {
-  --version:"1.0.5";
+  --version:"1.0.6";
 
   --accent-color: #941432;
   --text-color: white;
