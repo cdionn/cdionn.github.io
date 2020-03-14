@@ -2257,6 +2257,24 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
   border-radius: 10px;
 }
 
+.uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
+  background-color: transparent;
+}
+
+.uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .inner-3nWsbo {
+  background-color: var(--dark-blur);
+  backdrop-filter: var(--blur-radius) var(--vibrancy);
+  padding: 15px;
+  animation: page 300ms 1;
+  border:none;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 0px black;
+}
+
+.uploadArea-3QgLtW {
+  background-color: var(--dark-blur);
+}
+
 .markup-2BOw-j code {
   background-color: #000000a5;
   border-radius: 10px;
