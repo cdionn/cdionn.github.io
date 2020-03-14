@@ -211,6 +211,10 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 /* UI+  */
 
+.cancelButton-3hVEV6, .downloadButton-23tKQp {
+  color: #a5a5a5;
+}
+
 .exclamation-1s030J,.setup-20WnUG, .share-6HJeeD, .mobile-2-kNoD, .twitter-3GhgHP {
     filter: brightness(2);
 }
