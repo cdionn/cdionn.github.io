@@ -1528,12 +1528,11 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 }
 
 .theme-dark .menu-Sp6bN1 {
-    background: #08080880;
+    background: #080808;
 		border-radius: 0px;
 		box-shadow: var(--shadow);
 		transition: var(--animation);
 		border: solid 1px transparent;
-		backdrop-filter:blur(15px);
 }
 
 .theme-dark .menu-Sp6bN1:hover {
@@ -3949,6 +3948,21 @@ img[alt] {
 	border-radius: 0px;
 }
 
+img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
+	filter: invert(1) grayscale(1);
+}
+
+img[src="/assets/cef02719c12d8aaf38894c16dca7fbe6.svg"] {
+	filter: brightness(2) grayscale(1);
+}
+
+.editChannelButton-1dYN-G {
+	color: white;
+}
+
+.default-1mVZrv {
+	margin-top: 15px;
+}
 
 .theme-dark #bd-settings-sidebar .ui-tab-bar-item:hover {
 	background-color: #ffffff0a!important;
@@ -4309,6 +4323,7 @@ img[alt] {
 #bda-qem button.active, #bda-qem button.active:hover {
 	background-color: var(--accent-color);
 	opacity: 0.8;
+	color: var(--text-color);
 }
 
 #bda-qem button {
@@ -5469,7 +5484,6 @@ a {
 	background-color: #000!important;
 	opacity: 0.95!important;
 	animation: backdrop 300ms 1;
-	backdrop-filter: blur(5px);
 }
 
 .defaultValue-3gC7yw .markValue-2DwdXI {

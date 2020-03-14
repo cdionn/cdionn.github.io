@@ -1,7 +1,7 @@
 ﻿/**
  * @name Blurscord
  * @author Dion#0303
- * @version 1.0.7
+ * @version 1.0.8
  * @description Discord in a blurry style.
  * @website https://cdionn.github.io/discordtheme.html
 */
@@ -19,7 +19,7 @@
 @import url('https://cdionn.github.io/themes/Snippets/iosbuttons.css');
 
 :root {
-  --version:"1.0.7";
+  --version:"1.0.8";
 
   --accent-color: #941432;
   --text-color: white;
@@ -137,6 +137,14 @@ font-family: 'Exo', sans-serif;
 /* Chat */
 .messages-3amgkR, .chat-3bRxxu, .container-1r6BKw.themed-ANHk51 {
   background-color: transparent;
+}
+
+.default-1mVZrv {
+  margin-top: 15px;
+}
+
+img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
+  filter: invert(1) grayscale(1);
 }
 
 .wordmarkWindows-1v0lYD {
@@ -1432,6 +1440,19 @@ canvas[width="210"]{
 
 /* Einstellungen UI */
 
+img[src="/assets/cef02719c12d8aaf38894c16dca7fbe6.svg"] {
+  filter: invert(1) grayscale(1) brightness(2);
+}
+
+img[src="/assets/bbc9e257da833d4b7d22c82a1de8a0a0.svg"] {
+  filter: invert(1) grayscale(1) brightness(2);
+}
+
+.container-2VW0UT {
+  background-color: var(--dark-blur)!important;
+  backdrop-filter: var(--blur-radius) var(--vibrancy);
+}
+
 .disabled-3I9jyo {
   color: #8c8c8c;
 }
@@ -1481,10 +1502,34 @@ canvas[width="210"]{
   box-shadow: none;
 }
 
-.theme-dark .userSettingsVoice-iwdUCU .previewOverlay-2O7_KC {
+.theme-dark .notches-1sAcEM.gray-3_LNYR {
+  background: none;
+}
+
+.theme-dark .progress-1IcQ3A {
+  background-color: var(--dark-blur);
+  backdrop-filter: var(--blur-radius) var(--vibrancy);
+}
+
+.container-3PXSwK {
+  border-radius: 0px;
+  transition: var(--animation);
+}
+
+.userSettingsVoice-iwdUCU .previewContainer-37c2Si {
   background-color: var(--dark-blur);
   border-color: var(--dark-blur);
   backdrop-filter: var(--blur-radius) var(--vibrancy);
+}
+
+.theme-dark .userSettingsVoice-iwdUCU .previewOverlay-2O7_KC {
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 0px;
+}
+
+.userSettingsVoice-iwdUCU .sliderBar-3DezvM.speaking-2bFhO4 {
+  background-color: var(--accent-color);
 }
 
 .userSettingsSecurityImage-21pI_Q,.theme-dark .emptyIconFriends-BrjhY9 {
@@ -1869,25 +1914,12 @@ canvas[width="210"]{
   transition: var(--animation);
 }
 
-.theme-dark .notches-1sAcEM.gray-3_LNYR {
-  background: none;
-}
-
-.theme-dark .progress-1IcQ3A {
-  background-color: var(--dark-blur);
-  border-radius: 50px;
-}
-
-.container-3PXSwK {
-  border-radius: 50px;
-}
-
 .theme-dark .bar-2Qqk5Z[style*="background: rgb(105, 196, 154)"] {
 background: var(--dark-blur)!important;
 }
 
 .userSettingsVoice-iwdUCU .inputSensitivityToggle-2LKb8o.manual-36Evg9 .microphone-2rtdHw .fill-3eUagR {
-  background-color: #ffffff;
+  background-color: var(--accent-color);
 }
 
 .container-3PXSwK[style*="background: linear-gradient(to right, rgb(251, 184, 72), rgb(67, 181, 129))"] {
@@ -1989,6 +2021,16 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
   color: var(--text-color)!important;
   border: solid 1px transparent!important;
   font-weight: bold;
+}
+
+.lookOutlined-3sRXeN.colorRed-1TFJan {
+  color: white;
+  border-color: white;
+}
+
+.lookOutlined-3sRXeN.colorRed-1TFJan:hover {
+  color: #ff6161;
+  border-color: #ff6161;
 }
 
 .theme-dark .inviteRow-2L02ae{ transition: }
@@ -2506,7 +2548,7 @@ rect[fill="rgba(67, 181, 129, 1)"], .pointerEvents-2zdfdO[mask*="url(#svg-mask-s
 }
 
 /* Links  */
-.anchor-3Z-8Bb {
+.anchor-3Z-8Bb, .editChannelButton-1dYN-G {
   color: white;
   transition: var(--animation);
 }
