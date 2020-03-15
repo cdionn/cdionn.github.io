@@ -215,6 +215,35 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 /* UI+  */
 
+path[fill="rgb(71,112,228)"] {
+  display:none;
+}
+
+path[fill="rgb(156,184,255)"] {
+  fill: var(--accent-color)!important;
+  filter: grayscale(1)!important;
+}
+
+path[fill="rgb(128,167,255)"] {
+  fill: var(--accent-color)!important;
+}
+
+path[fill="rgb(202,218,247)"] {
+  fill: var(--text-color)!important;
+}
+
+path[d=" M0,20.691999435424805 C0,20.691999435424805 0,20.691999435424805 0,20.691999435424805 C11.380999565124512,20.691999435424805 20.691999435424805,11.380000114440918 20.691999435424805,0 C20.691999435424805,-11.380000114440918 11.380999565124512,-20.691999435424805 0,-20.691999435424805 C-11.380999565124512,-20.691999435424805 -20.691999435424805,-11.380000114440918 -20.691999435424805,0 C-20.691999435424805,11.380000114440918 -11.380999565124512,20.691999435424805 0,20.691999435424805z"] {
+  fill: var(--text-color)!important;
+}
+
+path[fill="rgb(184,208,255)"] {
+  fill: #00000020!important;
+}
+
+.noticeDanger-7u-yT9 {
+    background-color: #f36d53;
+}
+
 .cancelButton-3hVEV6, .downloadButton-23tKQp {
   color: #a5a5a5;
 }
@@ -2467,7 +2496,9 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
   border-bottom-right-radius: 20px;
   border:solid 1px black;
   padding: 10px 0px 10px 0px;
+  transition: var(--animation);
 }
+
 
 /* Bild Backdrop  */
 .inner-1ilYF7 {
