@@ -14,9 +14,10 @@
 
 */
 
-@import url('https://fonts.googleapis.com/css?family=Exo:100,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed:400,500,600&display=swap');
 @import url('https://cdionn.github.io/themes/Fonts/Segoe/style.css');
 @import url('https://cdionn.github.io/themes/Snippets/iosbuttons.css');
+@import url('https://fonts.googleapis.com/css?family=Fira+Code:400&display=swap');
 
 :root {
   --version:"1.0.8";
@@ -45,7 +46,7 @@
 }
 
 body, div, span, textarea, ::-webkit-input-placeholder {
-    font-family: 'Exo', sans-serif;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
 }
 
 .hljs,
@@ -160,6 +161,9 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
   color: #ffffff39;
   left: 10px;
   width: 300px;
+  font-family: 'Fira Code', monospace;
+  font-style: italic;
+  text-transform: uppercase;
 }
 
 .messages-3amgkR {
