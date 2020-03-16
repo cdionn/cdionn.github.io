@@ -215,6 +215,19 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 /* UI+  */
 
+.theme-dark .path-92Hmty, .theme-dark .path2-1q7bG_ {
+  stroke: var(--accent-color);
+}
+
+.theme-dark .path3-2l9TIX {
+  stroke: var(--accent-color);
+  opacity: 0.4;
+}
+
+.empty-388osJ {
+  fill: #ffffff0a;
+}
+
 path[fill="rgb(71,112,228)"] {
   display:none;
 }
