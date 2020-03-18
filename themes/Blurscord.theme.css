@@ -215,6 +215,12 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 /* UI+  */
 
+.incomingCallInner-2VmFiR {
+  background: var(--dark-blur);
+  backdrop-filter: var(--blur-radius) var(--vibrancy);
+  border: none;
+}
+
 .callAvatarBorder-uWp8Ga.voice-3bPYC-.speaking-B2MXPi {
   box-shadow: inset 0 0 0 4px var(--accent-color);
 }
