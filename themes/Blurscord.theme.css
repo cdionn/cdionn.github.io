@@ -1,7 +1,7 @@
 ﻿/**
  * @name Blurscord
  * @author Dion#0303
- * @version 1.0.8
+ * @version 1.0.9
  * @description Discord in a blurry style.
  * @website https://cdionn.github.io/discordtheme.html
 */
@@ -20,7 +20,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Code:400&display=swap');
 
 :root {
-  --version:"1.0.8";
+  --version:"1.0.9";
 
   --accent-color: #941432;
   --text-color: white;
@@ -262,6 +262,10 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 .video-1kutKI {
   border-radius: 3px!important;
+}
+
+.theme-dark .imageError-2OefUi {
+  filter: invert(1) grayscale(1);
 }
 
 .incomingCallInner-2VmFiR {
