@@ -215,6 +215,55 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 /* UI+  */
 
+.itemBase-tz5SeC.brand-3igrJY, .itemBase-tz5SeC.brand-3igrJY:hover {
+  color: var(--accent-color);
+}
+
+.button-1I8KM5 {
+  background-color: var(--dark-button-hover);
+  transition: var(--animation);
+}
+
+.button-1I8KM5:hover {
+  background-color: #ffffff09;
+}
+
+.itemSubMenu-1vN_Yn {
+  transition: var(--animation);
+}
+
+.itemBase-tz5SeC {
+  color: white;
+}
+
+.video-1FfuMD.noChat-3nt48u .videoBottom-2_HYXG {
+  margin-bottom: 45px;
+}
+
+.callAvatarBorder-uWp8Ga.video-3SrWSI.speaking-B2MXPi {
+  box-shadow: inset 0 0 0 3px var(--accent-color);
+}
+
+.joinVideoCallButton-beESDO {
+  background-color: var(--accent-color);
+}
+
+.callAvatarBorder-uWp8Ga.video-3SrWSI.soundsharing-1ne9xH {
+  box-shadow: inset 0 0 0 2px var(--accent-color);
+}
+
+.callAvatarBorder-uWp8Ga.video-3SrWSI.selected-2tLJQ6.notSpeaking-a3bIkW.notSoundsharing-2sYlLk {
+  box-shadow: inset 0 0 0 2px gray;
+}
+
+.joinVideoCallButton-beESDO .underlay-3pibKJ, .joinVideoCallButton-beESDO .callDivider-231Syj {
+  background-color: #ffffff20;
+}
+
+.video-1kutKI {
+  border-radius: 3px!important;
+}
+
 .incomingCallInner-2VmFiR {
   background: var(--dark-blur);
   backdrop-filter: var(--blur-radius) var(--vibrancy);
