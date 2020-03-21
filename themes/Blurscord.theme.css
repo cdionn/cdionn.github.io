@@ -1496,7 +1496,13 @@ canvas[width="210"]{
 }
 
 .root-25RxKh, .theme-dark .container-2oTpPc {
-  background-color: transparent;
+  background-color: var(--dark-blur);
+  border-radius: 20px;
+  backdrop-filter: var(--blur-radius) var(--vibrancy);
+}
+
+.videoControls-3glNbo {
+  border-radius: 20px;
 }
 
 .memberListItem-2ZX2pl {
