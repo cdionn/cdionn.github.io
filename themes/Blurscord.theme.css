@@ -1,7 +1,7 @@
 ﻿/**
  * @name Blurscord
  * @author Dion#0303
- * @version 1.0.9
+ * @version 1.1.0
  * @description Discord in a blurry style.
  * @website https://cdionn.github.io/discordtheme.html
 */
@@ -20,7 +20,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Code:400&display=swap');
 
 :root {
-  --version:"1.0.9";
+  --version:"1.1.0";
 
   --accent-color: #941432;
   --text-color: white;
@@ -215,6 +215,22 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 /* UI+  */
 
+.title-2Dc-Cb {
+  color: white;
+}
+
+.avatarUploaderInner-3UNxY3>* {
+  color: var(--text-color);
+}
+
+.theme-light .avatar-21196O {
+  border-color: var(--text-color);
+}
+
+.avatarUploaderInner-3UNxY3 {
+  background-color: var(--accent-color);
+}
+
 .emptyPreview-2kuSNe {
   background: #080808;
 }
@@ -333,21 +349,39 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 }
 
 .wrapper-29NfPK.fullScreen-3DKbL8 .actions-2vadYq .center-1Vp33r, .wrapper-29NfPK.fullScreen-3DKbL8 .actions-2vadYq .side-kO0bwV, .wrapper-29NfPK.noChat-2qlG4B .center-1Vp33r, .wrapper-29NfPK.noChat-2qlG4B .side-kO0bwV, .wrapper-29NfPK.normal-2GSW0u .center-1Vp33r, .wrapper-29NfPK.normal-2GSW0u .side-kO0bwV {
-  background-color: #ffffff0a;
-  border-color: transparent;
+  background-color: var(--dark-blur);
+  border: 2px solid #08080840;
   border-radius: 50px;
+  backdrop-filter: blur(20px) var(--vibrancy);
+  padding: 2px;
+}
+
+.miniPlayer-3Ms77e, .videoControls-3glNbo {
+  border-radius: 0px
+}
+
+.wrapper-29NfPK.noChat-2qlG4B .center-1Vp33r {
+  margin-bottom: 25px;
 }
 
 .video-1FfuMD.fullScreen-lH2Q2c .videoBottom-2_HYXG, .video-1FfuMD.noChat-3nt48u .videoBottom-2_HYXG, .video-1FfuMD.normal-1jW0uq .videoBottom-2_HYXG {
-  background-color: var(--dark-blur);
-  margin: 20px;
-  width: 500px;
-  border-radius: 50px;
   transition: var(--animation);
-  backdrop-filter: var(--blur-radius) var(--vibrancy);
-  box-shadow: 0px 3px 7px 0px #00000080;
-  position: relative;
-  align-self: center;
+  transform: none;
+  animation: page2 500ms 1;
+}
+
+.theme-dark .elevationHigh-3A9Xbf {
+  border-radius: 20px;
+}
+
+.overlay-1NmNEg {
+  border-color: black;
+}
+
+.theme-dark .pictureInPictureVideo-20ZvXn {
+  box-shadow: 0 3px 10px 0px #00000050;
+  background-color: var(--dark-blur);
+
 }
 
 .wrapper-29NfPK .actions-2vadYq {
