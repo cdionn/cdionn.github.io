@@ -1069,8 +1069,12 @@ rect[fill="#F04747"] {
   transition: var(--animation);
 }
 
-.messagesPopoutWrap-1MQ1bW,.header-ykumBX {
+.messagesPopoutWrap-1MQ1bW,.header-ykumBX, .theme-dark .contentWrapper-3WC1ID {
   background-color: #000000a5;
+}
+
+.pill-1dHPfk {
+  background-color: black;
 }
 
 .messageGroupWrapper-o-Zw7G {
