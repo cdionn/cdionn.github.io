@@ -118,6 +118,7 @@ font-family: 'Exo', sans-serif;
   background-size: cover;
   background-color: none!important;
   background-repeat: no-repeat;
+  border: solid 2px black;
 }
 
 .appMount-3lHmkl, body {
