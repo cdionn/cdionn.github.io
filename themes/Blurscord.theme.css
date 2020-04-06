@@ -215,6 +215,23 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 /* UI+  */
 
+.theme-dark .quickSelectPopoutOption-opKBx9 {
+  transition: var(--animation);
+}
+
+.check-2by_h9 {
+  filter: grayscale(1) brightness(2);
+}
+
+.theme-dark .quickSelectPopout-X1hvgV {
+  background-color: var(--dark-blur);
+  backdrop-filter: var(--blur-radius) var(--vibrancy);
+}
+
+.resultsGroup-r_nuzN {
+  backdrop-filter: var(--blur-radius) var(--vibrancy);
+}
+
 .popoutRight-1veHKi.noArrow-2foL9g {
   backdrop-filter: var(--blur-radius) var(--vibrancy);
 }
