@@ -1,7 +1,7 @@
 ﻿/**
  * @name Blurscord
  * @author Dion#0303
- * @version 1.1.2
+ * @version 1.1.3
  * @description Discord in a blurry style.
  * @website https://cdionn.github.io/discordtheme.html
 */
@@ -19,7 +19,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Code:400&display=swap');
 
 :root {
-  --version:"1.1.2";
+  --version:"1.1.3";
 
   --accent-color: #941432;
   --text-color: white;
@@ -164,6 +164,7 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
   font-family: 'Fira Code', monospace;
   font-style: italic;
   text-transform: uppercase;
+  top: 6px;
 }
 
 .messages-3amgkR {
@@ -215,6 +216,25 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 /* UI+  */
 
+.slateTextArea-1Mkdgw {
+  color: white;
+}
+
+.channelTextArea-rNsIhG {
+  transition: var(--animation);
+}
+
+.channelTextArea-rNsIhG:focus-within {
+  box-shadow: 0px 3px 5px 0px #00000050;
+  transform: scale(1.005);
+  background-color: black;
+}
+
+::selection {
+  background-color:var(--accent-color)!important;
+  color: var(--text-color);
+}
+
 .theme-dark .quickSelectPopoutOption-opKBx9 {
   transition: var(--animation);
 }
@@ -226,6 +246,7 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 .theme-dark .quickSelectPopout-X1hvgV {
   background-color: var(--dark-blur);
   backdrop-filter: var(--blur-radius) var(--vibrancy);
+  animation: page 300ms 1;
 }
 
 .resultsGroup-r_nuzN {
@@ -380,12 +401,17 @@ path[d="M21.1169 1.11603L22.8839 2.88403L19.7679 6.00003L22.8839 9.11603L21.1169
 }
 
 .centerButton-3CaNcJ {
-  background: rgba(33, 33, 33, 0.5);
-  backdrop-filter: var(--blur-radius) var(--vibrancy);
+  background: #080808;
+  transition: var(--animation);
 }
 
 .centerButton-3CaNcJ:hover {
-  background: rgba(37, 37, 37, 0.8);
+  background: #111111;
+  transform: scale(1.05);
+}
+
+.status-1WEaea.voice-3bPYC- {
+  background-color: #080808;
 }
 
 .controlButton-2MhVEL.leaveButton-2YnTyt:hover {
@@ -834,6 +860,10 @@ rect[fill="#F04747"] {
 
 .theme-dark #bd-settings-sidebar .ui-tab-bar-item:hover, .button-1ZiXG9:hover, .side-8zPYf6 .themed-OHr7kt.item-PXvHYJ:hover, .topPill-30KHOu .themed-OHr7kt.item-PXvHYJ:hover {
   background-color: var(--dark-button-hover);
+}
+
+.button-1ZiXG9:hover {
+  border-radius: 50px;
 }
 
 .gameIcon-_0rmMm:hover ,.assets-VMAukC:hover {transform: scale(1.03);}
@@ -1790,6 +1820,36 @@ canvas[width="210"]{
 
 /* Einstellungen UI */
 
+.bd-search-wrapper {
+  background-color: var(--dark-blur);
+  backdrop-filter: var(--blur-radius) var(--vibrancy);
+}
+
+.theme-dark .markValue-2DwdXI {
+  color: white;
+}
+
+.theme-dark .markDash-3hAolZ {
+  background-color: white;
+}
+
+.checkbox-1ix_J3[style*="background-color: rgb(114, 137, 218);"]{
+  background-color: var(--accent-color)!important;
+}
+
+.bd-addon-list a {
+  color: var(--accent-color);
+}
+
+.bd-switch {
+  background-color: var(--dark-blur);
+  backdrop-filter: var(--blur-radius) var(--vibrancy);
+}
+
+.bd-switch-checked {
+  background-color: var(--accent-color);
+}
+
 #bd-settings-sidebar .ui-tab-bar-header .bd-icon {
   fill: #ababab;
   transition: var(--animation);
@@ -2154,10 +2214,30 @@ img[src="/assets/bbc9e257da833d4b7d22c82a1de8a0a0.svg"] {
 }
 
 .theme-dark .focused-2bY0OD {
-  background-color: #ffffff10;
+  background-color: var(--dark-blur);
+  transition: var(--animation);
+  border-bottom-color: transparent;
+  backdrop-filter: var(--blur-radius) var(--vibrancy);
+}
+
+.theme-dark .container-3ayLPN {
+  background-color: var(--dark-blur);
+}
+
+.mediaBarInteractionVolume-3QZqYd {
+  animation: fadeIn 300ms 1;
   transition: var(--animation);
 }
 
+.theme-dark .queryContainer-RKFJW- {
+  transition: var(--animation);
+  background-color: var(--dark-blur);
+  backdrop-filter: var(--blur-radius) var(--vibrancy);
+}
+
+.controlIcon-35oS15 {
+  transition: var(--animation);
+}
 
 .total-3tKGEB:after {border-right-color: #0e0e0e;}
 .total-3tKGEB {background-color: #0e0e0e;}
@@ -2187,7 +2267,7 @@ img[src="/assets/bbc9e257da833d4b7d22c82a1de8a0a0.svg"] {
 #bd-settingspane-container .ui-switch-item {
   backdrop-filter: var(--blur-radius) var(--vibrancy);
   background-color: var(--dark-blur);
-  border-color: var(--dark-blur)!important;
+  border: 1px solid var(--dark-blur)!important;
   transition: var(--animation);
   padding: 10px;
   border-radius: 5px;
@@ -2214,10 +2294,6 @@ img[src="/assets/bbc9e257da833d4b7d22c82a1de8a0a0.svg"] {
 
 .item-26Dhrx:hover , .cardPrimary-1Hv-to:hover , .cardPrimaryEditable-3KtE4g:hover , .cardPrimaryOutline-29Ujqw:hover {
   background-color: var(--dark-blur-selected);
-}
-
-.theme-dark .container-3ayLPN {
-  background-color: #000000a5;
 }
 
 .theme-dark .option-96V44q:after {
