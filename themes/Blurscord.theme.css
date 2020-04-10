@@ -1,7 +1,7 @@
 ﻿/**
  * @name Blurscord
  * @author Dion#0303
- * @version 1.1.4
+ * @version 1.1.5
  * @description Discord in a blurry style.
  * @website https://cdionn.github.io/discordtheme.html
 */
@@ -19,7 +19,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Code:400&display=swap');
 
 :root {
-  --version:"1.1.4";
+  --version:"1.1.5";
 
   --accent-color: #941432;
   --text-color: white;
@@ -215,6 +215,20 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 }
 
 /* UI+  */
+
+.noiseCancellationPopout-iRK2A0 {
+  background-color: var(--dark-blur);
+  backdrop-filter: var(--blur-radius) var(--vibrancy);
+}
+
+.art-1GUxUB {
+  filter: grayscale(1);
+}
+
+.content-1DpZYB {
+  background: var(--dark-blur);
+  backdrop-filter: var(--blur-radius) var(--vibrancy);
+}
 
 .controlButton-2MhVEL.joinButton-1-UsTC {
   background: #5de4a7;
@@ -658,7 +672,7 @@ path[fill="#7289da"] {
   display: inline-block;
   margin-left: 0px;
   overflow: hidden;
-  width: 87px;
+  width: 44px;
   left: 4px;
   position: relative;
   margin-bottom: 0px;
@@ -674,10 +688,10 @@ path[fill="#7289da"] {
   display: inline-block;
   position: flex;
   height: 20px;
-  width: 15px;
+  width: 20px;
   position:  relative;
   top: 6px;
-  left: 8px;
+  left: 5px;
 }
 
 .rtcConnectionStatus-2-jIsi {
@@ -711,8 +725,8 @@ path[fill="#7289da"] {
   background-color: var(--dark-button-hover);
 }
 
-.rtcConnectionStatusConnected-VRZDjy, .rtcConnectionQualityFine-2J6i8z .ping-2NgC8E {
-  color: white;
+.rtcConnectionQualityFine-2J6i8z .pingForeground-2uAOZ3 {
+  color: white!important;
 }
 
 .theme-dark .message-2qRu38 {
@@ -2482,7 +2496,7 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 
 /* Hover  */
 
-.lookFilled-1Gx00P.colorRed-1TFJan:hover, .theme-dark .changeButton-1uBsOn:hover, .standardSidebarView-3F1I7i #bd-customcss-attach-controls button:hover, .bd-detached-css-editor #bd-customcss-attach-controls button:hover, .theme-dark .join-33Tr-7:hover .actionButton-2PeQbJ, .theme-light .join-33Tr-7:hover .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91:hover, .bd-pfbtn:hover, .lookFilled-1Gx00P.colorGreen-29iAKY:hover, .lookOutlined-3sRXeN.colorBrand-3pXr91:hover, .lookFilled-1Gx00P.colorBrand-3pXr91:hover, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
+.lookFilled-1Gx00P.colorGrey-2DXtkV:hover, .content-1DpZYB .button-2sk-Wq:hover, .lookFilled-1Gx00P.colorRed-1TFJan:hover, .theme-dark .changeButton-1uBsOn:hover, .standardSidebarView-3F1I7i #bd-customcss-attach-controls button:hover, .bd-detached-css-editor #bd-customcss-attach-controls button:hover, .theme-dark .join-33Tr-7:hover .actionButton-2PeQbJ, .theme-light .join-33Tr-7:hover .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91:hover, .bd-pfbtn:hover, .lookFilled-1Gx00P.colorGreen-29iAKY:hover, .lookOutlined-3sRXeN.colorBrand-3pXr91:hover, .lookFilled-1Gx00P.colorBrand-3pXr91:hover, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
   background-color: white!important;
   color: var(--accent-color)!important;
   border-color: transparent!important;
@@ -2490,7 +2504,7 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 }
 
 /* Still  */
-.lookFilled-1Gx00P.colorRed-1TFJan, .lookOutlined-3sRXeN.colorGreen-29iAKY, .theme-dark .changeButton-1uBsOn, .standardSidebarView-3F1I7i #bd-customcss-attach-controls button, .bd-detached-css-editor #bd-customcss-attach-controls button, .theme-dark .join-33Tr-7 .actionButton-2PeQbJ, .theme-light .join-33Tr-7 .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91, .lookFilled-1Gx00P.colorGreen-29iAKY,.lookOutlined-3sRXeN.colorBrand-3pXr91,.bd-pfbtn,.lookFilled-1Gx00P.colorBrand-3pXr91, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6, .bda-slist .bda-footer button {
+.lookFilled-1Gx00P.colorGrey-2DXtkV, .content-1DpZYB .button-2sk-Wq, .lookFilled-1Gx00P.colorRed-1TFJan, .lookOutlined-3sRXeN.colorGreen-29iAKY, .theme-dark .changeButton-1uBsOn, .standardSidebarView-3F1I7i #bd-customcss-attach-controls button, .bd-detached-css-editor #bd-customcss-attach-controls button, .theme-dark .join-33Tr-7 .actionButton-2PeQbJ, .theme-light .join-33Tr-7 .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91, .lookFilled-1Gx00P.colorGreen-29iAKY,.lookOutlined-3sRXeN.colorBrand-3pXr91,.bd-pfbtn,.lookFilled-1Gx00P.colorBrand-3pXr91, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6, .bda-slist .bda-footer button {
   background-color: var(--accent-color)!important;
   transition: var(--animation);
   border-color: transparent!important;
