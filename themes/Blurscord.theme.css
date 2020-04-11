@@ -1894,6 +1894,30 @@ canvas[width="210"]{
 
 /* Einstellungen UI */
 
+.colorMuted-HdFt4q {
+    color: #353535;
+}
+
+.anchor-3Z-8Bb[title="Twitter"] {
+  display: none;
+}
+
+.anchor-3Z-8Bb[title="Facebook"] {
+  display: none;
+}
+
+.anchor-3Z-8Bb[title="Instagram"] {
+  display: none;
+}
+
+.anchor-3Z-8Bb[title="BandagedBD"] {
+  display: none;
+}
+
+.socialLinks-3jqNFy {
+  padding: none;
+}
+
 .theme-dark .gameNameInput-385LoS:focus, .theme-dark .gameNameInput-385LoS:hover {
   background-color: #080808;
   border-color: transparent;
@@ -3069,9 +3093,9 @@ rect[fill="rgba(67, 181, 129, 1)"], .pointerEvents-2zdfdO[mask*="url(#svg-mask-s
   display:block;
 	position: relative;
 	background: var(--dark-button-hover);
-  padding: 2px 5px;
+  padding: 5px;
 	text-transform: uppercase;
-	margin: 0px;
+	margin: 0px 0px 20px 0px;
   border-radius: 50px;
   font-weight: bold;
   margin-top: 2px;
