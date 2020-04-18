@@ -1,7 +1,7 @@
 ﻿/**
  * @name Blurscord
  * @author Dion#0303
- * @version 1.1.7
+ * @version 1.1.8
  * @description Discord in a blurry style.
  * @website https://cdionn.github.io/discordtheme.html
 */
@@ -19,7 +19,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Code:400&display=swap');
 
 :root {
-  --version:"1.1.7";
+  --version:"1.1.8";
 
   --accent-color: #941432;
   --text-color: white;
@@ -686,7 +686,7 @@ path[fill="#7289da"] {
   display: inline-block;
   margin-left: 0px;
   overflow: hidden;
-  width: 44px;
+  width: 80px;
   left: 4px;
   position: relative;
   margin-bottom: 0px;
@@ -698,7 +698,7 @@ path[fill="#7289da"] {
   padding: 2px 2px 2px 2px;
 }
 
-.ping-2NgC8E.smallPing-R4na2o {
+.ping-2NgC8E {
   display: inline-block;
   position: flex;
   height: 20px;
@@ -1355,11 +1355,19 @@ rect[fill="#F04747"] {
   filter: grayscale(1);
 }
 
-.container-1giJp5, .activityPanel-28dQGo {
+.activityPanel-28dQGo {
   border-bottom-color: transparent;
   background-color: #ffffff0a;
   margin: 0px 10px 5px 10px;
   border-radius: 50px;
+  transition: var(--animation);
+}
+
+.container-1giJp5 {
+  border-bottom-color: transparent;
+  background-color: #ffffff0a;
+  margin: 0px 10px 5px 10px;
+  border-radius: 10px;
   transition: var(--animation);
 }
 
@@ -2571,8 +2579,9 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 .lookFilled-1Gx00P.colorGrey-2DXtkV:hover, .content-1DpZYB .button-2sk-Wq:hover, .lookFilled-1Gx00P.colorRed-1TFJan:hover, .theme-dark .changeButton-1uBsOn:hover, .standardSidebarView-3F1I7i #bd-customcss-attach-controls button:hover, .bd-detached-css-editor #bd-customcss-attach-controls button:hover, .theme-dark .join-33Tr-7:hover .actionButton-2PeQbJ, .theme-light .join-33Tr-7:hover .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91:hover, .bd-pfbtn:hover, .lookFilled-1Gx00P.colorGreen-29iAKY:hover, .lookOutlined-3sRXeN.colorBrand-3pXr91:hover, .lookFilled-1Gx00P.colorBrand-3pXr91:hover, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
   background-color: black!important;
   color: white!important;
-  border-color: white!important;
+  border-color: #111111!important;
   transform: scale(1.02);
+  border-radius: 50px;
 }
 
 /* Still  */
@@ -2583,6 +2592,7 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
   color: var(--text-color)!important;
   border: solid 1px transparent!important;
   font-weight: bold;
+  border-radius: 50px;
 }
 
 .lookGhost-2Fn_0-.colorGrey-2DXtkV {
