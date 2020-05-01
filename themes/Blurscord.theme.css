@@ -1,7 +1,7 @@
 ﻿/**
  * @name Blurscord
  * @author Dion#0303
- * @version 1.1.8
+ * @version 1.1.9
  * @description Discord in a blurry style.
  * @website https://cdionn.github.io/discordtheme.html
 */
@@ -19,11 +19,11 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Code:400&display=swap');
 
 :root {
-  --version:"1.1.8";
+  --version:"1.1.9";
 
   --accent-color: #941432;
   --text-color: white;
-  --wallpaper: url("https://cdionn.github.io/themes/Blurscord/background2.png");
+  --wallpaper: url("https://images.unsplash.com/photo-1586809774586-7be6449e517a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
 
   --light-blur:#ffffff40;
   --light-blur-hover:#ffffff30;
@@ -215,6 +215,26 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 }
 
 /* UI+  */
+
+.art-AMjjcG {
+  filter: grayscale(1);
+}
+
+.pointer-3ClhC2 {
+  border-top-color: var(--accent-color);
+}
+
+.container-1giJp5 {
+  border-bottom-color: transparent;
+  background-color: #ffffff0a;
+  margin: 0px 10px 5px 10px;
+  border-radius: 5px;
+  transition: var(--animation);
+}
+
+.actionButtons-14eAc_ {
+
+}
 
 .toolbar-2bjZV7:before {
   border-top-color: var(--dark-blur);
@@ -912,6 +932,11 @@ rect[fill="#F04747"] {
   color: var(--accent-color);
 }
 
+.guildsError-b7zR5H {
+  background-color: var(--dark-blur);
+  border-color: var(--accent-color);
+}
+
 .guildIconExpired-2Qcq05 {
   background-color: var(--dark-button-hover);
 }
@@ -1295,6 +1320,11 @@ rect[fill="#F04747"] {
   background-color: var(--light-blur-selected);
 }
 
+.content-3O0wBS {
+  background-color: var(--dark-blur);
+  backdrop-filter: var(--blur-radius) var(--vibrancy);
+}
+
 .wrapper-1ucjTd:hover .content-3at_AU {
   background-color: var(--dark-button-hover);
 }
@@ -1360,14 +1390,6 @@ rect[fill="#F04747"] {
   background-color: #ffffff0a;
   margin: 0px 10px 5px 10px;
   border-radius: 50px;
-  transition: var(--animation);
-}
-
-.container-1giJp5 {
-  border-bottom-color: transparent;
-  background-color: #ffffff0a;
-  margin: 0px 10px 5px 10px;
-  border-radius: 10px;
   transition: var(--animation);
 }
 
@@ -2576,7 +2598,7 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 
 /* Hover  */
 
-.lookFilled-1Gx00P.colorGrey-2DXtkV:hover, .content-1DpZYB .button-2sk-Wq:hover, .lookFilled-1Gx00P.colorRed-1TFJan:hover, .theme-dark .changeButton-1uBsOn:hover, .standardSidebarView-3F1I7i #bd-customcss-attach-controls button:hover, .bd-detached-css-editor #bd-customcss-attach-controls button:hover, .theme-dark .join-33Tr-7:hover .actionButton-2PeQbJ, .theme-light .join-33Tr-7:hover .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91:hover, .bd-pfbtn:hover, .lookFilled-1Gx00P.colorGreen-29iAKY:hover, .lookOutlined-3sRXeN.colorBrand-3pXr91:hover, .lookFilled-1Gx00P.colorBrand-3pXr91:hover, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
+.content-3O0wBS .button-3zdF3z:hover, .lookFilled-1Gx00P.colorGrey-2DXtkV:hover, .content-1DpZYB .button-2sk-Wq:hover, .lookFilled-1Gx00P.colorRed-1TFJan:hover, .theme-dark .changeButton-1uBsOn:hover, .standardSidebarView-3F1I7i #bd-customcss-attach-controls button:hover, .bd-detached-css-editor #bd-customcss-attach-controls button:hover, .theme-dark .join-33Tr-7:hover .actionButton-2PeQbJ, .theme-light .join-33Tr-7:hover .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91:hover, .bd-pfbtn:hover, .lookFilled-1Gx00P.colorGreen-29iAKY:hover, .lookOutlined-3sRXeN.colorBrand-3pXr91:hover, .lookFilled-1Gx00P.colorBrand-3pXr91:hover, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
   background-color: black!important;
   color: white!important;
   border-color: #111111!important;
@@ -2585,7 +2607,7 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 }
 
 /* Still  */
-.lookFilled-1Gx00P.colorGrey-2DXtkV, .content-1DpZYB .button-2sk-Wq, .lookFilled-1Gx00P.colorRed-1TFJan, .lookOutlined-3sRXeN.colorGreen-29iAKY, .theme-dark .changeButton-1uBsOn, .standardSidebarView-3F1I7i #bd-customcss-attach-controls button, .bd-detached-css-editor #bd-customcss-attach-controls button, .theme-dark .join-33Tr-7 .actionButton-2PeQbJ, .theme-light .join-33Tr-7 .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91, .lookFilled-1Gx00P.colorGreen-29iAKY,.lookOutlined-3sRXeN.colorBrand-3pXr91,.bd-pfbtn,.lookFilled-1Gx00P.colorBrand-3pXr91, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6, .bda-slist .bda-footer button {
+.content-3O0wBS .button-3zdF3z, .lookFilled-1Gx00P.colorGrey-2DXtkV, .content-1DpZYB .button-2sk-Wq, .lookFilled-1Gx00P.colorRed-1TFJan, .lookOutlined-3sRXeN.colorGreen-29iAKY, .theme-dark .changeButton-1uBsOn, .standardSidebarView-3F1I7i #bd-customcss-attach-controls button, .bd-detached-css-editor #bd-customcss-attach-controls button, .theme-dark .join-33Tr-7 .actionButton-2PeQbJ, .theme-light .join-33Tr-7 .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91, .lookFilled-1Gx00P.colorGreen-29iAKY,.lookOutlined-3sRXeN.colorBrand-3pXr91,.bd-pfbtn,.lookFilled-1Gx00P.colorBrand-3pXr91, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6, .bda-slist .bda-footer button {
   background-color: var(--accent-color)!important;
   transition: var(--animation);
   border-color: transparent!important;
