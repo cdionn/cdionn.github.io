@@ -69,20 +69,20 @@ font-family: 'Exo', sans-serif;
    text-align: center;
    align-items: center;
    justify-content: center;
-   color: #ffffff3f;
+   color: white;
    position: absolute;
    display: flex;
    height: inherit;
    width: inherit;
    background: black;
-   animation: load 1s forwards;
+   animation: loadbg 1s forwards;
    opacity: 1;
    white-space: pre;
    pointer-events: none;
    animation-delay: 1s;
    transition: var(--animation);
    z-index: 9998;
-   padding-top: 300px;
+   padding-top: 80px;
  }
 
  body::before {
@@ -96,8 +96,8 @@ font-family: 'Exo', sans-serif;
    height: inherit;
    width: inherit;
    background: transparent;
-   animation: load 1s forwards;
-   opacity: 1.5;
+   animation: loadbg 1s forwards;
+   opacity: 1;
    white-space: pre;
    pointer-events: none;
    background-image: url(https://cdionn.github.io/themes/Blurscord/logo.png);
@@ -3006,60 +3006,6 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
   border-color: var(--accent-color);
 }
 
-@keyframes pulse {
-  0%{
-    opacity: .5;
-  }
-  50%{
-    opacity: 1;
-  }
-  100%{
-    opacity: .5;
-  }
-}
-
-@keyframes checked{
-  0%{
-    transform: scale(1);
-    opacity: 0;
-  }
-  50%{
-    transform: scale(1.1);
-    opacity: 1;
-  }
-	100%{
-    transform: scale(1);
-  }
-}
-
-@keyframes page2{
-  0%{
-    transform:translateY(3rem);
-  }
-	100%{
-    transform:translateY(0px);
-  }
-}
-
-@keyframes page{
-  0%{
-    transform:translateY(3rem);
-    opacity:0;
-  }
-	100%{
-    transform:translateY(0px);
-    opacity:1;
-  }
-}
-
-@keyframes pageblurhider{
-  0%{
-  }
-  100%{
-    background-color: transparent;
-  }
-}
-
 /* Haupt Mittleres Fenster */
 .content-98HsJk {
     background-color: transparent;
@@ -3398,6 +3344,60 @@ rect[fill="rgba(67, 181, 129, 1)"], .pointerEvents-2zdfdO[mask*="url(#svg-mask-s
 
 /* Animationen  */
 
+@keyframes pulse {
+  0%{
+    opacity: .5;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: .5;
+  }
+}
+
+@keyframes checked{
+  0%{
+    transform: scale(1);
+    opacity: 0;
+  }
+  50%{
+    transform: scale(1.1);
+    opacity: 1;
+  }
+	100%{
+    transform: scale(1);
+  }
+}
+
+@keyframes page2{
+  0%{
+    transform:translateY(3rem);
+  }
+	100%{
+    transform:translateY(0px);
+  }
+}
+
+@keyframes page{
+  0%{
+    transform:translateY(3rem);
+    opacity:0;
+  }
+	100%{
+    transform:translateY(0px);
+    opacity:1;
+  }
+}
+
+@keyframes pageblurhider{
+  0%{
+  }
+  100%{
+    background-color: transparent;
+  }
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -3409,6 +3409,18 @@ rect[fill="rgba(67, 181, 129, 1)"], .pointerEvents-2zdfdO[mask*="url(#svg-mask-s
 }
 
 @keyframes load {
+    from {
+      transform:translateY(0);
+        opacity: 1;
+    }
+
+    to {
+      transform:translateY(-3rem);
+        opacity: 0;
+    }
+}
+
+@keyframes loadbg {
     from {
         opacity: 1;
     }
