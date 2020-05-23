@@ -1,7 +1,7 @@
 ﻿/**
  * @name Blurscord
  * @author Dion#0303
- * @version 1.2.1
+ * @version 1.2.2
  * @description Discord in a blurry style.
  * @website https://cdionn.github.io/discordtheme.html
 */
@@ -19,7 +19,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Code:400&display=swap');
 
 :root {
-  --version:"1.2.1";
+  --version:"1.2.2";
 
   --accent-color: #941432;
   --text-color: white;
@@ -33,6 +33,7 @@
   --dark-button-hover: #ffffff10;
   --dark-button-selected: #ffffff1f;
   --background-floating: #000000a5;
+  --shadow: 0px 15px 20px 0px #00000050;
 
   --blur-radius: blur(30px);
   --vibrancy: saturate(1.5) contrast(120%);
@@ -212,12 +213,11 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
   background-color: black;
 }
 
-.userPopout-3XzG_A {
-  border-radius: 0px;
-  box-shadow: 0 2px 10px 0 rgba(0,0,0,.2), 0 0 0 1px rgba(0, 0, 0, 0.6);
-}
-
 /* UI+  */
+
+.colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) {
+  background-color: var(--light-blur);
+}
 
 .emptyChannelIcon-3IXV5M {
   background-color: var(--dark-blur);
@@ -485,6 +485,8 @@ img[src="/assets/3e0acf6d69894a5d20deb7c513cd1412.svg"] {
 
 .popoutRight-1veHKi.noArrow-2foL9g {
   backdrop-filter: var(--blur-radius) var(--vibrancy);
+  transform: none!important;
+  animation: page 300ms 1;
 }
 
 .input-2A_zIr, .outer-o9SjPm .input-2A_zIr {
@@ -1091,6 +1093,9 @@ rect[fill="#F04747"] {
 .userPopout-3XzG_A {
   background-color: var(--dark-blur);
   backdrop-filter: var(--blur-radius) var(--vibrancy);
+  border-radius: 0px;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,.2), 0 0 0 1px rgba(0, 0, 0, 0.6);
+  animation: page 300ms 1;
 }
 
 .inviteDestinationExpired-2_1Ava {
@@ -2063,18 +2068,22 @@ canvas[width="210"]{
   animation: pageblurhider 300ms forwards;
   transition: none;
   animation-delay: 500ms;
-  background-color: black;
+  background-color: #040404;
 }
 
 .standardSidebarView-3F1I7i {
   animation: pageblurhider 300ms forwards;
-  background-color: black;
+  background-color: #040404;
   animation-delay: 500ms;
 }
 
 .layers-3iHuyZ>.layer-3QrUeG.animating-rRxada {
   transform: none!important;
   animation: page2 300ms 1;
+}
+
+.modal-3c3bKg {
+  animation: modalanim 600ms 1;
 }
 
 /* Main Window Transparent  */
@@ -3258,7 +3267,9 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 
 /* Bild Backdrop  */
 .inner-1ilYF7 {
-  animation: page 500ms 1;
+  transition: var(--animation);
+  box-shadow: var(--shadow);
+  border-radius: 15px;
 }
 
 .backdrop-1wrmKB, .backdropWithLayer-3_uhz4 {
@@ -3428,6 +3439,17 @@ rect[fill="rgba(67, 181, 129, 1)"], .pointerEvents-2zdfdO[mask*="url(#svg-mask-s
     to {
         opacity: 0;
     }
+}
+
+@keyframes modalanim {
+  0%{
+    opacity:0;
+    transform:  scale(0.9);
+  }
+	100%{
+    opacity:1;
+    transform:  scale(1);
+  }
 }
 
 /* Links  */

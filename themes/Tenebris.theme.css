@@ -1,4 +1,4 @@
-﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"4.1.0"}*//{}
+﻿//META{"name":"Tenebris","description":"A better looking dark theme","author":"c.dion","version":"4.1.1"}*//{}
 /*
 ///////////////////////////////////////
 
@@ -21,7 +21,7 @@
 	--text-color: black;
 	--gifbg: url("https://media.giphy.com/media/3ohze1qcZ9woSlyvFm/giphy.gif");
 	--gifbg-halloween: url("https://media.giphy.com/media/ds7ltUbHYLxjW/giphy.gif");
-	--version: "4.1.0";
+	--version: "4.1.1";
 
 
 	--online: #30cbff;
@@ -34,6 +34,10 @@
 
 	--background-light: #080808;
 	--background-dark: #000;
+	--background-tertiary: #040404;
+	--background-floating: #080808;
+	--background-secondary: #080808;
+	--background-secondary-alt: #040404;
 	--searchbar: #151515;
 	--button-active: rgba(255, 255, 255, 0.05);
 	--button-hover:	rgba(255, 255, 255, 0.02);
@@ -95,6 +99,28 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 	border-color: #ff56e7;
 }
 
+.navButtonActive-3RPAJy {
+	background-color: var(--accent-color);
+	color: var(--text-color);
+}
+
+img[src="/assets/b73a63cb14a22dd24f0f8da07b186335.svg"]{
+	filter: grayscale(1) brightness(2);
+}
+
+.categoryItem-3zFJns.selectedCategoryItem-3X8ujp .itemInner-3gVXMG {
+	background-color: #ffffff0a;
+}
+
+.colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) {
+	background-color: #ffffff0a;
+}
+
+.border-Jn5IOt.speaking-B2MXPi {
+	transition: var(--animation);
+	box-shadow: inset 0 0 0 3px var(--accent-color);
+}
+
 .theme-dark .activityFeed-1C0EmJ {
     background-color: black;
 }
@@ -142,6 +168,32 @@ rect[fill="rgba(67, 181, 129, 1)"], .pointerEvents-2zdfdO[mask*="url(#svg-mask-s
 
 .theme-dark .whiteButton-1lwF-y {
 	color: var(--accent-color);
+}
+
+.colorDefault-2K3EoJ.focused-3afm-j {
+	background-color: #ffffff0a;
+	border-radius: 0px;
+}
+
+.labelContainer-1BLJti {
+	transition: var(--animation);
+}
+
+.button-1ZiXG9:hover {
+	border-radius: 50px;
+}
+
+.colorBrand-ROmMP1 {
+	color: var(--accent-color);
+}
+
+path[d="M21 3H24V5H21V8H19V5H16V3H19V0H21V3ZM10 12C12.205 12 14 10.205 14 8C14 5.795 12.205 4 10 4C7.795 4 6 5.795 6 8C6 10.205 7.795 12 10 12ZM10 13C5.289 13 2 15.467 2 19V20H18V19C18 15.467 14.711 13 10 13Z"]
+{
+	fill: var(--accent-color)!important;
+}
+
+.colorPremium-p4p7qO .icon-LYJorE {
+	color: var(--accent-color)!important;
 }
 
 .theme-dark .modal-yWgWj- {
@@ -238,6 +290,10 @@ rect[fill="rgba(67, 181, 129, 1)"], .pointerEvents-2zdfdO[mask*="url(#svg-mask-s
 	background-color: #080808;
 	transition: var(--animation);
 	border: solid 1.5px transparent;
+}
+
+.userSettingsSecurity-3IYeMF .isEnabled-24g9qA {
+	color: white;
 }
 
 .scrollableContainer-2NUZem:focus-within {
