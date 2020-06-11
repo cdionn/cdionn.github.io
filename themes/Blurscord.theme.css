@@ -1604,7 +1604,7 @@ rect[fill="#F04747"] {
   border-bottom-color: transparent;
   background-color: #ffffff0a;
   margin: 0px 10px 5px 10px;
-  border-radius: 50px;
+  border-radius: 15px;
   transition: var(--animation);
 }
 
@@ -1658,6 +1658,14 @@ rect[fill="#F04747"] {
 
 .folder-21wGz3, .folderIconWrapper-226oVY[style*="background-color: rgba(114, 137, 218, 0.4)"] {
   background-color: #080808!important;
+}
+
+.border-Jn5IOt.speaking-B2MXPi {
+  box-shadow: inset 0 0 0 3px var(--accent-color);
+}
+
+.theme-dark .form-2fGMdU:before {
+  background: none;
 }
 
 .body-3ND3kc {
