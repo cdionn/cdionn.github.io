@@ -1,7 +1,7 @@
 ﻿/**
  * @name Blurscord
  * @author Dion#0303
- * @version 1.2.2
+ * @version 1.2.3
  * @description Discord in a blurry style.
  * @website https://cdionn.github.io/discordtheme.html
 */
@@ -214,6 +214,24 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 }
 
 /* UI+  */
+
+.guildsError-b7zR5H:hover {
+  border-color: var(--accent-color);
+  background: black;
+}
+
+.theme-dark .tooltipRed-8-9NeP, .theme-light .tooltipRed-8-9NeP {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+.theme-dark .tooltipRed-8-9NeP .tooltipPointer-3ZfirK, .theme-light .tooltipRed-8-9NeP .tooltipPointer-3ZfirK {
+  border-top-color: var(--accent-color);
+}
+
+.theme-dark .children-19S4PO:after {
+  background: none;
+}
 
 .colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) {
   background-color: var(--light-blur);
