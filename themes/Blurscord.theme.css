@@ -1,7 +1,7 @@
 ﻿/**
  * @name Blurscord
  * @author Dion#0303
- * @version 1.2.3
+ * @version 1.2.4
  * @description Discord in a blurry style.
  * @website https://cdionn.github.io/discordtheme.html
 */
@@ -19,7 +19,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Code:400&display=swap');
 
 :root {
-  --version:"1.2.2";
+  --version:"1.2.4";
 
   --accent-color: #941432;
   --text-color: white;
@@ -214,6 +214,68 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 }
 
 /* UI+  */
+
+.ping-2NgC8E {
+  color: #ffffff10;
+}
+
+.theme-dark .body-3iLsc4, .theme-dark .footer-1fjuF6 {
+  background-color: transparent;
+}
+
+.tertiary-aMXF0g {
+  background-color: black;
+}
+
+.icon-1Itzco {
+  background-color: var(--light-blur);
+}
+
+.messageContainer-gbhlwo {
+  background-color: var(--dark-blur);
+}
+
+.theme-dark .header-2-Imhb .tabBar-1kuXvJ .tab-ck0077.active-1MbGPa {
+  background-color: var(--dark-blur);
+  border-radius: 50px;
+}
+
+.wrapper-232cHJ {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+.badge-2qGa_k:after {
+  border-color: black;
+  background-color: var(--accent-color);
+}
+
+.container-enaOkj {
+  background-color: var(--dark-blur);
+  backdrop-filter: var(--blur-radius) var(--vibrancy);
+}
+
+.channelHeader-3Gd2xq {
+  background-color: var(--dark-blur);
+  backdrop-filter: var(--blur-radius) var(--vibrancy);
+}
+
+.secondary-dIudih {
+  background-color: #111;
+  transition: var(--animation);
+}
+
+.jumpButton-2F6EMx {
+  animation: fadeIn 300ms 1;
+}
+
+.secondary-dIudih:hover {
+  background-color: #222;
+}
+
+.messages-3G3erD, .tutorial-3w5I9h {
+  background-color: var(--dark-blur);
+}
 
 .guildsError-b7zR5H:hover {
   border-color: var(--accent-color);
@@ -2851,7 +2913,7 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 
 /* Hover  */
 
-.lookFilled-1Gx00P.colorWhite-rEQuAQ:hover, .content-3O0wBS .button-3zdF3z:hover, .lookFilled-1Gx00P.colorGrey-2DXtkV:hover, .content-1DpZYB .button-2sk-Wq:hover, .lookFilled-1Gx00P.colorRed-1TFJan:hover, .theme-dark .changeButton-1uBsOn:hover, .standardSidebarView-3F1I7i #bd-customcss-attach-controls button:hover, .bd-detached-css-editor #bd-customcss-attach-controls button:hover, .theme-dark .join-33Tr-7:hover .actionButton-2PeQbJ, .theme-light .join-33Tr-7:hover .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91:hover, .bd-pfbtn:hover, .lookFilled-1Gx00P.colorGreen-29iAKY:hover, .lookOutlined-3sRXeN.colorBrand-3pXr91:hover, .lookFilled-1Gx00P.colorBrand-3pXr91:hover, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
+.jumpButton-2dvRSC:hover, .lookFilled-1Gx00P.colorWhite-rEQuAQ:hover, .content-3O0wBS .button-3zdF3z:hover, .lookFilled-1Gx00P.colorGrey-2DXtkV:hover, .content-1DpZYB .button-2sk-Wq:hover, .lookFilled-1Gx00P.colorRed-1TFJan:hover, .theme-dark .changeButton-1uBsOn:hover, .standardSidebarView-3F1I7i #bd-customcss-attach-controls button:hover, .bd-detached-css-editor #bd-customcss-attach-controls button:hover, .theme-dark .join-33Tr-7:hover .actionButton-2PeQbJ, .theme-light .join-33Tr-7:hover .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91:hover, .bd-pfbtn:hover, .lookFilled-1Gx00P.colorGreen-29iAKY:hover, .lookOutlined-3sRXeN.colorBrand-3pXr91:hover, .lookFilled-1Gx00P.colorBrand-3pXr91:hover, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
   background-color: black!important;
   color: white!important;
   border-color: #111111!important;
@@ -2859,7 +2921,7 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 }
 
 /* Still  */
-.lookFilled-1Gx00P.colorWhite-rEQuAQ, .content-3O0wBS .button-3zdF3z, .lookFilled-1Gx00P.colorGrey-2DXtkV, .content-1DpZYB .button-2sk-Wq, .lookFilled-1Gx00P.colorRed-1TFJan, .lookOutlined-3sRXeN.colorGreen-29iAKY, .theme-dark .changeButton-1uBsOn, .standardSidebarView-3F1I7i #bd-customcss-attach-controls button, .bd-detached-css-editor #bd-customcss-attach-controls button, .theme-dark .join-33Tr-7 .actionButton-2PeQbJ, .theme-light .join-33Tr-7 .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91, .lookFilled-1Gx00P.colorGreen-29iAKY,.lookOutlined-3sRXeN.colorBrand-3pXr91,.bd-pfbtn,.lookFilled-1Gx00P.colorBrand-3pXr91, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6, .bda-slist .bda-footer button {
+.jumpButton-2dvRSC, .lookFilled-1Gx00P.colorWhite-rEQuAQ, .content-3O0wBS .button-3zdF3z, .lookFilled-1Gx00P.colorGrey-2DXtkV, .content-1DpZYB .button-2sk-Wq, .lookFilled-1Gx00P.colorRed-1TFJan, .lookOutlined-3sRXeN.colorGreen-29iAKY, .theme-dark .changeButton-1uBsOn, .standardSidebarView-3F1I7i #bd-customcss-attach-controls button, .bd-detached-css-editor #bd-customcss-attach-controls button, .theme-dark .join-33Tr-7 .actionButton-2PeQbJ, .theme-light .join-33Tr-7 .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91, .lookFilled-1Gx00P.colorGreen-29iAKY,.lookOutlined-3sRXeN.colorBrand-3pXr91,.bd-pfbtn,.lookFilled-1Gx00P.colorBrand-3pXr91, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6, .bda-slist .bda-footer button {
   background-color: var(--accent-color)!important;
   transition: var(--animation);
   border-color: transparent!important;
