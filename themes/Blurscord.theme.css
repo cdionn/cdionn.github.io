@@ -1,7 +1,7 @@
 ﻿/**
  * @name Blurscord
  * @author Dion#0303
- * @version 1.2.6
+ * @version 1.2.7
  * @description Discord in a blurry style.
  * @website https://cdionn.github.io/discordtheme.html
 */
@@ -14,12 +14,13 @@
 
 */
 
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Apple.css);
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed:400,500,600&display=swap');
 @import url('https://cdionn.github.io/themes/Fonts/Segoe/style.css');
 @import url('https://fonts.googleapis.com/css?family=Fira+Code:400&display=swap');
 
 :root {
-  --version:"1.2.6";
+  --version:"1.2.7";
 
   --accent-color: #941432;
   --text-color: white;
@@ -214,6 +215,47 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 }
 
 /* UI+  */
+
+path[d=" M-9.975000381469727,0.03999999910593033 C-9.975000381469727,0.03999999910593033 -0.03999999910593033,9.97599983215332 -0.03999999910593033,9.97599983215332 C-0.03999999910593033,9.97599983215332 9.975000381469727,9.97599983215332 9.975000381469727,9.97599983215332 C9.975000381469727,9.97599983215332 9.975000381469727,-0.04100000113248825 9.975000381469727,-0.04100000113248825 C9.975000381469727,-0.04100000113248825 0.03999999910593033,-9.97599983215332 0.03999999910593033,-9.97599983215332 C0.03999999910593033,-9.97599983215332 -9.975000381469727,-9.97599983215332 -9.975000381469727,-9.97599983215332 C-9.975000381469727,-9.97599983215332 -9.975000381469727,0.03999999910593033 -9.975000381469727,0.03999999910593033z"]
+{
+  fill: white;
+  opacity: .3;
+}
+path[d=" M7.914999961853027,15.670999526977539 C7.914999961853027,15.670999526977539 -7.914000034332275,15.670999526977539 -7.914000034332275,15.670999526977539 C-8.963000297546387,15.670999526977539 -9.814000129699707,14.819000244140625 -9.814000129699707,13.770999908447266 C-9.814000129699707,13.770999908447266 -9.814000129699707,-13.770999908447266 -9.814000129699707,-13.770999908447266 C-9.814000129699707,-14.819999694824219 -8.963000297546387,-15.670999526977539 -7.914000034332275,-15.670999526977539 C-7.914000034332275,-15.670999526977539 7.914999961853027,-15.670999526977539 7.914999961853027,-15.670999526977539 C8.96399974822998,-15.670999526977539 9.814000129699707,-14.819999694824219 9.814000129699707,-13.770999908447266 C9.814000129699707,-13.770999908447266 9.814000129699707,13.770999908447266 9.814000129699707,13.770999908447266 C9.814000129699707,14.819000244140625 8.96399974822998,15.670999526977539 7.914999961853027,15.670999526977539z"]{
+  fill: var(--accent-color);
+}
+
+.centerButton-3CaNcJ .centerIcon-2G6o-T path[d="M21.1169 1.11603L22.8839 2.88403L19.7679 6.00003L22.8839 9.11603L21.1169 10.884L17.9999 7.76803L14.8839 10.884L13.1169 9.11603L16.2329 6.00003L13.1169 2.88403L14.8839 1.11603L17.9999 4.23203L21.1169 1.11603ZM18 22H13C6.925 22 2 17.075 2 11V6C2 5.447 2.448 5 3 5H7C7.553 5 8 5.447 8 6V10C8 10.553 7.553 11 7 11H6C6.063 14.938 9 18 13 18V17C13 16.447 13.447 16 14 16H18C18.553 16 19 16.447 19 17V21C19 21.553 18.553 22 18 22Z"]{
+  fill: var(--text-color);
+}
+
+.listDefault-2y5Z9D .clickable-23RaYz:hover .content-3xS9Lh {
+  background-color: var(--dark-button-hover);
+}
+
+.listDefault-2y5Z9D .clickable-23RaYz.selected-3TGCSZ .content-3xS9Lh {
+  background-color: var(--dark-button-selected);
+}
+
+.modeSelected-1zApJ_ .icon-1_QxNX {
+  color: white;
+}
+
+.modeSelected-1zApJ_ .icon-1_QxNX, .modeSelected-1zApJ_:hover .icon-1_QxNX, .modeUnread-1zpFdA .icon-1_QxNX, .modeUnread-1zpFdA:hover .icon-1_QxNX {
+  color: white;
+}
+
+.contentWrapper-SvZHNd,.wrapper-2Gsate, .wrapper-1-Fsb8 {
+  background-color: black;
+}
+
+.introductionAction-LbJO-v {
+  color: var(--text-color);
+}
+
+.navButtonActive-1MkytQ {
+  background-color: #111111;
+}
 
 .participantsButton-KYW-IW:hover {background-color: black;}
 .participantsButton-KYW-IW {
@@ -1460,9 +1502,9 @@ rect[fill="#F04747"] {
   background-color: var(--dark-blur-selected);
 }
 
-.marketingRefreshHeaderAnimation-KQPxGl, .theme-dark .emptyIconGuilds-3OViNh{
+/* .marketingRefreshHeaderAnimation-KQPxGl, .theme-dark .emptyIconGuilds-3OViNh{
   filter: grayscale(1) invert(1);
-}
+} */
 
 .addFriendInput-4bcerK {
   color: white;
