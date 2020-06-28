@@ -1,7 +1,7 @@
 ﻿/**
  * @name Blurscord
  * @author Dion#0303
- * @version 1.2.9
+ * @version 2.0.0
  * @description Discord in a blurry style.
  * @website https://cdionn.github.io/discordtheme.html
 */
@@ -20,23 +20,29 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Code:400&display=swap');
 
 :root {
-  --version:"1.2.9";
+  --version:"2.0.0";
 
   --accent-color: #941432;
   --text-color: white;
-  --wallpaper: url("https://images.unsplash.com/photo-1586809774586-7be6449e517a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  --wallpaper: url("https://www.hdwallpapers.in/download/macbook_pro_2018_stock_4k_8k-5120x2880.jpg");
 
   --light-blur:#ffffff40;
   --light-blur-hover:#ffffff30;
   --light-blur-selected:#ffffff10;
-  --dark-blur: #000000a5;
+  --dark-blur: #00000090;
+  --no-blur: #1b1b1b;
   --dark-blur-selected:#000000f5;
   --dark-button-hover: #ffffff10;
   --dark-button-selected: #ffffff1f;
   --background-floating: #000000a5;
   --shadow: 0px 15px 20px 0px #00000050;
+  --borderr: 15px;
+  --borderc: #555555;
+  --borderw: 1px;
+  --surshadow: 0px 0px 10px 0px #00000060;
+  --usercard: #00000050;
 
-  --blur-radius: blur(30px);
+  --blur-radius: blur(40px);
   --vibrancy: saturate(1.5) contrast(120%);
 
   --online: #30ff87;
@@ -135,7 +141,7 @@ font-family: 'Exo', sans-serif;
 
 /* transparent */
 
-.sidebar-2K8pFh,.applicationStore-1pNvnv,.root-SR8cQa,.container-PNkimc, .scroller-2TZvBN,.wrapper-1Rf91z, .panels-j1Uci_,.scrollableContainer-2NUZem,.channelTextArea-rNsIhG, .members-1998pB, .contentRegionScroller-26nc1e,.contentRegion-3nDuYy,.sidebarRegionScroller-3MXcoP,.standardSidebarView-3F1I7i,.layer-3QrUeG, .privateChannels-1nO12o, .scroller-1JbKMe {
+.applicationStore-1pNvnv,.root-SR8cQa,.container-PNkimc, .scroller-2TZvBN,.wrapper-1Rf91z, .panels-j1Uci_,.scrollableContainer-2NUZem,.channelTextArea-rNsIhG, .members-1998pB, .contentRegionScroller-26nc1e,.contentRegion-3nDuYy,.sidebarRegionScroller-3MXcoP,.standardSidebarView-3F1I7i,.layer-3QrUeG, .privateChannels-1nO12o, .scroller-1JbKMe {
   background: transparent;
   background-color: transparent;
 }
@@ -173,7 +179,6 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 }
 
 .messages-3amgkR {
-  margin-bottom: 8px;
   animation: page 500ms 1;
 }
 
@@ -185,6 +190,9 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 .button-1ZiXG9.selected-LCBEAU {
   background-color: var(--light-blur-selected);
+}
+
+.scrollerWrap-2su1QI {
 }
 
 .nowPlayingColumn-2sl4cE {
@@ -199,11 +207,6 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
   margin: 20px;
 }
 
-.sidebar-2K8pFh {
-  margin: 0px 20px 0px 0px;
-  border-radius: 20px!important;
-}
-
 /* Benutzer Karte  */
 .theme-dark .quickMessage-1yeL4E {
   background-color: #000000a5;
@@ -215,6 +218,10 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 }
 
 /* UI+  */
+
+.container-1ov-mD>* , .wrapper-2K4Z3k {
+  box-shadow: var(--surshadow);
+}
 
 .art-3wzoO6 {
   filter: grayscale(1);
@@ -600,7 +607,7 @@ img[src="/assets/3e0acf6d69894a5d20deb7c513cd1412.svg"] {
 
 .container-1giJp5 {
   border-bottom-color: transparent;
-  background-color: #ffffff0a;
+  background-color: var(--usercard);
   margin: 0px 10px 5px 10px;
   border-radius: 15px;
   transition: var(--animation);
@@ -653,15 +660,6 @@ img[src="/assets/3e0acf6d69894a5d20deb7c513cd1412.svg"] {
 
 .slateTextArea-1Mkdgw {
   color: white;
-}
-
-.channelTextArea-rNsIhG {
-  transition: var(--animation);
-}
-
-.channelTextArea-rNsIhG:focus-within {
-  box-shadow: 0px 3px 5px 0px #00000050;
-  background-color: black;
 }
 
 .categorySection-2sgp74 {
@@ -1743,6 +1741,10 @@ rect[fill="#F04747"] {
   background-color: var(--light-blur-selected);
 }
 
+.actionIcon-2Hi9ZG {
+  color: white;
+}
+
 .content-3O0wBS {
   background-color: var(--dark-blur);
   backdrop-filter: var(--blur-radius) var(--vibrancy);
@@ -1823,7 +1825,7 @@ img[src="/assets/b73a63cb14a22dd24f0f8da07b186335.svg"]{
 
 .container-1giJp5:hover, .container-3baos1:hover {transform: scale(1.01);}
 .container-3baos1 {
-  background-color: #ffffff0a;
+  background-color: var(--usercard);
   margin: 0px 10px 10px 10px;
   border-radius: 15px;
   transition: var(--animation);
@@ -1944,8 +1946,8 @@ img[src="/assets/b73a63cb14a22dd24f0f8da07b186335.svg"]{
   color: var(--dark-button-selected);
 }
 
-.icon-1_QxNX, .name-3_Dsmg, .container-2Pjhx-, .theme-dark .debugButton-1Zec0y {
-    color: #b1b1b1;
+.icon-1_QxNX, .name-3_Dsmg, .container-2Pjhx-, .theme-dark .debugButton-1Zec0y, .container-2ax-kl, .wrapper-CU3qI5 {
+    color: white;
 }
 
 .tile-2silOL:hover .sourceThumbnail-14Iubx {
@@ -1953,7 +1955,7 @@ img[src="/assets/b73a63cb14a22dd24f0f8da07b186335.svg"]{
 }
 
 .modeMuted-3osy7j .icon-1_QxNX, .modeMuted-3osy7j .name-3_Dsmg {
-    color: #797979;
+    color: #ffffff80;
 }
 
 .layout-2DM8Md,.offline-3nJYBR,.content-3at_AU,.name-IbjUBS,.addButtonIcon-3u-3Hu, .container-3baos1 .avatar-SmRMf2, .attachButtonPlus-jWVFah, .mention {
@@ -2372,7 +2374,7 @@ img[src="/assets/5fb477ca84edd15d9a2888ac28365acd.svg"] {
  }
 
 .contentRegionScroller-26nc1e {
-  background-color: #000000ba;
+  background-color: #0000004a;
 }
 
 /* Einstellungen UI */
@@ -2411,7 +2413,7 @@ polyline[stroke="#ffffff"]{
 }
 
 .colorMuted-HdFt4q {
-    color: #5f5f5f;
+    color: #ffffff50;
 }
 
 .anchor-3Z-8Bb[title="Twitter"] {
@@ -3085,21 +3087,23 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 /* Hover  */
 
 .button-3HqqDX:hover, .jumpButton-2dvRSC:hover, .lookFilled-1Gx00P.colorWhite-rEQuAQ:hover, .content-3O0wBS .button-3zdF3z:hover, .lookFilled-1Gx00P.colorGrey-2DXtkV:hover, .content-1DpZYB .button-2sk-Wq:hover, .lookFilled-1Gx00P.colorRed-1TFJan:hover, .theme-dark .changeButton-1uBsOn:hover, .standardSidebarView-3F1I7i #bd-customcss-attach-controls button:hover, .bd-detached-css-editor #bd-customcss-attach-controls button:hover, .theme-dark .join-33Tr-7:hover .actionButton-2PeQbJ, .theme-light .join-33Tr-7:hover .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91:hover, .bd-pfbtn:hover, .lookFilled-1Gx00P.colorGreen-29iAKY:hover, .lookOutlined-3sRXeN.colorBrand-3pXr91:hover, .lookFilled-1Gx00P.colorBrand-3pXr91:hover, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
-  background-color: black!important;
+  background-color: var(--accent-color);!important;
+  background-image: linear-gradient(#00000050,transparent);
   color: white!important;
   border-color: #111111!important;
-  border-radius: 50px;
+  border-radius: 5px;
 }
 
 /* Still  */
 .button-3HqqDX, .jumpButton-2dvRSC, .lookFilled-1Gx00P.colorWhite-rEQuAQ, .content-3O0wBS .button-3zdF3z, .lookFilled-1Gx00P.colorGrey-2DXtkV, .content-1DpZYB .button-2sk-Wq, .lookFilled-1Gx00P.colorRed-1TFJan, .lookOutlined-3sRXeN.colorGreen-29iAKY, .theme-dark .changeButton-1uBsOn, .standardSidebarView-3F1I7i #bd-customcss-attach-controls button, .bd-detached-css-editor #bd-customcss-attach-controls button, .theme-dark .join-33Tr-7 .actionButton-2PeQbJ, .theme-light .join-33Tr-7 .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91, .lookFilled-1Gx00P.colorGreen-29iAKY,.lookOutlined-3sRXeN.colorBrand-3pXr91,.bd-pfbtn,.lookFilled-1Gx00P.colorBrand-3pXr91, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6, .bda-slist .bda-footer button {
-  background-color: var(--accent-color)!important;
+  background-color: var(--accent-color);
+  background-image: linear-gradient(#ffffff50,transparent);
   transition: var(--animation);
-  border-color: transparent!important;
   color: var(--text-color)!important;
-  border: solid 1px transparent!important;
+  border: solid 0px transparent!important;
   font-weight: bold;
-  border-radius: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px 1px #00000050;
 }
 
 /* Alert Button red */
@@ -3282,16 +3286,28 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 }
 
 .members-1998pB {
-  background-color: var(--dark-blur);
+  background-color: #080808;
   margin: 10px;
-  border-radius: 20px;
+  border-radius: var(--borderr);
   border: solid 1px black;
+  box-shadow: var(--surshadow);
+}
+
+.membersWrap-2h-GB4 {
+  animation: page 500ms 1;
 }
 
 .sidebar-2K8pFh {
   background-color: var(--dark-blur);
   backdrop-filter: var(--blur-radius) var(--vibrancy);
-  border: solid 1px black;
+  border-width: var(--borderr);
+  border-style: solid;
+  border-width: 1px 0px 1px 1px;
+  border-color: var(--borderc);
+  margin: 10px -10px 10px 10px;
+  box-shadow: var(--surshadow);
+  border-top-left-radius: var(--borderr)!important;
+  border-bottom-left-radius: var(--borderr)!important;
 }
 
 .embedSuppressButton-1FonMn {
@@ -3299,10 +3315,20 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 }
 
 .chat-3bRxxu, .theme-dark .container-1D34oG {
-  background-color: var(--dark-blur);
+  background-color: #1b1b1bf5;
   backdrop-filter: var(--blur-radius) var(--vibrancy);
-  border-radius: 20px;
-  border: solid 1px black;
+  border-radius: var(--borderr);
+  border-top-width: var(--borderw);
+  border-right-width: var(--borderw);
+  border-bottom-width: var(--borderw);
+  border-color: var(--borderc);
+  border-top-right-radius: var(-borderr);
+  border-bottom-right-radius: var(-borderr);
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  box-shadow: var(--surshadow);
+  border-style: solid;
+  margin: 10px;
 }
 
 .nowPlayingColumn-2sl4cE {
@@ -3382,13 +3408,25 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
   background-color: var(--dark-blur);
 }
 
+.header-2o-2hj:hover{background-color: transparent;}
 .header-2o-2hj {
-  background-color: var(--dark-blur);
+  background-color: transparent;
+  box-shadow: none;
 }
 
 .channelTextArea-rNsIhG {
-  background-color: #ffffff0a;
+  background-color: transparent;
   border-radius: 50px;
+  border: solid 1px #ffffff50;
+  transition: var(--animation);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.channelTextArea-rNsIhG:focus-within {
+  /* box-shadow: 0px 3px 5px 0px #00000050; */
+  background-color: transparent;
+  border-color: #ffffff50;
 }
 
 .attachWrapper-2TRKBi {
@@ -3516,14 +3554,14 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
   background-color: var(--dark-blur);
   backdrop-filter: var(--blur-radius) var(--vibrancy);
   border-radius: 0px;
-  margin: 20px 0px 20px 0px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-color: black;
-  border-width: 1px 1px 1px 0px;
+  margin: 30px 0px 30px 4px;
+  border-radius: var(--borderr);
+  border-color: var(--borderc);
+  border-width: 1px;
   border-style: solid;
   padding: 10px 0px 10px 0px;
   transition: var(--animation);
+  box-shadow: var(--surshadow);
 }
 
 
