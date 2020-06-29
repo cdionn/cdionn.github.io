@@ -140,7 +140,7 @@ font-family: 'Exo', sans-serif;
 }
 
 .standardSidebarView-3F1I7i {
-
+  animation: page 300ms 1;
 }
 
 /* transparent */
@@ -200,10 +200,6 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
   font-style: italic;
   text-transform: uppercase;
   top: 6px;
-}
-
-.messages-3amgkR {
-  animation: page 500ms 1;
 }
 
 .wrapper-2aW0bm:hover { box-shadow:none;}
@@ -3414,10 +3410,6 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
   border-radius: var(--borderr);
   border: solid 1px black;
   box-shadow: var(--surshadow);
-}
-
-.membersWrap-2h-GB4 {
-  animation: page 500ms 1;
 }
 
 .sidebar-2K8pFh {
