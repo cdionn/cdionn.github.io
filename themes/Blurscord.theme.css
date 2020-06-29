@@ -239,8 +239,16 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 /* UI+  */
 
+.disabledButtonOverlay-2DA5FI {
+  margin-right: -1px;
+}
+
 .container-1ov-mD>* , .wrapper-2K4Z3k {
   box-shadow: var(--surshadow);
+}
+
+.lookFilled-1Gx00P.colorBrand-3pXr91:disabled {
+  padding: 5px;
 }
 
 .art-3wzoO6 {
