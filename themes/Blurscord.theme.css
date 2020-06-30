@@ -295,7 +295,7 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
   color: var(--accent-color);
 }
 
-.members-1998pB, .members-1998pB>div {
+.members-1998pB>div {
   background-color: transparent;
 }
 
@@ -3985,7 +3985,7 @@ rect[fill*="#747f8d"]{
     transform: scale(1.05);
   }
   100%{
-    opacity: 0.6;
+    transform: scale(1);
   }
 }
 
