@@ -22,9 +22,9 @@
 :root {
   --version:"0.0.1";
 
-  --accent-color: #941432;
+  --accent-color: #0078ff;
   --text-color: white;
-  --wallpaper: url("https://www.hdwallpapers.in/download/macbook_pro_2018_stock_4k_8k-5120x2880.jpg");
+  --wallpaper: url("https://media.idownloadblog.com/wp-content/uploads/2020/06/macOS-Big-Sur-Daylight-Wallpaper-iDownloadBlog-2.jpg");
 
   --light-blur:#ffffff40;
   --light-blur-hover:#ffffff30;
@@ -40,7 +40,7 @@
   --borderc: #111111;
   --borderw: 1px;
   --surshadow: 0px 0px 10px 0px #00000060;
-  --usercard: #00000050;
+  --usercard: #ffffff0f;
 
   --blur-radius: blur(40px);
   --vibrancy: saturate(1.7) contrast(120%) brightness(1.1);
@@ -214,9 +214,6 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
   background-color: var(--light-blur-selected);
 }
 
-.scrollerWrap-2su1QI {
-}
-
 .nowPlayingColumn-2sl4cE {
   margin: 10px;
   border-radius: 10px!important;
@@ -240,6 +237,19 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 }
 
 /* UI+  */
+
+.base-gE7OpD .text-1y-e8- {
+    position: fixed;
+    right: 300px;
+    bottom: 70px;
+    padding: 0px 5px 0px 5px;
+    border-radius: 50px;
+    animation: pulsetyping 2s infinite;
+}
+
+.base-gE7OpD .ellipsis-19qdx6 {
+   display:none;
+}
 
 .base-PmTxvP[style="background-color: rgb(240, 71, 71); width: 16px; padding-right: 1px;"] {
   background-color: var(--accent-color)!important;
@@ -530,10 +540,9 @@ path[fill="rgb(118,134,177)"] {
 
 .css-n57xjs-menu {
   animation: page 300ms 1;
-  background-color: var(--dark-blur);
+  background-color: #1b1b1b;
   box-shadow: none;
   border-color: black;
-  backdrop-filter: var(--blur-radius) var(--vibrancy);
 }
 
 .styleFixed-sX-yHV {
@@ -652,12 +661,17 @@ img[src="/assets/3e0acf6d69894a5d20deb7c513cd1412.svg"] {
   border-top-color: var(--accent-color);
 }
 
-.container-1giJp5, .activityPanel-28dQGo {
+.container-1giJp5:hover, .container-3baos1:hover, .activityPanel-28dQGo:hover {transform: scale(1.01);}
+.container-3baos1, .container-1giJp5, .activityPanel-28dQGo {
   border-bottom-color: transparent;
   background-color: var(--usercard);
   margin: 0px 10px 5px 10px;
   border-radius: 15px;
   transition: var(--animation);
+}
+
+.container-3baos1 {
+  margin-bottom: 10px!important;
 }
 
 .toolbar-2bjZV7:before {
@@ -1059,6 +1073,25 @@ path[fill="rgb(184,208,255)"] {
   fill: #00000020!important;
 }
 
+#pluginNotice {
+  border-radius: 50px;
+  padding: 20px 10px 0px 10px;
+  margin: 0px 0px -35px 0px;
+  background-color: var(--dark-blur)!important;
+  backdrop-filter: var(--blur-radius) var(--vibrancy);
+  width: 300px;
+  position: fixed;
+  border-radius: var(--borderr);
+  border: 1px solid var(--borderc);
+  right: -450px;
+  top: 35px;
+  animation: notification 1.5s forwards;
+  animation-delay: 1s;
+  box-shadow: var(--surshadow);
+  z-index: 9999;
+  min-height: 60px;
+}
+
 .notice-2FJMB4 {
     border-radius: 50px;
     padding: 0px 10px 0px 10px;
@@ -1074,33 +1107,23 @@ path[fill="rgb(184,208,255)"] {
     animation: notification 1.5s forwards;
     animation-delay: 1s;
     box-shadow: var(--surshadow);
+    z-index: 9999;
 }
 
 .height36-36OHCc:before {
-  content:"Warnung";
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.height36-36OHCc:after {
   content:"";
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-weight: light;
-  font-size: 50px;
-  position: fixed;
-  top: 60px;
-  left: 17px;
+  font-size: 25px;
+  margin-top: -3px;
   font-family: "Segoe MDL2 Assets", normal;
 }
 
 .height36-36OHCc {
   line-height: 20px;
-  padding: 10px 20px 15px 20px;
+  padding: 20px 20px 20px 20px;
   text-align: left;
-  padding-left: 80px;
 }
 
 .button-1MICoQ {
@@ -1196,7 +1219,7 @@ path[fill="#7289da"] {
   border-radius: 50px;
   height: 31px;
   width: 32px;
-  background-color: #ffffff0a;
+  background-color: #00000030;
   position: relative;
   top: 2px;
 }
@@ -1657,6 +1680,10 @@ rect[fill="#F04747"] {
   color: var(--text-color)!important;
 }
 
+.selected-aXhQR6 .layout-2DM8Md * .pointerEvents-2zdfdO[mask*="url(#svg-mask-status"] {
+  fill: var(--text-color)!important;
+}
+
 .peopleListItem-2nzedh.active-rhSpJJ, .peopleListItem-2nzedh:hover {
   background-color: var(--dark-button-hover);
 }
@@ -1811,7 +1838,7 @@ rect[fill="#F04747"] {
 }
 
 .gameIcon-2YB8Et, .screenshareIcon-2redWJ {
-  background-color: #ffffff0f!important;
+  background-color: #00000030!important;
   border-radius: 50px;
   background-size: 25px;
   justify-content: center;
@@ -1992,14 +2019,6 @@ img[src="/assets/b73a63cb14a22dd24f0f8da07b186335.svg"]{
   margin-right: 10px!important;
 }
 
-.container-1giJp5:hover, .container-3baos1:hover {transform: scale(1.01);}
-.container-3baos1 {
-  background-color: var(--usercard);
-  margin: 0px 10px 10px 10px;
-  border-radius: 15px;
-  transition: var(--animation);
-}
-
 .theme-light .action-1lSjCi {
   background-color: var(--dark-blur);
 }
@@ -2030,7 +2049,7 @@ img[src="/assets/b73a63cb14a22dd24f0f8da07b186335.svg"]{
 .button-14-BFJ:hover { transform: scale(1.05); }
 .button-14-BFJ {
   border-radius: 50px;
-  background-color: #ffffff0a;
+  background-color: #00000030;
   margin: 0px 3px 0px 3px;
   transition: var(--animation);
   color: white!important;
@@ -3557,7 +3576,7 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
   backdrop-filter: var(--blur-radius) var(--vibrancy);
   border-width: var(--borderr);
   border-style: solid;
-  border-width: 1px 0px 1px 1px;
+  border-width: 1px 2px 1px 1px;
   border-color: var(--borderc);
   margin: 10px -10px 10px 10px;
   box-shadow: var(--surshadow);
@@ -3844,18 +3863,17 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 
 ::-webkit-scrollbar {
     width: 12px;
-    border-radius: 0px!important;
+    border-radius: 50px!important;
 }
 
 ::-webkit-scrollbar-track {
     background-color: transparent!important;
-    border-radius: 0px!important;
+    border-radius: 50px!important;
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
     background-color: var(--light-blur)!important;
-    border-radius: 0px!important;
+    border-radius: 50px!important;
 }
 
 ::-webkit-scrollbar-track-piece {
@@ -3918,6 +3936,19 @@ rect[fill*="#747f8d"]{
 }
 
 /* Animationen  */
+
+@keyframes pulsetyping {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100%{
+    opacity: 0.6;
+  }
+}
 
 @keyframes pulse {
   0%{
