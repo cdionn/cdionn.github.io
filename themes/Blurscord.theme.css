@@ -1,7 +1,7 @@
 ﻿/**
  * @name Blurscord
  * @author Dion#0303
- * @version 2.0.2
+ * @version 2.0.3
  * @description Discord in a blurry style.
  * @website https://cdionn.github.io/discordtheme.html
 */
@@ -20,7 +20,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Code:400&display=swap');
 
 :root {
-  --version:"2.0.2";
+  --version:"2.0.3";
 
   --accent-color: #941432;
   --text-color: white;
@@ -29,7 +29,7 @@
   --light-blur:#ffffff40;
   --light-blur-hover:#ffffff30;
   --light-blur-selected:#ffffff10;
-  --dark-blur: #00000090;
+  --dark-blur: #00000080;
   --no-blur: #1b1b1b;
   --dark-blur-selected:#000000f5;
   --dark-button-hover: #ffffff10;
@@ -43,7 +43,9 @@
   --usercard: #00000050;
 
   --blur-radius: blur(40px);
-  --vibrancy: saturate(1.5) contrast(120%);
+  --vibrancy: saturate(1.7) contrast(120%) brightness(1.1);
+
+  /* old --vibrancy: saturate(1.5) contrast(120%); */
 
   --online: #30ff87;
   --idle: #887cff;
