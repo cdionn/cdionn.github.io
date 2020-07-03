@@ -1,8 +1,0 @@
-Origin: cdion's repo
-Label: cdion's repo
-Suite: stable
-Version: 1.0
-Codename: cdion's
-Architectures: iphoneos-arm
-Components: main
-Description: My private repo
