@@ -1594,23 +1594,6 @@ rect[fill="#F04747"] {
   transition: var(--animation);
 }
 
-.assets-VMAukC {
-  position: absolute;
-  z-index: -1;
-  opacity: 1;
-  width: 210px;
-  display:block;
-  height: 150px;
-  box-shadow: 0px 0px 30px black;
-  border-radius: 5px;
-}
-
-.assetsLargeImageUserPopout-3Pp8BK {
-  width: 210px;
-  height: 150px;
-  filter: brightness(0.5);
-}
-
 .header-2BwW8b * .anchor-3Z-8Bb, .theme-dark .activityUserPopout-2yItg2 .content-3JfFJh , .text-AOoUen {
   color: white;
   mix-blend-mode: lighten;
