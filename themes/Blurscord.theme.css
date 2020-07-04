@@ -228,6 +228,18 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 /* Benutzer Karte  */
 
+.headerPlaying-j0WQBV, .headerStreaming-2FjmGz {
+  background-color: transparent;
+}
+
+.headerSpotify-zpWxgT {
+  background-color: transparent;
+}
+
+.activity-11LB_k {
+  background-color: var(--dark-blur);
+}
+
 .theme-dark .quickMessage-1yeL4E {
   background-color: #000000a5;
   border: solid 1px black;
@@ -258,6 +270,14 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 }
 
 /* UI+  */
+
+.theme-dark .tierUnlocked-25K6Kv, .theme-light .tierUnlocked-25K6Kv {
+  color: black;
+}
+
+.barForeground-3KglC8 {
+  background-color: var(--accent-color);
+}
 
 .searchResultsWrap-3-pOjs, .channelName-wvgELL {
   background-color: #080808;
@@ -3452,7 +3472,7 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 
 .lookInverted-2D7oAl.colorBrand-3pXr91 {
   background-color: white;
-  color: black;
+  color: black!important;
   transition: var(--animation);
 }
 
