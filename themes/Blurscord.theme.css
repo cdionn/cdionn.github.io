@@ -1749,7 +1749,7 @@ rect[fill="#F04747"] {
   color: var(--text-color)!important;
 }
 
-.selected-aXhQR6 .layout-2DM8Md * .pointerEvents-2zdfdO[mask*="url(#svg-mask-status"] {
+.selected-aXhQR6 .layout-2DM8Md * .pointerEvents-2zdfdO[mask*="url(#svg-mask-status"], .cursorDefault-dsQJ1n {
   fill: var(--text-color)!important;
 }
 
