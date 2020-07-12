@@ -1,7 +1,7 @@
 ﻿/**
  * @name Blurscord
  * @author Dion#0303
- * @version 0.0.3 Beta
+ * @version 0.0.4 Beta
  * @description Discord in a blurry style.
  * @website https://cdionn.github.io/discordtheme.html
 */
@@ -20,11 +20,11 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Code:400&display=swap');
 
 :root {
-  --version:"0.0.3 Beta";
+  --version:"0.0.4 Beta";
 
   --accent-color: #0078ff;
   --text-color: white;
-  --wallpaper: url("https://512pixels.net/wp-content/uploads/2020/06/11-0-Color-Night-thumbnails.jpg");
+  --wallpaper: url("https://wallpapercave.com/wp/wp4427059.jpg");
 
   --light-blur:#ffffff40;
   --light-blur-hover:#ffffff30;
@@ -270,6 +270,32 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 }
 
 /* UI+  */
+
+.colorable-1bkp8v.primary-3NQg8g {
+  background-color: #111111;
+}
+
+.pro-1T8RK7 {
+  color: var(--accent-color)!important;
+}
+
+.searchResultMessage-1fxgXh.hit-1fVM9e {
+    box-shadow: 0 0 10px 6px #000000;
+    background-color: #1b1b1b;
+    border: 1px solid var(--borderr;);
+}
+
+.jumpButton-JkYoYK {
+  background-color: #080808;
+}
+
+.searchResult-9tQ1uo:before {
+  background-image: linear-gradient(0deg,transparent, #080808);
+}
+
+.searchResult-9tQ1uo:after {
+  background-image: linear-gradient(180deg,transparent, #080808)
+}
 
 .edited-3sfAzf {
   color: #ffffff80;
@@ -1015,7 +1041,6 @@ img[src="/assets/3e0acf6d69894a5d20deb7c513cd1412.svg"] {
 
 .centerButton-3CaNcJ:hover {
   background: #111111;
-  transform: scale(1.05);
 }
 
 .status-1WEaea.voice-3bPYC- {
@@ -1241,8 +1266,8 @@ path[fill="rgb(184,208,255)"] {
   opacity: .5;
 }
 
-path[fill="#7289da"] {
-  fill: var(--accent-color)!important;
+.da-checked path[d="M8.99991 16.17L4.82991 12L3.40991 13.41L8.99991 19L20.9999 7.00003L19.5899 5.59003L8.99991 16.17Z"] {
+  fill: var(--text-color)!important;
 }
 
 .badgeUpgrade-1DzdNZ, .reportText-3upFz- {
@@ -2090,7 +2115,6 @@ img[src="/assets/b73a63cb14a22dd24f0f8da07b186335.svg"]{
   box-shadow: none;
 }
 
-.button-14-BFJ:hover { transform: scale(1.05); }
 .button-14-BFJ {
   border-radius: 50px;
   background-color: #00000030;
@@ -2098,6 +2122,11 @@ img[src="/assets/b73a63cb14a22dd24f0f8da07b186335.svg"]{
   transition: var(--animation);
   color: white!important;
   transition: var(--animation);
+  box-shadow: 0px 0px 15px 0px #00000040;
+}
+
+.button-14-BFJ:hover {
+  transform: scale(1.05);
 }
 
 .menu-Sp6bN1 {
