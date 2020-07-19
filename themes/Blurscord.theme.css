@@ -272,6 +272,32 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 /* UI+  */
 
+.tile-2w4k5N:hover .sourceThumbnail-27dolk, .sourceThumbnail-27dolk.selected-1nOkyc {
+    box-shadow: inset 0 0 0 2px var(--accent-color);
+}
+
+.card-2Mz_4z, .theme-dark .item-3T2z1R {
+  border-color: var(--borderc);
+  background-color: var(--dark-blur);
+}
+
+.selectorButton-EEUWed {
+  background-color: var(--accent-color);
+  transition: var(--animation);
+}
+
+.channelIcon-2xPHJh {
+  color: white;
+}
+
+.selectorButtonSelected-t5V9On {
+  background-color: var(--accent-color)!important;
+}
+
+.selectorButton-EEUWed:not(.selectorButtonPremiumRequired-mKMbIu):hover {
+  background-color: var(--accent-color);
+}
+
 .colorable-1bkp8v.red-33-Lnk {
     background: #ff2d2d;
 }
