@@ -1,1 +1,1 @@
-Fuer Minecraft 1.16.1
+Fabric Minecraft 1.16.1
