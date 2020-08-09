@@ -272,6 +272,10 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 /* UI+  */
 
+.textarea-2r0oV8:focus {
+  background-color: transparent;
+}
+
 .tile-2w4k5N:hover .sourceThumbnail-27dolk, .sourceThumbnail-27dolk.selected-1nOkyc {
     box-shadow: inset 0 0 0 2px var(--accent-color);
 }
@@ -1224,6 +1228,11 @@ path[fill="rgb(184,208,255)"] {
   fill: #00000020!important;
 }
 
+#outdatedPlugins {
+  position: absolute;
+  top: 0px;
+}
+
 #pluginNotice {
   border-radius: 50px;
   padding: 20px 10px 0px 10px;
@@ -1716,6 +1725,15 @@ rect[fill="#F04747"] {
 
 .input-cIJ7To {
   color: white;
+  border-radius: 10px;
+}
+
+.theme-dark .denySelected-1mh2mZ {
+  border-color: #f04747;
+}
+
+.theme-dark .allowSelected-25S_i5 {
+  border-color: #43b581;
 }
 
 .input-cIJ7To, .input-cIJ7To:hover, .input-cIJ7To.disabled-2BKQFm {
@@ -2760,6 +2778,43 @@ img[src="/assets/5fb477ca84edd15d9a2888ac28365acd.svg"] {
  }
 
 /* Einstellungen UI */
+
+.theme-dark .emojiAliasInput-1y-NBz .emojiInput-1aLNse {
+  background-color: var(--dark-blur);
+}
+
+.theme-dark .background-3xPPFc {
+  color: #ffffff20;
+}
+
+.theme-dark .tierInProgress-3mBoXq {
+  background-color: #ffffff20;
+}
+
+.featureCard-1RR4Tl {
+  background-color: var(--dark-blur);
+}
+
+.theme-dark .autocompleteArrow-Zxoy9H, .theme-dark .header-2bNvm4 {
+  background-color: #080808;
+}
+
+.theme-dark .container-VSDcQc .sectionTag-pXyto9 {
+  background-color: #000000;
+  color: white;
+}
+
+.theme-dark .autocompleteArrow-Zxoy9H, .theme-dark .autocompleteShadow-iiGWFU {
+  box-shadow: none;
+}
+
+.row-rrHHJU.selected-1pIgLL .rowInner-1vvRiF {
+  background-color: #ffffff10;
+}
+
+.rowInner-1vvRiF {
+  transition: var(--animation);
+}
 
 .container-1sFeqf {
   position: fixed;
