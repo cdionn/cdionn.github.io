@@ -1,7 +1,7 @@
 ﻿/**
  * @name Blurscord
  * @author Dion#0303
- * @version 0.0.5 Beta
+ * @version 0.0.6 Beta
  * @description Discord in a blurry style.
  * @website https://cdionn.github.io/discordtheme.html
 */
@@ -20,7 +20,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Code:400&display=swap');
 
 :root {
-  --version:"0.0.5 Beta";
+  --version:"0.0.6 Beta";
 
   --accent-color: #0078ff;
   --text-color: white;
@@ -208,7 +208,7 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 .wrapper-2aW0bm:hover { box-shadow:none;}
 .wrapper-2aW0bm {
   border-radius: 50px;
-  background-color: var(--dark-blur);
+  background-color: black;
 }
 
 .button-1ZiXG9.selected-LCBEAU {
@@ -271,6 +271,10 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 }
 
 /* UI+  */
+
+.wrapper-3vR61M,.wrapper-1F5TKx {
+  background-color: transparent;
+}
 
 .textarea-2r0oV8:focus {
   background-color: transparent;
