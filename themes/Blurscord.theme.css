@@ -276,6 +276,10 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
   background-color: transparent;
 }
 
+.container-3JTnYm {
+  backdrop-filter: var(--blur-radius) var(--vibrancy);
+}
+
 .textarea-2r0oV8:focus {
   background-color: transparent;
 }
