@@ -272,6 +272,10 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 /* UI+  */
 
+.icon-2IuuZd, .username-3KYl0N {
+  color: white;
+}
+
 .theme-dark .invite-18yqGF {
   background-color: var(--dark-blur);
   border-color: black;
