@@ -24,7 +24,7 @@
 
   --accent-color: red;
   --text-color: white;
-  --wallpaper: url("https://media.idownloadblog.com/wp-content/uploads/2020/06/macOS-Big-Sur-Daylight-Wallpaper-iDownloadBlog-2-2048x2048.jpg");
+  --wallpaperweinacht: url("https://img2.goodfon.com/original/1920x1080/d/80/noch-zima-luna-sugroby-staryy.jpg");
 
   --light-blur:#ffffff40;
   --light-blur-hover:#ffffff30;
@@ -127,7 +127,7 @@ font-family: 'Exo', sans-serif;
 
 
 .app-2rEoOp {
-  background-image: var(--wallpaper)!important;
+  background-image: var(--wallpaperweinacht)!important;
   background-size: cover;
   background-color: none!important;
   background-repeat: no-repeat;
@@ -4571,4 +4571,27 @@ rect[fill*="#747f8d"]{
   height: 288px;
   margin: 20px 0px 10px -3px;
   border-top: solid 2px red;
+}
+
+/* Season Effekte */
+
+/* Weinachten Effekt */
+.da-appMount:before {
+	content:"";
+	position: absolute;
+	z-index: 9999;
+	display: inline-block;
+	height: inherit;
+	width: inherit;
+	background-color: transparent;
+	background-image: url('https://designshack.net/tutorialexamples/letitsnow/snow.png'), url('https://designshack.net/tutorialexamples/letitsnow/snow3.png'), url('https://designshack.net/tutorialexamples/letitsnow/snow2.png');
+	animation: snow 20s linear infinite;
+	opacity: 0.15;
+	pointer-events: none;
+}
+
+@keyframes snow {
+	0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 	100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+
 }
