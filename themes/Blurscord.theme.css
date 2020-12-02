@@ -273,6 +273,10 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 /* UI+  */
 
+.notice-3bPHh- {
+  border-radius: var(--borderr);
+}
+
 .button-18p_f6 { transition: var(--animation); }
 .button-18p_f6:hover { background-color: var(--dark-blur); }
 
