@@ -273,6 +273,17 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 /* UI+  */
 
+.users-3kndPl{
+  background-color: var(--dark-blur-hover);
+}
+
+.total-i6us2n:after{
+  border-right-color: black;
+}
+.total-i6us2n {
+  background-color: black;
+}
+
 .detailsBlock-FoDTGA {
   background-color: var(--dark-blur);
 }
