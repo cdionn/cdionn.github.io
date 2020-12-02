@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @name Blurscord
  * @author Dion#0303
  * @version 1.0.1
@@ -420,17 +420,20 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
   color: #ffffff99;
 }
 
+
+.modeMuted-onO3r- .name-23GUGE { padding: 0px 0px 0px 18px; }
 .modeMuted-onO3r- .name-23GUGE::before {
   content: '';
   display: inline-flex;
   font-size: 12px;
-  position: relative;
+  position: absolute;
   font-weight: normal;
-  top: 2px;
-  margin-right: 3px;
+  top: 7px;
+  left: 33px;
   font-family: "Segoe MDL2 Assets", normal;
   font-size: 15px;
   font-weight: bold;
+  transition: var(--animation);
 }
 
 .content-1x5b-n {
