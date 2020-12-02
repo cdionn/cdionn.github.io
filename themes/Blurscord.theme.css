@@ -273,6 +273,13 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 /* UI+  */
 
+.selectedIcon-3uS11H { color: var(--accent-color); }
+.option-3KoAJB[aria-selected=true] { background-color: var(--light-blur-selected); }
+.popout-VcNcHB {
+  background-color: black;
+  border-color: black;
+}
+
 .users-3kndPl{
   background-color: var(--dark-blur-hover);
 }
