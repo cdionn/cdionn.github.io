@@ -27,8 +27,8 @@
   --wallpaperweinacht: url("https://img2.goodfon.com/original/1920x1080/d/80/noch-zima-luna-sugroby-staryy.jpg");
 
   --light-blur:#ffffff40;
-  --light-blur-hover:#ffffff30;
-  --light-blur-selected:#ffffff10;
+  --light-blur-hover:#ffffff10;
+  --light-blur-selected:#ffffff15;
   --dark-blur: #00000080;
   --dark-blur-hover: #0000009f;
   --no-blur: #1b1b1b;
@@ -273,7 +273,13 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 /* UI+  */
 
+.button-18p_f6 { transition: var(--animation); }
+.button-18p_f6:hover { background-color: var(--dark-blur); }
+
+
 .selectedIcon-3uS11H { color: var(--accent-color); }
+.option-3KoAJB { transition: var(--animation); }
+.option-3KoAJB:focus, .option-3KoAJB:hover { background-color: var(--light-blur-hover); }
 .option-3KoAJB[aria-selected=true] { background-color: var(--light-blur-selected); }
 .popout-VcNcHB {
   background-color: black;
@@ -421,7 +427,7 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 }
 
 
-.modeMuted-onO3r- .name-23GUGE { padding: 0px 0px 0px 18px; }
+.modeMuted-onO3r- .name-23GUGE { padding: 0px 0px 0px 15px; }
 .modeMuted-onO3r- .name-23GUGE::before {
   content: '';
   display: inline-flex;
@@ -3837,7 +3843,7 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 
 /* Hover  */
 
-.bd-modal-wrapper .footer button:hover, .button-1YfofB.buttonColor-7qQbGO.buttonActive-3FrkXp:hover, .lookFilled-1Gx00P.colorBrand-3pXr91:active,.button-3HqqDX:hover, .jumpButton-2dvRSC:hover, .lookFilled-1Gx00P.colorWhite-rEQuAQ:hover, .content-3O0wBS .button-3zdF3z:hover, .lookFilled-1Gx00P.colorGrey-2DXtkV:hover, .content-1DpZYB .button-2sk-Wq:hover, .lookFilled-1Gx00P.colorRed-1TFJan:hover, .theme-dark .changeButton-1uBsOn:hover, .standardSidebarView-3F1I7i #bd-customcss-attach-controls button:hover, .bd-detached-css-editor #bd-customcss-attach-controls button:hover, .theme-dark .join-33Tr-7:hover .actionButton-2PeQbJ, .theme-light .join-33Tr-7:hover .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91:hover, .bd-pfbtn:hover, .lookFilled-1Gx00P.colorGreen-29iAKY:hover, .lookOutlined-3sRXeN.colorBrand-3pXr91:hover, .lookFilled-1Gx00P.colorBrand-3pXr91:hover, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
+.actionRed-gYn8D3:hover, .bd-modal-wrapper .footer button:hover, .button-1YfofB.buttonColor-7qQbGO.buttonActive-3FrkXp:hover, .lookFilled-1Gx00P.colorBrand-3pXr91:active,.button-3HqqDX:hover, .jumpButton-2dvRSC:hover, .lookFilled-1Gx00P.colorWhite-rEQuAQ:hover, .content-3O0wBS .button-3zdF3z:hover, .lookFilled-1Gx00P.colorGrey-2DXtkV:hover, .content-1DpZYB .button-2sk-Wq:hover, .lookFilled-1Gx00P.colorRed-1TFJan:hover, .theme-dark .changeButton-1uBsOn:hover, .standardSidebarView-3F1I7i #bd-customcss-attach-controls button:hover, .bd-detached-css-editor #bd-customcss-attach-controls button:hover, .theme-dark .join-33Tr-7:hover .actionButton-2PeQbJ, .theme-light .join-33Tr-7:hover .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91:hover, .bd-pfbtn:hover, .lookFilled-1Gx00P.colorGreen-29iAKY:hover, .lookOutlined-3sRXeN.colorBrand-3pXr91:hover, .lookFilled-1Gx00P.colorBrand-3pXr91:hover, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
   background-color: #111111;!important;
   color: white!important;
   border-color: #111111!important;
@@ -3845,7 +3851,7 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 }
 
 /* Still  */
-.bd-modal-wrapper .footer button, .button-1YfofB.buttonColor-7qQbGO.buttonActive-3FrkXp, .button-3HqqDX, .jumpButton-2dvRSC, .lookFilled-1Gx00P.colorWhite-rEQuAQ, .content-3O0wBS .button-3zdF3z, .lookFilled-1Gx00P.colorGrey-2DXtkV, .content-1DpZYB .button-2sk-Wq, .lookFilled-1Gx00P.colorRed-1TFJan, .lookOutlined-3sRXeN.colorGreen-29iAKY, .theme-dark .changeButton-1uBsOn, .standardSidebarView-3F1I7i #bd-customcss-attach-controls button, .bd-detached-css-editor #bd-customcss-attach-controls button, .theme-dark .join-33Tr-7 .actionButton-2PeQbJ, .theme-light .join-33Tr-7 .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91, .lookFilled-1Gx00P.colorGreen-29iAKY,.lookOutlined-3sRXeN.colorBrand-3pXr91,.bd-pfbtn,.lookFilled-1Gx00P.colorBrand-3pXr91, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6, .bda-slist .bda-footer button {
+.actionRed-gYn8D3, .bd-modal-wrapper .footer button, .button-1YfofB.buttonColor-7qQbGO.buttonActive-3FrkXp, .button-3HqqDX, .jumpButton-2dvRSC, .lookFilled-1Gx00P.colorWhite-rEQuAQ, .content-3O0wBS .button-3zdF3z, .lookFilled-1Gx00P.colorGrey-2DXtkV, .content-1DpZYB .button-2sk-Wq, .lookFilled-1Gx00P.colorRed-1TFJan, .lookOutlined-3sRXeN.colorGreen-29iAKY, .theme-dark .changeButton-1uBsOn, .standardSidebarView-3F1I7i #bd-customcss-attach-controls button, .bd-detached-css-editor #bd-customcss-attach-controls button, .theme-dark .join-33Tr-7 .actionButton-2PeQbJ, .theme-light .join-33Tr-7 .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91, .lookFilled-1Gx00P.colorGreen-29iAKY,.lookOutlined-3sRXeN.colorBrand-3pXr91,.bd-pfbtn,.lookFilled-1Gx00P.colorBrand-3pXr91, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6, .bda-slist .bda-footer button {
   background-color: var(--accent-color);
   background-image: linear-gradient(#ffffff18,transparent);
   transition: var(--animation);
@@ -3854,23 +3860,6 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
   font-weight: bold;
   border-radius: 5px;
   box-shadow: 0px 1px 2px 0px #00000050;
-}
-
-/* Alert Button red */
-.actionRed-gYn8D3 {
-  border-radius: 50px;
-  background-color: #e87c36;
-  transition: var(--animation);
-  border: solid 1px transparent!important;
-}
-
-/* Alert Button red Hover */
-
-.actionRed-gYn8D3:hover {
-  border-radius: 50px;
-  background-color: black;
-  color: #e87c36;
-  border-color: #111111!important;
 }
 
 .lookOutlined-3sRXeN.colorRed-1TFJan {
