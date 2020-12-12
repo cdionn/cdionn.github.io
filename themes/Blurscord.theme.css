@@ -1076,7 +1076,7 @@ img[src="/assets/3e0acf6d69894a5d20deb7c513cd1412.svg"] {
 .container-3baos1, .container-1giJp5, .activityPanel-28dQGo, .container-6sXIoE {
   border-bottom-color: transparent;
   background-color: var(--usercard);
-  margin: 0px 10px 5px 10px;
+  margin: 0px 10px 5px 10px!important;
   border-radius: 15px;
   transition: var(--animation);
   border: solid 1px var(--borderc);
