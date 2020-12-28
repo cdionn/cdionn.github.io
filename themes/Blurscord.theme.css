@@ -273,6 +273,22 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 /* UI+  */
 
+/* Verschwommener Text input
+
+.scroller-2LSbBU {
+  bottom: -70px;
+  padding-bottom: 60px!important;
+}
+
+.form-2fGMdU {
+  background: transparent;
+  backdrop-filter: var(--blur-radius) var(--vibrancy) contrast(1);
+} */
+
+.message-2qnXI6.mentioned-xhSam7.selected-2P5D_Z, .mouse-mode.full-motion .mentioned-xhSam7:hover {
+  background-color: #ffffff15;
+}
+
 .lookFilled-1Gx00P .contents-18-Yxp {
   text-overflow: ellipsis;
 }
@@ -3060,6 +3076,10 @@ img[src="/assets/5fb477ca84edd15d9a2888ac28365acd.svg"] {
 
 /* Einstellungen UI */
 
+.upsellFooter-3coAfO {
+  background-color: var(--dark-blur);
+}
+
 .guildHeader-3nh5RK {background-color: #080808;}
 .guildSubscriptionSlots-JPXXvN {
   background-color: var(--dark-blur);
@@ -4185,7 +4205,7 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 .channelTextArea-rNsIhG {
   background-color: transparent;
   border-radius: 50px;
-  border: solid 1px #ffffff50;
+  border: solid 1px gray;
   transition: var(--animation);
   margin-top: 15px;
   margin-bottom: 15px;
