@@ -1,7 +1,7 @@
 /**
  * @name Blurscord
  * @author Dion#0303
- * @version 1.0.1
+ * @version 1.1.0
  * @description Discord in a blurry style.
  * @website https://cdionn.github.io/discordtheme.html
 */
@@ -225,7 +225,9 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 /* Abstand zum Hintergrund und der Sidebar  */
 
 .base-3dtUhz {
-  margin: 20px;
+  margin: 30px;
+  backdrop-filter: var(--blur-radius) var(--vibrancy);
+  border-radius: var(--borderr);
 }
 
 /* Benutzer Karte  */
@@ -2263,7 +2265,6 @@ rect[fill="#F04747"] {
 .mention-1f5kbO:active {background-color: var(--dark-blur-selected);}
 .mention-1f5kbO {
   background-color: var(--dark-blur);
-  backdrop-filter: blur(5px);
   border: solid 1px black;
   opacity: 1;
   transition: var(--animation);
@@ -2769,8 +2770,7 @@ padding-left: 0px;
 
 .unread-1xRYoj:active {background-color: var(--dark-blur-selected);}
 .unread-1xRYoj {
-  background-color: var(--dark-blur);
-  backdrop-filter: blur(5px);
+  background-color: black;
   border:solid 1px black;
   opacity: 1;
   transition: var(--animation);
@@ -2923,7 +2923,7 @@ canvas[width="210"]{
 
 .popoutTopLeft-3B0mFf.noArrow-2foL9g {
   background-color: #000000c5;
-  backdrop-filter: var(--blur-radius) var(--vibrancy);
+
   border-radius: 10px;
 }
 
@@ -2991,8 +2991,11 @@ canvas[width="210"]{
   background-color: transparent;
 }
 
+/* Einstellungen buggt hauptscreen blur will-change auf unset machen */
+
 .layers-3iHuyZ>.layer-3QrUeG.animating-rRxada {
   transform: none!important;
+  will-change: unset!important;
 }
 
 .modal-3c3bKg {
@@ -4086,14 +4089,12 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
   box-shadow: var(--surshadow);
 }
 
-.sidebar-2K8pFh {
+.platform-win .sidebar-2K8pFh {
   background-color: var(--dark-blur);
-  backdrop-filter: var(--blur-radius) var(--vibrancy);
-  border-width: var(--borderr);
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   border-color: var(--borderc);
-  margin: 10px -10px 10px 10px;
+  margin: 0px;
   box-shadow: var(--surshadow);
   border-top-left-radius: var(--borderr)!important;
   border-bottom-left-radius: var(--borderr)!important;
@@ -4116,7 +4117,7 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
   border-bottom-left-radius: 0px;
   box-shadow: var(--surshadow);
   border-style: solid;
-  margin: 10px;
+  margin: 0px;
 }
 
 .nowPlayingColumn-2sl4cE {
