@@ -273,15 +273,15 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 /* UI+  */
 
-/* Verschwommener Text input
+/* Verschwommener Text input */
 
-.scroller-2LSbBU {
+/* .scroller-2LSbBU {
   bottom: -70px;
   padding-bottom: 60px!important;
 }
 
 .form-2fGMdU {
-  background: transparent;
+  background: var(--dark-blur);
   backdrop-filter: var(--blur-radius) var(--vibrancy) contrast(1);
 } */
 
@@ -455,15 +455,15 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 }
 
 
-.modeMuted-onO3r- .name-23GUGE { padding: 0px 0px 0px 15px; }
+.modeMuted-onO3r- .name-23GUGE { padding: 0px 0px 0px 18px; }
 .modeMuted-onO3r- .name-23GUGE::before {
   content: '';
   display: inline-flex;
   font-size: 12px;
   position: absolute;
   font-weight: normal;
-  top: 7px;
-  left: 33px;
+  top: 2px;
+  left: 0px;
   font-family: "Segoe MDL2 Assets", normal;
   font-size: 15px;
   font-weight: bold;
