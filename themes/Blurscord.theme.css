@@ -260,7 +260,6 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 }
 
 .userPopout-3XzG_A {
-  backdrop-filter: var(--blur-radius) var(--vibrancy);
   box-shadow: 0 2px 20px 0 #00000080, 0 0 0 1px rgba(0, 0, 0, 0.6);
   border-radius: var(--borderr);
 }
@@ -271,6 +270,8 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 .full-motion .translate-2dAEQ6.didRender-33z1u8 {
   animation: page 300ms 1;
+  backdrop-filter: var(--blur-radius) var(--vibrancy);
+  border-radius: var(--borderr);
 }
 
 /* UI+  */
