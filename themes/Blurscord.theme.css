@@ -25,6 +25,7 @@
   --accent-color: red;
   --text-color: white;
   --wallpaper: url("https://media.idownloadblog.com/wp-content/uploads/2020/06/macOS-Big-Sur-Daylight-Wallpaper-iDownloadBlog-2-2048x2048.jpg");
+  --loadwallpaper: url("https://steamuserimages-a.akamaihd.net/ugc/927060754650750033/F3169FE4FB3C62B9FCE317F943D06CCD8AEC6831/");
 
   --light-blur:#ffffff40;
   --light-blur-hover:#ffffff10;
@@ -85,7 +86,9 @@ font-family: 'Exo', sans-serif;
    display: flex;
    height: inherit;
    width: inherit;
-   background: black;
+   background: var(--loadwallpaper);
+   background-repeat: no-repeat;
+   background-size: cover;
    animation: loadbg 1s forwards;
    opacity: 1;
    white-space: pre;
@@ -107,7 +110,7 @@ font-family: 'Exo', sans-serif;
    height: inherit;
    width: inherit;
    background: transparent;
-   animation: loadbg 1s forwards;
+   animation: loadbglogo 1s forwards;
    opacity: 1;
    white-space: pre;
    pointer-events: none;
@@ -4580,6 +4583,23 @@ rect[fill*="#747f8d"]{
 }
 
 @keyframes loadbg {
+    from {
+        opacity: 1;
+        background: var(--loadwallpaper);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: black;
+    }
+
+    to {
+        opacity: 0;
+        background: none;
+        background-repeat: no-repeat;
+        background-color: transparent;
+    }
+}
+
+@keyframes loadbglogo {
     from {
         opacity: 1;
     }
