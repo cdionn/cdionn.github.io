@@ -265,6 +265,10 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 .userPopout-3XzG_A {
   box-shadow: 0 2px 20px 0 #00000080, 0 0 0 1px rgba(0, 0, 0, 0.6);
   border-radius: var(--borderr);
+  backdrop-filter: var(--blur-radius) var(--vibrancy);
+  animation: pageblurhidersettings 300ms forwards;
+  background-color: black;
+  animation-delay: 300ms;
 }
 
 .quickMessage-2XpSaN {
@@ -273,11 +277,20 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 .full-motion .translate-2dAEQ6.didRender-33z1u8 {
   animation: page 300ms 1;
-  backdrop-filter: var(--blur-radius) var(--vibrancy);
+
   border-radius: var(--borderr);
 }
 
 /* UI+  */
+
+.theme-dark .tooltipPrimary-1d1ph4 .tooltipPointer-3ZfirK, .theme-light .tooltipPrimary-1d1ph4 .tooltipPointer-3ZfirK {
+  border-top-color: black;
+}
+
+.theme-dark .tooltipPrimary-1d1ph4, .theme-light .tooltipPrimary-1d1ph4 {
+  border-radius: 10px;
+  background-color: black;
+}
 
 /* Verschwommener Text input */
 
@@ -2417,7 +2430,6 @@ rect[fill="#F04747"] {
 }
 
 .audioControls-2HsaU6, .videoControls-2kcYic {
-  backdrop-filter: var(--blur-radius) var(--vibrancy);
   background-color: #000000a5;
 }
 
@@ -3046,6 +3058,10 @@ canvas[width="210"]{
 
 
 /* Einstellungen */
+
+.theme-dark .avatarUploaderIndicator-2G-aIZ {
+  visibility: hidden;
+}
 
 img[src="/assets/5fb477ca84edd15d9a2888ac28365acd.svg"] {
   filter:grayscale(1);
