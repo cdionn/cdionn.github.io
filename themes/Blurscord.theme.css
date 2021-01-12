@@ -677,22 +677,24 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
   color: white;
 }
 
-.base-gE7OpD .text-1y-e8- {
-  z-index: -1;
-}
+/* schreibt animation */
 
 .typing-2GQL18 {
-  z-index: -1;
-  bottom: -6px;
+  z-index: 9999;
+  top: -5px;
   font-size: 12px
+  transform: scale(.9);
+}
+
+.base-gE7OpD .ellipsis-19qdx6 {
+   transform: scale(0.8);
+   background-color: #1b1b1b;
+   padding: 5px;
+   border-radius: var(--borderr);
 }
 
 .activityUserPopout-2yItg2 .textRow-19NEd_ {
   margin-top: 3px;
-}
-
-.base-gE7OpD .ellipsis-19qdx6 {
-   display:none;
 }
 
 .base-PmTxvP[style="background-color: rgb(240, 71, 71); width: 16px; padding-right: 1px;"] {
