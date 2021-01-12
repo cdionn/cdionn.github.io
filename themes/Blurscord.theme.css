@@ -1,7 +1,7 @@
 /**
  * @name Blurscord
  * @author Dion#0303
- * @version 1.1.0
+ * @version 1.1.1
  * @description Discord in a blurry style.
  * @website https://cdionn.github.io/discordtheme.html
 */
@@ -20,7 +20,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Code:400&display=swap');
 
 :root {
-  --version:"1.1.0";
+  --version:"1.1.1";
 
   --accent-color: red;
   --text-color: white;
@@ -86,7 +86,7 @@ font-family: 'Exo', sans-serif;
    display: flex;
    height: inherit;
    width: inherit;
-   background: var(--loadwallpaper);
+   background: var(--wallpaper);
    background-repeat: no-repeat;
    background-size: cover;
    animation: loadbg 1s forwards;
@@ -283,6 +283,11 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 /* UI+  */
 
+.jumpToPresentBar-G1R9s6 {
+  background-color: #090909;
+  opacity: 1;
+}
+
 .theme-dark .tooltipPrimary-1d1ph4 .tooltipPointer-3ZfirK, .theme-light .tooltipPrimary-1d1ph4 .tooltipPointer-3ZfirK {
   border-top-color: black;
 }
@@ -294,15 +299,17 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 /* Verschwommener Text input */
 
-/* .scroller-2LSbBU {
+.scroller-2LSbBU {
   bottom: -70px;
   padding-bottom: 60px!important;
 }
 
 .form-2fGMdU {
-  background: var(--dark-blur);
+  background: #1b1b1b80;
   backdrop-filter: var(--blur-radius) var(--vibrancy) contrast(1);
-} */
+  border: solid var(--borderc);
+  border-width: 1px 0px 0px 0px;
+}
 
 .message-2qnXI6.mentioned-xhSam7.selected-2P5D_Z, .mouse-mode.full-motion .mentioned-xhSam7:hover {
   background-color: #ffffff15;
@@ -4102,10 +4109,10 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 }
 
 .members-1998pB {
-  background-color: #00000090;
-  margin: 10px;
-  border-radius: var(--borderr);
-  border: solid 1px black;
+  background-color: black;
+  margin: 0px;
+  border-radius: 0px;
+  border: none;;
   box-shadow: var(--surshadow);
 }
 
@@ -4224,9 +4231,9 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 }
 
 .channelTextArea-rNsIhG {
-  background-color: transparent;
+  background-color: #1b1b1bc9;
   border-radius: 50px;
-  border: solid 1px gray;
+  border: solid 1px var(--borderc);
   transition: var(--animation);
   margin-top: 15px;
   margin-bottom: 15px;
@@ -4234,8 +4241,8 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 
 .channelTextArea-rNsIhG:focus-within {
   /* box-shadow: 0px 3px 5px 0px #00000050; */
-  background-color: transparent;
-  border-color: #ffffff50;
+  background-color: #1b1b1b;
+  border-color: black;
 }
 
 .attachWrapper-2TRKBi {
@@ -4601,7 +4608,7 @@ rect[fill*="#747f8d"]{
 @keyframes loadbg {
     from {
         opacity: 1;
-        background: var(--loadwallpaper);
+        background: var(--wallpaper);
         background-repeat: no-repeat;
         background-size: cover;
         background-color: black;
