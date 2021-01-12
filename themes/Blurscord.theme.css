@@ -15,9 +15,9 @@
 */
 
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Apple.css);
-@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed:400,500,600&display=swap');
 @import url('https://cdionn.github.io/themes/Fonts/Segoe/style.css');
 @import url('https://fonts.googleapis.com/css?family=Fira+Code:400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 :root {
   --version:"1.1.1";
@@ -60,7 +60,7 @@
 }
 
 body, div, span, textarea, ::-webkit-input-placeholder {
-    font-family: 'Encode Sans Semi Condensed', sans-serif;
+        font-family: 'Quicksand', sans-serif;
 }
 
 .hljs,
