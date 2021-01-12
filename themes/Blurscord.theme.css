@@ -156,27 +156,6 @@ font-family: 'Exo', sans-serif;
   background-color: transparent;
 }
 
-.contentRegion-3nDuYy {
-  background-color: #1b1b1b;
-  backdrop-filter: var(--blur-radius) var(--vibrancy);
-  border-radius: var(--borderr);
-  border-top-width: var(--borderw);
-  border-right-width: var(--borderw);
-  border-bottom-width: var(--borderw);
-  border-color: var(--borderc);
-  border-top-right-radius: var(-borderr);
-  border-bottom-right-radius: var(-borderr);
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  box-shadow: var(--surshadow);
-  border-style: solid;
-  margin: 20px 230px 20px 0px;
-  padding-left: 50px;
-  animation: pageblurhidersettingsright 500ms forwards;
-  animation-delay: .7s;
-  border-left-width: 1px;
-}
-
 /* Chat */
 .messages-3amgkR, .chat-3bRxxu, .container-1r6BKw.themed-ANHk51 {
   background-color: transparent;
@@ -3014,7 +2993,31 @@ canvas[width="210"]{
   background-color: transparent;
 }
 
-/* Einstellungen buggt hauptscreen blur will-change auf unset machen */
+.standardSidebarView-3F1I7i {
+  margin: 50px 300px 50px 300px;
+  backdrop-filter: var(--blur-radius) var(--vibrancy);
+  border-radius: var(--borderr);
+  animation: pageblurhidersettings 500ms forwards;
+  animation-delay: .7s;
+  background-color: #1b1b1b;
+  border: solid 1px var(--borderc);
+  box-shadow: var(--surshadow)
+}
+
+.sidebarRegion-VFTUkN {
+  background-color: var(--dark-blur);
+  border-radius: var(--borderr) 0px 0px var(--borderr);
+  max-width: 270px;
+  border: solid var(--borderc);
+  border-width: 0px 1px 0px 0px;
+}
+
+.contentRegion-3nDuYy {
+  background-color: #1b1b1b80;
+  border-radius: 0px var(--borderr) var(--borderr) 0px;
+}
+
+/* Einstellungen Animation buggt hauptscreen blur -will-change auf unset machen */
 
 .layers-3iHuyZ>.layer-3QrUeG.animating-rRxada {
   transform: none!important;
@@ -3072,23 +3075,6 @@ canvas[width="210"]{
 
 img[src="/assets/5fb477ca84edd15d9a2888ac28365acd.svg"] {
   filter:grayscale(1);
-}
-
-.sidebarRegion-VFTUkN {
-  background-color: black;
-  backdrop-filter: var(--blur-radius) var(--vibrancy);
-  border-width: var(--borderr);
-  border-style: solid;
-  border-width: 1px 0px 1px 1px;
-  border-color: var(--borderc);
-  margin: 20px 0px 20px 200px;
-  box-shadow: var(--surshadow);
-  border-top-left-radius: var(--borderr)!important;
-  border-bottom-left-radius: var(--borderr)!important;
-  max-width: 270px;
-  padding: 30px 0px 10px 30px;
-  animation: pageblurhidersettings 500ms forwards;
-  animation-delay: .7s;
 }
 
 .sidebar-CFHs9e {
