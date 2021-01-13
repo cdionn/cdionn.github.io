@@ -2,5 +2,5 @@
 font-family: 'DG';
 font-style: normal;
 font-weight: normal;
-src: local('DionsGlyphs'), url('DionsGlyphs.ttf') format('ttf');
+src: local('DionsGlyphs'), url('DionsGlyphs.woff2') format('woff2');
 }
