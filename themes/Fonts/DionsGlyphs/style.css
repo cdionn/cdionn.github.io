@@ -1,0 +1,6 @@
+@font-face {
+font-family: 'DG';
+font-style: normal;
+font-weight: normal;
+src: local('DionsGlyphs'), url('DionsGlyphs.ttf') format('ttf');
+}
