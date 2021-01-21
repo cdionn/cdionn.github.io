@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @name Blurscord
  * @author Dion#0303
  * @version 1.1.1
@@ -4363,7 +4363,7 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
   border-color: var(--borderc);
   border-width: 1px;
   border-style: solid;
-  padding: 10px 0px 10px 0px;
+  padding: 0px 0px 0px 0px;
   transition: var(--animation);
   box-shadow: var(--surshadow);
 }
@@ -4413,7 +4413,7 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 
 /* statuse  */
 .status-1AY8sU[style*="rgb(250, 166, 26)"] {background-color: var(--idle)!important;}
-rect[fill="rgba(250, 166, 26, 1)"], .pointerEvents-2zdfdO[mask^="url(#svg-mask-status-idle"], .header-QKLPzZ .pointerEvents-2zdfdO[mask^="url(#svg-mask-status-idle"], .header-2BwW8b .pointerEvents-2zdfdO[mask^="url(#svg-mask-status-idle"] {
+rect[fill*="x: 22; y: 22;"], .pointerEvents-2zdfdO[mask^="url(#svg-mask-status-idle"], .header-QKLPzZ .pointerEvents-2zdfdO[mask^="url(#svg-mask-status-idle"], .header-2BwW8b .pointerEvents-2zdfdO[mask^="url(#svg-mask-status-idle"] {
 	fill: var(--idle)!important;
 }
 
