@@ -17,5 +17,5 @@ rect[fill="#faa61a"] {
 
 /* Offline */
 rect[fill="#747f8d"] {
-    fill: var(--ofline)!important;
+    fill: var(--offline)!important;
 }
