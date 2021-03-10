@@ -1,0 +1,21 @@
+/*Status color Snippet*/
+
+/* Online */
+rect[fill="#43b581"] {
+    fill: var(--online)!important;
+}
+
+/* DND */
+rect[fill="#f04747"] {
+    fill: var(--dnd)!important;
+}
+
+/* Idle */
+rect[fill="#faa61a"] {
+    fill: var(--idle)!important;
+}
+
+/* Offline */
+rect[fill="#747f8d"] {
+    fill: var(--ofline)!important;
+}
