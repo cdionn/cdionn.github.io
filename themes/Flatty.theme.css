@@ -39,6 +39,7 @@
 
     --ease: all 250ms cubic-bezier(0.4, 0.0, 0.2, 1);
     --deease: all 250ms cubic-bezier(0.0, 0.0, 0.2, 1);
+    --ripple: all 1s cubic-bezier(0.4, 0.0, 0.2, 1);
 
 }
 
@@ -183,10 +184,6 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 .avatarWrapperNormal-3wFMbf, .da-avatar { box-shadow: var(--shadow); border-radius: 50px; }
 .da-message, .da-itemCard, .da-buttons, .da-button, .da-avatar, .da-role, .da-roleColor, .da-actionIcon, .da-mainContent, .da-searchBar, .da-emojiItem, .da-gameNameInput, .da-item, .da-option, .da-listRow, .da-peopleListItem, .da-actionButton, .da-memberListItem, .da-wrapper[role="listitem"] {
     transition: var(--ease);
-}
-
-.da-button {
-    border-radius: var(--borderr);
 }
 
 .disabled-3I9jyo, .textarea-2r0oV8, .name-23GUGE, .container-2ax-kl {
@@ -820,6 +817,12 @@ path[fill="rgb(118,134,177)"]{
 }
 
 /* Buttons */
+
+
+.da-button {
+    border-radius: var(--borderr);
+    transition: var(--ease);
+}
 
 .lookFilled-1Gx00P:hover { box-shadow: var(--shadowa); }
 .lookFilled-1Gx00P {
