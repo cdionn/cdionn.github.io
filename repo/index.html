@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Sidia</title> <!-- Change Sidia To Whatever You'd Like -->
+  <title>Dion's</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -9,17 +9,18 @@
 </head>
 
 <style>
+
+:root {
+  --background: black;
+}
+
 html {
     height: 100%;
 }
 
 body {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#87e0fd+0,53cbf1+40,05abe0+100;Blue+3D+%23+16 */
-background: #87e0fd; /* Old browsers */
-background: -moz-linear-gradient(top, #87e0fd 0%, #53cbf1 40%, #05abe0 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #87e0fd 0%,#53cbf1 40%,#05abe0 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #87e0fd 0%,#53cbf1 40%,#05abe0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#05abe0',GradientType=0 ); /* IE6-9 */
+background: var(--background);
 height: 100%;
     margin: 0;
     background-repeat: no-repeat;
@@ -47,26 +48,30 @@ height: 100%;
     text-align: center;
     opacity: 0.5;
 }
+
+
+.addbutton {
+  color: white;
+  font-size: 30px;
+  margin: 30px;
+}
+
 </style>
 
 <body>
 
   <div class="container">
-<h1>Huoooooh</h1>
+<h1 style="color: rgb(129, 32, 32);" >Dion's Repo</h1>
 
-<h3> Seems like you did a little Oopsie</h3>
-
-<h3> Add to Sileo Here: <a href="sileo://source/REPLACETHIS">REPLACETHIS</a></h3>
-
-</div>
-
-
-
-
-
-<div class="obsolete_cydia"> <!-- This is Using Essentialis' "index.html", they added "obsolete_cydia" bullshit. Not Me (Sukarodo) -->
-
-  <h6> Still using Cydia? Tap <a href="cydia://url/https://cydia.saurik.com/api/share#?source=REPLACETHIS">here to add to Cydia</a></h6>
+<h3>Wähle einen Paketmanager aus.</h3>
+<br>
+<a class="addbutton" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://cdionn.github.io/repo/>Cydia</a>
+<br>
+<br>
+<a class="addbutton" href="sileo://sources/add/https://cdionn.github.io/repo/">Sileo</a>
+<br>
+<br>
+<a class="addbutton" href="zbra://source/https://cdionn.github.io/repo/">Zebra</a>
 
 </div>
 </body>
