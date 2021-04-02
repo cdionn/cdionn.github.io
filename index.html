@@ -1,29 +1,78 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <link rel="preload" href="style.css" as="style">
-    <link rel="preload" href="main.js" as="script">
+<html lang="en">
+<head>
+  <title>Dion's</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
 
-    <link rel="stylesheet" href="style.css">
-    <title>Dion's</title>
-    <link rel = "icon" type = "image/png" href = "CydiaIcon.png">
-    <link rel = "apple-touch-icon" type = "image/png" href = "CydiaIcon.png"/>
-  </head>
+<style>
 
-  <body>
-<script src="main.js"></script>
+:root {
+  --background: black;
+}
 
-<div class="titelcontainer">
-  <a href="index.html">
-  <img id="dionslogo" src="site/logo.png" alt="Dions"></img>
-</a>
+html {
+    height: 100%;
+}
+
+body {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#87e0fd+0,53cbf1+40,05abe0+100;Blue+3D+%23+16 */
+background: var(--background);
+height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    color: white;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+.obsolete_cydia {
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    opacity: 0.5;
+}
+
+
+.addbutton {
+  color: white;
+  font-size: 30px;
+  margin: 30px;
+}
+
+</style>
+
+<body>
+
+  <div class="container">
+<h1 style="color: rgb(129, 32, 32);" >Dion's Repo</h1>
+
+<h3>Wähle einen Paketmanager aus.</h3>
+<br>
+<a class="addbutton" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://opa334.github.io/">Cydia</a>
+<br>
+<br>
+<a class="addbutton" href="zbra://sources/add/https://opa334.github.io/">Zebra</a>
+<br>
+<br>
+<a class="addbutton" href="sileo://source/https://cdionn.github.io/">Sileo</a>
+
 </div>
-
-<div class="linktab-tudorstinkt">
-  <a href="discordtheme.html">Discord Theme</a>
-  <a style="color:gray; pointer-events: none; user-select: none;" href="jailbreak.html">Jailbreak</a>
-  <a href="minecraft.html">Minecraft</a>
-</div>
-
-  </body>
+</body>
 </html>
