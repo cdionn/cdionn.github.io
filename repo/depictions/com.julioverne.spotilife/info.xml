@@ -1,0 +1,30 @@
+<package>
+	<id>com.julioverne.spotilife</id>
+	<name>Spotilife</name>
+	<version>1.5</version>
+	<compatibility>
+	</compatibility>
+	<dependencies>
+		<package>mobilesubstrate</package>
+	</dependencies>
+	<shortDescription>Premium features for Spotify.</shortDescription>
+	<descriptionlist>
+		<description>Premium features for Spotify.</description>
+	</descriptionlist>
+	<screenshots>	
+		<screenshot>
+			<description>Spotilife settings</description>
+			<image>settings.png</image>
+		</screenshot>		
+	</screenshots>
+	<changelog>
+		<change>Fix for new Spotify update.</change>
+	</changelog>
+	<links>
+		<link>
+			<name>/r/jailbreak</name>
+			<url>https://www.reddit.com/r/jailbreak</url>
+			<iconclass>fa fa-reddit</iconclass>
+		</link>
+	</links>
+</package>
