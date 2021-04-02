@@ -1,24 +1,17 @@
 <package>
 	<id>com.cdion.tenebris_1.5.4_iphoneos-arm.deb</id>
 	<name>Tenebris</name>
-	<version>2.0.0-1</version>
+	<version>1.6.4-2</version>
 	<compatibility>
 		<firmware>
-			<miniOS>7.0</miniOS>
 		</firmware>
 	</compatibility>
 	<dependencies>
 		<package>mobilesubstrate</package>
 	</dependencies>
-	<shortDescription>This is a sample new package. Firmware should be greater than 7.0</shortDescription>
+	<shortDescription>Tenebris Theme</shortDescription>
 	<descriptionlist>
-		<description>This is an package will full depictions.</description>
-		<description>It has more description lines.</description>
-		<description><![CDATA[
-		You can also have<br/> 
-		a multi-line item.
-		]]>
-		</description>
+		<description>Tenebris theme compatible with all themeing engines.</description>
 	</descriptionlist>
 	<screenshots>
 		<screenshot>
