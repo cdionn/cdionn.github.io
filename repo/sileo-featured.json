@@ -9,5 +9,11 @@
         "package": "com.julioverne.spotilife",
         "hideShadow": false
     }
+    {
+      "url": "https://cdionn.github.io/repo/assets/Banners/Tenebris.png",
+      "title": "Tenebris",
+      "package": "com.cdion.tenebris",
+      "hideShadow": false
+  }
   ]
 }

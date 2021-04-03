@@ -24,7 +24,7 @@
 				},
 				{
 					"title": "Released",
-					"text": "RELEASE_DATE",
+					"text": "2021",
 					"class": "DepictionTableTextView"
 				},
 				{
@@ -63,7 +63,7 @@
 					"class": "DepictionSubheaderView"
 				},
 				{
-					"markdown": "\t\n\u2022 Tenebris theme works for all themeing engines.",
+					"markdown": "\t\n\u2022 Spotilife unlocks premium features for Spotify requires official Spotify from the Appstore",
 					"useSpacing": false,
 					"class": "DepictionMarkdownView"
 				},
