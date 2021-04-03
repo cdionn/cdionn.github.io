@@ -1,14 +1,14 @@
 {
 	"minVersion": "0.1",
 	"headerImage": "https://cdionn.github.io/repo/assets/Banners/Spotilife.png",
-	"tintColor": "#32a852",
+	"tintColor": "#1ed760",
 	"tabs": [
 		{
 			"tabname": "Details",
 			"views": [
 				{
 					"class": "DepictionMarkdownView",
-					"markdown": "## TWEAK_NAME\nSHORT_DESCRIPTION"
+					"markdown": "## Spotilife\nPremium features for Spotify"
 				},
 				{
 					"class": "DepictionSeparatorView"
@@ -19,7 +19,7 @@
 				},
 				{
 					"title": "Version",
-					"text": "VERSION_NUMBER",
+					"text": "1.0",
 					"class": "DepictionTableTextView"
 				},
 				{
@@ -29,22 +29,17 @@
 				},
 				{
 					"title": "Price",
-					"text": "PRICE",
+					"text": "Free",
 					"class": "DepictionTableTextView"
 				},
 				{
 					"title": "Developer",
-					"text": "DEVELOPER_NAME",
+					"text": "Dion",
 					"class": "DepictionTableTextView"
 				},
 				{
 					"title": "Website",
-					"action": "WEBSITE_HERE",
-					"class": "DepictionTableButtonView"
-				},
-				{
-					"title": "Use This Template",
-					"action": "https://github.com/sukarodo/Sidia",
+					"action": "https://cdionn.github.io/repo",
 					"class": "DepictionTableButtonView"
 				},
 				{
@@ -62,18 +57,18 @@
 			"tabname": "Changelog",
 			"views": [
 				{
-					"title": "VERSION_NUMBER",
+					"title": "1.0.0",
 					"useBoldText": true,
 					"useBottomMargin": true,
 					"class": "DepictionSubheaderView"
 				},
 				{
-					"markdown": "\t\n\u2022 UPDATE_DESCRIPTION",
+					"markdown": "\t\n\u2022 Tenebris theme works for all themeing engines.",
 					"useSpacing": false,
 					"class": "DepictionMarkdownView"
 				},
 				{
-					"markdown": "<small style=\"color: #999; margin-top: -8px;\">Released RELEASE_DATE</small>",
+					"markdown": "<small style=\"color: #999; margin-top: -8px;\">Released 2021</small>",
 					"useRawFormat": true,
 					"class": "DepictionMarkdownView"
 				}
