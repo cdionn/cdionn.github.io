@@ -1,0 +1,24 @@
+<package>
+	<id>com.cdion.tenebris</id>
+	<name>Tenebris</name>
+	<version>1.0</version>
+	<compatibility>
+	</compatibility>
+	<dependencies>
+	</dependencies>
+	<shortDescription>a black and white theme.</shortDescription>
+	<descriptionlist>
+		<description>Works with all themeing engines.</description>
+	</descriptionlist>
+	<screenshots>
+		<screenshot>
+			<description>Theme picture</description>
+			<image>cydia.jpg</image>
+		</screenshot>	
+	</screenshots>
+	<changelog>
+		<change>Initial Release</change>
+	</changelog>
+	<links>
+	</links>
+</package>

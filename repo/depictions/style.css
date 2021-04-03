@@ -6,21 +6,21 @@
     list-style-type: none;
     padding: 17px 15px;
     display: block;
-    color: #337ab7 !important;
+    color: #b73333 !important;
     text-align: left;
 }
 
 .link-item:hover {
-    border: 1px solid #ddd;
-    background-color: #f5f5f5;
+    border: 1px solid black;
+    background-color: #111111;
 }
 
 html.can-touch .link-item:hover{ /* disable hover effect when input is touch */
-    background-color: #fff;
+    background-color: #111111;
 }
 
 html.can-touch .link-item:active{ /* disable hover effect when input is touch */
-    background-color: #f5f5f5;
+    background-color: #111111;
 }
 
 .fa {
