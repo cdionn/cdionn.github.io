@@ -49,7 +49,24 @@
 				{
 					"spacing": 20,
 					"class": "DepictionSpacerView"
-				}
+				},
+				{
+					"class": "DepictionSubheaderView",
+					"title": "Screenshots",
+					"useBoldText": true,
+					"useBottomMargin": false
+				  },
+				  {
+					"class": "DepictionScreenshotsView",
+					"itemCornerRadius": 8,
+					"itemSize": "{360, 640}",
+					"screenshots": [
+					  {
+						"accessibilityText": "Screenshot",
+						"url": "https://cdionn.github.io/repo/depictions/com.cdion.tenebris/screenshots/home.PNG"
+					  }
+					]
+				  }
 			],
 			"class": "DepictionStackView"
 		},
@@ -71,24 +88,7 @@
 					"markdown": "<small style=\"color: #999; margin-top: -8px;\">Released 2021</small>",
 					"useRawFormat": true,
 					"class": "DepictionMarkdownView"
-				},
-				{
-					"class": "DepictionSubheaderView",
-					"title": "Screenshots",
-					"useBoldText": true,
-					"useBottomMargin": false
-				  },
-				  {
-					"class": "DepictionScreenshotsView",
-					"itemCornerRadius": 8,
-					"itemSize": "{360, 640}",
-					"screenshots": [
-					  {
-						"accessibilityText": "Screenshot",
-						"url": "https://cdionn.github.io/repo/depictions/com.cdion.tenebris/screenshots/home.png"
-					  }
-					]
-				  }
+				}
 			],
 			"class": "DepictionStackView"
 		}
