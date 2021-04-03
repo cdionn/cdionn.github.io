@@ -1,7 +1,7 @@
 {
 	"minVersion": "0.1",
 	"headerImage": "https://cdionn.github.io/repo/assets/Banners/Tenebris.png",
-	"tintColor": "#0b0b0b",
+	"tintColor": "#0393fd",
 	"tabs": [
 		{
 			"tabname": "Details",
