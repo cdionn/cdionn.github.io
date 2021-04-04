@@ -312,6 +312,16 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 /* UI+  */
 
+.container-2dqNWc {
+  background-color: #080808;
+  border-radius: var(--borderr);
+}
+
+.lookOutlined-3sRXeN.colorWhite-rEQuAQ {
+  border-radius: 50px;
+  border-width: 2px;
+}
+
 .jumpToPresentBar-G1R9s6 {
   background-color: #090909;
   opacity: 1;
@@ -401,6 +411,7 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
   fill: var(--text-color)!important;
   color: var(--text-color)!important;
 }
+
 
 .css-3vaxre-menu {
   background-color: #0a0a0a;
