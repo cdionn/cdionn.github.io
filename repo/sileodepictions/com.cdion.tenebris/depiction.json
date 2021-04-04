@@ -72,7 +72,18 @@
 		},
 		{
 			"tabname": "Changelog",
-			"views": [
+			"views": [ 
+				{
+					"title": "1.0.1",
+					"useBoldText": true,
+					"useBottomMargin": true,
+					"class": "DepictionSubheaderView"
+				},
+				{
+					"markdown": "\t\n\u2022 Added some Icons",
+					"useSpacing": false,
+					"class": "DepictionMarkdownView"
+				},
 				{
 					"title": "1.0.0",
 					"useBoldText": true,
@@ -80,7 +91,7 @@
 					"class": "DepictionSubheaderView"
 				},
 				{
-					"markdown": "\t\n\u2022 Tenebris theme works for all themeing engines.",
+					"markdown": "\t\n\u2022 Initial Release",
 					"useSpacing": false,
 					"class": "DepictionMarkdownView"
 				},
