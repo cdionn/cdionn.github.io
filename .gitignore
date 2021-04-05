@@ -8,3 +8,8 @@ themes/Copy.Bat
 themes/MoveBlurscord.Bat
 themes/sound.vbs
 .DS_Store
+repo/debs/tmp.rar
+repo/debs/tmp/DEBIAN/control
+repo/debs/tmp/DEBIAN/control
+repo/debs/devytmp.rar
+repo/debs/tmp/DEBIAN/control
