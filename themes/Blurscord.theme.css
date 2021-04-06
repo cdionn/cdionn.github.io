@@ -82,7 +82,7 @@
 
 .anchor-3Z-8Bb[href="https://support.discord.com"]:hover::before {
   background: #080808;
-  content: var(--version)" Changelog:\A\A Ein wenig Light mode Sachen hinzugefügt und kleine UI Fixes \A\A Changelog wird bald in einstellungen gemoved.";
+  content: var(--version)" Changelog:\A\A Ein wenig Light mode Sachen hinzugefügt und kleine UI Fixes\A\A Scrollbar im Chat gefixxt. \A\A Changelog wird bald in einstellungen gemoved.";
   white-space: pre-wrap;
   font-family: var(--font);
   font-size: 18px;
@@ -335,8 +335,12 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
   padding-bottom: 60px!important;
 }
 
+.scroller-2LSbBU::-webkit-scrollbar-track {
+  margin-bottom: 78px;
+}
+
 .form-2fGMdU {
-  background: linear-gradient(to left, black, var(--dark-blur), var(--dark-blur),var(--dark-blur));
+  background: var(--dark-blur);
   backdrop-filter: var(--blur-radius) var(--vibrancy) contrast(1);
   border: solid var(--borderc);
   border-width: 1px 0px 1px 0px;
