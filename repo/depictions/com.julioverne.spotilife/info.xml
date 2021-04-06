@@ -21,9 +21,9 @@
 	</changelog>
 	<links>
 		<link>
-			<name>/r/jailbreak</name>
-			<url>https://www.reddit.com/r/jailbreak</url>
-			<iconclass>fa fa-reddit</iconclass>
+			<name>iJulioverne Twitter</name>
+			<url>https://twitter.com/ijulioverne</url>
+			<iconclass>fab fa-twitter</iconclass>
 		</link>
 	</links>
 </package>
