@@ -767,6 +767,16 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
    background-color: var(--alternate);
    padding: 5px;
    border-radius: var(--borderr);
+  
+}
+
+.base-gE7OpD {
+  left: 0px;
+  animation: fadeIN forwards 2s;
+}
+
+.colorBrand-2tjs5J {
+  color: var(--accent-color);
 }
 
 .activityUserPopout-2yItg2 .textRow-19NEd_ {
@@ -4059,6 +4069,10 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
   color: var(--text-color);
 }
 
+.lookFilled-1Gx00P.colorWhite-rEQuAQ {
+  color: black!important;
+}
+
 .lookGhost-2Fn_0-.colorGrey-2DXtkV {
   color: white;
   background-color: var(--neutral);
@@ -4905,7 +4919,7 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
   color: black;
 }
 
-.theme-light .nameNormal-2lqVQK, .activityName-1IaRLn {
+.theme-light .nameNormal-2lqVQK,.theme-light .activityName-1IaRLn {
   color: black;
 }
 
