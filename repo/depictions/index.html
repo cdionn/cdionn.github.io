@@ -13,10 +13,10 @@
   <script type="text/javascript" src="js/ios_version_check.js"></script>
   <style>
 	@media (max-width: 767px) {
-		body{background:#080808!important;margin:0;padding:0;border:0;outline:0;box-sizing:border-box}
+		body{background:#efeff4!important;margin:0;padding:0;border:0;outline:0;box-sizing:border-box}
 	}
 	.jumbotron-bg {
-		background: green
+		background: var(--accent-color)!important;
 	}
   </style>
   <script type="text/javascript">
@@ -158,15 +158,19 @@
 
 <div id="packageInformation">
 
-	<div id="packageHeader" class="container" style="display:none">
+	<div id="packageHeader" class="container">
 		<div class="jumbotron">
 			<h1 id="packageName"></h1>
-			<p id="packageShortDesc">brought to you by Dion</p>
+			<p id="packageShortDesc" style="color: var(--accent-color);">brought to you by Dion's</p>
 		</div>
 	</div>
 
 	<div class="container">
 	  <div id="compatibilityCheck" class="alert"></div>
+	</div>
+
+	<div id="RepoLogo" class="repologo">
+		<img src="https://cdionn.github.io/repo/CydiaIcon.png" width="80" height="80" alt="logo">
 	</div>
 
 	<div class="container">
@@ -198,7 +202,7 @@
 <div id="packageError" style="display:none">
 	<div class="container">
 	  <div class="alert alert-danger">
-		<strong>Oh snap!</strong> The package you are tying to view is not hosted on this repository.
+		<strong>Oh snap!</strong> The package you are trying to view is not hosted on this repository.
 	  </div>
 	</div>
 </div>

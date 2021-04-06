@@ -1,8 +1,9 @@
 <changelog>
-	<changes>
+		<changes>
 		<version>1.0.1</version>
 		<change>Icons Added</change>
-	
+	</changes>
+	<changes>
 		<version>1.0.0</version>
 		<change>Initial Release</change>
 	</changes>
