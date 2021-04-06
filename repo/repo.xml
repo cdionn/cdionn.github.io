@@ -1,9 +1,9 @@
 <repo>
     <footerlinks>
         <link>
-            <name> Follow me on Twitter</name>
+            <name>Follow me on Twitter</name>
             <url>https://twitter.com/cdion__</url>
-            <i class="fab fa-twitter"></i>
+            <iconclass>fab fa-twitter</iconclass>
         </link>
     </footerlinks>
 </repo>
