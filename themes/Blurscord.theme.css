@@ -2610,6 +2610,8 @@ img[src="/assets/b73a63cb14a22dd24f0f8da07b186335.svg"]{
   color: white;
 }
 
+
+.avatarSpeaking-2c8-9i { box-shadow: inset 0px 0px 0px 3px var(--accent-color); transition: var(--animation); }
 .avatarSpeaking-2IGMRN {
   box-shadow: inset 0px 0px 0px 3px var(--accent-color);
 }
