@@ -2456,6 +2456,45 @@ rect[fill="#F04747"] {
   background-image: linear-gradient(transparent,#00000010);
 }
 
+/* Spotify Plugin */
+
+.container-6sXIoE.withTimeline-824fT_ .button-14-BFJ {
+  background-color: var(--dark-blur)!important;
+  background-image: linear-gradient(transparent,#00000010);
+}
+
+.container-6sXIoE.maximized-vv2Wr0 .button-14-BFJ.active-6TsW-_ {
+  background-color: var(--accent-color)!important;
+}
+
+.container-6sXIoE.maximized-vv2Wr0 .directionRow-3v3tfG {
+  width: 100%;
+}
+
+.container-6sXIoE.maximized-vv2Wr0 .coverWrapper-YAplwJ {
+  margin: 0px;
+}
+
+.container-6sXIoE.maximized-vv2Wr0 .cover-SwJ-ck {
+  transform: scale(.9);
+  border-radius: 12px;
+}
+
+.slider-1PF9SW .barFill-23-gu- {
+  background-color: var(--accent-color)!important;
+}
+
+.container-6sXIoE.maximized-vv2Wr0 .button-14-BFJ{
+  height: 23px;
+}
+
+.theme-dark .popout-xwjvsX.popoutTop-3WSJtH::after, .theme-dark .popout-xwjvsX.popoutTopLeft-3B0mFf::after, .theme-dark .popout-xwjvsX.popoutTopRight-1lc8Mq::after {
+  border-top-color: #101010;
+}
+
+.themedPopout-1TrfdI {
+  background-color: #101010;
+}
 
 .actionIcon-2Hi9ZG {
   color: white;
@@ -3475,6 +3514,10 @@ img[src="/assets/bbc9e257da833d4b7d22c82a1de8a0a0.svg"] {
   transition: var(--animation);
 }
 
+.container-BetterVolume {
+  background: var(--dark-blur);
+}
+
 .defaultColor-1_ajX0 {
   font-size: 25px
 }
@@ -3490,37 +3533,16 @@ img[src="/assets/bbc9e257da833d4b7d22c82a1de8a0a0.svg"] {
   border: solid 1px #222222;
 }
 
-.grabber-3mFHz2 {
-  border-radius: 50px;
-  height:10px;
-  top: 34px;
-  transform: scale(2);
-  box-shadow: 0px 0px 1px 0px #00000080;
-  border-color: #f1f1f1;
-  background-color: #f8f8f8;
-}
-
 .bar-2Qqk5Z {
   background-color: #00000050!important;
-  border: solid 1px #272727!important;
 }
 
-.bar-2Qqk5Z {
-height: 20px!important;
-border-radius: 50px!important;
+.barFill-23-gu-[style="background-color: rgb(29, 185, 84); width: 58%;"] {
+  background-color: var(--accent-color)!important;
 }
 
 .barFill-23-gu- {
   background-color: white;
-}
-
-.sliderContainer-2Nrll8{
-  margin-bottom: 20px;
-}
-
-.mini-dmm9yo .grabber-3mFHz2 {
-  transform: scale(1.5);
-  top: 18px;
 }
 
 .theme-dark .progress-1IcQ3A {
