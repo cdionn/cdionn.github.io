@@ -1,7 +1,7 @@
 ﻿/**
  * @name Blurscord
  * @author Dion#0303
- * @version 1.2.1
+ * @version 1.2.2
  * @description Discord in a blurry style.
  * @website https://cdionn.github.io/discordtheme.html
 */
@@ -25,7 +25,7 @@
 @import url('https://use.fontawesome.com/releases/v5.15.3/css/brands.css');
 
 :root {
-  --version:"1.2.1";
+  --version:"1.2.2";
 
   --accent-color: #447af0;
   --accent-color2: #447af015;
@@ -288,12 +288,39 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 }
 
 .full-motion .translate-2dAEQ6.didRender-33z1u8 {
-  animation: page 300ms 1;
-
   border-radius: var(--borderr);
 }
 
 /* UI+  */
+
+.selectWrapper-yPjeij .searchInput-5YMkDH {
+  background-color: transparent;
+}
+
+.bf-toolbar {
+  margin-bottom: 30px!important;
+  margin: 0 0px 0 0!important;
+  top: -20px!important;
+}
+
+.bf-toolbar::before {
+  background-color: #000!important;
+}
+
+.theme-dark .bf-toolbar .bf-arrow {
+  background-color: #000;
+  opacity: 1;
+}
+
+.bf-toolbar .bf-arrow {
+  border-radius: 50px;
+}
+
+.chatCounter-XOMPsh {
+  right: 0;
+  bottom: -1.2em;
+  font-size: 12px;
+}
 
 .theme-light .layout-2DM8Md {
   color: black;
@@ -362,7 +389,7 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
   background: var(--dark-blur);
   backdrop-filter: var(--blur-radius) var(--vibrancy) contrast(1);
   border: solid var(--borderc);
-  border-width: 1px 0px 1px 0px;
+  border-width: 1px 0px 0px 0px;
 }
 
 .lookFilled-1Gx00P .contents-18-Yxp {
@@ -4124,10 +4151,10 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 
 .lookOutlined-3sRXeN.colorRed-1TFJan {
   border-radius: 5px;
-  background-color: #fefefe;
+  background-color: rgb(218, 34, 34);
   border: none;
   color: var(--neutral)!important;
-  background-image: linear-gradient(#00000020, transparent);
+  background-image: linear-gradient(#ffffff20, transparent);
   transition: var(--animation);
 }
 
@@ -4705,7 +4732,6 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 
 .translate-2dAEQ6.animatorLeft-1EQxU0,.translate-2dAEQ6.animatorRight-3i_YPs {
   transform: none;
-  animation: page 250ms 1;
 }
 
 /* Animationen  */
