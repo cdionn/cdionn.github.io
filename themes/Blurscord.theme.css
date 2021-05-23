@@ -1,7 +1,7 @@
 ﻿/**
  * @name Blurscord
  * @author Dion#0303
- * @version 1.2.2
+ * @version 1.2.3
  * @description Discord in a blurry style.
  * @website https://cdionn.github.io/discordtheme.html
 */
@@ -25,7 +25,7 @@
 @import url('https://use.fontawesome.com/releases/v5.15.3/css/brands.css');
 
 :root {
-  --version:"1.2.2";
+  --version:"1.2.3";
 
   --accent-color: #447af0;
   --accent-color2: #447af015;
@@ -57,11 +57,11 @@
 
 /* Changelog */
 
-.anchor-3Z-8Bb[href="https://support.discord.com"] {
+/* .anchor-3Z-8Bb[href="https://twitter.com/BandagedBD"] {
   visibility: hidden;
 }
 
-.anchor-3Z-8Bb[href="https://support.discord.com"]::before {
+.anchor-3Z-8Bb[href="https://twitter.com/BandagedBD"]::after {
   font-family: var(--fonta);
   background: transparent;
   content: "\f05a";
@@ -80,7 +80,7 @@
   z-index: 99;
 }
 
-.anchor-3Z-8Bb[href="https://support.discord.com"]:hover::before {
+.anchor-3Z-8Bb[href="https://twitter.com/BandagedBD"]:hover::after {
   background: #080808;
   content: var(--version)" Changelog:\A\A Ein wenig Light mode Sachen hinzugefügt und kleine UI Fixes\A\A Scrollbar im Chat gefixxt. \A\A Changelog wird bald in einstellungen gemoved.";
   white-space: pre-wrap;
@@ -95,7 +95,7 @@
   border-radius: var(--borderr);
   right: 20px;
   transition: var(--animation);
-}
+} */
 
 /* end */
 
@@ -292,6 +292,10 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 }
 
 /* UI+  */
+
+.section-2gLsgF {
+  background-color: var(--dark-blur);
+}
 
 .selectWrapper-yPjeij .searchInput-5YMkDH {
   background-color: transparent;
@@ -2672,8 +2676,18 @@ img[src="/assets/b73a63cb14a22dd24f0f8da07b186335.svg"]{
   transition: var(--animation);
 }
 
-.theme-dark .outer-1AjyKL.active-1xchHY, .theme-dark .outer-1AjyKL.interactive-3B9GmY:hover {
-  background-color: var(--background-modifier-selected);
+.theme-dark .outer-1AjyKL.interactive-3B9GmY:hover { background-color: var(--dark-blur-selected); }
+.theme-dark .outer-1AjyKL.active-1xchHY {
+  background-color: var(--dark-blur);
+}
+
+.partyMemberOverflow-lXnzvu {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+.wrapper-3D2qGf {
+  border-color: var(--borderc);
 }
 
 .theme-dark .footer-3rDWdC {
@@ -4520,7 +4534,7 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
   content: '\f360';
 }
 .layers-3iHuyZ>.layer-3QrUeG[aria-label="USER_SETTINGS"] .side-8zPYf6 .item-PXvHYJ:nth-child(8)::before {
-  content: '\f290';
+  
 }
 .layers-3iHuyZ>.layer-3QrUeG[aria-label="USER_SETTINGS"] .side-8zPYf6 .item-PXvHYJ:nth-child(9)::before {
   content: '\f062';
