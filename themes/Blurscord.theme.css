@@ -1,7 +1,7 @@
 ﻿/**
  * @name Blurscord
  * @author Dion#0303
- * @version 1.2.3
+ * @version 1.2.4
  * @description Discord in a blurry style.
  * @website https://cdionn.github.io/discordtheme.html
 */
@@ -25,7 +25,7 @@
 @import url('https://use.fontawesome.com/releases/v5.15.3/css/brands.css');
 
 :root {
-  --version:"1.2.3";
+  --version:"1.2.4";
 
   --accent-color: #447af0;
   --accent-color2: #447af015;
@@ -233,7 +233,7 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 /* Abstand zum Hintergrund und der Sidebar  */
 
 .base-3dtUhz {
-  margin: 30px;
+  margin: 20px;
   backdrop-filter: var(--blur-radius) var(--vibrancy);
   border-radius: var(--borderr);
 }
@@ -273,6 +273,7 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 .theme-light .body-3iLsc4, .theme-light .footer-1fjuF6 {
   background-color: transparent;
 }
+
 
 .userPopout-3XzG_A {
   box-shadow: 0 2px 20px 0 #00000080, 0 0 0 1px rgba(0, 0, 0, 0.6);
@@ -604,6 +605,7 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 .content-1x5b-n {
   transition: var(--animation);
+  border-radius: 8px;
 }
 
 .name-23GUGE, .icon-1DeIlz {
@@ -1150,6 +1152,7 @@ path[fill="rgb(118,134,177)"] {
 
 .styleFixed-sX-yHV {
   backdrop-filter: var(--blur-radius) var(--vibrancy);
+  border-radius: var(--borderr);
 }
 
 .colorBrand-ROmMP1, .colorPremium-p4p7qO .icon-LYJorE {
@@ -1212,8 +1215,22 @@ path[fill="rgb(118,134,177)"] {
   color: white;
 }
 
+.wrapper-PY0fhH {
+  border-bottom: 1px solid #ffffff10;
+  margin: 0 0 5px 6px;
+}
+
+.name-3l27Hl {
+  text-align: center;
+}
+
+.status-1AY8sU {
+  transition: var(--animation);
+}
+
 .colorDefault-2K3EoJ {
   transition: var(--animation);
+  border-radius: 10px;
 }
 
 .operations-36ENbA>a {
@@ -1232,8 +1249,9 @@ path[fill="rgb(118,134,177)"] {
 }
 
 .separator-2I32lJ {
-    border-bottom: 1px solid hsla(0, 0%, 42%, 0.06);
-}
+    /* border-bottom: 1px solid hsla(0, 0%, 42%, 0.06); */
+    border-color: transparent;
+  }
 
 .categoryItem-3zFJns.selectedCategoryItem-3X8ujp .itemInner-3gVXMG {
   background-color: var(--light-blur);
@@ -4654,7 +4672,7 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
   background-color: var(--dark-blur);
   backdrop-filter: var(--blur-radius) var(--vibrancy);
   border-radius: 0px;
-  margin: 30px 0px 30px 4px;
+  margin: 20px 0px 20px 4px;
   border-radius: var(--borderr);
   border-color: var(--borderc);
   border-width: 1px;
