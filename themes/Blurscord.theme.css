@@ -1,7 +1,7 @@
 ﻿/**
  * @name Blurscord
  * @author Dion#0303
- * @version 1.2.5
+ * @version 1.2.6
  * @description Discord in a blurry style.
  * @website https://cdionn.github.io/discordtheme.html
 */
@@ -25,7 +25,7 @@
 @import url('https://use.fontawesome.com/releases/v5.15.3/css/brands.css');
 
 :root {
-  --version:"1.2.5";
+  --version:"1.2.6";
 
   --accent-color: #447af0;
   --accent-color2: #447af015;
@@ -184,6 +184,13 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
   visibility: hidden;
 }
 
+
+.avatarHint-1E3LMl {   position: fixed; left: 106px; top: 22px;}
+.avatar-22FtUu {
+  position: fixed;
+  left: 100px;
+}
+
 .theme-dark .wordmarkWindows-1v0lYD:after {
   content: "Blurscord " var(--version);
   display: inline-block;
@@ -300,7 +307,7 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 .banner-2QYc2d {
   background: linear-gradient(transparent, var(--dark-blur));
-  height: 130px;
+  height: 124px;
   border-bottom: solid 1px black;
 }
 
@@ -308,10 +315,16 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
   background-color: var(--dark-blur);
 }
 
+
 .headerTop-2y3V6H {
   background-color: transparent;
   border-bottom-color: transparent;
   padding: 20px 16px 16px;
+}
+
+.loadingPopout-qYljDW {
+  background-color: #111111;
+  border-radius: 50px;
 }
 
 .section-2gLsgF {
@@ -2086,7 +2099,6 @@ rect[fill="#F04747"] {
   border-radius: 50px;
 }
 
-.gameIcon-_0rmMm:hover ,.assets-VMAukC:hover {transform: scale(1.03);}
 .gameIcon-_0rmMm, .assets-VMAukC {
   transition: var(--animation);
 }
