@@ -1,7 +1,7 @@
 ﻿/**
  * @name Blurscord
  * @author Dion#0303
- * @version 1.2.4
+ * @version 1.2.5
  * @description Discord in a blurry style.
  * @website https://cdionn.github.io/discordtheme.html
 */
@@ -25,7 +25,7 @@
 @import url('https://use.fontawesome.com/releases/v5.15.3/css/brands.css');
 
 :root {
-  --version:"1.2.4";
+  --version:"1.2.5";
 
   --accent-color: #447af0;
   --accent-color2: #447af015;
@@ -294,6 +294,26 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 /* UI+  */
 
+.input-2_SIlA {
+  background-color: transparent;;
+}
+
+.banner-2QYc2d {
+  background: linear-gradient(transparent, var(--dark-blur));
+  height: 130px;
+  border-bottom: solid 1px black;
+}
+
+.headerNormal-1l1Znk {
+  background-color: var(--dark-blur);
+}
+
+.headerTop-2y3V6H {
+  background-color: transparent;
+  border-bottom-color: transparent;
+  padding: 20px 16px 16px;
+}
+
 .section-2gLsgF {
   background-color: var(--dark-blur);
 }
@@ -512,6 +532,14 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
   right: 0px;
 }
 
+.bd-switch input:checked+.bd-switch-body {
+  --switch-color: var(--accent-color);
+}
+
+.bd-switch-body {
+  --switch-color: #242424;
+}
+
 .bd-modal-wrapper .bd-modal-body, .bd-modal-wrapper .header, .bd-modal-wrapper .tab-bar-container, .theme-dark .footer-3rDWdC {
   box-shadow: none;
   background-color: none!important;
@@ -539,10 +567,6 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 .bd-addon-list .bd-addon-card, .bd-addon-list .bd-addon-header {
   background-color: var(--dark-blur);
   border-radius: var(--borderr);
-}
-
-.bd-switch-checked, .bd-addon-views .bd-view-button.selected, .bd-button {
-  background-color: var(--accent-color);
 }
 
 .cardPrimaryEditable-3KtE4g[style="padding: 10px; border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26);"] {
@@ -3384,10 +3408,6 @@ img[src="/assets/5fb477ca84edd15d9a2888ac28365acd.svg"] {
   border-radius: 50px;
 }
 
-.bd-switch-checked::after {
-  background-color: var(--text-color);
-}
-
 polyline[stroke="#ffffff"]{
   stroke: var(--text-color);
 }
@@ -3501,15 +3521,6 @@ polyline[stroke="#ffffff"]{
 
 .bd-addon-list a {
   color: var(--accent-color);
-}
-
-.bd-switch {
-  background-color: #ffffff20;
-  backdrop-filter: var(--blur-radius) var(--vibrancy);
-}
-
-.bd-switch-checked {
-  background-color: var(--accent-color);
 }
 
 #bd-settings-sidebar .ui-tab-bar-header .bd-icon {
