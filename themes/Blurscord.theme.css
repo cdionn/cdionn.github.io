@@ -1257,6 +1257,34 @@ path[fill="rgb(118,134,177)"] {
   margin: 0 0 5px 6px;
 }
 
+.theme-dark .wrapper-3WhCwL {
+  color: var(--accent-color);
+  background-color: var(--accent-color2);
+}
+
+.reaction-1hd86g:hover {background-color: var(--dark-blur-hover); border-color: #ffffff50;}
+.reaction-1hd86g {
+  background-color: var(--dark-blur);
+  border-color: black;
+}
+
+.repliedMessage-VokQwo:before {
+  border-color: var(--accent-color);
+}
+
+.barFill-Dhkah7 {
+  background: var(--accent-color)
+}
+
+.bar-g2ZMIm {
+  background-color: #ffffff20;
+}
+
+.reaction-1hd86g.reactionMe-wv5HKu {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color2);
+}
+
 .name-3l27Hl {
   text-align: center;
 }
@@ -4510,7 +4538,8 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 
 .theme-dark .container-1CE3eW { background-color: #080808; border-radius: var(--borderr); }
 .theme-dark .title-3w8xhj { color: white; }
-.theme-dark .colorHeaderSecondary-3Sp3Ft, .theme-dark .colorStandard-2KCXvj { color: #ffffff80; }
+.theme-dark .subtext-3CDbHg { color: #ffffff99; }
+.theme-dark .colorHeaderSecondary-3Sp3Ft, .theme-dark .colorStandard-2KCXvj { color: #ffffff; }
 .theme-dark .container-UC8Ug1:hover { background-color: #111; }
 .theme-dark .container-UC8Ug1 { background-color: #191919; transition: var(--animation);}
 .theme-light .root-1gCeng { box-shadow: none; }
