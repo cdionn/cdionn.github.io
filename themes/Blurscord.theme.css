@@ -180,15 +180,17 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
   filter: invert(1) grayscale(1);
 }
 
+.profileBanner-33-uE1 {
+  background: linear-gradient(transparent, var(--dark-blur));
+}
+
 .wordmarkWindows-1v0lYD {
   visibility: hidden;
 }
 
-
-.avatarHint-1E3LMl {   position: fixed; left: 106px; top: 22px;}
 .avatar-22FtUu {
-  position: fixed;
-  left: 100px;
+  border: 6px solid black;
+  background-color: black;
 }
 
 .theme-dark .wordmarkWindows-1v0lYD:after {
@@ -305,11 +307,7 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
   background-color: transparent;;
 }
 
-.banner-2QYc2d {
-  background: linear-gradient(transparent, var(--dark-blur));
-  height: 124px;
-  border-bottom: solid 1px black;
-}
+
 
 .headerNormal-1l1Znk {
   background-color: var(--dark-blur);
@@ -317,9 +315,8 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 
 .headerTop-2y3V6H {
-  background-color: transparent;
-  border-bottom-color: transparent;
-  padding: 20px 16px 16px;
+  background: linear-gradient(black 45px, transparent);
+  border-bottom: none;
 }
 
 .loadingPopout-qYljDW {
