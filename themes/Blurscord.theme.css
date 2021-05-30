@@ -303,11 +303,15 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 /* UI+  */
 
+.lowerBadge-29hYVK > .base-PmTxvP{
+  background-color: var(--accent-color)!important;
+  color: var(--text-color);
+  animation: badge 5s infinite;
+}
+
 .input-2_SIlA {
   background-color: transparent;;
 }
-
-
 
 .headerNormal-1l1Znk {
   background-color: var(--dark-blur);
@@ -2484,6 +2488,11 @@ rect[fill="#F04747"] {
 
 .mentioned-xhSam7 {
   background-color: var(--accent-color2)!important;
+}
+
+.mentioned-xhSam7 * .wrapper-3WhCwL {
+  animation: mention 3s infinite;
+  background-color: transparent;
 }
 
 .message-2qnXI6.mentioned-xhSam7.selected-2P5D_Z, .mouse-mode.full-motion .mentioned-xhSam7:hover {
@@ -4842,6 +4851,26 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
   100%{
     opacity: 0.6;
     transform: scale(1);
+  }
+}
+
+@keyframes mention {
+  0%{
+  }
+  10%{
+   filter:drop-shadow(0px 0px 3px var(--accent-color));
+  }
+  10.1%, 100%{
+  }
+}
+
+@keyframes badge {
+  0%{
+  }
+  10%{
+   filter:drop-shadow(0px 0px 3px var(--accent-color));
+  }
+  10.1%, 100%{
   }
 }
 
