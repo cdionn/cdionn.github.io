@@ -379,6 +379,21 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 
 /* UI+  */
 
+.button-1YfofB.buttonColor-7qQbGO, .button-1YfofB .buttonColor-7qQbGO {
+  overflow:hidden;
+  border-radius: 10px;
+  background: linear-gradient(#ffffff18,transparent), var(--accent-color)!important;
+  color: var(--text-color);
+}
+
+.button-1YfofB.buttonColor-7qQbGO:hover, .button-1YfofB .buttonColor-7qQbGO:hover {
+  overflow:hidden;
+  border-radius: 10px;
+  border-color: #111111!important;
+  background: linear-gradient(#ffffff18,transparent), #111111!important;
+  color: white!important;
+}
+
 .lowerBadge-29hYVK > .base-PmTxvP{
   background-color: var(--accent-color)!important;
   color: var(--text-color);
