@@ -1,7 +1,7 @@
 ﻿/**
  * @name Blurscord
  * @author Dion#0303
- * @version 1.3.0
+ * @version 1.3.1
  * @description Discord in a blurry style.
  * @website https://cdionn.github.io/discordtheme.html
 */
@@ -25,10 +25,10 @@
 @import url('https://use.fontawesome.com/releases/v5.15.3/css/brands.css');
 
 :root {
-  --version:"1.3.0";
+  --version:"1.3.1";
 
-  --accent-color: #447af0;
-  --accent-color2: #447af015;
+  --accent-color: #4480f0;
+  --accent-color2: #4497f015;
   --text-color: white;
   --wallpaper: url("https://media.idownloadblog.com/wp-content/uploads/2020/06/macOS-Big-Sur-Daylight-Wallpaper-iDownloadBlog-2-2048x2048.jpg");
   --loadwallpaper: url("https://steamuserimages-a.akamaihd.net/ugc/927060754650750033/F3169FE4FB3C62B9FCE317F943D06CCD8AEC6831/");
@@ -143,9 +143,7 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 .app-2rEoOp {
   background-image: var(--wallpaper)!important;
   background-size: cover;
-  background-color: none!important;
   background-repeat: no-repeat;
-  border: solid 2px var(--borderc);
 }
 
 .appMount-3lHmkl, body {
@@ -505,22 +503,26 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
   background-color: var(--neutral);
 }
 
+/* Members shift  */
+.membersWrap-2h-GB4 {
+  padding-top: 40px;
+}
+
+.membersWrap-2h-GB4 ::-webkit-scrollbar-track {
+  margin: 10px 0 15px 0;
+}
+
 /* Verschwommener Text input */
 
 .scroller-2LSbBU {
   bottom: -70px;
   padding-bottom: 60px!important;
+  padding-top: 30px;
 }
 
 .scroller-2LSbBU::-webkit-scrollbar-track {
   margin-bottom: 78px;
-}
-
-.form-2fGMdU {
-  background: var(--dark-blur);
-  backdrop-filter: var(--blur-radius) var(--vibrancy) contrast(1) brightness(.5);
-  border: solid var(--borderc);
-  border-width: 1px 0px 0px 0px;
+  margin-top: 50px;
 }
 
 .lookFilled-1Gx00P .contents-18-Yxp {
@@ -1359,6 +1361,7 @@ path[fill="rgb(118,134,177)"] {
 .wrapper-PY0fhH {
   border-bottom: 1px solid #00000069;
   margin: 0 0 5px 6px;
+  color: white;
 }
 
 .theme-dark .wrapper-3WhCwL {
@@ -1461,13 +1464,17 @@ img[src="/assets/3e0acf6d69894a5d20deb7c513cd1412.svg"] {
 }
 
 /* .container-1giJp5:hover, .container-3baos1:hover, .activityPanel-28dQGo:hover {transform: scale(1.01);} */
-.container-3baos1, .container-1giJp5, .activityPanel-28dQGo, .container-6sXIoE {
+.container-3baos1, .container-1giJp5, .activityPanel-28dQGo, .container-6sXIoE, .listeningAlong-30wH70 {
   border-bottom-color: transparent;
   background-color: var(--usercard);
   margin: 0px 10px 5px 10px!important;
   border-radius: 15px;
   transition: var(--animation);
   border: solid 1px var(--borderc);
+}
+
+.listeningAlong-30wH70 {
+  width: auto;
 }
 
 .timeline-UWmgAx:hover .barFill-Dhkah7 {
@@ -2911,8 +2918,21 @@ img[src="/assets/b73a63cb14a22dd24f0f8da07b186335.svg"]{
   box-shadow: inset 0 0 0 3px var(--accent-color);
 }
 
-.theme-dark .form-2fGMdU:before {
-  background: none;
+.theme-dark .form-2fGMdU {
+  backdrop-filter: blur(120px) var(--vibrancy);
+  -webkit-transform:translate3d(0,0,0);
+  background-color: #000000d0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+.theme-light .form-2fGMdU {
+  backdrop-filter: blur(120px) var(--vibrancy);
+  -webkit-transform:translate3d(0,0,0);
+  background-color: #ffffffd0
+}
+
+.form-2fGMdU:before {
+  background: none!important;
 }
 
 .body-3ND3kc {
@@ -2924,8 +2944,6 @@ img[src="/assets/b73a63cb14a22dd24f0f8da07b186335.svg"]{
   color: white;
   font-weight: bold;
 }
-
-
 
 .icon-3BcwQu, .username-lm8y6T, .listDefault-2y5Z9D .avatarContainer-2inGBK {
   transition: var(--animation);
@@ -2955,10 +2973,9 @@ img[src="/assets/b73a63cb14a22dd24f0f8da07b186335.svg"]{
   color: white;
 }
 
-
-.avatarSpeaking-2c8-9i { box-shadow: inset 0px 0px 0px 3px var(--accent-color); transition: var(--animation); }
+.avatarSpeaking-2c8-9i { box-shadow: inset 0px 0px 0px 3px var(--accent-color); transition: var(--animation);}
 .avatarSpeaking-2IGMRN {
-  box-shadow: inset 0px 0px 0px 3px var(--accent-color);
+  box-shadow: inset 0px 0px 0px 3px var(--accent-color); 
 }
 
 .content-1Wq3SX {
@@ -3475,6 +3492,16 @@ canvas[width="210"]{
 
 /* Einstellungen */
 
+.ShowSessions-list-badgesContainer div {
+  background-color: var(--accent-color)!important;
+  border-radius: 50px;
+  color:var(--text-color);
+}
+
+.ShowSessions-list-item {
+  background: var(--dark-blur)!important;
+}
+
 .avatar-1uQSZT {
   border-color: black;
 }
@@ -3505,6 +3532,20 @@ img[src="/assets/5fb477ca84edd15d9a2888ac28365acd.svg"] {
  }
 
 /* Einstellungen UI */
+
+.theme-dark .tierHeaderUnlocked-3lTDnP, .theme-dark .wrapper-18yWki,.theme-dark .tierBody-3aUxuc, .promotionCard-2IP574 {
+  background-color: var(--dark-blur);
+}
+
+.theme-dark .tierBody-3aUxuc {
+  border-radius: 0 0 var(--borderr) var(--borderr);
+}
+
+.theme-light .tierHeaderLocked-3S508x {  background-color: white; }
+.theme-dark .tierHeaderLocked-3S508x {
+  background-color: black;
+  border-radius: var(--borderr) var(--borderr) 0 0;
+}
 
 .upsellFooter-3coAfO {
   background-color: var(--dark-blur);
@@ -3972,8 +4013,8 @@ img[src="/assets/bbc9e257da833d4b7d22c82a1de8a0a0.svg"] {
   backdrop-filter: var(--blur-radius) var(--vibrancy);
 }
 
-.connectionHeader-2MDqhu {
-	background: #00000080;
+.theme-dark .connectionHeader-2MDqhu {
+	background: black;
 	border-radius: 10px 10px 0px 0px;
 }
 
@@ -4341,7 +4382,7 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 
 /* Hover  */
 
-.button-coQXfM:hover, .actionRed-gYn8D3:hover, .bd-modal-wrapper .footer button:hover, .button-1YfofB.buttonColor-7qQbGO.buttonActive-3FrkXp:hover, .lookFilled-1Gx00P.colorBrand-3pXr91[role="button"]:active,.button-3HqqDX:hover, .jumpButton-2dvRSC:hover, .lookFilled-1Gx00P.colorWhite-rEQuAQ:hover, .content-3O0wBS .button-3zdF3z:hover, .lookFilled-1Gx00P.colorGrey-2DXtkV:hover, .content-1DpZYB .button-2sk-Wq:hover, .lookFilled-1Gx00P.colorRed-1TFJan:hover, .theme-dark .changeButton-1uBsOn:hover, .standardSidebarView-3F1I7i #bd-customcss-attach-controls button:hover, .bd-detached-css-editor #bd-customcss-attach-controls button:hover, .theme-dark .join-33Tr-7:hover .actionButton-2PeQbJ, .theme-light .join-33Tr-7:hover .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91:hover, .bd-pfbtn:hover, .lookFilled-1Gx00P.colorGreen-29iAKY:hover, .lookOutlined-3sRXeN.colorBrand-3pXr91:hover, .lookFilled-1Gx00P.colorBrand-3pXr91[role="button"]:hover, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
+.lookFilled-1Gx00P.colorBrand-3pXr91:hover:not(.swatch-3mFIiP), .button-coQXfM:hover, .actionRed-gYn8D3:hover, .bd-modal-wrapper .footer button:hover, .button-1YfofB.buttonColor-7qQbGO.buttonActive-3FrkXp:hover, .lookFilled-1Gx00P.colorBrand-3pXr91[role="button"]:active,.button-3HqqDX:hover, .jumpButton-2dvRSC:hover, .lookFilled-1Gx00P.colorWhite-rEQuAQ:hover, .content-3O0wBS .button-3zdF3z:hover, .lookFilled-1Gx00P.colorGrey-2DXtkV:hover, .content-1DpZYB .button-2sk-Wq:hover, .lookFilled-1Gx00P.colorRed-1TFJan:hover, .theme-dark .changeButton-1uBsOn:hover, .standardSidebarView-3F1I7i #bd-customcss-attach-controls button:hover, .bd-detached-css-editor #bd-customcss-attach-controls button:hover, .theme-dark .join-33Tr-7:hover .actionButton-2PeQbJ, .theme-light .join-33Tr-7:hover .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91:hover, .bd-pfbtn:hover, .lookFilled-1Gx00P.colorGreen-29iAKY:hover, .lookOutlined-3sRXeN.colorBrand-3pXr91:hover, .lookFilled-1Gx00P.colorBrand-3pXr91[role="button"]:hover, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
   background-color: #111111!important;
   color: white!important;
   border-color: #111111!important;
@@ -4349,7 +4390,7 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 }
 
 /* Still  */
-.button-coQXfM, .actionRed-gYn8D3, .bd-modal-wrapper .footer button, .button-1YfofB.buttonColor-7qQbGO.buttonActive-3FrkXp, .button-3HqqDX, .jumpButton-2dvRSC, .lookFilled-1Gx00P.colorWhite-rEQuAQ, .content-3O0wBS .button-3zdF3z, .lookFilled-1Gx00P.colorGrey-2DXtkV, .content-1DpZYB .button-2sk-Wq, .lookFilled-1Gx00P.colorRed-1TFJan, .lookOutlined-3sRXeN.colorGreen-29iAKY, .theme-dark .changeButton-1uBsOn, .standardSidebarView-3F1I7i #bd-customcss-attach-controls button, .bd-detached-css-editor #bd-customcss-attach-controls button, .theme-dark .join-33Tr-7 .actionButton-2PeQbJ, .theme-light .join-33Tr-7 .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91, .lookFilled-1Gx00P.colorGreen-29iAKY,.lookOutlined-3sRXeN.colorBrand-3pXr91,.bd-pfbtn,.lookFilled-1Gx00P.colorBrand-3pXr91[role="button"], .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6, .bda-slist .bda-footer button {
+.lookFilled-1Gx00P.colorBrand-3pXr91:not(.swatch-3mFIiP), .button-coQXfM, .actionRed-gYn8D3, .bd-modal-wrapper .footer button, .button-1YfofB.buttonColor-7qQbGO.buttonActive-3FrkXp, .button-3HqqDX, .jumpButton-2dvRSC, .lookFilled-1Gx00P.colorWhite-rEQuAQ, .content-3O0wBS .button-3zdF3z, .lookFilled-1Gx00P.colorGrey-2DXtkV, .content-1DpZYB .button-2sk-Wq, .lookFilled-1Gx00P.colorRed-1TFJan, .lookOutlined-3sRXeN.colorGreen-29iAKY, .theme-dark .changeButton-1uBsOn, .standardSidebarView-3F1I7i #bd-customcss-attach-controls button, .bd-detached-css-editor #bd-customcss-attach-controls button, .theme-dark .join-33Tr-7 .actionButton-2PeQbJ, .theme-light .join-33Tr-7 .actionButton-2PeQbJ, .lookInverted-2D7oAl.colorBrand-3pXr91, .lookFilled-1Gx00P.colorGreen-29iAKY,.lookOutlined-3sRXeN.colorBrand-3pXr91,.bd-pfbtn,.lookFilled-1Gx00P.colorBrand-3pXr91[role="button"], .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6, .bda-slist .bda-footer button {
   background-color: var(--accent-color)!important;
   background-image: linear-gradient(#ffffff18,transparent);
   transition: var(--animation);
@@ -4547,8 +4588,24 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
   transition: var(--animation);
 }
 
-.chat-3bRxxu, .theme-dark .container-1D34oG {
-  background-color: var(--alternate);
+.theme-dark .chat-3bRxxu, .theme-dark .container-1D34oG {
+  background-color: #080808;
+  border-radius: var(--borderr);
+  border-top-width: var(--borderw);
+  border-right-width: var(--borderw);
+  border-bottom-width: var(--borderw);
+  border-color: var(--borderc);
+  border-top-right-radius: var(-borderr);
+  border-bottom-right-radius: var(-borderr);
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  box-shadow: var(--surshadow);
+  border-style: solid;
+  margin: 0px;
+}
+
+.theme-light .chat-3bRxxu, .theme-light .container-1D34oG {
+  background-color: rgb(255, 255, 255);
   border-radius: var(--borderr);
   border-top-width: var(--borderw);
   border-right-width: var(--borderw);
@@ -4647,8 +4704,22 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
   border-color: var(--dark-blur);
 }
 
-.container-1r6BKw.themed-ANHk51 {
-  background-color: var(--dark-blur);
+.theme-dark .container-1r6BKw.themed-ANHk51 {
+  background: #000000d0;
+  border-radius: 0px;
+  position: absolute;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  margin: 0 auto;
+  backdrop-filter: blur(120px) var(--vibrancy);
+}
+
+.theme-light .container-1r6BKw.themed-ANHk51 {
+  background: #ffffffd0;
+  border-radius: 0px;
+  position: absolute;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  margin: 0 auto;
+  backdrop-filter: blur(120px) var(--vibrancy);
 }
 
 .headerBar-1YYOfi {
@@ -4689,7 +4760,7 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
 }
 
 .theme-dark .channelTextArea-rNsIhG {
-  background-color: transparent;
+  background-color: var(--dark-blur);
   border-radius: 50px;
   border: solid 1px #ffffff20;
   transition: var(--animation);
@@ -4697,10 +4768,16 @@ img[src="/assets/aba3ec7874f7f01fe9a8275a3e5c21a0.svg"]{
   margin-bottom: 15px;
 }
 
-.channelTextArea-rNsIhG:focus-within {
-  /* box-shadow: 0px 3px 5px 0px #00000050; */
-  background-color: var(--textinput2);
-  border-color: var(--neutral);
+.theme-dark .channelTextArea-rNsIhG:focus-within {
+  box-shadow: 0px 3px 5px 0px #00000050;
+  background-color: var(--dark-blur);
+  border-color: rgba(255, 255, 255, 0.542);
+}
+
+.theme-light .channelTextArea-rNsIhG:focus-within {
+  box-shadow: 0px 3px 5px 0px #00000050;
+  background-color: var(--dark-blur);
+  border-color: rgba(0, 0, 0, 0.542);
 }
 
 .attachWrapper-2TRKBi {
