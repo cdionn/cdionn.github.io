@@ -1,2 +1,0 @@
-Mac: install homebrew then dpkg and run dpkg-scanpackages script use update.sh perl maybe?
-Windows: using WSL sudo apt install python3 python3-pip ipython3 then pip3 install pydpkg. good to go use update.bat

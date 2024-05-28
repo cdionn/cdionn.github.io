@@ -1,3 +1,0 @@
-bash updatewsl.sh
-
-PAUSE
