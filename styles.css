@@ -6,7 +6,7 @@ body {
 }
 
 #container, #next-reservations-container {
-    width: 95%;
+    width: 100%;
     margin: auto;
     overflow: hidden;
 }
@@ -28,6 +28,11 @@ body {
 #main-title, #available-times-title, #reservation-heading, #reservations-title, #history-title, #next-reservations-title {
     text-align: center;
     color: #333;
+}
+
+#main-title {
+    margin: 0px;
+    padding: 30px 0px 0px 0px
 }
 
 #history-title, #next-reservations-title {
@@ -85,6 +90,7 @@ li {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 
 body {
     background: url("https://images.unsplash.com/photo-1620121684840-edffcfc4b878?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") !important;

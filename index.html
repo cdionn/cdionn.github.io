@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1 id="main-title">Çil Barbers</h1>
     <div id="next-reservations-container">
         <h2 id="next-reservations-title">Nächste Reservierungen</h2>
         <div id="next-reservations-list">
@@ -28,7 +29,6 @@
         <div id="header">
             <div id="current-time"></div>
         </div>
-        <h1 id="main-title">Reservierungssystem für Friseursalon</h1>
         <div id="date-selection">
             <label for="calendar">Datum auswählen:</label>
             <input type="date" id="calendar" onchange="loadReservations(); loadDeletedReservations(); updateNextReservations();">
