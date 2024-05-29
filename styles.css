@@ -93,6 +93,7 @@ body {
     background-position: center !important;
     background-attachment: fixed !important;
     backdrop-filter: brightness(0.6) !important;
+    -webkit-backdrop-filter: brightness(0.6);
     font-family: "Ubuntu", sans-serif !important;
 }
 
@@ -105,6 +106,7 @@ div#available-times-section, div#reservation-section, div#reservations, div#hist
     width: 16% !important;
     height: 20% !important;
     backdrop-filter: blur(30px) !important;
+    -webkit-backdrop-filter: blur(30px);
     padding: 10px 20px 20px 20px !important;
     border-radius: 13px !important;
     transition: transform 100ms ease-out !important;
@@ -158,6 +160,7 @@ div#date-selection {
     background-color: #000000b8 !important;
     border: #00000038 solid 2px !important;
     backdrop-filter: blur(30px) !important;
+    -webkit-backdrop-filter: blur(30px);
 }
 
 div#next-reservation-dion, div#next-reservation-cevat, div#next-reservation-tibet {
@@ -165,6 +168,7 @@ div#next-reservation-dion, div#next-reservation-cevat, div#next-reservation-tibe
     text-align:center !important;
     background-color: #000000b8 !important;
     backdrop-filter: blur(30px) !important;
+    -webkit-backdrop-filter: blur(30px);
     border: #00000038 solid 2px !important;
     margin: 10px !important;
     border-radius: 13px !important;
