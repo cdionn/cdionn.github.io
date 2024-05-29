@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap'); 
+
+body {
+    background: url("https://images.unsplash.com/photo-1620121684840-edffcfc4b878?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: brightness(0.6);
+    font-family: "Ubuntu", sans-serif;
+}
+
+div#available-times-section, div#reservation-section, div#reservations, div#history {
+    float: left;
+    color: white;
+    background-color: #000000b8;
+    border: #00000038 solid 2px;
+    margin: 10px;
+    width: 16%;
+    height: 20%;
+    backdrop-filter: blur(30px);
+    padding: 10px 20px 20px 20px;
+    border-radius: 13px;
+    transition: transform 100ms ease-out;
+    transition-delay: 250ms;
+}
+
+div#available-times-section:hover, div#reservation-section:hover, div#reservations:hover, div#history:hover {
+    transform:scale(1.05);
+    
+}
+
+ul#available-times > li {
+    background-color: #000000b8;
+    color: white;
+    border: black;
+    border-radius: 13px;
+}
+
+div#reservation-section {
+    width: 20%;
+    float: left;
+}
+
+div#reservations {
+    float:left;
+    width: 30%;
+}
+
+div#history {
+    float: left;
+}
+
+h1#main-title, h2#reservation-heading, h2#reservations-title, h2#history-title, h2#available-times-title, h2#next-reservations-title {
+    color:white;
+}
+
+div#date-selection, div#header {
+    color: white;
+}
+
+div#header{
+    font-size: 30px;
+    width:30%;
+    background-color: transparent;
+}
+
+div#date-selection {
+    padding: 15px;
+    width: 24%;
+    border-radius: 13px;
+    margin-left:10px;
+    background-color: #000000b8;
+    border: #00000038 solid 2px;
+    backdrop-filter: blur(30px);
+}
+
+div#next-reservation-dion, div#next-reservation-cevat, div#next-reservation-tibet {
+    width: 20%;
+    text-align:center;
+    background-color: #000000b8;
+    backdrop-filter: blur(30px);
+    border: #00000038 solid 2px;
+    margin: 10px;
+    border-radius: 13px;
+    padding: 0px 0px 10px 0px;
+    float: left;
+}
+
+div#next-reservation-dion > h3, div#next-reservation-cevat > h3, div#next-reservation-tibet > h3 {
+    background-color: #00000073;
+    padding: 3px 0px 3px 0px;
+    
+}
+
+div#next-reservation-dion-list, div#next-reservation-cevat-list, div#next-reservation-tibet-list {
+    padding: 10px 0px 0px 0px;
+    color: white;
+}
+
+div#next-reservations-list {
+      display: flex;
+  justify-content: center;
+}
+
+div#reservations-list {
+    text-align: center;
+}

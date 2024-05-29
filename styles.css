@@ -5,13 +5,13 @@ body {
     padding: 0;
 }
 
-.container {
+#container, #next-reservations-container {
     width: 80%;
     margin: auto;
     overflow: hidden;
 }
 
-.header {
+#header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -25,31 +25,35 @@ body {
     margin-left: 10px;
 }
 
-h1, h2 {
+#main-title, #available-times-title, #reservation-heading, #reservations-title, #history-title, #next-reservations-title {
     text-align: center;
     color: #333;
 }
 
-form {
+#history-title, #next-reservations-title {
+    cursor: pointer;
+}
+
+#reservation-form {
     display: flex;
     flex-direction: column;
     margin: 20px 0;
 }
 
-label, input, select, button {
+#customer-name-label, #barber-label, #time-label, #auto-delete-label, #auto-delete-time-label, #customer-name, #barber, #time, #reserve-button {
     margin: 5px 0;
     padding: 10px;
     font-size: 1em;
 }
 
-button {
+#reserve-button {
     background-color: #333;
     color: white;
     border: none;
     cursor: pointer;
 }
 
-button:hover {
+#reserve-button:hover {
     background-color: #555;
 }
 
@@ -63,4 +67,19 @@ li {
     margin: 10px 0;
     padding: 10px;
     border: 1px solid #ddd;
+}
+
+.hidden {
+    display: none;
+}
+
+#next-reservations-list > div {
+    margin-bottom: 20px;
+}
+
+#next-reservations-list h3 {
+    margin: 0;
+    padding: 10px;
+    background-color: #333;
+    color: white;
 }

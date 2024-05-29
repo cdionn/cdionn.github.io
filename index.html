@@ -7,18 +7,35 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
+    <div id="next-reservations-container">
+        <h2 id="next-reservations-title">Nächste Reservierungen</h2>
+        <div id="next-reservations-list">
+            <div id="next-reservation-cevat">
+                <h3>Cevat</h3>
+                <div id="next-reservation-cevat-list"></div>
+            </div>
+            <div id="next-reservation-tibet">
+                <h3>Tibet</h3>
+                <div id="next-reservation-tibet-list"></div>
+            </div>
+            <div id="next-reservation-dion">
+                <h3>Dion</h3>
+                <div id="next-reservation-dion-list"></div>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div id="header">
             <div id="current-time"></div>
         </div>
-        <h1>Reservierungssystem für Friseursalon</h1>
-        <div>
+        <h1 id="main-title">Reservierungssystem für Friseursalon</h1>
+        <div id="date-selection">
             <label for="calendar">Datum auswählen:</label>
-            <input type="date" id="calendar" onchange="loadReservations()">
-            <button onclick="goToToday()">Heutiges Datum</button>
+            <input type="date" id="calendar" onchange="loadReservations(); loadDeletedReservations(); updateNextReservations();">
+            <button id="today-button" onclick="goToToday()">Heutiges Datum</button>
         </div>
-        <div>
-            <h2>Verfügbare Termine für heute</h2>
+        <div id="available-times-section">
+            <h2 id="available-times-title">Verfügbare Termine für heute</h2>
             <ul id="available-times">
                 <!-- Freie Termine werden hier aufgelistet -->
             </ul>
@@ -28,7 +45,7 @@
             <form id="reservation-form" onsubmit="addReservation(event)">
                 <label for="customer-name" id="customer-name-label">Name des Kunden:</label>
                 <input type="text" id="customer-name">
-                <label for="barber">Friseur auswählen:</label>
+                <label for="barber" id="barber-label">Friseur auswählen:</label>
                 <select id="barber" onchange="loadAvailableTimes()" required>
                     <option value="Cevat">Cevat</option>
                     <option value="Tibet">Tibet</option>
@@ -39,13 +56,26 @@
                     <!-- Zeiten werden dynamisch hinzugefügt -->
                 </select>
                 <span id="no-times-message" style="display:none;">Keine freien Uhrzeiten mehr</span>
+                <label for="auto-delete" id="auto-delete-label">
+                    <input type="checkbox" id="auto-delete" onchange="saveAutoDeleteStatus()"> Termin automatisch löschen
+                </label>
+                <label for="auto-delete-time" id="auto-delete-time-label">Automatisch löschen nach:</label>
+                <select id="auto-delete-time" onchange="saveAutoDeleteTime()">
+                    <!-- Zeiten werden dynamisch hinzugefügt -->
+                </select>
                 <button id="reserve-button" type="submit">Reservieren</button>
             </form>
         </div>
         <div id="reservations">
-            <h2>Reservierungen für <span id="selected-date">heute</span></h2>
+            <h2 id="reservations-title">Reservierungen für <span id="selected-date">heute</span></h2>
             <div id="reservations-list">
                 <!-- Reservierungen werden hier aufgelistet -->
+            </div>
+        </div>
+        <div id="history">
+            <h2 id="history-title" onclick="toggleHistory()">Gelöschte Reservierungen</h2>
+            <div id="history-list" class="hidden">
+                <!-- Gelöschte Reservierungen werden hier aufgelistet -->
             </div>
         </div>
     </div>

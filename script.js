@@ -4,6 +4,8 @@ const reservations = {
     'Dion': []
 };
 
+const deletedReservations = [];
+
 const openingHours = {
     'Mo': { start: '09:00', end: '18:00' },
     'Di': { start: '09:00', end: '18:00' },
@@ -14,24 +16,68 @@ const openingHours = {
     'So': { start: null, end: null } // Geschlossen
 };
 
-// Lade gespeicherte Reservierungen aus dem localStorage
+// Lade gespeicherte Reservierungen und Auto-Delete-Status aus dem localStorage
 if (localStorage.getItem('reservations')) {
     Object.assign(reservations, JSON.parse(localStorage.getItem('reservations')));
 }
+if (localStorage.getItem('deletedReservations')) {
+    deletedReservations.push(...JSON.parse(localStorage.getItem('deletedReservations')));
+}
+if (localStorage.getItem('autoDeleteStatus') === 'true') {
+    document.getElementById('auto-delete').checked = true;
+}
 
 document.getElementById('calendar').valueAsDate = new Date();
+populateAutoDeleteTimeOptions();
+loadAutoDeleteTime();
 loadReservations();
+loadDeletedReservations();
 updateCurrentTime();
 setInterval(updateCurrentTime, 1000);
+updateNextReservations();
 
 function updateCurrentTime() {
     const now = new Date();
     const timeString = now.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
     document.getElementById('current-time').innerText = `Aktuelle Uhrzeit: ${timeString}`;
+    if (document.getElementById('auto-delete').checked) {
+        checkAndDeleteExpiredReservations();
+    }
 }
 
 function saveReservations() {
     localStorage.setItem('reservations', JSON.stringify(reservations));
+}
+
+function saveDeletedReservations() {
+    localStorage.setItem('deletedReservations', JSON.stringify(deletedReservations));
+}
+
+function saveAutoDeleteStatus() {
+    const autoDeleteStatus = document.getElementById('auto-delete').checked;
+    localStorage.setItem('autoDeleteStatus', autoDeleteStatus);
+}
+
+function saveAutoDeleteTime() {
+    const autoDeleteTime = document.getElementById('auto-delete-time').value;
+    localStorage.setItem('autoDeleteTime', autoDeleteTime);
+}
+
+function loadAutoDeleteTime() {
+    const autoDeleteTimeSelect = document.getElementById('auto-delete-time');
+    const savedTime = localStorage.getItem('autoDeleteTime') || 15; // Standardmäßig auf 15 Minuten setzen
+    autoDeleteTimeSelect.value = savedTime;
+}
+
+function populateAutoDeleteTimeOptions() {
+    const autoDeleteTimeSelect = document.getElementById('auto-delete-time');
+    for (let i = 5; i <= 60; i += 5) {
+        const option = document.createElement('option');
+        option.value = i;
+        option.innerText = `${i} Minuten`;
+        autoDeleteTimeSelect.appendChild(option);
+    }
+    autoDeleteTimeSelect.value = 15; // Standardmäßig auf 15 Minuten setzen
 }
 
 function loadReservations() {
@@ -66,6 +112,34 @@ function loadReservations() {
     loadAvailableTimes();
 }
 
+function loadDeletedReservations() {
+    const historyList = document.getElementById('history-list');
+    historyList.innerHTML = '';
+
+    const selectedDate = document.getElementById('calendar').value;
+
+    deletedReservations
+        .filter(res => res.date === selectedDate)
+        .forEach(res => {
+            const historyItem = document.createElement('div');
+            historyItem.innerText = `${res.time} - ${res.customer} (Friseur: ${res.barber})`;
+            const restoreButton = document.createElement('button');
+            restoreButton.innerText = 'Wiederherstellen';
+            restoreButton.onclick = () => restoreReservation(res);
+            const deleteButton = document.createElement('button');
+            deleteButton.innerText = 'Löschen';
+            deleteButton.onclick = () => permanentlyDeleteReservation(res);
+            historyItem.appendChild(restoreButton);
+            historyItem.appendChild(deleteButton);
+            historyList.appendChild(historyItem);
+        });
+}
+
+function toggleHistory() {
+    const historyList = document.getElementById('history-list');
+    historyList.classList.toggle('hidden');
+}
+
 function displayAvailableTimes() {
     const selectedDate = document.getElementById('calendar').value;
     const date = new Date(selectedDate);
@@ -77,6 +151,7 @@ function displayAvailableTimes() {
 
     if (!hours.start || !hours.end) {
         availableTimesList.innerHTML = '<li>Keine freien Uhrzeiten heute</li>';
+        checkForNextAvailableDay();
         return;
     }
 
@@ -90,6 +165,8 @@ function displayAvailableTimes() {
 
     const endDate = new Date();
     endDate.setHours(end[0], end[1], 0, 0);
+
+    let hasAvailableTimes = false;
 
     while (startDate < endDate) {
         const time = startDate.toTimeString().split(' ')[0].substring(0, 5);
@@ -105,13 +182,34 @@ function displayAvailableTimes() {
                 const timeItem = document.createElement('li');
                 timeItem.innerText = `${time} - Frei: ${availableBarbers.join(', ')}`;
                 availableTimesList.appendChild(timeItem);
+                hasAvailableTimes = true;
             }
         }
         startDate.setMinutes(startDate.getMinutes() + 30);
     }
 
-    if (availableTimesList.innerHTML === '') {
+    if (!hasAvailableTimes) {
         availableTimesList.innerHTML = '<li>Keine freien Uhrzeiten heute</li>';
+        checkForNextAvailableDay();
+    }
+}
+
+function checkForNextAvailableDay() {
+    const currentDate = new Date(document.getElementById('calendar').value);
+    let nextDate = new Date(currentDate);
+    nextDate.setDate(currentDate.getDate() + 1);
+
+    while (true) {
+        const day = nextDate.toLocaleDateString('de-DE', { weekday: 'short' });
+        const hours = openingHours[day];
+
+        if (hours.start && hours.end) {
+            document.getElementById('calendar').valueAsDate = nextDate;
+            loadReservations();
+            loadDeletedReservations();
+            break;
+        }
+        nextDate.setDate(nextDate.getDate() + 1);
     }
 }
 
@@ -208,17 +306,70 @@ function addReservation(event) {
         reservations[barber].push({ date, time, customer });
         saveReservations();
         loadReservations();
+        loadDeletedReservations(); // Ensure deleted reservations are reloaded
+        updateNextReservations(); // Update next reservations
     } else {
         alert('Dieser Termin ist bereits reserviert.');
     }
 
+    // Reset the form but not the auto-delete checkbox and auto-delete time
+    const autoDeleteStatus = document.getElementById('auto-delete').checked;
+    const autoDeleteTime = document.getElementById('auto-delete-time').value;
     document.getElementById('reservation-form').reset();
     document.getElementById('barber').value = barber; // Keep the selected barber
+    document.getElementById('auto-delete').checked = autoDeleteStatus;
+    document.getElementById('auto-delete-time').value = autoDeleteTime;
     loadAvailableTimes();
 }
 
 function deleteReservation(barber, date, time) {
-    reservations[barber] = reservations[barber].filter(res => !(res.date === date && res.time === time));
+    const reservationIndex = reservations[barber].findIndex(res => res.date === date && res.time === time);
+    if (reservationIndex !== -1) {
+        const deletedReservation = reservations[barber].splice(reservationIndex, 1)[0];
+        deletedReservations.push({ ...deletedReservation, barber });
+        saveReservations();
+        saveDeletedReservations();
+        loadReservations();
+        loadDeletedReservations();
+        updateNextReservations(); // Update next reservations
+    }
+}
+
+function restoreReservation(reservation) {
+    reservations[reservation.barber].push({
+        date: reservation.date,
+        time: reservation.time,
+        customer: reservation.customer
+    });
+    const index = deletedReservations.indexOf(reservation);
+    if (index !== -1) {
+        deletedReservations.splice(index, 1);
+    }
+    saveReservations();
+    saveDeletedReservations();
+    loadReservations();
+    loadDeletedReservations();
+    updateNextReservations(); // Update next reservations
+}
+
+function permanentlyDeleteReservation(reservation) {
+    const index = deletedReservations.indexOf(reservation);
+    if (index !== -1) {
+        deletedReservations.splice(index, 1);
+    }
+    saveDeletedReservations();
+    loadDeletedReservations();
+}
+
+function checkAndDeleteExpiredReservations() {
+    const now = new Date();
+    const autoDeleteTime = parseInt(localStorage.getItem('autoDeleteTime')) || 15;
+    for (let barber in reservations) {
+        reservations[barber] = reservations[barber].filter(res => {
+            const resTime = new Date(`${res.date}T${res.time}`);
+            return now - resTime <= autoDeleteTime * 60 * 1000; // Auto-Delete-Zeit
+        });
+    }
     saveReservations();
     loadReservations();
 }
@@ -226,4 +377,38 @@ function deleteReservation(barber, date, time) {
 function goToToday() {
     document.getElementById('calendar').valueAsDate = new Date();
     loadReservations();
+    loadDeletedReservations();
+    updateNextReservations(); // Update next reservations
+}
+
+function updateNextReservations() {
+    const selectedDate = document.getElementById('calendar').value;
+    const now = new Date();
+    const nextReservationCevatList = document.getElementById('next-reservation-cevat-list');
+    const nextReservationTibetList = document.getElementById('next-reservation-tibet-list');
+    const nextReservationDionList = document.getElementById('next-reservation-dion-list');
+
+    nextReservationCevatList.innerHTML = '';
+    nextReservationTibetList.innerHTML = '';
+    nextReservationDionList.innerHTML = '';
+
+    const barbers = ['Cevat', 'Tibet', 'Dion'];
+
+    barbers.forEach(barber => {
+        const nextReservationList = document.getElementById(`next-reservation-${barber.toLowerCase()}-list`);
+        const barberReservations = reservations[barber]
+            .filter(res => res.date === selectedDate && new Date(`${res.date}T${res.time}`) > now)
+            .sort((a, b) => new Date(`${a.date}T${a.time}`) - new Date(`${b.date}T${b.time}`));
+
+        if (barberReservations.length > 0) {
+            const nextReservation = barberReservations[0];
+            const reservationItem = document.createElement('div');
+            reservationItem.innerText = `${nextReservation.time} - ${nextReservation.customer}`;
+            nextReservationList.appendChild(reservationItem);
+        } else {
+            const noReservationItem = document.createElement('div');
+            noReservationItem.innerText = 'Keine kommenden Reservierungen';
+            nextReservationList.appendChild(noReservationItem);
+        }
+    });
 }
