@@ -226,7 +226,7 @@ div#reservations-list {
 }
 
 #settings-container.hidden {
-    display: none;
+    display: block;
 }
 
 #settings-container h3 {
