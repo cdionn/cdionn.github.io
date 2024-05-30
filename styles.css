@@ -201,3 +201,48 @@ div#reservations-list {
     text-align: center !important;
 }
 
+/* Add this to your styles.css */
+#server-status-container {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+#settings-container {
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+}
+
+#settings-container.hidden {
+    display: none;
+}
+
+#settings-container h3 {
+    margin: 0 0 10px 0;
+}
+
+#settings-button {
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+#settings-button:hover {
+    background-color: #777;
+}
+

@@ -36,6 +36,15 @@ updateCurrentTime();
 setInterval(updateCurrentTime, 1000);
 updateNextReservations();
 
+document.addEventListener('DOMContentLoaded', () => {
+    // Load server settings from localStorage
+    const serverAddress = localStorage.getItem('serverAddress');
+    if (serverAddress) {
+        document.getElementById('server-address').value = serverAddress;
+    }
+    checkServerStatus();
+});
+
 function updateCurrentTime() {
     const now = new Date();
     const timeString = now.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
@@ -410,5 +419,68 @@ function updateNextReservations() {
             noReservationItem.innerText = 'Keine kommenden Reservierungen';
             nextReservationList.appendChild(noReservationItem);
         }
+    });
+}
+
+function toggleSettings() {
+    document.getElementById('settings-container').classList.toggle('hidden');
+}
+
+function saveServerSettings() {
+    const serverAddress = document.getElementById('server-address').value;
+    localStorage.setItem('serverAddress', serverAddress);
+    checkServerStatus();
+}
+
+function checkServerStatus() {
+    const serverAddress = localStorage.getItem('serverAddress');
+    if (!serverAddress) {
+        updateServerStatus('Disconnected');
+        return;
+    }
+
+    fetch(`${serverAddress}/status`)
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === 'ok') {
+                updateServerStatus('Connected');
+                synchronizeData();
+            } else {
+                updateServerStatus('Disconnected');
+            }
+        })
+        .catch(() => {
+            updateServerStatus('Disconnected');
+        });
+}
+
+function updateServerStatus(status) {
+    document.getElementById('status-indicator').innerText = status;
+}
+
+function synchronizeData() {
+    const reservationsData = localStorage.getItem('reservations');
+    const deletedReservationsData = localStorage.getItem('deletedReservations');
+
+    fetch(`${localStorage.getItem('serverAddress')}/sync`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            reservations: reservationsData ? JSON.parse(reservationsData) : {},
+            deletedReservations: deletedReservationsData ? JSON.parse(deletedReservationsData) : []
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.status === 'ok') {
+            console.log('Data synchronized successfully');
+        } else {
+            console.error('Failed to synchronize data');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
     });
 }

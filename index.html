@@ -79,6 +79,19 @@
             </div>
         </div>
     </div>
+    <!-- Add the settings and status elements at the end of the body -->
+    <div id="server-status-container">
+        <div id="server-status">Server Status: <span id="status-indicator">Disconnected</span></div>
+        <button id="settings-button" onclick="toggleSettings()">Settings</button>
+    </div>
+
+    <div id="settings-container" class="hidden">
+        <h3>Server Settings</h3>
+        <label for="server-address">Server Address:</label>
+        <input type="text" id="server-address">
+        <button onclick="saveServerSettings()">Save</button>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
