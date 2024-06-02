@@ -309,17 +309,36 @@ function addReservation(event) {
         customer = 'Kunde';
     }
 
-    const isReserved = reservations[barber].some(res => res.date === date && res.time === time);
+    const reservation = { customer_name: customer, barber, date, time };
 
-    if (!isReserved) {
+    fetch(`${localStorage.getItem('serverAddress')}/reservations`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(reservation)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Failed to add reservation');
+        }
+        return response.text();
+    })
+    .then(data => {
+        console.log(data);
+        // Update local storage and UI
+        if (!reservations[barber]) {
+            reservations[barber] = [];
+        }
         reservations[barber].push({ date, time, customer });
         saveReservations();
         loadReservations();
-        loadDeletedReservations(); // Ensure deleted reservations are reloaded
-        updateNextReservations(); // Update next reservations
-    } else {
-        alert('Dieser Termin ist bereits reserviert.');
-    }
+        loadDeletedReservations();
+        updateNextReservations();
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
 
     // Reset the form but not the auto-delete checkbox and auto-delete time
     const autoDeleteStatus = document.getElementById('auto-delete').checked;
