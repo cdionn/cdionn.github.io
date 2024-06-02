@@ -93,6 +93,31 @@ function loadReservations() {
     const selectedDate = document.getElementById('calendar').value;
     document.getElementById('selected-date').innerText = selectedDate;
 
+    fetch(`${localStorage.getItem('serverAddress')}/reservations`)
+        .then(response => response.json())
+        .then(data => {
+            // Clear existing reservations
+            for (let barber in reservations) {
+                reservations[barber] = [];
+            }
+
+            // Populate reservations from the server
+            data.forEach(res => {
+                if (!reservations[res.barber]) {
+                    reservations[res.barber] = [];
+                }
+                reservations[res.barber].push(res);
+            });
+
+            updateUI(selectedDate);
+        })
+        .catch(error => {
+            console.error('Error fetching reservations:', error);
+            updateUI(selectedDate); // Fallback to local storage data
+        });
+}
+
+function updateUI(selectedDate) {
     const date = new Date(selectedDate);
     const day = date.toLocaleDateString('de-DE', { weekday: 'short' });
     const hours = openingHours[day];
@@ -107,7 +132,7 @@ function loadReservations() {
         barberSection.innerHTML = `<h3>${barber}</h3>`;
         barberReservations.forEach(res => {
             const reservationItem = document.createElement('div');
-            reservationItem.innerText = `${res.time} - ${res.customer}`;
+            reservationItem.innerText = `${res.time} - ${res.customer_name}`;
             const deleteButton = document.createElement('button');
             deleteButton.innerText = 'Löschen';
             deleteButton.onclick = () => deleteReservation(barber, res.date, res.time);
@@ -131,7 +156,7 @@ function loadDeletedReservations() {
         .filter(res => res.date === selectedDate)
         .forEach(res => {
             const historyItem = document.createElement('div');
-            historyItem.innerText = `${res.time} - ${res.customer} (Friseur: ${res.barber})`;
+            historyItem.innerText = `${res.time} - ${res.customer_name} (Friseur: ${res.barber})`;
             const restoreButton = document.createElement('button');
             restoreButton.innerText = 'Wiederherstellen';
             restoreButton.onclick = () => restoreReservation(res);
@@ -226,6 +251,7 @@ function loadAvailableTimes() {
     const selectedDate = document.getElementById('calendar').value;
     const barber = document.getElementById('barber').value;
     const availableTimes = document.getElementById('time');
+    const selectedTime = availableTimes.value; // Save the current selected time
     const timeLabel = document.getElementById('time-label');
     const noTimesMessage = document.getElementById('no-times-message');
     const reserveButton = document.getElementById('reserve-button');
@@ -287,6 +313,11 @@ function loadAvailableTimes() {
         customerNameField.style.display = 'block';
         customerNameLabel.style.display = 'block';
         reservationHeading.style.display = 'block';
+
+        // Set the previously selected time if it still exists
+        if (availableTimes.querySelector(`option[value="${selectedTime}"]`)) {
+            availableTimes.value = selectedTime;
+        }
     } else {
         availableTimes.style.display = 'none';
         timeLabel.style.display = 'none';
@@ -304,6 +335,8 @@ function addReservation(event) {
     const barber = document.getElementById('barber').value;
     const time = document.getElementById('time').value;
     const date = document.getElementById('calendar').value;
+
+    console.log(`Adding reservation for ${customer}, ${barber}, ${date}, ${time}`);
 
     if (!customer) {
         customer = 'Kunde';
@@ -330,7 +363,7 @@ function addReservation(event) {
         if (!reservations[barber]) {
             reservations[barber] = [];
         }
-        reservations[barber].push({ date, time, customer });
+        reservations[barber].push({ date, time, customer_name: customer });
         saveReservations();
         loadReservations();
         loadDeletedReservations();
@@ -359,7 +392,7 @@ function deleteReservation(barber, date, time) {
         saveDeletedReservations();
         loadReservations();
         loadDeletedReservations();
-        updateNextReservations(); // Update next reservations
+        updateNextReservations();
     }
 }
 
@@ -367,7 +400,7 @@ function restoreReservation(reservation) {
     reservations[reservation.barber].push({
         date: reservation.date,
         time: reservation.time,
-        customer: reservation.customer
+        customer_name: reservation.customer_name
     });
     const index = deletedReservations.indexOf(reservation);
     if (index !== -1) {
@@ -377,7 +410,7 @@ function restoreReservation(reservation) {
     saveDeletedReservations();
     loadReservations();
     loadDeletedReservations();
-    updateNextReservations(); // Update next reservations
+    updateNextReservations();
 }
 
 function permanentlyDeleteReservation(reservation) {
@@ -406,7 +439,7 @@ function goToToday() {
     document.getElementById('calendar').valueAsDate = new Date();
     loadReservations();
     loadDeletedReservations();
-    updateNextReservations(); // Update next reservations
+    updateNextReservations();
 }
 
 function updateNextReservations() {
@@ -431,7 +464,7 @@ function updateNextReservations() {
         if (barberReservations.length > 0) {
             const nextReservation = barberReservations[0];
             const reservationItem = document.createElement('div');
-            reservationItem.innerText = `${nextReservation.time} - ${nextReservation.customer}`;
+            reservationItem.innerText = `${nextReservation.time} - ${nextReservation.customer_name}`;
             nextReservationList.appendChild(reservationItem);
         } else {
             const noReservationItem = document.createElement('div');
@@ -495,6 +528,8 @@ function synchronizeData() {
     .then(data => {
         if (data.status === 'ok') {
             console.log('Data synchronized successfully');
+            loadReservations();
+            loadDeletedReservations();
         } else {
             console.error('Failed to synchronize data');
         }
