@@ -94,8 +94,14 @@ function loadReservations() {
     document.getElementById('selected-date').innerText = selectedDate;
 
     fetch(`${localStorage.getItem('serverAddress')}/reservations`)
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
         .then(data => {
+            console.log('Fetched reservations:', data); // Debugging-Ausgabe
             // Clear existing reservations
             for (let barber in reservations) {
                 reservations[barber] = [];
@@ -109,6 +115,7 @@ function loadReservations() {
                 reservations[res.barber].push(res);
             });
 
+            console.log('Updated reservations:', reservations); // Debugging-Ausgabe
             updateUI(selectedDate);
         })
         .catch(error => {
@@ -118,6 +125,7 @@ function loadReservations() {
 }
 
 function updateUI(selectedDate) {
+    console.log('Updating UI for date:', selectedDate); // Debugging-Ausgabe
     const date = new Date(selectedDate);
     const day = date.toLocaleDateString('de-DE', { weekday: 'short' });
     const hours = openingHours[day];
@@ -127,6 +135,7 @@ function updateUI(selectedDate) {
 
     for (let barber in reservations) {
         const barberReservations = reservations[barber].filter(res => res.date === selectedDate);
+        console.log(`Reservations for ${barber} on ${selectedDate}:`, barberReservations); // Debugging-Ausgabe
         barberReservations.sort((a, b) => a.time.localeCompare(b.time));
         const barberSection = document.createElement('div');
         barberSection.innerHTML = `<h3>${barber}</h3>`;
