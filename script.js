@@ -109,6 +109,7 @@ function loadReservations() {
 
             // Populate reservations from the server
             data.forEach(res => {
+                console.log(`Processing reservation:`, res); // Debugging-Ausgabe
                 if (!reservations[res.barber]) {
                     reservations[res.barber] = [];
                 }
@@ -136,6 +137,8 @@ function updateUI(selectedDate) {
     for (let barber in reservations) {
         const barberReservations = reservations[barber].filter(res => res.date === selectedDate);
         console.log(`Reservations for ${barber} on ${selectedDate}:`, barberReservations); // Debugging-Ausgabe
+        if (barberReservations.length === 0) continue; // Skip if there are no reservations for this barber
+
         barberReservations.sort((a, b) => a.time.localeCompare(b.time));
         const barberSection = document.createElement('div');
         barberSection.innerHTML = `<h3>${barber}</h3>`;
